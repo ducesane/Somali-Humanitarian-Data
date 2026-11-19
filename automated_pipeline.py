@@ -365,8 +365,10 @@ def generate_html_dashboard(feed_statuses, updates_detected):
                     <h2 class="fw-bold mb-0 text-white">Somalia Humanitarian Data Auto-Sync Engine</h2>
                     <p class="small text-light opacity-80 mb-0">Automated Monitoring of UN OCHA HDX CKAN Datasets & FTS Funding APIs</p>
                 </div>
-                <div class="mt-3 mt-md-0">
+                <div class="mt-3 mt-md-0 d-flex flex-wrap gap-2 align-items-center">
                     <span class="badge bg-light text-dark fs-6 shadow-sm"><i class="fa-regular fa-clock me-1"></i> Last Checked: {ts}</span>
+                    <a href="index.html" class="btn btn-sm btn-outline-light"><i class="fa-solid fa-house me-1"></i> Portal</a>
+                    <a href="somalia_3w_4w_interactive_ngo_map.html" class="btn btn-sm btn-success text-white"><i class="fa-solid fa-map-location-dot me-1"></i> Live GIS Map</a>
                 </div>
             </div>
         </div>
@@ -421,28 +423,65 @@ def generate_html_dashboard(feed_statuses, updates_detected):
         </div>
         
         <div class="card-custom">
-            <h5 class="fw-bold mb-3 text-dark"><i class="fa-solid fa-terminal text-success me-2"></i>How to Run & Automate</h5>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="fw-bold mb-0 text-dark"><i class="fa-solid fa-network-wired text-primary me-2"></i>Automated Pipeline Architecture &amp; Telemetry</h5>
+                <span class="badge bg-success text-white"><i class="fa-solid fa-check-double me-1"></i>Production Grade</span>
+            </div>
+            <p class="small text-muted mb-4">Autonomous synchronization engine continuously polling UN OCHA humanitarian data endpoints. When a new resource release or dataset modification timestamp is detected, downstream GIS maps and analytical models are automatically rebuilt.</p>
+            
             <div class="row g-3">
-                <div class="col-md-6">
-                    <div class="p-3 bg-light rounded border">
-                        <span class="fw-bold text-dark"><i class="fa-solid fa-magnifying-glass me-1"></i> Mode 1: Check Only (Safe Query)</span>
-                        <pre class="bg-dark text-light p-2 rounded mt-2 mb-1" style="font-size: 0.85rem;">python automated_pipeline.py --check</pre>
-                        <div class="small text-muted">Queries HDX CKAN and FTS APIs to verify if any new files are published, without downloading or overwriting anything.</div>
+                <div class="col-md-3">
+                    <div class="p-3 bg-light rounded border text-center h-100">
+                        <div class="text-primary mb-2"><i class="fa-solid fa-rotate fs-4"></i></div>
+                        <div class="fw-bold text-dark small">Polling Protocol</div>
+                        <div class="small text-muted mt-1">CKAN Package Revisions &amp; FTS REST v1 Endpoints</div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="p-3 bg-light rounded border">
-                        <span class="fw-bold text-dark"><i class="fa-solid fa-cloud-arrow-down me-1"></i> Mode 2: Full Sync & Rebuild</span>
-                        <pre class="bg-dark text-light p-2 rounded mt-2 mb-1" style="font-size: 0.85rem;">python automated_pipeline.py --sync</pre>
-                        <div class="small text-muted">Automatically downloads new releases, backs up previous versions into <code>hdx_data/backups/</code>, and re-generates all maps and Excel reports.</div>
+                <div class="col-md-3">
+                    <div class="p-3 bg-light rounded border text-center h-100">
+                        <div class="text-success mb-2"><i class="fa-solid fa-shield-halved fs-4"></i></div>
+                        <div class="fw-bold text-dark small">Data Integrity</div>
+                        <div class="small text-muted mt-1">Byte-size validation, schema diffs &amp; automated rollback</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 bg-light rounded border text-center h-100">
+                        <div class="text-warning mb-2"><i class="fa-solid fa-boxes-stacked fs-4"></i></div>
+                        <div class="fw-bold text-dark small">Snapshot Archival</div>
+                        <div class="small text-muted mt-1">Timestamped backup history preserved prior to overwrite</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 bg-light rounded border text-center h-100">
+                        <div class="text-info mb-2"><i class="fa-solid fa-bolt fs-4"></i></div>
+                        <div class="fw-bold text-dark small">Downstream Trigger</div>
+                        <div class="small text-muted mt-1">Auto-recompiles 3W GIS map, funding charts &amp; Excel</div>
                     </div>
                 </div>
             </div>
-            <div class="mt-3 p-3 bg-light rounded border">
-                <span class="fw-bold text-dark"><i class="fa-solid fa-calendar-check me-1"></i> Automatic Recurring Scheduling:</span>
-                <p class="small text-muted mb-1">You can double-click <code>run_pipeline.bat</code> anytime, or schedule it to run automatically every morning via Windows Task Scheduler:</p>
-                <code class="text-primary fw-bold" style="font-size: 0.85rem;">powershell -ExecutionPolicy Bypass -File setup_windows_scheduler.ps1</code>
-            </div>
+
+            <details class="mt-4 pt-3 border-top">
+                <summary class="small text-muted fw-bold" style="cursor: pointer;">
+                    <i class="fa-solid fa-terminal me-1"></i> Developer &amp; CLI Maintenance Commands (Click to Expand)
+                </summary>
+                <div class="mt-3">
+                    <p class="small text-muted mb-2">For local repository maintainers executing sync operations manually:</p>
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <div class="p-2 bg-dark rounded text-light small">
+                                <code>python automated_pipeline.py --check</code>
+                                <div class="text-secondary small mt-1">Safe query mode (verifies remote status without file modifications).</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-2 bg-dark rounded text-light small">
+                                <code>python automated_pipeline.py --sync</code>
+                                <div class="text-secondary small mt-1">Full synchronization mode (downloads updates and rebuilds outputs).</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
         </div>
     </div>
 </body>
