@@ -17,3 +17,8 @@ pipeline_log.txt
 *~
 Thumbs.db
 Desktop.ini
+
+# Next.js build artifacts
+portal/node_modules/
+portal/.next/
+portal/out/
