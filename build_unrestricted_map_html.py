@@ -442,6 +442,19 @@ html_content = f"""<!DOCTYPE html>
                             <div id="detClusterTags"></div>
                         </div>
 
+                        <!-- IOM DTM Emergency Trends Tracking (ETT) Influx Alert -->
+                        <div class="mb-3 p-2 rounded border" id="detEttContainer" style="background: #fff1f2; border-color: #fecdd3 !important;">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="badge bg-danger" id="detEttBadge"><i class="fa-solid fa-triangle-exclamation me-1"></i> IOM ETT Recent Influx</span>
+                                <span class="small text-danger fw-bold" id="detEttArrivals">0 Arrivals</span>
+                            </div>
+                            <div class="small text-dark" style="font-size: 0.78rem;">
+                                <div><strong>Primary Driver:</strong> <span id="detEttCause">-</span></div>
+                                <div><strong>Top Urgent Need:</strong> <span id="detEttNeed" class="text-danger fw-bold">-</span></div>
+                                <div id="detEttOriginRow"><strong>Top Origin:</strong> <span id="detEttOrigin">-</span></div>
+                            </div>
+                        </div>
+
                         <!-- Full Operating NGO Roster -->
                         <div class="border-top pt-2">
                             <div class="d-flex justify-content-between align-items-center mb-1">
@@ -761,6 +774,39 @@ html_content = f"""<!DOCTYPE html>
                     span.innerText = `${{cl}} (${{cnt}})`;
                     clTagsContainer.appendChild(span);
                 }});
+            }}
+
+            // IOM ETT Displacement Influx Population
+            const ett = d.ett_2026 || {{}};
+            const ettContainer = document.getElementById('detEttContainer');
+            const ettBadge = document.getElementById('detEttBadge');
+            const ettArr = document.getElementById('detEttArrivals');
+            const ettCause = document.getElementById('detEttCause');
+            const ettNeed = document.getElementById('detEttNeed');
+            const ettOrigin = document.getElementById('detEttOrigin');
+            const ettOriginRow = document.getElementById('detEttOriginRow');
+
+            if (ett.arrivals && ett.arrivals > 0) {{
+                ettContainer.style.background = '#fff1f2';
+                ettContainer.style.borderColor = '#fecdd3';
+                ettBadge.className = 'badge bg-danger';
+                ettBadge.innerHTML = '<i class="fa-solid fa-triangle-exclamation me-1"></i> IOM ETT Acute Influx';
+                ettArr.className = 'small text-danger fw-bold';
+                ettArr.innerText = '+' + Number(ett.arrivals).toLocaleString() + ' arrivals';
+                ettCause.innerText = ett.top_cause || 'N/A';
+                ettNeed.innerText = ett.top_need || 'N/A';
+                ettOrigin.innerText = ett.top_origin || 'Internal Movement';
+                ettOriginRow.style.display = 'block';
+            }} else {{
+                ettContainer.style.background = '#f8fafc';
+                ettContainer.style.borderColor = '#e2e8f0';
+                ettBadge.className = 'badge bg-secondary';
+                ettBadge.innerHTML = '<i class="fa-solid fa-circle-check me-1"></i> IOM ETT Baseline';
+                ettArr.className = 'small text-muted';
+                ettArr.innerText = 'No Acute Influx';
+                ettCause.innerText = 'Stable Baseline (Routine Ops)';
+                ettNeed.innerText = 'Ongoing Assistance';
+                ettOriginRow.style.display = 'none';
             }}
 
             const ngoList = document.getElementById('detNgoList');

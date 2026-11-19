@@ -62,6 +62,14 @@ MONITORED_FEEDS = {
         'url': 'https://api.hpc.tools/v1/public/fts/flow?countryISO3=SOM&year=2026',
         'target_filename': 'fts_2026_flows_api.json',
         'description': 'Real-time incoming bilateral donor grants logged in FTS'
+    },
+    'iom_dtm_ett_tracker': {
+        'name': 'IOM DTM: Emergency Trends Tracking (IDP Weekly Influx)',
+        'type': 'hdx_package',
+        'package_id': 'somalia-displacement-idps-emergency-trends-tracking-ett-since-oct2023-iom-dtm',
+        'target_filename': 'iom_dtm_ett_tracker_2026.xlsx',
+        'filter_keyword': 'sinceJune2026',
+        'description': 'Weekly rapid displacement tracking, acute shocks, and primary unmet needs'
     }
 }
 
@@ -310,6 +318,7 @@ def run_pipeline(check_only=False):
 def trigger_rebuild():
     scripts = [
         ('build_map_payload.py', 'Re-generating Map GeoJSON payload'),
+        ('process_ett_data.py', 'Integrating IOM ETT Displacement into Map payload'),
         ('build_unrestricted_map_html.py', 'Re-building Interactive Map HTML'),
         ('build_3w_fts_excel.py', 'Re-building 3W vs FTS Comparative Excel'),
         ('build_flow_excel.py', 'Re-building INGO/Local NGO Flow Excel')
