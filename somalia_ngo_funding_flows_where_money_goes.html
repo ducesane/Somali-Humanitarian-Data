@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where Aid Money Goes in Somalia: INGO Allocations & Local NGO Revenue Streams</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-navy: #0f172a;
+            --accent-blue: #2563eb;
+            --accent-emerald: #059669;
+            --accent-amber: #d97706;
+            --accent-rose: #e11d48;
+            --surface-bg: #f8fafc;
+            --card-border: #e2e8f0;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--surface-bg);
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        .hero-banner {
+            background: linear-gradient(135deg, #064e3b 0%, #0f172a 60%, #1e1b4b 100%);
+            color: white;
+            padding: 3.5rem 0 2.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 4px solid #10b981;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3);
+        }
+        .kpi-card {
+            background: white;
+            border-radius: 12px;
+            border: 1px solid var(--card-border);
+            padding: 1.5rem;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+        .kpi-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 20px -3px rgba(0,0,0,0.1);
+        }
+        .kpi-num {
+            font-size: 2.1rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 0.35rem;
+        }
+        .section-header {
+            position: relative;
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: #10b981;
+            border-radius: 2px;
+        }
+        .analysis-card {
+            background: white;
+            border-radius: 12px;
+            border: 1px solid var(--card-border);
+            padding: 1.75rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        }
+        .chart-img-container {
+            background: #ffffff;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 1.25rem;
+        }
+        .chart-img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+        .btn-download-chart {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.25rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        .callout-box {
+            background-color: #f0fdf4;
+            border-left: 4px solid var(--accent-emerald);
+            padding: 1.25rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.25rem 0;
+        }
+        .callout-box.alert-blue {
+            background-color: #eff6ff;
+            border-left-color: var(--accent-blue);
+        }
+        .callout-box.alert-amber {
+            background-color: #fffbeb;
+            border-left-color: var(--accent-amber);
+        }
+        .data-table {
+            font-size: 0.88rem;
+        }
+        .data-table thead th {
+            background-color: #0f172a;
+            color: #ffffff;
+            position: sticky;
+            top: 0;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+        .table-scroll {
+            max-height: 500px;
+            overflow-y: auto;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="hero-banner">
+        <div class="container-fluid px-lg-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="badge bg-success fw-bold px-3 py-1"><i class="fa-solid fa-money-bill-transfer me-1"></i> FTS & HDX Financial Tracking Deep-Dive</span>
+                        <span class="badge bg-light text-dark fw-bold">Somalia 2026 Aid Architecture</span>
+                    </div>
+                    <h1 class="display-6 fw-bold mb-2">Where Does International NGO Money Go & Where Do Local NGOs Get Their Money?</h1>
+                    <p class="lead mb-0 text-light opacity-90">
+                        Empirical analysis of international donor contributions (FTS), UN OCHA Pooled Funds (Somalia Humanitarian Fund / CBPF), and downstream sub-contracting mechanics supporting frontline delivery across Somalia.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <a href="Somalia_INGO_and_Local_NGO_Funding_Flows_Analysis.xlsx" class="btn btn-warning btn-lg fw-bold shadow-sm me-2" download>
+                        <i class="fa-solid fa-file-excel me-1"></i> Download Flow Excel
+                    </a>
+                    <button class="btn btn-outline-light btn-lg shadow-sm" onclick="window.print()">
+                        <i class="fa-solid fa-print me-1"></i> Print / PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid px-lg-5 mb-5">
+
+        <!-- Executive Summary Cards -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="kpi-card border-top border-4 border-primary">
+                    <div class="text-muted small fw-semibold text-uppercase">INGO FTS Funding (2026)</div>
+                    <div class="kpi-num text-primary">$119.9M</div>
+                    <div class="small text-muted fw-bold">36.1% of Total Somalia FTS Aid</div>
+                    <div class="small text-primary mt-1">167 grants across 68 INGOs</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="kpi-card border-top border-4 border-success">
+                    <div class="text-muted small fw-semibold text-uppercase">SHF to Local Somali NGOs</div>
+                    <div class="kpi-num text-success">$19.5M (84.6%)</div>
+                    <div class="small text-success fw-bold"><i class="fa-solid fa-check me-1"></i> 40 of 47 Projects to Local NGOs</div>
+                    <div class="small text-muted mt-1">The primary institutional pipeline</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="kpi-card border-top border-4 border-warning">
+                    <div class="text-muted small fw-semibold text-uppercase">Direct Bilateral Donors to NNGOs</div>
+                    <div class="kpi-num text-warning">$2.81M</div>
+                    <div class="small text-danger fw-bold"><i class="fa-solid fa-triangle-exclamation me-1"></i> 0.80% of total FTS funding</div>
+                    <div class="small text-muted mt-1">98% from Saudi Arabia (KSrelief)</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="kpi-card border-top border-4 border-info">
+                    <div class="text-muted small fw-semibold text-uppercase">Local NGO Ground Share</div>
+                    <div class="kpi-num text-info">40.8%</div>
+                    <div class="small text-dark fw-bold">2,952 physical field operations</div>
+                    <div class="small text-muted mt-1">118 operating Somali NGOs</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Master Flow Chart -->
+        <div class="analysis-card">
+            <h3 class="section-header"><i class="fa-solid fa-diagram-project text-success me-2"></i>Aid Architecture: Complete Funding Flow Mechanics</h3>
+            <p>
+                Synthesizing the primary international donor grants from UN OCHA FTS with the project-level allocations of the Somalia Humanitarian Fund (SHF / CBPF) and UN agency downstream sub-contracting models:
+            </p>
+            <div class="chart-img-container">
+                <img src="flow_images/funding_flow_mechanics.png" alt="Funding Flow Mechanics Diagram">
+                <div class="mt-3">
+                    <a href="flow_images/funding_flow_mechanics.png" class="btn btn-outline-success btn-sm btn-download-chart" download="funding_flow_mechanics.png">
+                        <i class="fa-solid fa-download"></i> Download Master Chart (High-Resolution PNG)
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 1: Where Does INGO Money Go? -->
+        <div class="analysis-card">
+            <h3 class="section-header"><i class="fa-solid fa-building-ngo text-primary me-2"></i>Question 1: Where Does International NGO (INGO) Money Go?</h3>
+            <p>
+                In 2026, International NGOs received <strong>$119,898,581</strong> across 167 tracked donor grants. The data reveals where this money is directed:
+            </p>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h5 class="fw-bold mb-3"><i class="fa-solid fa-pie-chart text-primary me-2"></i>A. Sectoral Distribution of INGO Funds</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-sm align-middle">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Sector / Cluster</th>
+                                    <th class="text-end">Amount (USD)</th>
+                                    <th class="text-end">Share (%)</th>
+                                    <th>Core Activities Funded</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-bold">Protection & Child Protection</td>
+                                    <td class="text-end fw-bold text-primary">$23,963,966</td>
+                                    <td class="text-end">20.0%</td>
+                                    <td>GBV survivor care, safe spaces, child protection</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Food Security & Livelihoods</td>
+                                    <td class="text-end fw-bold text-success">$19,279,189</td>
+                                    <td class="text-end">16.1%</td>
+                                    <td>Mobile food vouchers, emergency livestock treatment</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Multipurpose Cash (MPCA)</td>
+                                    <td class="text-end fw-bold text-warning">$15,262,661</td>
+                                    <td class="text-end">12.7%</td>
+                                    <td>Unrestricted mobile money transfers to IDP families</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Health</td>
+                                    <td class="text-end fw-bold text-danger">$15,009,430</td>
+                                    <td class="text-end">12.5%</td>
+                                    <td>Primary health centres, mobile clinics, cholera teams</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Multi-Sector Resilience (BRCiS)</td>
+                                    <td class="text-end fw-bold text-info">$12,302,271</td>
+                                    <td class="text-end">10.3%</td>
+                                    <td>Community resilience consortium grants</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Education in Emergencies</td>
+                                    <td class="text-end fw-bold">$9,965,417</td>
+                                    <td class="text-end">8.3%</td>
+                                    <td>Temporary learning spaces, school feeding kits</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Nutrition</td>
+                                    <td class="text-end fw-bold">$5,683,806</td>
+                                    <td class="text-end">4.7%</td>
+                                    <td>Outpatient therapeutic programmes, malnutrition screening</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">WASH</td>
+                                    <td class="text-end fw-bold">$4,540,382</td>
+                                    <td class="text-end">3.8%</td>
+                                    <td>Solar water borehole rehabilitation, hygiene kits</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5 class="fw-bold mb-3"><i class="fa-solid fa-trophy text-primary me-2"></i>B. Top INGO Recipients & Consortia</h5>
+                    <div class="callout-box alert-blue">
+                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-network-wired me-1"></i> The Consortia Operating Model</h6>
+                        <p class="small mb-0">
+                            The top INGOs do not simply run isolated bilateral projects; they operate large multi-agency <strong>Consortia</strong>:
+                            <br>• <strong>Norwegian Refugee Council (NRC) ($19.0M)</strong>: Leads the <em>BRCiS Consortium</em> (Building Resilient Communities in Somalia).
+                            <br>• <strong>Concern Worldwide ($17.0M)</strong>: Major lead on Cash Transfer Programming (CTP) and nutrition partnerships.
+                            <br>• <strong>Qatar Charity ($14.6M)</strong>: Direct institutional donor-implementer funding water projects and orphan care.
+                            <br>• <strong>Save the Children ($14.3M)</strong>: Leads the <em>GAASHAN Protection Project</em> and major Education in Emergencies initiatives.
+                            <br>• <strong>Action Against Hunger / Acción Contra el Hambre ($21.7M combined)</strong>: Clinical nutrition and WASH systems.
+                        </p>
+                    </div>
+
+                    <div class="callout-box alert-amber">
+                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-share-nodes me-1"></i> Downstream Pass-Through to Local NGOs</h6>
+                        <p class="small mb-0">
+                            Because INGO international staff face strict movement limitations outside secure fortified zones (e.g., MIA Mogadishu airport compound, Baidoa hub), INGOs retain funds for program design, technical advisory, security tracking (via INSO), and sub-contract <strong>30% to 50% of the operational delivery</strong> down to local Somali partner NGOs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 2: Where Do Local NGOs Get Their Money? -->
+        <div class="analysis-card">
+            <h3 class="section-header"><i class="fa-solid fa-seedling text-success me-2"></i>Question 2: Where Do Local Somali NGOs Get Their Money?</h3>
+            <p>
+                If direct bilateral donor grants in FTS account for only <strong>$2.81 million (0.80%)</strong>, how do local Somali NGOs fund their <strong>2,952 field operations (40.8% of all aid delivery in Somalia)</strong>?
+                The data demonstrates four specific institutional financing channels:
+            </p>
+
+            <div class="row g-4 mb-4">
+                <!-- Channel 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm bg-light p-3 rounded-3">
+                        <span class="badge bg-success mb-2 align-self-start">Channel 1: 84.6% Direct</span>
+                        <h6 class="fw-bold text-dark">Somalia Humanitarian Fund (SHF / CBPF)</h6>
+                        <p class="small text-muted mb-0">
+                            <strong>The primary institutional lifeline.</strong> In 2026, UN OCHA allocated <strong>$19,524,281 (84.6% of SHF)</strong> directly to 40 Somali National NGO projects.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Channel 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm bg-light p-3 rounded-3">
+                        <span class="badge bg-primary mb-2 align-self-start">Channel 2: Pass-Through</span>
+                        <h6 class="fw-bold text-dark">UN Agency Implementing Partnerships</h6>
+                        <p class="small text-muted mb-0">
+                            UN agencies receive $144.7M in FTS and sign Field Level Agreements (FLAs) with Somali NGOs (WFP food distribution, UNICEF nutrition centres, UNHCR protection).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Channel 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm bg-light p-3 rounded-3">
+                        <span class="badge bg-warning text-dark mb-2 align-self-start">Channel 3: Sub-Grants</span>
+                        <h6 class="fw-bold text-dark">INGO Consortia Sub-Grants</h6>
+                        <p class="small text-muted mb-0">
+                            Large consortia (BRCiS, SomReP, SNS) led by INGOs channel 30%–50% of rural implementation funds directly to local Somali NGOs who have community access.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Channel 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm bg-light p-3 rounded-3">
+                        <span class="badge bg-danger mb-2 align-self-start">Channel 4: Gulf Donors</span>
+                        <h6 class="fw-bold text-dark">Direct Bilateral (KSrelief / Gulf)</h6>
+                        <p class="small text-muted mb-0">
+                            Saudi Arabia (KSrelief: $2.75M) and Kuwaiti/Qatari foundations directly fund Somali NGOs (Zamzam, Mahasin, Juba Foundation) for emergency relief and Ramadan meals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="fw-bold mb-3"><i class="fa-solid fa-list-check text-success me-2"></i>Official Project Allocations: Somalia Humanitarian Fund (SHF 2026 Database)</h5>
+            <div class="table-scroll">
+                <table class="table table-hover table-striped align-middle data-table mb-0">
+                    <thead>
+                        <tr>
+                            <th>Operating Organization</th>
+                            <th>Partner Category</th>
+                            <th>Project Title</th>
+                            <th class="text-end">Approved Budget (USD)</th>
+                            <th class="text-end">Target Beneficiaries</th>
+                            <th>Duration</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+    <tr>
+        <td class="fw-bold">Solutions for Humanity International</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Integrated Lifesaving WASH, Health, and Nutrition Response to Support Climate-Shocked, Flood-Affected, and Protection-Vulnerable Communities in Jowhar District, Middle Shabelle, Somalia.">Integrated Lifesaving WASH, Health, and Nutrition Response to Support Climate-Shocked, Flood-Affected, and Protection-Vulnerable Communities in Jowhar District, Middle Shabelle, Somalia.</td>
+        <td class="fw-bold text-end text-success">$1,100,008.10</td>
+        <td class="text-end">94,540</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">New Ways Organization</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of integrated life-saving WASH, Health and Nutrition services to underserved communities impacted by climatic shocks in hard-to-reach areas in Ceel buur district.">Provision of integrated life-saving WASH, Health and Nutrition services to underserved communities impacted by climatic shocks in hard-to-reach areas in Ceel buur district.</td>
+        <td class="fw-bold text-end text-success">$937,200.00</td>
+        <td class="text-end">46,800</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Norwegian Refugee Council</td>
+        <td><span class="badge bg-primary">International NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of integrated lifesaving assistance to support climate-affected, underserved communities in Jowhar">Provision of integrated lifesaving assistance to support climate-affected, underserved communities in Jowhar</td>
+        <td class="fw-bold text-end text-success">$899,999.99</td>
+        <td class="text-end">35,832</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Towfiiq Umbrella Organization</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of integrated lifesaving assistance to support underserved communities impacted by climatic shocks with heightened protection and flood risk in Jowhar-Middle Shabelle, Region">Provision of integrated lifesaving assistance to support underserved communities impacted by climatic shocks with heightened protection and flood risk in Jowhar-Middle Shabelle, Region</td>
+        <td class="fw-bold text-end text-success">$800,000.00</td>
+        <td class="text-end">20,054</td>
+        <td>9 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Skills Active Forward</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of lifesaving WASH assistance to support underserved communities impacted by climatic shocks with heightened protection and flood risk in Beled Weyne district">Provision of lifesaving WASH assistance to support underserved communities impacted by climatic shocks with heightened protection and flood risk in Beled Weyne district</td>
+        <td class="fw-bold text-end text-success">$757,954.98</td>
+        <td class="text-end">24,000</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Danish Refugee Council</td>
+        <td><span class="badge bg-primary">International NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Integrated WASH and Protection Response for Drought- and Conflict-Affected Communities in Ceel Buur District.">Integrated WASH and Protection Response for Drought- and Conflict-Affected Communities in Ceel Buur District.</td>
+        <td class="fw-bold text-end text-success">$750,000.00</td>
+        <td class="text-end">35,000</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Agency for Minority Rights and Development</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Integrated Emergency WASH Assistance for Crisis-Affected Communities in Qansax Dheere District, Bay Region">Integrated Emergency WASH Assistance for Crisis-Affected Communities in Qansax Dheere District, Bay Region</td>
+        <td class="fw-bold text-end text-success">$700,000.00</td>
+        <td class="text-end">35,000</td>
+        <td>7 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Humanitarian Integrity for Women Action</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Strengthening Access to Lifesaving WASH services for Vulnerable and Underserved Communities in Beledweyne">Strengthening Access to Lifesaving WASH services for Vulnerable and Underserved Communities in Beledweyne</td>
+        <td class="fw-bold text-end text-success">$697,535.61</td>
+        <td class="text-end">20,466</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Tadamun Social Society</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of lifesaving Food Security assistance with integrated Protection for hard-to-reach rural communities in Galdogob District, Mudug Region, Somalia.">Provision of lifesaving Food Security assistance with integrated Protection for hard-to-reach rural communities in Galdogob District, Mudug Region, Somalia.</td>
+        <td class="fw-bold text-end text-success">$692,140.20</td>
+        <td class="text-end">8,340</td>
+        <td>6 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Dignity First Somalia</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Integrated Multipurpose Cash Assistance (MPCA) and Emergency Livelihood Support for Climate-Shock-Affected Communities in Beletweyne District">Integrated Multipurpose Cash Assistance (MPCA) and Emergency Livelihood Support for Climate-Shock-Affected Communities in Beletweyne District</td>
+        <td class="fw-bold text-end text-success">$650,000.00</td>
+        <td class="text-end">5,400</td>
+        <td>6 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Agency for Technical Cooperation and Development</td>
+        <td><span class="badge bg-primary">International NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Integrated Emergency WASH Response for Flood-Affected Populations in Qansax Dheere District">Integrated Emergency WASH Response for Flood-Affected Populations in Qansax Dheere District</td>
+        <td class="fw-bold text-end text-success">$636,801.00</td>
+        <td class="text-end">19,000</td>
+        <td>8 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Nomadic Development Organization</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of Integrated Lifesaving Health and Nutrition Assistance to Support Underserved Communities Impacted by Climatic Shocks in Galdogob District, Somalia">Provision of Integrated Lifesaving Health and Nutrition Assistance to Support Underserved Communities Impacted by Climatic Shocks in Galdogob District, Somalia</td>
+        <td class="fw-bold text-end text-success">$607,852.35</td>
+        <td class="text-end">49,968</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Agency for Minority Rights and Development</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Lifesaving Multi-Purpose Cash Assistance and Emergency Agricultural Inputs for Food-Insecure Households in Jowhar District">Lifesaving Multi-Purpose Cash Assistance and Emergency Agricultural Inputs for Food-Insecure Households in Jowhar District</td>
+        <td class="fw-bold text-end text-success">$600,000.00</td>
+        <td class="text-end">5,904</td>
+        <td>7 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Puntland Minority Women Development Organization</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Enhancing Access to Safe Water, Sanitation and Hygiene Services for Drought-Affected Vulnerable Communities in Galdogob District, Somalia">Enhancing Access to Safe Water, Sanitation and Hygiene Services for Drought-Affected Vulnerable Communities in Galdogob District, Somalia</td>
+        <td class="fw-bold text-end text-success">$599,999.83</td>
+        <td class="text-end">20,000</td>
+        <td>10 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">ACTION AGAINST POVERTY AND PEACE DEVELOPMENT</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of integrated lifesaving assistance to support underserved communities impacted by climatic shocks with heightened protection and flood risk in Beledweyne district Hiran region, Somalia.">Provision of integrated lifesaving assistance to support underserved communities impacted by climatic shocks with heightened protection and flood risk in Beledweyne district Hiran region, Somalia.</td>
+        <td class="fw-bold text-end text-success">$599,991.61</td>
+        <td class="text-end">26,679</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Wadajir Rural Development Organization</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Integrated Life-Saving Food Security Response through Unconditional Cash Transfers and Cash+ Agricultural Support for Vulnerable Households in Jowhar District, Middle Shabelle Region">Integrated Life-Saving Food Security Response through Unconditional Cash Transfers and Cash+ Agricultural Support for Vulnerable Households in Jowhar District, Middle Shabelle Region</td>
+        <td class="fw-bold text-end text-success">$566,972.45</td>
+        <td class="text-end">15,000</td>
+        <td>10 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Humanitarian Africa Relief Development Organization</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of integrated lifesaving WASH assistance to support underserved communities impacted by climatic shocks with heightened protection and flood risk in Sakow District">Provision of integrated lifesaving WASH assistance to support underserved communities impacted by climatic shocks with heightened protection and flood risk in Sakow District</td>
+        <td class="fw-bold text-end text-success">$557,349.38</td>
+        <td class="text-end">22,500</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Himilo Relief and Development Association</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of life-saving assistance to communities affected by climatic shocks, particularly those with heightened protection and flood risks in Baletweyne ">Provision of life-saving assistance to communities affected by climatic shocks, particularly those with heightened protection and flood risks in Baletweyne </td>
+        <td class="fw-bold text-end text-success">$512,581.15</td>
+        <td class="text-end">12,858</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Somali Helping Hands Association</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Integrated lifesaving nutrition response for climate-vulnerable and flood-affected communities in Belet Weyne District">Integrated lifesaving nutrition response for climate-vulnerable and flood-affected communities in Belet Weyne District</td>
+        <td class="fw-bold text-end text-success">$511,524.33</td>
+        <td class="text-end">19,350</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">KULMIYE RELIEF AND DEVELOPMENT ORGANIZATION</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of life-saving preventive and curative nutrition services for drought-affected populations in Qansax Dheere District, Bay Region.">Provision of life-saving preventive and curative nutrition services for drought-affected populations in Qansax Dheere District, Bay Region.</td>
+        <td class="fw-bold text-end text-success">$502,499.88</td>
+        <td class="text-end">9,000</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Somali Lifeline Organization </td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Integrated Lifesaving Health and Nutrition Response for Climate-Affected Communities in Beletweyne District, Somalia">Integrated Lifesaving Health and Nutrition Response for Climate-Affected Communities in Beletweyne District, Somalia</td>
+        <td class="fw-bold text-end text-success">$500,000.46</td>
+        <td class="text-end">25,500</td>
+        <td>10 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Golweyne Relief and Rehabilitation NGO</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Life-Saving WASH Response to Combat Drought-Related Famine in Burhakaba">Life-Saving WASH Response to Combat Drought-Related Famine in Burhakaba</td>
+        <td class="fw-bold text-end text-success">$500,000.00</td>
+        <td class="text-end">15,000</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Rural Development Support Agency</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of lifesaving Multipurpose Cash Transfer - MPCA and agricultural inputs (cash+ approach) to underserved HHs in Beletweyne impacted by climatic shocks, with protection and flood risks.">Provision of lifesaving Multipurpose Cash Transfer - MPCA and agricultural inputs (cash+ approach) to underserved HHs in Beletweyne impacted by climatic shocks, with protection and flood risks.</td>
+        <td class="fw-bold text-end text-success">$478,978.99</td>
+        <td class="text-end">7,092</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Himilo Organization for Development</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Integrated livestock support and multi-purpose cash Assistance for drought affected households in crisis and emergency phases in Ceelbur district, Galgaduud, Somalia">Integrated livestock support and multi-purpose cash Assistance for drought affected households in crisis and emergency phases in Ceelbur district, Galgaduud, Somalia</td>
+        <td class="fw-bold text-end text-success">$462,800.00</td>
+        <td class="text-end">4,200</td>
+        <td>6 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Somali Women and Child Care Association</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Lifesaving Multipurpose Cash Assistance and Emergency Agricultural Support for Vulnerable Households in Jowhar District, Middle Shabelle Region.">Lifesaving Multipurpose Cash Assistance and Emergency Agricultural Support for Vulnerable Households in Jowhar District, Middle Shabelle Region.</td>
+        <td class="fw-bold text-end text-success">$444,174.00</td>
+        <td class="text-end">4,872</td>
+        <td>6 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Danish Refugee Council</td>
+        <td><span class="badge bg-primary">International NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Integrated Protection and MPCA Response for Drought- and Conflict-Affected Communities in Qansax Dheere District">Integrated Protection and MPCA Response for Drought- and Conflict-Affected Communities in Qansax Dheere District</td>
+        <td class="fw-bold text-end text-success">$407,300.00</td>
+        <td class="text-end">29,250</td>
+        <td>6 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">SOS Children’s Villages Somalia</td>
+        <td><span class="badge bg-primary">International NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Scaling Up Integrated Lifesaving Health, Nutrition, and Protection Assistance for Famine Response in Hard-to-Reach Rural Communities of Burhakaba District, Bay Region, Somalia">Scaling Up Integrated Lifesaving Health, Nutrition, and Protection Assistance for Famine Response in Hard-to-Reach Rural Communities of Burhakaba District, Bay Region, Somalia</td>
+        <td class="fw-bold text-end text-success">$399,999.99</td>
+        <td class="text-end">114,266</td>
+        <td>7 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">INTERSOM Relief and Development Organization</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of Integrated Lifesaving Protection Response for Flood-and-Climate Affected Vulnerable Communities in Beletweyne District">Provision of Integrated Lifesaving Protection Response for Flood-and-Climate Affected Vulnerable Communities in Beletweyne District</td>
+        <td class="fw-bold text-end text-success">$399,998.10</td>
+        <td class="text-end">18,516</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">WARDI Relief and Development Initiatives</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of Integrated Life-Saving Nutrition Assistance to Underserved Communities Affected by Climatic Shocks, Heightened Protection Risks, and Flooding in Beledweyne District, Hiran Region">Provision of Integrated Life-Saving Nutrition Assistance to Underserved Communities Affected by Climatic Shocks, Heightened Protection Risks, and Flooding in Beledweyne District, Hiran Region</td>
+        <td class="fw-bold text-end text-success">$399,989.64</td>
+        <td class="text-end">13,639</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Somali Relief and Development Society</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of Life-Saving Food Assistance for at risk of famine affected populations in Burhakaba District, Bay Region">Provision of Life-Saving Food Assistance for at risk of famine affected populations in Burhakaba District, Bay Region</td>
+        <td class="fw-bold text-end text-success">$398,810.40</td>
+        <td class="text-end">6,600</td>
+        <td>6 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Medair</td>
+        <td><span class="badge bg-primary">International NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Scaling Up Life-Saving Health, Nutrition, and Protection Services for Famine Prevention Among Drought-Affected Rural Communities in Burhakaba">Scaling Up Life-Saving Health, Nutrition, and Protection Services for Famine Prevention Among Drought-Affected Rural Communities in Burhakaba</td>
+        <td class="fw-bold text-end text-success">$379,999.99</td>
+        <td class="text-end">5,167</td>
+        <td>6 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Dignity First Somalia</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Integrated Life-Saving GBV and Child Protection Services for Crisis-Affected Communities in Qansax Dheere District">Integrated Life-Saving GBV and Child Protection Services for Crisis-Affected Communities in Qansax Dheere District</td>
+        <td class="fw-bold text-end text-success">$365,300.00</td>
+        <td class="text-end">4,085</td>
+        <td>6 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Wamo Relief and Rehabilitation Services</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of integrated emergency health and nutrition services for drought and conflict affected communities in Qansax Dheere District, Bay Region.">Provision of integrated emergency health and nutrition services for drought and conflict affected communities in Qansax Dheere District, Bay Region.</td>
+        <td class="fw-bold text-end text-success">$363,599.38</td>
+        <td class="text-end">13,364</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Volunteers for Relief and Development</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of Essential Primary Healthcare to the Climate Shock-affected population in  Elbur District, Galgadud region">Provision of Essential Primary Healthcare to the Climate Shock-affected population in  Elbur District, Galgadud region</td>
+        <td class="fw-bold text-end text-success">$350,000.00</td>
+        <td class="text-end">17,833</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Jubba Youth Association</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Integrated Health and Nutrition Assistance for Underserved Communities Affected by Climatic Shocks in Sakow District Jubbaland State of Somalia">Integrated Health and Nutrition Assistance for Underserved Communities Affected by Climatic Shocks in Sakow District Jubbaland State of Somalia</td>
+        <td class="fw-bold text-end text-success">$329,100.97</td>
+        <td class="text-end">21,540</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Mandhere Relief and Development Organization</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of integrated lifesaving health assistance to support underserved communities impacted by climatic shocks with heightened protection and flood risk in Qansaxdhere District">Provision of integrated lifesaving health assistance to support underserved communities impacted by climatic shocks with heightened protection and flood risk in Qansaxdhere District</td>
+        <td class="fw-bold text-end text-success">$319,999.45</td>
+        <td class="text-end">35,000</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">WARDI Relief and Development Initiatives</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Emergency Food Distribution to Address Acute Food Insecurity among Vulnerable Households in Burhakaba District">Emergency Food Distribution to Address Acute Food Insecurity among Vulnerable Households in Burhakaba District</td>
+        <td class="fw-bold text-end text-success">$319,920.80</td>
+        <td class="text-end">5,178</td>
+        <td>6 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Soma Action</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Integrated life-saving Multipurpose Cash Assiststance for vulnerable drought-affected households in Saakow District,Somalia.">Integrated life-saving Multipurpose Cash Assiststance for vulnerable drought-affected households in Saakow District,Somalia.</td>
+        <td class="fw-bold text-end text-success">$313,500.00</td>
+        <td class="text-end">3,420</td>
+        <td>6 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Peace Action Society Organisation for Somalia</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of life-saving  Food Security Support to Underserved Communities affected by climatic Shocks in Qansax Dhere District">Provision of life-saving  Food Security Support to Underserved Communities affected by climatic Shocks in Qansax Dhere District</td>
+        <td class="fw-bold text-end text-success">$304,500.28</td>
+        <td class="text-end">1,759</td>
+        <td>6 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Volunteers for Relief and Development</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Strengthening Access to Quality Primary Healthcare Services for Vulnerable Households Affected by Climate-Related Risks in Beledweyne District.">Strengthening Access to Quality Primary Healthcare Services for Vulnerable Households Affected by Climate-Related Risks in Beledweyne District.</td>
+        <td class="fw-bold text-end text-success">$300,000.00</td>
+        <td class="text-end">14,705</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Peace Action Society Organisation for Somalia</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of Lifesaving Water, Sanitation and Hygiene (WASH) Services to 15,000 Drought-Affected Vulnerable Communities in Sablaale District, Lower Shabelle Region, Somalia">Provision of Lifesaving Water, Sanitation and Hygiene (WASH) Services to 15,000 Drought-Affected Vulnerable Communities in Sablaale District, Lower Shabelle Region, Somalia</td>
+        <td class="fw-bold text-end text-success">$300,000.00</td>
+        <td class="text-end">15,000</td>
+        <td>6 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">New Ways Organization</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of integrated life-saving Health services to underserved communities impacted by climatic shocks in Sablale district">Provision of integrated life-saving Health services to underserved communities impacted by climatic shocks in Sablale district</td>
+        <td class="fw-bold text-end text-success">$300,000.00</td>
+        <td class="text-end">20,000</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Somali Community Concern</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Improving Gender-Based Violence (GBV) Support and Access for Rural Communities in Jowhar District, Hirshabelle State, Somalia">Improving Gender-Based Violence (GBV) Support and Access for Rural Communities in Jowhar District, Hirshabelle State, Somalia</td>
+        <td class="fw-bold text-end text-success">$299,999.57</td>
+        <td class="text-end">11,392</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Action Sustainability Improvement Programs</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Immediate Life-Saving Assistance Through UCT and Agricultural-Inputs for the Most Vulneralbe Affected and Displaced Communities in Sablaale District, Lower Shabelle Region">Immediate Life-Saving Assistance Through UCT and Agricultural-Inputs for the Most Vulneralbe Affected and Displaced Communities in Sablaale District, Lower Shabelle Region</td>
+        <td class="fw-bold text-end text-success">$250,000.00</td>
+        <td class="text-end">3,600</td>
+        <td>6 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Agro-pastoral Charity Organization</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Lifesaving Nutrition response for underserved communities impacted by climatic shocks in Sablaale District, Lower Shabelle Region, Somalia">Lifesaving Nutrition response for underserved communities impacted by climatic shocks in Sablaale District, Lower Shabelle Region, Somalia</td>
+        <td class="fw-bold text-end text-success">$229,999.19</td>
+        <td class="text-end">7,170</td>
+        <td>6 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">INTERSOM Relief and Development Organization</td>
+        <td><span class="badge bg-success">National NGO</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Provision of Emergency Child Protection Response for Flood- and Drought-Affected Communities in Jowhar District.">Provision of Emergency Child Protection Response for Flood- and Drought-Affected Communities in Jowhar District.</td>
+        <td class="fw-bold text-end text-success">$199,999.95</td>
+        <td class="text-end">4,000</td>
+        <td>12 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Implementation & Reporting</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Food and Agriculture Organization of the United Nations</td>
+        <td><span class="badge bg-secondary">UN Agency</span></td>
+        <td class="text-truncate" style="max-width: 280px;" title="Support to the Food Security and Nutrition Analysis Unit (FSNAU) for follow-up Integrated Food Security, Nutrition and Mortality assessment among Baidoa IDPs">Support to the Food Security and Nutrition Analysis Unit (FSNAU) for follow-up Integrated Food Security, Nutrition and Mortality assessment among Baidoa IDPs</td>
+        <td class="fw-bold text-end text-success">$87,000.00</td>
+        <td class="text-end">515,290</td>
+        <td>3 Months mos</td>
+        <td><span class="badge bg-light text-dark border">Disbursement</span></td>
+    </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-2 text-muted small text-end">Source: UN OCHA Country-Based Pooled Fund (CBPF) Project Summary Database (2,010 tracked projects)</div>
+        </div>
+
+        <!-- Files and Resources Directory -->
+        <div class="analysis-card">
+            <h3 class="section-header"><i class="fa-solid fa-folder-open text-primary me-2"></i>Where to Find These Datasets (Official Links & Local Copies)</h3>
+            <p>
+                All data cited above is verifiable through the following official OCHA FTS and HDX sources, already downloaded and parsed in your workspace:
+            </p>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-sm align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Dataset Name</th>
+                            <th>Online Official Source</th>
+                            <th>Local File in Workspace</th>
+                            <th>What Data It Contains</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">FTS Incoming Flows (2026)</td>
+                            <td><a href="https://fts.unocha.org/countries/206" target="_blank" class="fw-bold">fts.unocha.org/countries/206</a></td>
+                            <td><code>somali data all .xlsx</code></td>
+                            <td>All 431 primary donor grants ($349.1M) into UN, INGO, and NNGO recipients.</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">FTS Internal Pass-Through Flows</td>
+                            <td><a href="https://data.humdata.org/dataset/som-requirements-and-funding-data" target="_blank">HDX: som-requirements-and-funding-data</a></td>
+                            <td><code>hdx_data/fts_internal_funding_som.csv</code></td>
+                            <td>Internal funding transfers ($23.1M) from SHF to NGOs.</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">CBPF Project Allocations (SHF)</td>
+                            <td><a href="https://data.humdata.org/dataset/somalia-cbpf-allocations-and-contributions" target="_blank">HDX: somalia-cbpf-allocations-and-contributions</a></td>
+                            <td><code>hdx_data/som_cbpf_project_summary.csv</code></td>
+                            <td>2,010 projects showing exact allocations to each National Somali NGO vs INGO (2017–2026).</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">CBPF Donor Contributions</td>
+                            <td><a href="https://data.humdata.org/dataset/somalia-cbpf-allocations-and-contributions" target="_blank">HDX: somalia-cbpf-allocations-and-contributions</a></td>
+                            <td><code>hdx_data/somalia_cbpf_allocations_som_cbpf_contributions.csv</code></td>
+                            <td>Donor deposits into the Somalia Humanitarian Fund ($42.3M in 2026).</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Operational Presence (3W)</td>
+                            <td><a href="https://data.humdata.org/group/som" target="_blank">HDX: Somalia Operational Presence 3W</a></td>
+                            <td><code>hdx_data/somalia_3w_operational_presence_2026.xlsx</code></td>
+                            <td>7,233 records showing 40.8% of ground field delivery is performed by Local Somali NGOs.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 border-top border-secondary">
+        <div class="container-fluid px-lg-5 text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <p class="mb-1 fw-bold">Somalia Humanitarian Financial Flow Intelligence System</p>
+                    <p class="mb-0 text-muted small">
+                        Cross-analyzing UN OCHA FTS Primary Donors, Country-Based Pooled Funds (SHF), and Downstream Implementation Networks.
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                    <a href="Somalia_INGO_and_Local_NGO_Funding_Flows_Analysis.xlsx" class="btn btn-warning btn-sm fw-bold">
+                        <i class="fa-solid fa-file-excel me-1"></i> Download Flow Workbook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

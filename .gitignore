@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary and backup files
+*.bak
+*.tmp
+~$*
+hdx_data/backups/
+pipeline_log.txt
+
+# Editor and IDE configurations
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+Desktop.ini

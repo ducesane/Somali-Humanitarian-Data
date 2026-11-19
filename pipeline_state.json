@@ -1,0 +1,30 @@
+{
+  "3w_operational_presence": {
+    "resource_id": "046df6fb-2461-4313-9937-e0228478ddbf",
+    "resource_name": "3W Operational Presence Dataset_January - June  2026",
+    "last_modified": "2026-09-15T12:59:28.751470",
+    "last_checked": "2026-11-19 19:16:29",
+    "hash": "93a0c02d8c005e407343ed90b7d91af3"
+  },
+  "cbpf_shf_project_summary": {
+    "last_checked": "2026-11-19 19:16:29",
+    "hash": "b8c1e71e220fb8ada58d8061d2275247"
+  },
+  "cbpf_shf_contributions": {
+    "last_checked": "2026-11-19 19:16:29",
+    "hash": "29b08954118815b6cf9a4bdc0bebbf3b"
+  },
+  "target_reached_matrix": {
+    "last_checked": "2026-11-19 19:16:29",
+    "hash": "6a996ac92c498c4aaf6145fe946f1727"
+  },
+  "fts_internal_pass_through": {
+    "last_checked": "2026-11-19 19:16:29",
+    "hash": "196366238703759046f43881d62514b9"
+  },
+  "fts_2026_flows_api": {
+    "flows_count": 200,
+    "last_checked": "2026-11-19 19:16:38",
+    "hash": null
+  }
+}

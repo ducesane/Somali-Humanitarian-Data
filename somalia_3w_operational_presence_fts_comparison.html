@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somalia Operational Presence (3W/4W) vs FTS Funding Intelligence Report</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-navy: #0f172a;
+            --accent-blue: #2563eb;
+            --accent-cyan: #06b6d4;
+            --accent-orange: #ea580c;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --surface-bg: #f8fafc;
+            --card-border: #e2e8f0;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--surface-bg);
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        .hero-banner {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #1e3a8a 100%);
+            color: white;
+            padding: 3rem 0 2.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 4px solid var(--accent-orange);
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3);
+        }
+        .kpi-card {
+            background: white;
+            border-radius: 12px;
+            border: 1px solid var(--card-border);
+            padding: 1.4rem;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+        .kpi-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 20px -3px rgba(0,0,0,0.1);
+            border-color: var(--accent-blue);
+        }
+        .kpi-num {
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 0.35rem;
+        }
+        .section-header {
+            position: relative;
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--accent-orange);
+            border-radius: 2px;
+        }
+        .analysis-card {
+            background: white;
+            border-radius: 12px;
+            border: 1px solid var(--card-border);
+            padding: 1.75rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        }
+        .chart-img-container {
+            background: #ffffff;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 1.25rem;
+        }
+        .chart-img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+        .btn-download-chart {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.25rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: all 0.2s ease;
+        }
+        .badge-danger { background-color: #fee2e2; color: #b91c1c; border: 1px solid #f87171; }
+        .badge-warning { background-color: #fef3c7; color: #b45309; border: 1px solid #fcd34d; }
+        .badge-success { background-color: #d1fae5; color: #047857; border: 1px solid #6ee7b7; }
+        .data-table {
+            font-size: 0.9rem;
+        }
+        .data-table thead th {
+            background-color: #0f172a;
+            color: #ffffff;
+            position: sticky;
+            top: 0;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.5px;
+        }
+        .table-scroll {
+            max-height: 520px;
+            overflow-y: auto;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+        }
+        .callout-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.25rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.25rem 0;
+        }
+        .callout-box.alert-red {
+            background-color: #fef2f2;
+            border-left-color: var(--accent-red);
+        }
+        .callout-box.alert-amber {
+            background-color: #fffbeb;
+            border-left-color: #f59e0b;
+        }
+        .code-pill {
+            font-family: 'JetBrains Mono', monospace;
+            background: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Header -->
+    <header class="hero-banner">
+        <div class="container-fluid px-lg-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="badge bg-warning text-dark fw-bold px-3 py-1"><i class="fa-solid fa-map-location-dot me-1"></i> HDX 3W / 4W & FTS Cross-Analysis</span>
+                        <span class="badge bg-light text-dark fw-bold">Somalia Humanitarian Operations 2026</span>
+                    </div>
+                    <h1 class="display-6 fw-bold mb-2">Operational Presence (3W/4W) & FTS Funding Intelligence Report</h1>
+                    <p class="lead mb-0 text-light opacity-90">
+                        Rigorous comparative analysis of UN OCHA Financial Tracking Service (FTS) funding vs. HDX Operational Presence (3W: Who does What, Where, When), Target vs. Reached populations, and Cash-Based Programming (CWG 4W) across all 18 regions and 74 districts.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <a href="Somalia_3W_Operational_Presence_and_FTS_Comparative_Analysis.xlsx" class="btn btn-warning btn-lg fw-bold shadow-sm me-2" download>
+                        <i class="fa-solid fa-file-excel me-1"></i> Download Excel Report
+                    </a>
+                    <button class="btn btn-outline-light btn-lg shadow-sm" onclick="window.print()">
+                        <i class="fa-solid fa-print me-1"></i> Print / PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid px-lg-5 mb-5">
+
+        <!-- KPI Row -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="kpi-card border-top border-4 border-primary">
+                    <div class="text-muted small fw-semibold text-uppercase">Total FTS Funding (2026)</div>
+                    <div class="kpi-num text-primary">$349.1M</div>
+                    <div class="small text-danger fw-bold"><i class="fa-solid fa-arrow-trend-down me-1"></i> -35.4% YoY vs $540.7M (2025)</div>
+                    <div class="text-muted small mt-1">431 tracked grant transactions</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="kpi-card border-top border-4 border-warning">
+                    <div class="text-muted small fw-semibold text-uppercase">3W Ground Activities</div>
+                    <div class="kpi-num text-warning">7,233</div>
+                    <div class="small text-dark fw-bold"><i class="fa-solid fa-layer-group me-1"></i> Across 90 Districts & 18 Regions</div>
+                    <div class="text-muted small mt-1">H1 2026 Operational Footprint</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="kpi-card border-top border-4 border-danger">
+                    <div class="text-muted small fw-semibold text-uppercase">Active Operating Orgs</div>
+                    <div class="kpi-num text-danger">204 Orgs</div>
+                    <div class="small text-danger fw-bold"><i class="fa-solid fa-arrow-down me-1"></i> -27.7% contraction (282 in 2025)</div>
+                    <div class="text-muted small mt-1">78 agencies ceased field reporting</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="kpi-card border-top border-4 border-success">
+                    <div class="text-muted small fw-semibold text-uppercase">The Localization Chasm</div>
+                    <div class="kpi-num text-success">40.8% vs 0.8%</div>
+                    <div class="small text-danger fw-bold"><i class="fa-solid fa-triangle-exclamation me-1"></i> NNGOs do 41% work, get 0.8% $</div>
+                    <div class="text-muted small mt-1">Grand Bargain Intermediation Paradox</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 1: Localization Paradox -->
+        <div class="analysis-card">
+            <h3 class="section-header"><i class="fa-solid fa-handshake-angle text-primary me-2"></i>1. The Localization Paradox: Funding Allocation vs. Ground Implementation Footprint</h3>
+            <p>
+                A fundamental debate in global humanitarian policy centers on the <strong>Grand Bargain commitment</strong> to channel at least 25% of humanitarian funding as directly as possible to local and national responders. Comparing Somalia's 2026 FTS funding database with the OCHA 3W operational presence reveals an acute disconnect between financial flows and frontline physical delivery.
+            </p>
+
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="chart-img-container">
+                        <img src="3w_images/3w_fig1_localization_disconnect.png" alt="Localization Disconnect Chart">
+                        <div class="mt-3">
+                            <a href="3w_images/3w_fig1_localization_disconnect.png" class="btn btn-outline-primary btn-sm btn-download-chart" download="3w_fig1_localization_disconnect.png">
+                                <i class="fa-solid fa-download"></i> Download Chart (High-Resolution PNG)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-sm align-middle">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Actor Category</th>
+                                    <th>FTS Funding ($)</th>
+                                    <th>FTS Share</th>
+                                    <th>3W Activities</th>
+                                    <th>3W Share</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-danger">
+                                    <td class="fw-bold">National NGOs (NNGOs)</td>
+                                    <td>$2,810,088</td>
+                                    <td class="fw-bold text-danger">0.80%</td>
+                                    <td>2,952</td>
+                                    <td class="fw-bold text-success">40.81%</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">International NGOs (INGOs)</td>
+                                    <td>$125,939,941</td>
+                                    <td class="fw-bold">36.08%</td>
+                                    <td>2,863</td>
+                                    <td class="fw-bold">39.58%</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td class="fw-bold">UN Agencies & Pooled Funds</td>
+                                    <td>$189,614,858</td>
+                                    <td class="fw-bold text-primary">54.32%</td>
+                                    <td>1,183</td>
+                                    <td class="fw-bold">16.36%</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Government Entities</td>
+                                    <td>$3,258,945</td>
+                                    <td>0.93%</td>
+                                    <td>222</td>
+                                    <td>3.07%</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Red Cross / Other</td>
+                                    <td>$27,443,407</td>
+                                    <td>7.86%</td>
+                                    <td>13</td>
+                                    <td>0.18%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="callout-box alert-red mt-3">
+                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-triangle-exclamation me-1"></i> Empirical Core Finding: The Intermediation Cascade</h6>
+                        <p class="small mb-0">
+                            Local Somali NGOs execute <strong>40.8% of all physical field operations</strong> across 90 districts—more than any other actor category. Yet they receive only <strong>$2.81 million (0.80%)</strong> in direct funding. UN agencies receive <strong>54.3% of all financial resources</strong> while executing just 16.4% of direct ground operations. This demonstrates that frontline implementation is largely sub-contracted downstream through multi-tiered overhead structures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Sectoral Comparison -->
+        <div class="analysis-card">
+            <h3 class="section-header"><i class="fa-solid fa-chart-pie text-primary me-2"></i>2. Sectoral Divergence: Financial Weight vs. Physical Partner Footprint</h3>
+            <p>
+                Comparing the dollar value allocated in FTS with the number of operating humanitarian partners in 3W highlights major variations in capital intensity and operational distribution across humanitarian clusters.
+            </p>
+
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="chart-img-container">
+                        <img src="3w_images/3w_fig2_sector_funding_vs_operational_activities.png" alt="Sectoral Funding vs Operational Activities">
+                        <div class="mt-3">
+                            <a href="3w_images/3w_fig2_sector_funding_vs_operational_activities.png" class="btn btn-outline-primary btn-sm btn-download-chart" download="3w_fig2_sector_funding_vs_operational_activities.png">
+                                <i class="fa-solid fa-download"></i> Download Chart (High-Resolution PNG)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="callout-box mb-3">
+                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-stethoscope text-primary me-1"></i> Health vs. Food Security Structural Contrast</h6>
+                        <p class="small mb-0">
+                            <strong>Health</strong> possesses the largest field operational presence in Somalia with <strong>1,462 activities across 55 distinct organizations</strong>, yet receives only <strong>$27.9M ($19,110 per field activity)</strong>. In contrast, <strong>Food Security</strong> commands <strong>$73.8M</strong> with 1,212 field activities ($60,920 per activity)—reflecting the high cost of food procurement and large-scale bulk commodity distribution compared to clinical outpatient staffing.
+                        </p>
+                    </div>
+                    <div class="callout-box alert-amber">
+                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-shield-heart text-warning me-1"></i> Protection & GBV: The Frontline Burden</h6>
+                        <p class="small mb-0">
+                            Protection clusters (Child Protection: 909 activities, GBV: 684 activities, General Protection: 581 activities) represent <strong>2,174 combined operations</strong> across 84 unique partners. Despite representing nearly 30% of all field activities, protection sectors capture less than $30M in FTS funding ($13,799 per activity), demonstrating intense reliance on low-cost community-based local volunteers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Regional Presence & Target vs Reach -->
+        <div class="analysis-card">
+            <h3 class="section-header"><i class="fa-solid fa-earth-africa text-primary me-2"></i>3. Regional Operational Density vs. Target Reach: Congestion vs. Humanitarian Deserts</h3>
+            <p>
+                By linking the 3W operational partner footprint with the official UN OCHA <strong>People Targeted vs. Reached Monitoring Matrix</strong> across all 18 administrative regions, we expose severe geographic delivery imbalances.
+            </p>
+
+            <div class="row align-items-center mb-4">
+                <div class="col-lg-7">
+                    <div class="chart-img-container">
+                        <img src="3w_images/3w_fig3_regional_operational_density_vs_reach.png" alt="Regional Operational Density vs Reach Ratio">
+                        <div class="mt-3">
+                            <a href="3w_images/3w_fig3_regional_operational_density_vs_reach.png" class="btn btn-outline-primary btn-sm btn-download-chart" download="3w_fig3_regional_operational_density_vs_reach.png">
+                                <i class="fa-solid fa-download"></i> Download Chart (High-Resolution PNG)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card border-0 bg-light p-3 rounded-3 mb-3">
+                        <h6 class="fw-bold text-dark"><i class="fa-solid fa-circle-dot text-danger me-1"></i> Middle Juba: Complete Access Blackout</h6>
+                        <p class="small text-muted mb-0">
+                            Middle Juba suffers from near-total operational neglect. Only <strong>35 activities by 7 organizations</strong> operate in the region. Out of ~180,000 targeted people in acute need, only <strong>11.8% were reached</strong> due to active conflict and territorial access denial.
+                        </p>
+                    </div>
+                    <div class="card border-0 bg-light p-3 rounded-3 mb-3">
+                        <h6 class="fw-bold text-dark"><i class="fa-solid fa-circle-dot text-warning me-1"></i> Banadir: The Urban Congestion Paradox</h6>
+                        <p class="small text-muted mb-0">
+                            Banadir (Mogadishu) hosts <strong>889 activities across 68 organizations</strong>. Yet, it achieved a <strong>reach ratio of only 47.8% (617,072 reached of 1.29M targeted)</strong>. High agency density does not translate into proportional delivery due to severe IDP camp fragmentation, gatekeeper exploitation, and rapid secondary evictions.
+                        </p>
+                    </div>
+                    <div class="card border-0 bg-light p-3 rounded-3">
+                        <h6 class="fw-bold text-dark"><i class="fa-solid fa-circle-dot text-success me-1"></i> Bay (Baidoa): Epicentre of Aid Absorption</h6>
+                        <p class="small text-muted mb-0">
+                            Bay dominates the country with <strong>1,094 activities and 84 unique operating organizations</strong>, achieving a <strong>97.0% reach ratio</strong> (899,979 reached of 927,370 targeted). Baidoa remains the operational nexus of the international humanitarian response.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="fw-bold mb-3"><i class="fa-solid fa-table-list text-primary me-2"></i>All 18 Administrative Regions: Operational Footprint & Target Coverage Table</h5>
+            <div class="table-scroll">
+                <table class="table table-hover table-striped align-middle data-table mb-0">
+                    <thead>
+                        <tr>
+                            <th>Region</th>
+                            <th>3W Activities</th>
+                            <th>Active Orgs</th>
+                            <th>Districts</th>
+                            <th>Affected Pop.</th>
+                            <th>Target Pop.</th>
+                            <th>Reached Pop.</th>
+                            <th>Coverage (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+    <tr>
+        <td class="fw-bold">Bay</td>
+        <td><span class="badge bg-primary">1,094</span></td>
+        <td>84 orgs</td>
+        <td>5</td>
+        <td>894,023</td>
+        <td>927,370</td>
+        <td>899,979</td>
+        <td><span class="badge badge-success">97.0%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Banadir</td>
+        <td><span class="badge bg-primary">889</span></td>
+        <td>68 orgs</td>
+        <td>17</td>
+        <td>1,242,175</td>
+        <td>1,290,596</td>
+        <td>617,072</td>
+        <td><span class="badge badge-danger">47.8%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Lower Juba</td>
+        <td><span class="badge bg-primary">670</span></td>
+        <td>53 orgs</td>
+        <td>4</td>
+        <td>490,054</td>
+        <td>465,389</td>
+        <td>355,437</td>
+        <td><span class="badge badge-warning">76.4%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Gedo</td>
+        <td><span class="badge bg-primary">601</span></td>
+        <td>49 orgs</td>
+        <td>6</td>
+        <td>429,228</td>
+        <td>395,225</td>
+        <td>463,483</td>
+        <td><span class="badge badge-success">117.3%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Mudug</td>
+        <td><span class="badge bg-primary">558</span></td>
+        <td>34 orgs</td>
+        <td>5</td>
+        <td>694,511</td>
+        <td>567,351</td>
+        <td>444,085</td>
+        <td><span class="badge badge-warning">78.3%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Bakool</td>
+        <td><span class="badge bg-primary">474</span></td>
+        <td>40 orgs</td>
+        <td>5</td>
+        <td>295,667</td>
+        <td>263,726</td>
+        <td>366,503</td>
+        <td><span class="badge badge-success">139.0%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Nugaal</td>
+        <td><span class="badge bg-primary">449</span></td>
+        <td>17 orgs</td>
+        <td>3</td>
+        <td>339,697</td>
+        <td>248,633</td>
+        <td>138,258</td>
+        <td><span class="badge badge-warning">55.6%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Hiraan</td>
+        <td><span class="badge bg-primary">423</span></td>
+        <td>50 orgs</td>
+        <td>4</td>
+        <td>205,992</td>
+        <td>188,532</td>
+        <td>339,940</td>
+        <td><span class="badge badge-success">180.3%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Lower Shabelle</td>
+        <td><span class="badge bg-primary">417</span></td>
+        <td>41 orgs</td>
+        <td>8</td>
+        <td>647,359</td>
+        <td>560,722</td>
+        <td>439,623</td>
+        <td><span class="badge badge-warning">78.4%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Galgaduud</td>
+        <td><span class="badge bg-primary">325</span></td>
+        <td>28 orgs</td>
+        <td>5</td>
+        <td>414,112</td>
+        <td>376,497</td>
+        <td>340,101</td>
+        <td><span class="badge badge-success">90.3%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Middle Shabelle</td>
+        <td><span class="badge bg-primary">325</span></td>
+        <td>39 orgs</td>
+        <td>5</td>
+        <td>450,399</td>
+        <td>483,960</td>
+        <td>179,445</td>
+        <td><span class="badge badge-danger">37.1%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Sanaag</td>
+        <td><span class="badge bg-primary">224</span></td>
+        <td>18 orgs</td>
+        <td>3</td>
+        <td>229,755</td>
+        <td>183,624</td>
+        <td>226,268</td>
+        <td><span class="badge badge-success">123.2%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Bari</td>
+        <td><span class="badge bg-primary">220</span></td>
+        <td>20 orgs</td>
+        <td>7</td>
+        <td>454,000</td>
+        <td>419,036</td>
+        <td>405,451</td>
+        <td><span class="badge badge-success">96.8%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Woqooyi Galbeed</td>
+        <td><span class="badge bg-primary">158</span></td>
+        <td>21 orgs</td>
+        <td>4</td>
+        <td>491,293</td>
+        <td>411,842</td>
+        <td>252,221</td>
+        <td><span class="badge badge-warning">61.2%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Awdal</td>
+        <td><span class="badge bg-primary">150</span></td>
+        <td>14 orgs</td>
+        <td>4</td>
+        <td>240,580</td>
+        <td>201,011</td>
+        <td>429,285</td>
+        <td><span class="badge badge-success">213.6%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Sool</td>
+        <td><span class="badge bg-primary">128</span></td>
+        <td>21 orgs</td>
+        <td>4</td>
+        <td>211,873</td>
+        <td>179,880</td>
+        <td>174,162</td>
+        <td><span class="badge badge-success">96.8%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Togdheer</td>
+        <td><span class="badge bg-primary">93</span></td>
+        <td>17 orgs</td>
+        <td>4</td>
+        <td>339,944</td>
+        <td>311,958</td>
+        <td>238,210</td>
+        <td><span class="badge badge-warning">76.4%</span></td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold">Middle Juba</td>
+        <td><span class="badge bg-primary">35</span></td>
+        <td>7 orgs</td>
+        <td>4</td>
+        <td>179,640</td>
+        <td>162,282</td>
+        <td>19,214</td>
+        <td><span class="badge badge-danger">11.8%</span></td>
+    </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Section 4: Cash-Based Programming (CWG 4W) -->
+        <div class="analysis-card">
+            <h3 class="section-header"><i class="fa-solid fa-money-bill-transfer text-primary me-2"></i>4. Cash-Based Programming (CBP): CWG 4W & FTS Transfer Modalities</h3>
+            <p>
+                Somalia's sophisticated mobile money ecosystem (Hormuud EVC Plus, Telesom ZAAD, Golis Sahal) has made Cash and Voucher Assistance (CVA) the most cost-effective frontline modality. We contrast the <strong>Cash Working Group (CWG) 4W monthly tracker</strong> against FTS modality tracking.
+            </p>
+
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="chart-img-container">
+                        <img src="3w_images/3w_fig4_cash_programming_breakdown.png" alt="Cash Programming Breakdown">
+                        <div class="mt-3">
+                            <a href="3w_images/3w_fig4_cash_programming_breakdown.png" class="btn btn-outline-primary btn-sm btn-download-chart" download="3w_fig4_cash_programming_breakdown.png">
+                                <i class="fa-solid fa-download"></i> Download Chart (High-Resolution PNG)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="callout-box">
+                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-basket-shopping text-primary me-1"></i> Food Security Dominates Cash Delivery</h6>
+                        <p class="small mb-0">
+                            The CWG 4W tracker confirms that <strong>Food Security CVA</strong> represents >90% of all cash disbursements, reaching an average of <strong>797,698 individuals per month</strong>. Multi-Purpose Cash Assistance (MPCA) reaches an additional <strong>62,450 individuals monthly</strong> across 74 districts.
+                        </p>
+                    </div>
+                    <div class="callout-box alert-amber">
+                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-vault text-warning me-1"></i> FTS Modality Tracking: 26.8% Cash Share</h6>
+                        <p class="small mb-0">
+                            In FTS 2026, cash and voucher modalities total <strong>$93.7 million (26.8% of total tracked funding)</strong>, including $48.5M in Food Security cash transfers and $33.0M in explicit Multipurpose Cash (MPCA). This provides direct purchasing power in local markets amidst high food price inflation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 5: Operational Contraction 2025 vs 2026 -->
+        <div class="analysis-card">
+            <h3 class="section-header"><i class="fa-solid fa-arrow-trend-down text-danger me-2"></i>5. The Operational Contraction: 2025 vs. 2026 Field Footprint Shrinkage</h3>
+            <p>
+                The global funding decline has had immediate operational consequences on the humanitarian footprint across Somalia.
+            </p>
+
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="chart-img-container">
+                        <img src="3w_images/3w_fig5_operational_contraction_2025_vs_2026.png" alt="2025 vs 2026 Operational Contraction">
+                        <div class="mt-3">
+                            <a href="3w_images/3w_fig5_operational_contraction_2025_vs_2026.png" class="btn btn-outline-primary btn-sm btn-download-chart" download="3w_fig5_operational_contraction_2025_vs_2026.png">
+                                <i class="fa-solid fa-download"></i> Download Chart (High-Resolution PNG)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <ul class="list-group list-group-flush border rounded-3 p-2">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">FTS Funding Pipeline</span>
+                                <div class="small text-muted">$540.7M (2025) → $349.1M (2026)</div>
+                            </div>
+                            <span class="badge bg-danger fs-6">-35.4%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">Active Humanitarian Orgs</span>
+                                <div class="small text-muted">282 orgs (2025) → 204 orgs (2026)</div>
+                            </div>
+                            <span class="badge bg-danger fs-6">-27.7%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">National NGOs Active</span>
+                                <div class="small text-muted">164 NNGOs (2025) → 118 NNGOs (2026)</div>
+                            </div>
+                            <span class="badge bg-danger fs-6">-28.0%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">International NGOs Active</span>
+                                <div class="small text-muted">92 INGOs (2025) → 68 INGOs (2026)</div>
+                            </div>
+                            <span class="badge bg-danger fs-6">-26.1%</span>
+                        </li>
+                    </ul>
+
+                    <div class="callout-box alert-red mt-3">
+                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-person-walking-arrow-right me-1"></i> Exit of 78 Humanitarian Partners</h6>
+                        <p class="small mb-0">
+                            The withdrawal of 78 organizations has disproportionately affected remote frontline communities. As budgets contracted, international agencies retreated to central fortified hubs (Mogadishu, Baidoa, Kismayo), leaving peripheral districts with zero or minimal operational presence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 6: Full District-Level Matrix -->
+        <div class="analysis-card">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-3">
+                <h3 class="section-header mb-2 mb-md-0"><i class="fa-solid fa-list-check text-primary me-2"></i>6. Full District-Level Matrix: 74 Districts (Target, Reach & 3W Footprint)</h3>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white"><i class="fa-solid fa-search text-muted"></i></span>
+                        <input type="text" id="districtSearch" class="form-control" placeholder="Search region or district (e.g. Baidoa, Kismayo, Afgooye)...">
+                    </div>
+                </div>
+            </div>
+            <p class="text-muted small">
+                Interactive real-time database merging the 74 monitored districts with OCHA Operational Priority Areas (OPA 1, 2, 3), Affected populations, Target vs Reached figures, and active 3W partner counts.
+            </p>
+
+            <div class="table-scroll">
+                <table class="table table-hover table-striped align-middle data-table mb-0" id="districtTable">
+                    <thead>
+                        <tr>
+                            <th>Region</th>
+                            <th>District</th>
+                            <th>OPA Priority</th>
+                            <th>Affected Pop.</th>
+                            <th>Target Pop.</th>
+                            <th>Reached Pop.</th>
+                            <th>Reach Ratio (%)</th>
+                            <th>Active Partners (3W)</th>
+                            <th>3W Field Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+    <tr>
+        <td class="fw-bold text-muted">Awdal</td>
+        <td class="fw-bold text-primary">Baki</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>25,641</td>
+        <td>19,014</td>
+        <td>20,694</td>
+        <td><span class="badge badge-success">108.8%</span></td>
+        <td><strong>3</strong></td>
+        <td>72</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Awdal</td>
+        <td class="fw-bold text-primary">Borama</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>137,007</td>
+        <td>109,510</td>
+        <td>55,878</td>
+        <td><span class="badge badge-warning">51.0%</span></td>
+        <td><strong>12</strong></td>
+        <td>41</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Awdal</td>
+        <td class="fw-bold text-primary">Lughaye</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>40,066</td>
+        <td>34,747</td>
+        <td>10,678</td>
+        <td><span class="badge badge-danger">30.7%</span></td>
+        <td><strong>4</strong></td>
+        <td>22</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Awdal</td>
+        <td class="fw-bold text-primary">Zeylac</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>37,866</td>
+        <td>37,740</td>
+        <td>342,035</td>
+        <td><span class="badge badge-success">906.3%</span></td>
+        <td><strong>7</strong></td>
+        <td>15</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bakool</td>
+        <td class="fw-bold text-primary">Ceel Barde</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>35,207</td>
+        <td>24,537</td>
+        <td>52,457</td>
+        <td><span class="badge badge-success">213.8%</span></td>
+        <td><strong>10</strong></td>
+        <td>69</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bakool</td>
+        <td class="fw-bold text-primary">Rab Dhuure</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>42,532</td>
+        <td>40,570</td>
+        <td>102,746</td>
+        <td><span class="badge badge-success">253.3%</span></td>
+        <td><strong>5</strong></td>
+        <td>30</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bakool</td>
+        <td class="fw-bold text-primary">Tayeeglow</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>91,532</td>
+        <td>91,532</td>
+        <td>12,760</td>
+        <td><span class="badge badge-danger">13.9%</span></td>
+        <td><strong>11</strong></td>
+        <td>37</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bakool</td>
+        <td class="fw-bold text-primary">Waajid</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>54,329</td>
+        <td>46,207</td>
+        <td>74,033</td>
+        <td><span class="badge badge-success">160.2%</span></td>
+        <td><strong>23</strong></td>
+        <td>125</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bakool</td>
+        <td class="fw-bold text-primary">Xudur</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>72,067</td>
+        <td>60,880</td>
+        <td>124,507</td>
+        <td><span class="badge badge-success">204.5%</span></td>
+        <td><strong>25</strong></td>
+        <td>214</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Banadir</td>
+        <td class="fw-bold text-primary">Banadir</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>1,242,175</td>
+        <td>1,290,596</td>
+        <td>617,072</td>
+        <td><span class="badge badge-danger">47.8%</span></td>
+        <td><strong>0</strong></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bari</td>
+        <td class="fw-bold text-primary">Bandarbeyla</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>20,881</td>
+        <td>18,338</td>
+        <td>22,990</td>
+        <td><span class="badge badge-success">125.4%</span></td>
+        <td><strong>3</strong></td>
+        <td>13</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bari</td>
+        <td class="fw-bold text-primary">Bossaso</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>269,323</td>
+        <td>259,341</td>
+        <td>202,457</td>
+        <td><span class="badge badge-warning">78.1%</span></td>
+        <td><strong>15</strong></td>
+        <td>70</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bari</td>
+        <td class="fw-bold text-primary">Caluula</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>37,036</td>
+        <td>36,632</td>
+        <td>26,694</td>
+        <td><span class="badge badge-warning">72.9%</span></td>
+        <td><strong>2</strong></td>
+        <td>9</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bari</td>
+        <td class="fw-bold text-primary">Iskushuban</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>33,537</td>
+        <td>30,706</td>
+        <td>43,092</td>
+        <td><span class="badge badge-success">140.3%</span></td>
+        <td><strong>6</strong></td>
+        <td>72</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bari</td>
+        <td class="fw-bold text-primary">Qandala</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>27,212</td>
+        <td>27,212</td>
+        <td>29,741</td>
+        <td><span class="badge badge-success">109.3%</span></td>
+        <td><strong>4</strong></td>
+        <td>15</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bari</td>
+        <td class="fw-bold text-primary">Qardho</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>66,011</td>
+        <td>46,807</td>
+        <td>80,477</td>
+        <td><span class="badge badge-success">171.9%</span></td>
+        <td><strong>11</strong></td>
+        <td>40</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bay</td>
+        <td class="fw-bold text-primary">Baydhaba</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>527,419</td>
+        <td>573,139</td>
+        <td>570,585</td>
+        <td><span class="badge badge-success">99.6%</span></td>
+        <td><strong>69</strong></td>
+        <td>571</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bay</td>
+        <td class="fw-bold text-primary">Buur Hakaba</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>156,377</td>
+        <td>156,493</td>
+        <td>189,156</td>
+        <td><span class="badge badge-success">120.9%</span></td>
+        <td><strong>21</strong></td>
+        <td>125</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bay</td>
+        <td class="fw-bold text-primary">Diinsoor</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>111,475</td>
+        <td>87,379</td>
+        <td>50,730</td>
+        <td><span class="badge badge-warning">58.1%</span></td>
+        <td><strong>28</strong></td>
+        <td>208</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Bay</td>
+        <td class="fw-bold text-primary">Qansax Dheere</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>98,752</td>
+        <td>110,359</td>
+        <td>89,508</td>
+        <td><span class="badge badge-success">81.1%</span></td>
+        <td><strong>26</strong></td>
+        <td>189</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Galgaduud</td>
+        <td class="fw-bold text-primary">Cabudwaaq</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>112,050</td>
+        <td>118,159</td>
+        <td>120,355</td>
+        <td><span class="badge badge-success">101.9%</span></td>
+        <td><strong>13</strong></td>
+        <td>68</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Galgaduud</td>
+        <td class="fw-bold text-primary">Cadaado</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>66,828</td>
+        <td>65,398</td>
+        <td>57,959</td>
+        <td><span class="badge badge-success">88.6%</span></td>
+        <td><strong>15</strong></td>
+        <td>118</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Galgaduud</td>
+        <td class="fw-bold text-primary">Ceel Buur</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>60,672</td>
+        <td>53,002</td>
+        <td>30,834</td>
+        <td><span class="badge badge-warning">58.2%</span></td>
+        <td><strong>4</strong></td>
+        <td>12</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Galgaduud</td>
+        <td class="fw-bold text-primary">Ceel Dheer</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>57,345</td>
+        <td>34,784</td>
+        <td>15,724</td>
+        <td><span class="badge badge-danger">45.2%</span></td>
+        <td><strong>8</strong></td>
+        <td>22</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Galgaduud</td>
+        <td class="fw-bold text-primary">Dhuusamarreeb</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>117,217</td>
+        <td>105,154</td>
+        <td>115,229</td>
+        <td><span class="badge badge-success">109.6%</span></td>
+        <td><strong>19</strong></td>
+        <td>105</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Gedo</td>
+        <td class="fw-bold text-primary">Baardheere</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>89,566</td>
+        <td>97,215</td>
+        <td>141,319</td>
+        <td><span class="badge badge-success">145.4%</span></td>
+        <td><strong>21</strong></td>
+        <td>116</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Gedo</td>
+        <td class="fw-bold text-primary">Belet Xaawo</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>68,178</td>
+        <td>49,340</td>
+        <td>68,530</td>
+        <td><span class="badge badge-success">138.9%</span></td>
+        <td><strong>16</strong></td>
+        <td>106</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Gedo</td>
+        <td class="fw-bold text-primary">Ceel Waaq</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>41,378</td>
+        <td>37,640</td>
+        <td>26,916</td>
+        <td><span class="badge badge-warning">71.5%</span></td>
+        <td><strong>13</strong></td>
+        <td>54</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Gedo</td>
+        <td class="fw-bold text-primary">Doolow</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>99,523</td>
+        <td>98,820</td>
+        <td>119,842</td>
+        <td><span class="badge badge-success">121.3%</span></td>
+        <td><strong>20</strong></td>
+        <td>148</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Gedo</td>
+        <td class="fw-bold text-primary">Garbahaarey</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>60,595</td>
+        <td>47,707</td>
+        <td>33,078</td>
+        <td><span class="badge badge-warning">69.3%</span></td>
+        <td><strong>8</strong></td>
+        <td>54</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Gedo</td>
+        <td class="fw-bold text-primary">Luuq</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>69,988</td>
+        <td>64,503</td>
+        <td>73,798</td>
+        <td><span class="badge badge-success">114.4%</span></td>
+        <td><strong>19</strong></td>
+        <td>123</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Hiraan</td>
+        <td class="fw-bold text-primary">Belet Weyne</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>137,642</td>
+        <td>130,218</td>
+        <td>202,814</td>
+        <td><span class="badge badge-success">155.7%</span></td>
+        <td><strong>47</strong></td>
+        <td>324</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Hiraan</td>
+        <td class="fw-bold text-primary">Bulo Burto</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>40,032</td>
+        <td>34,069</td>
+        <td>45,762</td>
+        <td><span class="badge badge-success">134.3%</span></td>
+        <td><strong>14</strong></td>
+        <td>80</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Hiraan</td>
+        <td class="fw-bold text-primary">Jalalaqsi</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>28,318</td>
+        <td>24,245</td>
+        <td>91,364</td>
+        <td><span class="badge badge-success">376.8%</span></td>
+        <td><strong>6</strong></td>
+        <td>17</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Lower Juba</td>
+        <td class="fw-bold text-primary">Afmadow</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>138,224</td>
+        <td>105,473</td>
+        <td>76,041</td>
+        <td><span class="badge badge-warning">72.1%</span></td>
+        <td><strong>26</strong></td>
+        <td>210</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Lower Juba</td>
+        <td class="fw-bold text-primary">Badhaadhe</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>32,788</td>
+        <td>23,033</td>
+        <td>36,251</td>
+        <td><span class="badge badge-success">157.4%</span></td>
+        <td><strong>11</strong></td>
+        <td>37</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Lower Juba</td>
+        <td class="fw-bold text-primary">Jamaame</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>174,270</td>
+        <td>206,204</td>
+        <td>17,579</td>
+        <td><span class="badge badge-danger">8.5%</span></td>
+        <td><strong>21</strong></td>
+        <td>65</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Lower Juba</td>
+        <td class="fw-bold text-primary">Kismaayo</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>144,772</td>
+        <td>130,679</td>
+        <td>225,566</td>
+        <td><span class="badge badge-success">172.6%</span></td>
+        <td><strong>43</strong></td>
+        <td>360</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Lower Shabelle</td>
+        <td class="fw-bold text-primary">Afgooye</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>214,057</td>
+        <td>171,784</td>
+        <td>56,539</td>
+        <td><span class="badge badge-danger">32.9%</span></td>
+        <td><strong>33</strong></td>
+        <td>186</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Lower Shabelle</td>
+        <td class="fw-bold text-primary">Baraawe</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>27,500</td>
+        <td>18,536</td>
+        <td>126,474</td>
+        <td><span class="badge badge-success">682.3%</span></td>
+        <td><strong>11</strong></td>
+        <td>38</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Lower Shabelle</td>
+        <td class="fw-bold text-primary">Kurtunwaarey</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>36,059</td>
+        <td>31,883</td>
+        <td>42,056</td>
+        <td><span class="badge badge-success">131.9%</span></td>
+        <td><strong>6</strong></td>
+        <td>27</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Lower Shabelle</td>
+        <td class="fw-bold text-primary">Marka</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>118,855</td>
+        <td>97,822</td>
+        <td>76,246</td>
+        <td><span class="badge badge-warning">77.9%</span></td>
+        <td><strong>12</strong></td>
+        <td>61</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Lower Shabelle</td>
+        <td class="fw-bold text-primary">Qoryooley</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>72,788</td>
+        <td>68,019</td>
+        <td>75,640</td>
+        <td><span class="badge badge-success">111.2%</span></td>
+        <td><strong>10</strong></td>
+        <td>55</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Lower Shabelle</td>
+        <td class="fw-bold text-primary">Sablaale</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>28,432</td>
+        <td>22,659</td>
+        <td>2,196</td>
+        <td><span class="badge badge-danger">9.7%</span></td>
+        <td><strong>2</strong></td>
+        <td>7</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Lower Shabelle</td>
+        <td class="fw-bold text-primary">Wanla Weyn</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>149,668</td>
+        <td>150,019</td>
+        <td>60,472</td>
+        <td><span class="badge badge-danger">40.3%</span></td>
+        <td><strong>10</strong></td>
+        <td>42</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Middle Juba</td>
+        <td class="fw-bold text-primary">Bu'aale</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>56,107</td>
+        <td>56,107</td>
+        <td>14,877</td>
+        <td><span class="badge badge-danger">26.5%</span></td>
+        <td><strong>6</strong></td>
+        <td>23</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Middle Juba</td>
+        <td class="fw-bold text-primary">Jilib</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>67,812</td>
+        <td>67,812</td>
+        <td>2,141</td>
+        <td><span class="badge badge-danger">3.2%</span></td>
+        <td><strong>3</strong></td>
+        <td>10</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Middle Juba</td>
+        <td class="fw-bold text-primary">Saakow</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>55,721</td>
+        <td>38,363</td>
+        <td>2,196</td>
+        <td><span class="badge badge-danger">5.7%</span></td>
+        <td><strong>1</strong></td>
+        <td>1</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Middle Shabelle</td>
+        <td class="fw-bold text-primary">Adan Yabaal</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>36,980</td>
+        <td>36,569</td>
+        <td>16,541</td>
+        <td><span class="badge badge-danger">45.2%</span></td>
+        <td><strong>4</strong></td>
+        <td>6</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Middle Shabelle</td>
+        <td class="fw-bold text-primary">Balcad</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>177,685</td>
+        <td>206,161</td>
+        <td>76,456</td>
+        <td><span class="badge badge-danger">37.1%</span></td>
+        <td><strong>19</strong></td>
+        <td>98</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Middle Shabelle</td>
+        <td class="fw-bold text-primary">Cadale</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>41,229</td>
+        <td>37,551</td>
+        <td>48,524</td>
+        <td><span class="badge badge-success">129.2%</span></td>
+        <td><strong>7</strong></td>
+        <td>40</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Middle Shabelle</td>
+        <td class="fw-bold text-primary">Jowhar</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>194,505</td>
+        <td>203,679</td>
+        <td>37,924</td>
+        <td><span class="badge badge-danger">18.6%</span></td>
+        <td><strong>30</strong></td>
+        <td>180</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Mudug</td>
+        <td class="fw-bold text-primary">Gaalkacyo</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>353,380</td>
+        <td>243,188</td>
+        <td>225,966</td>
+        <td><span class="badge badge-success">92.9%</span></td>
+        <td><strong>30</strong></td>
+        <td>366</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Mudug</td>
+        <td class="fw-bold text-primary">Galdogob</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>88,944</td>
+        <td>90,773</td>
+        <td>56,842</td>
+        <td><span class="badge badge-warning">62.6%</span></td>
+        <td><strong>10</strong></td>
+        <td>45</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Mudug</td>
+        <td class="fw-bold text-primary">Hobyo</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>107,517</td>
+        <td>106,759</td>
+        <td>93,706</td>
+        <td><span class="badge badge-success">87.8%</span></td>
+        <td><strong>14</strong></td>
+        <td>70</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Mudug</td>
+        <td class="fw-bold text-primary">Jariiban</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>112,433</td>
+        <td>99,882</td>
+        <td>50,633</td>
+        <td><span class="badge badge-warning">50.7%</span></td>
+        <td><strong>8</strong></td>
+        <td>59</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Mudug</td>
+        <td class="fw-bold text-primary">Xarardheere</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>32,237</td>
+        <td>26,749</td>
+        <td>16,938</td>
+        <td><span class="badge badge-warning">63.3%</span></td>
+        <td><strong>7</strong></td>
+        <td>19</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Nugaal</td>
+        <td class="fw-bold text-primary">Burtinle</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>65,380</td>
+        <td>43,337</td>
+        <td>46,473</td>
+        <td><span class="badge badge-success">107.2%</span></td>
+        <td><strong>8</strong></td>
+        <td>65</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Nugaal</td>
+        <td class="fw-bold text-primary">Eyl</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>99,808</td>
+        <td>90,839</td>
+        <td>37,242</td>
+        <td><span class="badge badge-danger">41.0%</span></td>
+        <td><strong>5</strong></td>
+        <td>83</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Nugaal</td>
+        <td class="fw-bold text-primary">Garoowe</td>
+        <td><span class="badge bg-danger">OPA 1 (Extreme)</span></td>
+        <td>174,509</td>
+        <td>114,457</td>
+        <td>54,543</td>
+        <td><span class="badge badge-danger">47.7%</span></td>
+        <td><strong>15</strong></td>
+        <td>301</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Sanaag</td>
+        <td class="fw-bold text-primary">Ceel Afweyn</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>46,915</td>
+        <td>32,228</td>
+        <td>64,041</td>
+        <td><span class="badge badge-success">198.7%</span></td>
+        <td><strong>6</strong></td>
+        <td>20</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Sanaag</td>
+        <td class="fw-bold text-primary">Ceerigaabo</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>92,896</td>
+        <td>75,450</td>
+        <td>93,393</td>
+        <td><span class="badge badge-success">123.8%</span></td>
+        <td><strong>17</strong></td>
+        <td>164</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Sanaag</td>
+        <td class="fw-bold text-primary">Laasqoray</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>89,944</td>
+        <td>75,946</td>
+        <td>68,834</td>
+        <td><span class="badge badge-success">90.6%</span></td>
+        <td><strong>8</strong></td>
+        <td>40</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Sool</td>
+        <td class="fw-bold text-primary">Caynabo</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>37,059</td>
+        <td>31,558</td>
+        <td>22,630</td>
+        <td><span class="badge badge-warning">71.7%</span></td>
+        <td><strong>11</strong></td>
+        <td>30</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Sool</td>
+        <td class="fw-bold text-primary">Laas Caanood</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>107,154</td>
+        <td>92,162</td>
+        <td>106,124</td>
+        <td><span class="badge badge-success">115.1%</span></td>
+        <td><strong>15</strong></td>
+        <td>75</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Sool</td>
+        <td class="fw-bold text-primary">Taleex</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>31,615</td>
+        <td>30,303</td>
+        <td>27,408</td>
+        <td><span class="badge badge-success">90.4%</span></td>
+        <td><strong>4</strong></td>
+        <td>15</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Sool</td>
+        <td class="fw-bold text-primary">Xudun</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>36,045</td>
+        <td>25,857</td>
+        <td>18,000</td>
+        <td><span class="badge badge-warning">69.6%</span></td>
+        <td><strong>3</strong></td>
+        <td>8</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Togdheer</td>
+        <td class="fw-bold text-primary">Burco</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>195,324</td>
+        <td>178,157</td>
+        <td>118,343</td>
+        <td><span class="badge badge-warning">66.4%</span></td>
+        <td><strong>15</strong></td>
+        <td>68</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Togdheer</td>
+        <td class="fw-bold text-primary">Buuhoodle</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>41,828</td>
+        <td>48,312</td>
+        <td>39,420</td>
+        <td><span class="badge badge-success">81.6%</span></td>
+        <td><strong>3</strong></td>
+        <td>10</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Togdheer</td>
+        <td class="fw-bold text-primary">Owdweyne</td>
+        <td><span class="badge bg-warning text-dark">OPA 2 (Severe)</span></td>
+        <td>44,126</td>
+        <td>44,373</td>
+        <td>64,955</td>
+        <td><span class="badge badge-success">146.4%</span></td>
+        <td><strong>4</strong></td>
+        <td>10</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Togdheer</td>
+        <td class="fw-bold text-primary">Sheikh</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>58,666</td>
+        <td>41,116</td>
+        <td>15,492</td>
+        <td><span class="badge badge-danger">37.7%</span></td>
+        <td><strong>5</strong></td>
+        <td>13</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Woqooyi Galbeed</td>
+        <td class="fw-bold text-primary">Berbera</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>67,664</td>
+        <td>50,967</td>
+        <td>22,456</td>
+        <td><span class="badge badge-danger">44.1%</span></td>
+        <td><strong>7</strong></td>
+        <td>20</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Woqooyi Galbeed</td>
+        <td class="fw-bold text-primary">Gebiley</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>92,273</td>
+        <td>75,399</td>
+        <td>20,778</td>
+        <td><span class="badge badge-danger">27.6%</span></td>
+        <td><strong>7</strong></td>
+        <td>26</td>
+    </tr>
+    
+    <tr>
+        <td class="fw-bold text-muted">Woqooyi Galbeed</td>
+        <td class="fw-bold text-primary">Hargeysa</td>
+        <td><span class="badge bg-secondary">OPA 3 (Moderate)</span></td>
+        <td>331,356</td>
+        <td>285,476</td>
+        <td>208,987</td>
+        <td><span class="badge badge-warning">73.2%</span></td>
+        <td><strong>20</strong></td>
+        <td>104</td>
+    </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-2 text-muted small text-end" id="recordCount">Showing 74 districts</div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 border-top border-secondary">
+        <div class="container-fluid px-lg-5 text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <p class="mb-1 fw-bold">Somalia Humanitarian Data Integration Initiative (OCHA HDX & FTS)</p>
+                    <p class="mb-0 text-muted small">
+                        Synthesizing FTS Financial Flows, HDX Operational Presence 3W/4W, Target vs Reached Monitoring Matrices, and Cash Working Group (CWG) datasets.
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                    <a href="Somalia_3W_Operational_Presence_and_FTS_Comparative_Analysis.xlsx" class="btn btn-warning btn-sm fw-bold">
+                        <i class="fa-solid fa-file-excel me-1"></i> Download Clean Excel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Script -->
+    <script>
+        document.getElementById('districtSearch').addEventListener('keyup', function() {
+            let filter = this.value.toLowerCase();
+            let rows = document.querySelectorAll('#districtTable tbody tr');
+            let visibleCount = 0;
+            rows.forEach(row => {
+                let text = row.innerText.toLowerCase();
+                if (text.includes(filter)) {
+                    row.style.display = '';
+                    visibleCount++;
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+            document.getElementById('recordCount').innerText = 'Showing ' + visibleCount + ' districts';
+        });
+    </script>
+</body>
+</html>
