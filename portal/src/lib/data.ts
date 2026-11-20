@@ -63,3 +63,30 @@ export function getTopDistrictsByArrivals(limit = 5): DistrictData[] {
     .sort((a, b) => (b.ett_2026?.arrivals || 0) - (a.ett_2026?.arrivals || 0))
     .slice(0, limit);
 }
+
+import cvaDataRaw from '@/data/somalia_cva_audit_data.json';
+
+export interface DistrictCVAData {
+  district: string;
+  total_usd_transferred: number;
+  households_reached: number;
+  individuals_assisted: number;
+  mobile_money_usd: number;
+  voucher_usd: number;
+  active_organizations: string[];
+  records_count: number;
+  avg_transfer_value_usd: number;
+  idp_camps_count: number;
+  gatekeeper_camps_count: number;
+  gatekeeper_prevalence_pct: number;
+  total_idp_shelters: number;
+}
+
+export function getDistrictCVA(districtName: string): DistrictCVAData | undefined {
+  const norm = districtName.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const found = (cvaDataRaw.districts as unknown as DistrictCVAData[]).find(
+    (d) => d.district.toLowerCase().replace(/[^a-z0-9]/g, '') === norm
+  );
+  return found;
+}
+
