@@ -2,25 +2,28 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { 
-  Building2, 
-  FileText, 
-  Download, 
-  ExternalLink, 
-  Search, 
-  MapPin, 
-  DollarSign, 
-  Calendar, 
-  Filter, 
-  CheckCircle, 
-  FolderDown, 
-  FileSpreadsheet, 
+import {
+  Building2,
+  FileText,
+  Download,
+  ExternalLink,
+  Search,
+  MapPin,
+  DollarSign,
+  Calendar,
+  Filter,
+  CheckCircle,
+  FolderDown,
+  FileSpreadsheet,
   FileCheck,
   ChevronDown,
   ChevronUp,
   ChevronRight
 } from 'lucide-react';
 import undpData from '@/data/undp_somalia_projects_documents.json';
+import vendorNameToSlugRaw from '@/data/vendor_name_to_slug.json';
+
+const vendorNameToSlug = vendorNameToSlugRaw as Record<string, string>;
 
 export default function UndpProjectsPage() {
   const [search, setSearch] = useState('');
@@ -104,7 +107,7 @@ export default function UndpProjectsPage() {
           Active Projects, Contractors &amp; Document Downloads
         </h1>
         <p className="text-sm text-slate-400 max-w-3xl leading-relaxed">
-          Real-time synchronization with UNDP Open API (<code className="text-emerald-400">Operating Unit: SOM</code>). 
+          Real-time synchronization with UNDP Open API (<code className="text-emerald-400">Operating Unit: SOM</code>).
           Explore every active project, identify top contractors and purchase orders, and directly download official signed project documents (ProDocs), annual workplans, and budgets.
         </p>
       </div>
@@ -157,11 +160,10 @@ export default function UndpProjectsPage() {
             <button
               key={fmt}
               onClick={() => setSelectedFormat(fmt)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                selectedFormat === fmt
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${selectedFormat === fmt
                   ? 'bg-emerald-600 text-white shadow-sm shadow-emerald-950'
                   : 'bg-slate-800 text-slate-400 hover:text-white'
-              }`}
+                }`}
             >
               {fmt}
             </button>
@@ -183,7 +185,7 @@ export default function UndpProjectsPage() {
               className="rounded-2xl border border-slate-800 bg-slate-900 hover:border-slate-700 transition-all overflow-hidden"
             >
               {/* Project Header Summary */}
-              <div 
+              <div
                 onClick={() => toggleExpand(proj.id)}
                 className="p-6 cursor-pointer flex flex-col lg:flex-row lg:items-center justify-between gap-4"
               >
@@ -258,24 +260,29 @@ export default function UndpProjectsPage() {
                       Top Commercial Contractors &amp; Money Allocation
                     </h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                      {proj.top_vendors.map((v) => (
-                        <div
-                          key={v.name}
-                          className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between"
-                        >
-                          <div className="truncate pr-2">
-                            <div className="text-sm font-bold text-white truncate" title={v.name}>
-                              {v.name}
+                      {proj.top_vendors.map((v) => {
+                        const slug = vendorNameToSlug[v.name] || vendorNameToSlug[(v.name || '').toLowerCase()];
+                        return (
+                          <Link
+                            key={v.name}
+                            href={slug ? `/vendors/${slug}` : '#'}
+                            className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-700/60 transition-all flex items-center justify-between group"
+                            title={`View all work done by ${v.name}`}
+                          >
+                            <div className="truncate pr-2">
+                              <div className="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors truncate">
+                                {v.name}
+                              </div>
+                              <div className="text-xs text-slate-500">
+                                {v.order_count} order{v.order_count > 1 ? 's' : ''} &bull; Click for dossier
+                              </div>
                             </div>
-                            <div className="text-xs text-slate-500">
-                              {v.order_count} order{v.order_count > 1 ? 's' : ''}
+                            <div className="text-right font-black text-emerald-400 text-sm whitespace-nowrap">
+                              ${v.total_amount.toLocaleString()}
                             </div>
-                          </div>
-                          <div className="text-right font-black text-emerald-400 text-sm whitespace-nowrap">
-                            ${v.total_amount.toLocaleString()}
-                          </div>
-                        </div>
-                      ))}
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
 

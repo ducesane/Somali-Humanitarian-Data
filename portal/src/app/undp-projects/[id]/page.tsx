@@ -17,6 +17,9 @@ import {
   BadgeDollarSign
 } from 'lucide-react';
 import undpData from '@/data/undp_somalia_projects_documents.json';
+import vendorNameToSlugRaw from '@/data/vendor_name_to_slug.json';
+
+const vendorNameToSlug = vendorNameToSlugRaw as Record<string, string>;
 
 interface ProjectPageProps {
   params: Promise<{
@@ -211,8 +214,19 @@ export default async function UndpProjectDetailPage({ params }: ProjectPageProps
                     </td>
 
                     {/* Vendor */}
-                    <td className="py-3.5 px-4 font-sans font-bold text-white whitespace-nowrap">
-                      {po.vendor_name}
+                    <td className="py-3.5 px-4 font-sans font-bold whitespace-nowrap">
+                      {vendorNameToSlug[po.vendor_name] || vendorNameToSlug[(po.vendor_name || '').toLowerCase()] ? (
+                        <Link
+                          href={`/vendors/${vendorNameToSlug[po.vendor_name] || vendorNameToSlug[(po.vendor_name || '').toLowerCase()]}`}
+                          className="text-white hover:text-emerald-400 transition-colors inline-flex items-center gap-1.5 group"
+                          title="View all work done by this vendor across Somalia"
+                        >
+                          <span>{po.vendor_name}</span>
+                          <ExternalLink className="w-3 h-3 text-slate-500 group-hover:text-emerald-400 transition-colors" />
+                        </Link>
+                      ) : (
+                        <span className="text-white">{po.vendor_name}</span>
+                      )}
                     </td>
 
                     {/* Description */}
