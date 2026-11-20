@@ -334,6 +334,16 @@ export default function CashTransferAuditDashboard() {
           </div>
 
           {/* Master District Grid & Side Dossier */}
+          <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-300">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-indigo-400 shrink-0" />
+              <span>
+                <strong>Temporal Provenance Notice:</strong> Cash transfer values &amp; households reached are from the <strong>UN Somalia CWG 2023 Annual Cycle</strong>. IDP camp counts &amp; shelters are from the <strong>REACH Initiative February 2022 Country-Wide Site Assessment</strong>.
+              </span>
+            </div>
+            <span className="text-slate-500 text-[11px] shrink-0 font-mono">Cross-Referenced Baseline</span>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             
             {/* Left 2 Columns: Interactive District Table */}
@@ -356,8 +366,11 @@ export default function CashTransferAuditDashboard() {
                         className="py-3 px-4 cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
                       >
                         <div className="flex items-center gap-1">
-                          <span>District</span>
-                          <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                          <div>
+                            <span>District</span>
+                            <span className="block text-[9px] text-slate-500 font-normal lowercase tracking-normal">Somalia (74)</span>
+                          </div>
+                          <ArrowUpDown className="w-3 h-3 text-slate-500 shrink-0 ml-1" />
                         </div>
                       </th>
                       <th 
@@ -365,8 +378,11 @@ export default function CashTransferAuditDashboard() {
                         className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
                       >
                         <div className="flex items-center justify-end gap-1">
-                          <span>Total Transferred</span>
-                          <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                          <div className="text-right">
+                            <span>Total Transferred</span>
+                            <span className="block text-[9px] text-emerald-400 font-normal lowercase tracking-normal">CWG 2023</span>
+                          </div>
+                          <ArrowUpDown className="w-3 h-3 text-slate-500 shrink-0 ml-1" />
                         </div>
                       </th>
                       <th 
@@ -374,8 +390,11 @@ export default function CashTransferAuditDashboard() {
                         className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
                       >
                         <div className="flex items-center justify-end gap-1">
-                          <span>Mobile Money</span>
-                          <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                          <div className="text-right">
+                            <span>Mobile Money</span>
+                            <span className="block text-[9px] text-emerald-400 font-normal lowercase tracking-normal">CWG 2023</span>
+                          </div>
+                          <ArrowUpDown className="w-3 h-3 text-slate-500 shrink-0 ml-1" />
                         </div>
                       </th>
                       <th 
@@ -383,8 +402,11 @@ export default function CashTransferAuditDashboard() {
                         className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
                       >
                         <div className="flex items-center justify-end gap-1">
-                          <span>Voucher</span>
-                          <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                          <div className="text-right">
+                            <span>Voucher</span>
+                            <span className="block text-[9px] text-indigo-400 font-normal lowercase tracking-normal">CWG 2023</span>
+                          </div>
+                          <ArrowUpDown className="w-3 h-3 text-slate-500 shrink-0 ml-1" />
                         </div>
                       </th>
                       <th 
@@ -392,8 +414,11 @@ export default function CashTransferAuditDashboard() {
                         className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
                       >
                         <div className="flex items-center justify-end gap-1">
-                          <span>Households</span>
-                          <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                          <div className="text-right">
+                            <span>Households</span>
+                            <span className="block text-[9px] text-slate-400 font-normal lowercase tracking-normal">CWG 2023 Dispatches</span>
+                          </div>
+                          <ArrowUpDown className="w-3 h-3 text-slate-500 shrink-0 ml-1" />
                         </div>
                       </th>
                       <th 
@@ -401,8 +426,11 @@ export default function CashTransferAuditDashboard() {
                         className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
                       >
                         <div className="flex items-center justify-end gap-1">
-                          <span>IDP Camps</span>
-                          <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                          <div className="text-right">
+                            <span>IDP Camps</span>
+                            <span className="block text-[9px] text-slate-400 font-normal lowercase tracking-normal">REACH Feb 2022</span>
+                          </div>
+                          <ArrowUpDown className="w-3 h-3 text-slate-500 shrink-0 ml-1" />
                         </div>
                       </th>
                       <th 
@@ -410,8 +438,11 @@ export default function CashTransferAuditDashboard() {
                         className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
                       >
                         <div className="flex items-center justify-end gap-1">
-                          <span>Shelters</span>
-                          <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                          <div className="text-right">
+                            <span>Shelters</span>
+                            <span className="block text-[9px] text-slate-400 font-normal lowercase tracking-normal">REACH Feb 2022</span>
+                          </div>
+                          <ArrowUpDown className="w-3 h-3 text-slate-500 shrink-0 ml-1" />
                         </div>
                       </th>
                     </tr>

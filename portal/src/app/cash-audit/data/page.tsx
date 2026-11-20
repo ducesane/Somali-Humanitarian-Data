@@ -581,102 +581,137 @@ export default function RealDataWindow() {
 
         {/* TAB 3: REAL DISTRICT SUMMARY SPREADSHEET */}
         {activeTab === 'district_summary' && (
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
-            <div className="overflow-x-auto max-h-[750px]">
-              <table className="w-full text-left text-xs border-collapse">
-                <thead className="bg-slate-800/95 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
-                  <tr>
-                    <th 
-                      onClick={() => toggleDistrictSort('district')}
-                      className="py-3 px-4 cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
-                    >
-                      <div className="flex items-center gap-1.5">
-                        <span>District</span>
-                        {districtSortField === 'district' ? (
-                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
-                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
-                      </div>
-                    </th>
-                    <th 
-                      onClick={() => toggleDistrictSort('total_usd_transferred')}
-                      className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
-                    >
-                      <div className="flex items-center justify-end gap-1.5">
-                        <span>Total Transferred (USD)</span>
-                        {districtSortField === 'total_usd_transferred' ? (
-                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
-                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
-                      </div>
-                    </th>
-                    <th 
-                      onClick={() => toggleDistrictSort('mobile_money_usd')}
-                      className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
-                    >
-                      <div className="flex items-center justify-end gap-1.5">
-                        <span>Mobile Money (USD)</span>
-                        {districtSortField === 'mobile_money_usd' ? (
-                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
-                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
-                      </div>
-                    </th>
-                    <th 
-                      onClick={() => toggleDistrictSort('voucher_usd')}
-                      className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
-                    >
-                      <div className="flex items-center justify-end gap-1.5">
-                        <span>Voucher (USD)</span>
-                        {districtSortField === 'voucher_usd' ? (
-                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
-                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
-                      </div>
-                    </th>
-                    <th 
-                      onClick={() => toggleDistrictSort('households_reached')}
-                      className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
-                    >
-                      <div className="flex items-center justify-end gap-1.5">
-                        <span>Households</span>
-                        {districtSortField === 'households_reached' ? (
-                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
-                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
-                      </div>
-                    </th>
-                    <th 
-                      onClick={() => toggleDistrictSort('idp_camps_count')}
-                      className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
-                    >
-                      <div className="flex items-center justify-end gap-1.5">
-                        <span>IDP Camps Count</span>
-                        {districtSortField === 'idp_camps_count' ? (
-                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
-                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
-                      </div>
-                    </th>
-                    <th 
-                      onClick={() => toggleDistrictSort('gatekeeper_camps_count')}
-                      className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
-                    >
-                      <div className="flex items-center justify-end gap-1.5">
-                        <span>Gatekeeper Camps</span>
-                        {districtSortField === 'gatekeeper_camps_count' ? (
-                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
-                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
-                      </div>
-                    </th>
-                    <th 
-                      onClick={() => toggleDistrictSort('total_idp_shelters')}
-                      className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
-                    >
-                      <div className="flex items-center justify-end gap-1.5">
-                        <span>Total Shelters</span>
-                        {districtSortField === 'total_idp_shelters' ? (
-                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
-                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
-                      </div>
-                    </th>
-                    <th className="py-3 px-4">Active Implementers</th>
-                  </tr>
-                </thead>
+          <div className="space-y-4">
+            <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-300">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-indigo-400 shrink-0" />
+                <span>
+                  <strong>Temporal Alignment Notice:</strong> Cash transfer numbers and households reflect the <strong>UN Somalia CWG 2023 Annual Cycle</strong>. IDP settlement and shelter figures reflect the <strong>REACH Initiative February 2022 Comprehensive Site Assessment</strong>.
+                </span>
+              </div>
+              <span className="text-slate-500 text-[11px] shrink-0 font-mono">Cross-Referenced Baseline</span>
+            </div>
+
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+              <div className="overflow-x-auto max-h-[750px]">
+                <table className="w-full text-left text-xs border-collapse">
+                  <thead className="bg-slate-800/95 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
+                    <tr>
+                      <th 
+                        onClick={() => toggleDistrictSort('district')}
+                        className="py-3 px-4 cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center gap-1.5">
+                          <div>
+                            <span>District</span>
+                            <span className="block text-[9px] text-slate-500 font-normal lowercase tracking-normal">Somalia (74)</span>
+                          </div>
+                          {districtSortField === 'district' ? (
+                            districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                          ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                        </div>
+                      </th>
+                      <th 
+                        onClick={() => toggleDistrictSort('total_usd_transferred')}
+                        className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center justify-end gap-1.5">
+                          <div className="text-right">
+                            <span>Total Transferred</span>
+                            <span className="block text-[9px] text-emerald-400 font-normal lowercase tracking-normal">CWG 2023</span>
+                          </div>
+                          {districtSortField === 'total_usd_transferred' ? (
+                            districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                          ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                        </div>
+                      </th>
+                      <th 
+                        onClick={() => toggleDistrictSort('mobile_money_usd')}
+                        className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center justify-end gap-1.5">
+                          <div className="text-right">
+                            <span>Mobile Money</span>
+                            <span className="block text-[9px] text-emerald-400 font-normal lowercase tracking-normal">CWG 2023</span>
+                          </div>
+                          {districtSortField === 'mobile_money_usd' ? (
+                            districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                          ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                        </div>
+                      </th>
+                      <th 
+                        onClick={() => toggleDistrictSort('voucher_usd')}
+                        className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center justify-end gap-1.5">
+                          <div className="text-right">
+                            <span>Voucher</span>
+                            <span className="block text-[9px] text-indigo-400 font-normal lowercase tracking-normal">CWG 2023</span>
+                          </div>
+                          {districtSortField === 'voucher_usd' ? (
+                            districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                          ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                        </div>
+                      </th>
+                      <th 
+                        onClick={() => toggleDistrictSort('households_reached')}
+                        className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center justify-end gap-1.5">
+                          <div className="text-right">
+                            <span>Households</span>
+                            <span className="block text-[9px] text-slate-400 font-normal lowercase tracking-normal">CWG 2023 Dispatches</span>
+                          </div>
+                          {districtSortField === 'households_reached' ? (
+                            districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                          ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                        </div>
+                      </th>
+                      <th 
+                        onClick={() => toggleDistrictSort('idp_camps_count')}
+                        className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center justify-end gap-1.5">
+                          <div className="text-right">
+                            <span>IDP Camps</span>
+                            <span className="block text-[9px] text-slate-400 font-normal lowercase tracking-normal">REACH Feb 2022</span>
+                          </div>
+                          {districtSortField === 'idp_camps_count' ? (
+                            districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                          ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                        </div>
+                      </th>
+                      <th 
+                        onClick={() => toggleDistrictSort('gatekeeper_camps_count')}
+                        className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center justify-end gap-1.5">
+                          <div className="text-right">
+                            <span>Gatekeeper Camps</span>
+                            <span className="block text-[9px] text-slate-400 font-normal lowercase tracking-normal">REACH Feb 2022</span>
+                          </div>
+                          {districtSortField === 'gatekeeper_camps_count' ? (
+                            districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                          ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                        </div>
+                      </th>
+                      <th 
+                        onClick={() => toggleDistrictSort('total_idp_shelters')}
+                        className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center justify-end gap-1.5">
+                          <div className="text-right">
+                            <span>Total Shelters</span>
+                            <span className="block text-[9px] text-slate-400 font-normal lowercase tracking-normal">REACH Feb 2022</span>
+                          </div>
+                          {districtSortField === 'total_idp_shelters' ? (
+                            districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                          ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                        </div>
+                      </th>
+                      <th className="py-3 px-4">Active Implementers</th>
+                    </tr>
+                  </thead>
                 <tbody className="divide-y divide-slate-800 text-slate-300 font-mono">
                   {filteredDistricts.length === 0 ? (
                     <tr>
@@ -710,7 +745,8 @@ export default function RealDataWindow() {
               Showing {filteredDistricts.length} active Somali districts sorted by <strong>{districtSortField.replace(/_/g, ' ')}</strong> ({districtSortAsc ? 'Ascending' : 'Descending'}). Click any column header to sort.
             </div>
           </div>
-        )}
+        </div>
+      )}
 
         {/* TAB 4: REAL INDIVIDUAL HOUSEHOLDS MICRODATA */}
         {activeTab === 'household_microdata' && (
