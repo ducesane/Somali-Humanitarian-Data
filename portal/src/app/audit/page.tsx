@@ -1,15 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
-import { 
-  CheckCircle2, 
-  ArrowRight, 
-  ExternalLink, 
-  FileText, 
-  Globe2, 
-  Layers, 
-  ShieldCheck, 
-  Sparkles, 
-  MapPin, 
+import {
+  CheckCircle2,
+  ArrowRight,
+  ExternalLink,
+  FileText,
+  Globe2,
+  Layers,
+  ShieldCheck,
+  Sparkles,
+  MapPin,
   Building2,
   TrendingUp,
   ZoomIn,
@@ -135,7 +135,7 @@ export default function SatelliteAuditPage() {
 
       {/* Main Content Area */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
-        
+
         {/* ------------------------------------------------------------------ */}
         {/* SCENARIO TOOL: SITE COORDINATE RESOLVER (EXIF & REGISTRY ENGINE)   */}
         {/* ------------------------------------------------------------------ */}
@@ -190,7 +190,7 @@ export default function SatelliteAuditPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-sm">
             <div className="space-y-1">
               <div className="text-xs text-slate-500 font-semibold uppercase">Contracted Vendor</div>
-              <Link 
+              <Link
                 href="/vendors/hiraal-engineering-and-construction-comp"
                 className="font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 group"
               >
@@ -217,7 +217,7 @@ export default function SatelliteAuditPage() {
             <div className="space-y-1">
               <div className="text-xs text-slate-500 font-semibold uppercase">Observation Telemetry</div>
               <div className="text-xs text-slate-300">
-                <strong className="text-sky-400">Google Earth:</strong> Sub-Meter Optical (Zoom 18-20)<br/>
+                <strong className="text-sky-400">Google Earth:</strong> Sub-Meter Optical (Zoom 18-20)<br />
                 <strong className="text-emerald-400">Sentinel-2:</strong> Multi-Spectral BOA Reflectance
               </div>
             </div>
@@ -261,8 +261,8 @@ export default function SatelliteAuditPage() {
           </div>
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl p-2 sm:p-4">
-            <img 
-              src="/audit/dossier_page1_optical_audit.png" 
+            <img
+              src="/audit/dossier_page1_optical_audit.png"
               alt="Figure Ref: FIG-01-OPT: Multi-Source Satellite & Earth Observation Audit"
               className="w-full h-auto rounded-xl border border-slate-800"
             />
@@ -310,8 +310,8 @@ export default function SatelliteAuditPage() {
           </div>
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl p-2 sm:p-4">
-            <img 
-              src="/audit/dossier_page2_structural_audit.png" 
+            <img
+              src="/audit/dossier_page2_structural_audit.png"
               alt="Figure Ref: FIG-02-BOQ: Detailed Structural Verification & BOQ Alignment"
               className="w-full h-auto rounded-xl border border-slate-800"
             />
@@ -384,8 +384,8 @@ export default function SatelliteAuditPage() {
           </div>
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl p-2 sm:p-4">
-            <img 
-              src="/audit/dossier_page3_ndvi_hydrological.png" 
+            <img
+              src="/audit/dossier_page3_ndvi_hydrological.png"
               alt="Figure Ref: FIG-03-NDVI: Hydrological Impact & NDVI Analysis"
               className="w-full h-auto rounded-xl border border-slate-800"
             />
@@ -397,7 +397,7 @@ export default function SatelliteAuditPage() {
               <span>Hydrological Proof: Resolving the "Empty Shell" Risk</span>
             </h4>
             <p className="text-xs text-emerald-200/90 leading-relaxed">
-              A major vulnerability in humanitarian infrastructure monitoring is that a contractor can construct an empty building or dry pipe that fails to produce water. 
+              A major vulnerability in humanitarian infrastructure monitoring is that a contractor can construct an empty building or dry pipe that fails to produce water.
               Our remote sensing algorithm calculated a <strong>+103.5% surge in Normalized Difference Vegetation Index (NDVI)</strong> from 0.112 (dry baseline) to 0.228 around the tap stand and wastewater soakaway. In the arid Mudug desert, vegetation cannot green without continuous artificial discharge. This confirms that the solar pump is operational and water is actively supplied to the community.
             </p>
           </div>

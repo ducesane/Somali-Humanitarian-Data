@@ -24,7 +24,11 @@ import {
   ChevronDown,
   Layers,
   ChevronRight,
-  ShieldCheck
+  ShieldCheck,
+  Maximize2,
+  X,
+  Download,
+  FileSpreadsheet
 } from 'lucide-react';
 import cvaData from '@/data/somalia_cva_audit_data.json';
 
@@ -56,6 +60,7 @@ export default function CashTransferAuditDashboard() {
   const [riskFilter, setRiskFilter] = useState<'ALL' | 'HIGH' | 'MEDIUM' | 'LOW'>('ALL');
   const [selectedDistrict, setSelectedDistrict] = useState<DistrictItem>(cvaData.districts[0] as DistrictItem);
   const [selectedBatchIndex, setSelectedBatchIndex] = useState(0);
+  const [quickModalOpen, setQuickModalOpen] = useState(false);
 
   // Filter districts
   const filteredDistricts = useMemo(() => {
@@ -92,6 +97,15 @@ export default function CashTransferAuditDashboard() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3">
+            <Link
+              href="/cash-audit/data"
+              target="_blank"
+              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-indigo-950/80 hover:bg-indigo-900 text-indigo-200 border border-indigo-700/70 font-semibold text-sm transition-all shadow-sm"
+              title="Open full data spreadsheet in a new window"
+            >
+              <ExternalLink className="w-4 h-4 text-indigo-400" />
+              <span>Open List in New Window</span>
+            </Link>
             <Link
               href="/audit"
               className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 border border-slate-700/60 font-medium text-sm transition-all"
@@ -215,22 +229,46 @@ export default function CashTransferAuditDashboard() {
               />
             </div>
 
-            {/* Filter buttons */}
-            <div className="flex items-center gap-2 w-full md:w-auto overflow-x-auto pb-1 md:pb-0">
-              <span className="text-xs text-slate-400 font-medium whitespace-nowrap">Filter Risk:</span>
-              {(['ALL', 'HIGH', 'MEDIUM', 'LOW'] as const).map(risk => (
+            {/* Filter buttons & New Window Triggers */}
+            <div className="flex flex-wrap items-center gap-2.5 w-full md:w-auto">
+              <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0">
+                <span className="text-xs text-slate-400 font-medium whitespace-nowrap">Risk:</span>
+                {(['ALL', 'HIGH', 'MEDIUM', 'LOW'] as const).map(risk => (
+                  <button
+                    key={risk}
+                    onClick={() => setRiskFilter(risk)}
+                    className={`px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all whitespace-nowrap ${
+                      riskFilter === risk
+                        ? 'bg-indigo-600 text-white shadow'
+                        : 'bg-slate-800 text-slate-400 hover:text-white'
+                    }`}
+                  >
+                    {risk}
+                  </button>
+                ))}
+              </div>
+
+              <div className="h-5 w-px bg-slate-700 hidden sm:block" />
+
+              <div className="flex items-center gap-2">
                 <button
-                  key={risk}
-                  onClick={() => setRiskFilter(risk)}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all whitespace-nowrap ${
-                    riskFilter === risk
-                      ? 'bg-indigo-600 text-white shadow'
-                      : 'bg-slate-800 text-slate-400 hover:text-white'
-                  }`}
+                  onClick={() => setQuickModalOpen(true)}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold transition-all whitespace-nowrap"
+                  title="Open in popup window"
                 >
-                  {risk}
+                  <Maximize2 className="w-3.5 h-3.5 text-indigo-400" />
+                  <span>Quick Window</span>
                 </button>
-              ))}
+                <Link
+                  href="/cash-audit/data"
+                  target="_blank"
+                  className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold transition-all shadow-md shadow-indigo-600/20 whitespace-nowrap"
+                  title="Open full data spreadsheet in a new window"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  <span>Open Full List Window ↗</span>
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -303,7 +341,18 @@ export default function CashTransferAuditDashboard() {
                               </span>
                             </td>
                             <td className="py-3 px-4 text-right">
-                              <ChevronRight className="w-4 h-4 text-slate-500 inline" />
+                              <div className="flex items-center justify-end gap-1.5">
+                                <Link
+                                  href="/cash-audit/data"
+                                  target="_blank"
+                                  onClick={(e) => e.stopPropagation()}
+                                  title={`Open ${d.district} in new standalone window`}
+                                  className="p-1 rounded hover:bg-slate-700/80 text-slate-400 hover:text-indigo-400 transition-colors"
+                                >
+                                  <ExternalLink className="w-3.5 h-3.5" />
+                                </Link>
+                                <ChevronRight className="w-4 h-4 text-slate-500 inline" />
+                              </div>
                             </td>
                           </tr>
                         );
@@ -451,8 +500,21 @@ export default function CashTransferAuditDashboard() {
               </p>
             </div>
 
+            {/* Batch Selector Header & New Window Action */}
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mt-6 mb-3">
+              <span className="text-xs font-bold text-slate-300 uppercase tracking-wider">Select Sample Disbursement Batch:</span>
+              <Link
+                href="/cash-audit/data"
+                target="_blank"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-300 border border-indigo-500/30 text-xs font-semibold transition-colors"
+              >
+                <ExternalLink className="w-3.5 h-3.5" />
+                <span>Open Transaction Ledger in New Window ↗</span>
+              </Link>
+            </div>
+
             {/* Batch Selector */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
               {cvaData.sample_evc_forensic_batches.map((batch, idx) => (
                 <div
                   key={batch.batch_id}
@@ -649,6 +711,123 @@ export default function CashTransferAuditDashboard() {
                   </div>
                 );
               })}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ------------------------------------------------------------- */}
+      {/* QUICK MODAL WINDOW OVERLAY (IN-PAGE POPUP)                    */}
+      {/* ------------------------------------------------------------- */}
+      {quickModalOpen && (
+        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 animate-in fade-in duration-200">
+          <div className="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-6xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
+            
+            {/* Modal Header */}
+            <div className="p-4 sm:p-6 border-b border-slate-800 flex justify-between items-center bg-slate-900/90">
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="text-xs uppercase font-bold tracking-wider text-indigo-400">Master Dataset Window</span>
+                </div>
+                <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                  <FileSpreadsheet className="w-5 h-5 text-indigo-400" />
+                  <span>Somalia 74-District CVA & Gatekeeper Registry</span>
+                </h3>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <Link
+                  href="/cash-audit/data"
+                  target="_blank"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold transition-all shadow"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  <span>Open in Standalone Tab ↗</span>
+                </Link>
+                <button
+                  onClick={() => setQuickModalOpen(false)}
+                  className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+
+            {/* Modal Search Bar */}
+            <div className="p-4 bg-slate-850 border-b border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-3">
+              <div className="relative w-full sm:w-80">
+                <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                <input
+                  type="text"
+                  placeholder="Filter district..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full bg-slate-800 border border-slate-700 rounded-lg pl-9 pr-3 py-1.5 text-xs text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+                />
+              </div>
+              <span className="text-xs text-slate-400 font-mono">
+                Showing {filteredDistricts.length} of {cvaData.districts.length} Districts
+              </span>
+            </div>
+
+            {/* Modal Table Content */}
+            <div className="overflow-y-auto overflow-x-auto flex-1 p-4">
+              <table className="w-full text-left text-xs border-collapse">
+                <thead className="bg-slate-800/80 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
+                  <tr>
+                    <th className="py-2.5 px-3">District</th>
+                    <th className="py-2.5 px-3 text-right">Total Cash (USD)</th>
+                    <th className="py-2.5 px-3 text-right">Mobile Money</th>
+                    <th className="py-2.5 px-3 text-right">Households</th>
+                    <th className="py-2.5 px-3 text-right">IDP Camps</th>
+                    <th className="py-2.5 px-3 text-right">Gatekeeper %</th>
+                    <th className="py-2.5 px-3 text-center">Risk Score</th>
+                    <th className="py-2.5 px-3">Active Implementers</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800 text-slate-300 font-mono">
+                  {filteredDistricts.map(d => (
+                    <tr key={d.district} className="hover:bg-slate-800/50 transition-colors">
+                      <td className="py-2 px-3 font-sans font-bold text-white whitespace-nowrap">{d.district}</td>
+                      <td className="py-2 px-3 text-right font-bold text-slate-100">${d.total_usd_transferred.toLocaleString()}</td>
+                      <td className="py-2 px-3 text-right text-emerald-400">${d.mobile_money_usd.toLocaleString()}</td>
+                      <td className="py-2 px-3 text-right text-slate-300">{d.households_reached.toLocaleString()}</td>
+                      <td className="py-2 px-3 text-right text-slate-300">{d.idp_camps_count}</td>
+                      <td className="py-2 px-3 text-right font-bold">
+                        <span className={d.gatekeeper_prevalence_pct > 75 ? 'text-red-400' : d.gatekeeper_prevalence_pct > 40 ? 'text-amber-400' : 'text-slate-400'}>
+                          {d.gatekeeper_prevalence_pct}%
+                        </span>
+                      </td>
+                      <td className="py-2 px-3 text-center">
+                        <span className={`inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold ${
+                          d.risk_level === 'HIGH'
+                            ? 'bg-red-500/20 text-red-400 border border-red-500/30'
+                            : d.risk_level === 'MEDIUM'
+                            ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
+                            : 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
+                        }`}>
+                          {d.aid_diversion_risk_score}
+                        </span>
+                      </td>
+                      <td className="py-2 px-3 font-sans text-slate-400 max-w-xs truncate" title={d.active_organizations.join(', ')}>
+                        {d.active_organizations.join(', ')}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="p-4 border-t border-slate-800 bg-slate-900 flex justify-between items-center text-xs">
+              <span className="text-slate-500">Source: Somalia Cash Working Group (CWG) & REACH Detailed Site Assessment</span>
+              <button
+                onClick={() => setQuickModalOpen(false)}
+                className="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold"
+              >
+                Close Window
+              </button>
             </div>
           </div>
         </div>

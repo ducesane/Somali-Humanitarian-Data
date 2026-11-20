@@ -2,13 +2,13 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { 
-  Compass, 
-  MapPin, 
-  Building2, 
-  FileText, 
-  Activity, 
-  Menu, 
+import {
+  Compass,
+  MapPin,
+  Building2,
+  FileText,
+  Activity,
+  Menu,
   X,
   ExternalLink,
   FolderDown,
@@ -80,21 +80,20 @@ export default function Navbar() {
   }, [lastScrollY]);
 
   return (
-    <header 
-      className={`sticky top-0 z-50 bg-slate-950/98 backdrop-blur-md border-b border-emerald-900/40 text-white shadow-2xl transition-all duration-300 ease-in-out ${
-        isVisible || isOpen
+    <header
+      className={`sticky top-0 z-50 bg-slate-950/98 backdrop-blur-md border-b border-emerald-900/40 text-white shadow-2xl transition-all duration-300 ease-in-out ${isVisible || isOpen
           ? 'translate-y-0 opacity-100 pointer-events-auto'
           : '-translate-y-full opacity-0 pointer-events-none'
-      }`}
+        }`}
     >
-      
+
       {/* ============================================================== */}
       {/* TIER 1: GLOBAL BRANDING, REAL-TIME STATUS & ACTIONS            */}
       {/* ============================================================== */}
       <div className="border-b border-slate-800/90 bg-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-13 py-2">
-            
+
             {/* Brand Logo & Title */}
             <Link href="/" className="flex items-center gap-3 group">
               <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center shadow-md shadow-emerald-950/50 group-hover:scale-105 transition-transform">
@@ -160,7 +159,7 @@ export default function Navbar() {
       <div className="border-b border-slate-800/70 bg-slate-900/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-1">
-            
+
             {/* Left Category Indicator */}
             <div className="hidden lg:flex items-center gap-1.5 text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0 mr-4">
               <Globe2 className="w-3.5 h-3.5 text-emerald-400" />
@@ -172,27 +171,25 @@ export default function Navbar() {
               {FIELD_TABS.map((tab) => {
                 const Icon = tab.icon;
                 const isActive = pathname === tab.href || (tab.href !== '/' && pathname.startsWith(tab.href));
-                
+
                 return (
                   <Link
                     key={tab.href}
                     href={tab.href}
-                    className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all relative ${
-                      isActive
+                    className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all relative ${isActive
                         ? 'bg-slate-800 text-emerald-300 border border-slate-700 shadow-sm'
                         : 'text-slate-300 hover:text-white hover:bg-slate-800/50'
-                    }`}
+                      }`}
                   >
                     <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-emerald-400' : 'text-slate-400'}`} />
                     <span>{tab.label}</span>
-                    
+
                     {tab.count && (
                       <span
-                        className={`text-[10px] font-mono px-1.5 py-0.2 rounded font-semibold ${
-                          isActive
+                        className={`text-[10px] font-mono px-1.5 py-0.2 rounded font-semibold ${isActive
                             ? 'bg-emerald-950 text-emerald-300 border border-emerald-800/60'
                             : 'bg-slate-950 text-slate-400 border border-slate-800'
-                        }`}
+                          }`}
                       >
                         {tab.count}
                       </span>
@@ -220,7 +217,7 @@ export default function Navbar() {
       <div className="bg-slate-950/90">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-1.5">
-            
+
             {/* Left Category Indicator */}
             <div className="hidden lg:flex items-center gap-1.5 text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0 mr-4">
               <Briefcase className="w-3.5 h-3.5 text-amber-400" />
@@ -232,31 +229,29 @@ export default function Navbar() {
               {PROCUREMENT_TABS.map((tab) => {
                 const Icon = tab.icon;
                 const isActive = pathname.startsWith(tab.href);
-                
+
                 return (
                   <Link
                     key={tab.href}
                     href={tab.href}
-                    className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all relative ${
-                      tab.highlight
+                    className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all relative ${tab.highlight
                         ? 'bg-gradient-to-r from-emerald-600 to-teal-600 text-slate-950 font-bold hover:from-emerald-500 hover:to-teal-500 shadow-sm'
                         : isActive
-                        ? 'bg-slate-800 text-amber-300 border border-slate-700 shadow-sm'
-                        : 'text-slate-300 hover:text-white hover:bg-slate-800/50'
-                    }`}
+                          ? 'bg-slate-800 text-amber-300 border border-slate-700 shadow-sm'
+                          : 'text-slate-300 hover:text-white hover:bg-slate-800/50'
+                      }`}
                   >
                     <Icon className={`w-3.5 h-3.5 ${tab.highlight ? 'text-slate-950' : isActive ? 'text-amber-400' : 'text-slate-400'}`} />
                     <span>{tab.label}</span>
-                    
+
                     {tab.count && (
                       <span
-                        className={`text-[10px] font-mono px-1.5 py-0.2 rounded font-semibold ${
-                          tab.isLive
+                        className={`text-[10px] font-mono px-1.5 py-0.2 rounded font-semibold ${tab.isLive
                             ? 'bg-emerald-950 text-emerald-300 border border-emerald-800/80'
                             : isActive
-                            ? 'bg-amber-950 text-amber-300 border border-amber-800/60'
-                            : 'bg-slate-900 text-slate-400 border border-slate-800'
-                        }`}
+                              ? 'bg-amber-950 text-amber-300 border border-amber-800/60'
+                              : 'bg-slate-900 text-slate-400 border border-slate-800'
+                          }`}
                       >
                         {tab.isLive && <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1 animate-pulse"></span>}
                         {tab.count}
@@ -290,7 +285,7 @@ export default function Navbar() {
       {/* ============================================================== */}
       {isOpen && (
         <div className="md:hidden border-t border-slate-800 bg-slate-950 px-4 pt-3 pb-5 space-y-4">
-          
+
           {/* Pillar I Links */}
           <div className="space-y-1">
             <div className="text-[10px] uppercase font-bold text-slate-500 px-3 py-1 flex items-center gap-1.5 tracking-wider">
@@ -305,11 +300,10 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={`flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold ${
-                    isActive
+                  className={`flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold ${isActive
                       ? 'bg-slate-800 text-emerald-400 border border-slate-700'
                       : 'text-slate-300 hover:bg-slate-900 hover:text-white'
-                  }`}
+                    }`}
                 >
                   <div className="flex items-center gap-2.5">
                     <Icon className="w-4 h-4" />
@@ -339,13 +333,12 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={`flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold ${
-                    item.highlight
+                  className={`flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold ${item.highlight
                       ? 'bg-gradient-to-r from-emerald-600 to-teal-600 text-slate-950 font-bold'
                       : isActive
-                      ? 'bg-slate-800 text-amber-400 border border-slate-700'
-                      : 'text-slate-300 hover:bg-slate-900 hover:text-white'
-                  }`}
+                        ? 'bg-slate-800 text-amber-400 border border-slate-700'
+                        : 'text-slate-300 hover:bg-slate-900 hover:text-white'
+                    }`}
                 >
                   <div className="flex items-center gap-2.5">
                     <Icon className="w-4 h-4" />
