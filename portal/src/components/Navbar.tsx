@@ -36,8 +36,7 @@ const PROCUREMENT_TABS = [
   { href: '/undp-projects', label: 'UNDP Projects', count: '50', icon: FolderDown },
   { href: '/vendors', label: 'Vendors & Contractors', count: '364', icon: ReceiptText },
   { href: '/tenders', label: 'Live Tenders & Awards', count: '47', icon: Radio, isLive: true },
-  { href: '/audit', label: 'Satellite Audit (TPM)', icon: Globe2, badge: 'New' },
-  { href: '/cash-audit', label: 'Cash (CVA) TPM', icon: Smartphone, badge: '$592M' },
+  { href: '/cash-audit', label: 'Cash Programming (CVA)', icon: Smartphone, badge: '$592M' },
   { href: '/dossier-builder', label: 'Proposal Dossier Builder', icon: Sparkles, highlight: true },
   { href: '/pipeline', label: 'Data Pipeline & Status', icon: Activity, badge: 'Live' },
 ];
