@@ -82,11 +82,30 @@ export interface DistrictCVAData {
   total_idp_shelters: number;
 }
 
+const DISTRICT_ALIASES: Record<string, string> = {
+  baidoa: 'baydhaba',
+  kismayo: 'kismaayo',
+  mogadishu: 'banadir',
+  garowe: 'garoowe',
+  hargeisa: 'hargeysa',
+  beletweyne: 'belet weyne',
+  'bulo burto': 'bulo burti',
+  dhusamareb: 'dhuusamarreeb',
+  gaalkacyo: 'galkacyo',
+  galkayo: 'galkacyo',
+  bosaso: 'boosaaso',
+};
+
 export function getDistrictCVA(districtName: string): DistrictCVAData | undefined {
-  const norm = districtName.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const found = (cvaDataRaw.districts as unknown as DistrictCVAData[]).find(
-    (d) => d.district.toLowerCase().replace(/[^a-z0-9]/g, '') === norm
-  );
+  const norm = districtName.toLowerCase().trim();
+  const aliasTarget = DISTRICT_ALIASES[norm] || norm;
+  const strippedAlias = aliasTarget.replace(/[^a-z0-9]/g, '');
+
+  const found = (cvaDataRaw.districts as unknown as DistrictCVAData[]).find((d) => {
+    const dNorm = d.district.toLowerCase().trim();
+    const dStripped = dNorm.replace(/[^a-z0-9]/g, '');
+    return dNorm === norm || dNorm === aliasTarget || dStripped === strippedAlias;
+  });
   return found;
 }
 
