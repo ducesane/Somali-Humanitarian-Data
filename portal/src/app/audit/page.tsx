@@ -12,7 +12,8 @@ import {
   MapPin, 
   Building2,
   TrendingUp,
-  ZoomIn
+  ZoomIn,
+  Smartphone
 } from 'lucide-react';
 import InteractiveAuditViewer from '@/components/InteractiveAuditViewer';
 import BoreholeZoomMap from '@/components/BoreholeZoomMap';
@@ -53,6 +54,14 @@ export default function SatelliteAuditPage() {
 
             {/* Quick Actions */}
             <div className="flex flex-wrap items-center gap-3">
+              <Link
+                href="/cash-audit"
+                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-indigo-950/80 hover:bg-indigo-900/80 border border-indigo-700/60 text-sm font-semibold text-indigo-200 transition-colors shadow-sm"
+              >
+                <Smartphone className="w-4 h-4 text-indigo-400" />
+                <span>Switch to Cash (CVA) TPM</span>
+                <ArrowRight className="w-3.5 h-3.5 text-indigo-400" />
+              </Link>
               <a
                 href="https://www.google.com/maps/@7.1932,47.5284,18z/data=!3m1!1e3"
                 target="_blank"
