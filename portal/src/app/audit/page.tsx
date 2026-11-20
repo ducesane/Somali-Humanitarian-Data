@@ -1,9 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { 
   CheckCircle2, 
-  AlertTriangle, 
   ArrowRight, 
   ExternalLink, 
   FileText, 
@@ -12,13 +10,10 @@ import {
   ShieldCheck, 
   Sparkles, 
   MapPin, 
-  DollarSign, 
-  Calendar, 
   Building2,
-  TrendingUp,
-  Cpu,
-  Download
+  TrendingUp
 } from 'lucide-react';
+import InteractiveAuditViewer from '@/components/InteractiveAuditViewer';
 
 export const metadata = {
   title: 'Independent Satellite Audit (TPM) | Somalia Humanitarian Intelligence',
@@ -38,7 +33,7 @@ export default function SatelliteAuditPage() {
                   Third-Party Monitoring (TPM) Desk Audit
                 </span>
                 <span className="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-slate-900 text-slate-300 border border-slate-700">
-                  Copernicus Sentinel-2 &bull; 10m Multi-Spectral
+                  Google Earth &bull; Sentinel-2 &bull; Sub-Meter
                 </span>
                 <span className="px-3 py-1 rounded-full text-xs font-bold bg-amber-950 text-amber-300 border border-amber-800 flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5" />
@@ -49,12 +44,22 @@ export default function SatelliteAuditPage() {
                 Independent Satellite Change Detection Audit
               </h1>
               <p className="mt-2 text-base text-slate-400 max-w-3xl leading-relaxed">
-                Multi-temporal Earth Observation verification of deep borehole drilling, solar PV pumping station, and auxiliary civil works in Bacadweyn Village, Gaalkacyo District, Mudug Region.
+                Multi-temporal Earth Observation and sub-meter Google Satellite verification of deep borehole drilling, solar PV pumping station, and auxiliary civil works in Bacadweyn Village, Gaalkacyo District, Mudug Region.
               </p>
             </div>
 
             {/* Quick Actions */}
             <div className="flex flex-wrap items-center gap-3">
+              <a
+                href="https://www.google.com/maps/@6.4402,47.3418,17z/data=!3m1!1e3"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-sm font-semibold text-slate-200 transition-colors shadow-sm"
+              >
+                <Globe2 className="w-4 h-4 text-sky-400" />
+                <span>Google Maps View</span>
+                <ExternalLink className="w-3.5 h-3.5 text-slate-500" />
+              </a>
               <Link
                 href="/vendors/hiraal-engineering-and-construction-comp"
                 className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-sm font-semibold text-slate-200 transition-colors shadow-sm"
@@ -128,7 +133,7 @@ export default function SatelliteAuditPage() {
               </div>
               <div>
                 <h2 className="text-lg font-bold text-white">Target Procurement & Audit Parameters</h2>
-                <p className="text-xs text-slate-400">Harmonized UNDP procurement data paired with Copernicus Sentinel-2 satellite telemetry</p>
+                <p className="text-xs text-slate-400">Harmonized UNDP procurement data paired with multi-spectral satellite telemetry</p>
               </div>
             </div>
             <span className="hidden sm:inline-block font-mono text-xs text-emerald-400 bg-emerald-950/70 border border-emerald-800/80 px-3 py-1 rounded-full">
@@ -164,59 +169,76 @@ export default function SatelliteAuditPage() {
             </div>
 
             <div className="space-y-1">
-              <div className="text-xs text-slate-500 font-semibold uppercase">Observation Windows</div>
+              <div className="text-xs text-slate-500 font-semibold uppercase">Observation Telemetry</div>
               <div className="text-xs text-slate-300">
-                <strong className="text-sky-400">T0 Baseline:</strong> 23-May-2026 (Sentinel-2)<br/>
-                <strong className="text-emerald-400">T1 Audit:</strong> 09-Nov-2026 (Sentinel-2)
+                <strong className="text-sky-400">Google Earth:</strong> Sub-Meter Optical (Zoom 18)<br/>
+                <strong className="text-emerald-400">Sentinel-2:</strong> Multi-Spectral BOA Reflectance
               </div>
             </div>
           </div>
         </div>
 
         {/* ------------------------------------------------------------------ */}
-        {/* DOSSIER SECTION 1: OPTICAL CHANGE DETECTION                        */}
+        {/* INTERACTIVE GEOSPATIAL VIEWER (LAYER SELECTOR & SLIDER)            */}
         {/* ------------------------------------------------------------------ */}
         <section className="space-y-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Layers className="w-5 h-5 text-emerald-400" />
+              <h3 className="text-xl font-bold text-white">Live Multi-Layer Map &amp; Before/After Inspector</h3>
+            </div>
+            <span className="text-xs text-slate-400">
+              Interactive Tools &bull; Toggle Satellite Layers
+            </span>
+          </div>
+
+          <InteractiveAuditViewer />
+        </section>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* DOSSIER SECTION 1: OPTICAL CHANGE DETECTION                        */}
+        {/* ------------------------------------------------------------------ */}
+        <section className="space-y-4 pt-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <span className="w-7 h-7 rounded-lg bg-sky-500/20 text-sky-400 font-extrabold text-sm flex items-center justify-center border border-sky-500/30">
                 1
               </span>
               <div>
-                <h3 className="text-xl font-bold text-white">Dossier Page 1: Multi-Temporal Optical Change Detection</h3>
-                <p className="text-xs text-slate-400">Confirmation of surface ground disturbance, heavy rotary rig tracks, and perimeter clearing</p>
+                <h3 className="text-xl font-bold text-white">Figure Ref: FIG-01-OPT — Multi-Source Satellite &amp; Earth Observation Audit</h3>
+                <p className="text-xs text-slate-400">3-Panel Analysis: Regional Infrastructure (Google Hybrid) vs Baseline ($T_0$) vs Completed Compound ($T_1$)</p>
               </div>
             </div>
             <span className="text-xs font-semibold px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-sky-300">
-              Figure Ref: FIG-01-OPT
+              Spacious High-Res Suite
             </span>
           </div>
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl p-2 sm:p-4">
             <img 
               src="/audit/dossier_page1_optical_audit.png" 
-              alt="Page 1: Multi-Temporal Optical Change Detection"
+              alt="Figure Ref: FIG-01-OPT: Multi-Source Satellite & Earth Observation Audit"
               className="w-full h-auto rounded-xl border border-slate-800"
             />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
             <div className="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
-              <h4 className="text-xs font-bold text-sky-400 uppercase tracking-wider mb-1">Baseline State (May 2026)</h4>
+              <h4 className="text-xs font-bold text-sky-400 uppercase tracking-wider mb-1">Panel A: Regional Google Hybrid</h4>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Pre-construction optical imagery verifies an untouched semi-arid rangeland scrub expanse with zero man-made infrastructure, tracks, or excavation pits within 250m.
+                Covers a 2.4 km corridor showing the Bacadweyn settlement, primary Gaalkacyo supply track, and arterial pastoral routes converging on the borehole site.
               </p>
             </div>
             <div className="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
-              <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1">Post-Works Footprint (Nov 2026)</h4>
+              <h4 className="text-xs font-bold text-rose-400 uppercase tracking-wider mb-1">Panel B: Pre-Construction Baseline</h4>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Distinct 1,850 m² clearing footprint with high sub-soil limestone reflectance. Heavy rotary rig compaction lines confirm physical rig presence and civil excavation.
+                Untouched semi-arid scrubland prior to contractor mobilization (May 2026). Zero excavation pits, rig tracks, or structural reflections detected.
               </p>
             </div>
             <div className="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
-              <h4 className="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">TPM Auditor Finding</h4>
+              <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1">Panel C: Sub-Meter Verification</h4>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Zero ghost infrastructure risk. The spatial extent and orientation match contracted LOT3 civil engineering guidelines for Gaalkacyo district.
+                Confirmed 1,850 m² clearing footprint with high sub-soil limestone reflectance, solar PV rack, operator kiosk roof, and water troughs.
               </p>
             </div>
           </div>
@@ -232,19 +254,19 @@ export default function SatelliteAuditPage() {
                 2
               </span>
               <div>
-                <h3 className="text-xl font-bold text-white">Dossier Page 2: Detailed Structural &amp; BOQ Alignment Audit</h3>
-                <p className="text-xs text-slate-400">Sub-meter component extraction: Solar PV mounting rack, operator kiosk zinc roof, and water troughs</p>
+                <h3 className="text-xl font-bold text-white">Figure Ref: FIG-02-BOQ — Detailed Structural Verification &amp; BOQ Alignment</h3>
+                <p className="text-xs text-slate-400">Sub-meter optical component extraction: Solar PV mounting rack, operator kiosk zinc roof, and water troughs</p>
               </div>
             </div>
             <span className="text-xs font-semibold px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-amber-300">
-              Figure Ref: FIG-02-BOQ
+              Component Extraction
             </span>
           </div>
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl p-2 sm:p-4">
             <img 
               src="/audit/dossier_page2_structural_audit.png" 
-              alt="Page 2: Detailed Structural Verification & BOQ Alignment"
+              alt="Figure Ref: FIG-02-BOQ: Detailed Structural Verification & BOQ Alignment"
               className="w-full h-auto rounded-xl border border-slate-800"
             />
           </div>
@@ -262,31 +284,31 @@ export default function SatelliteAuditPage() {
               </thead>
               <tbody className="divide-y divide-slate-800 font-mono">
                 <tr>
-                  <td className="px-4 py-3 font-semibold text-white">Deep Borehole Casing &amp; Apron</td>
+                  <td className="px-4 py-3 font-semibold text-white">[1] Deep Borehole Casing &amp; Apron</td>
                   <td className="px-4 py-3 text-slate-400">160–180m depth; concrete apron collar</td>
                   <td className="px-4 py-3 text-emerald-400">Compact circular concrete apron verified at center</td>
                   <td className="px-4 py-3 text-right text-emerald-400 font-bold">100%</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-3 font-semibold text-white">Solar PV Array Sub-Station</td>
+                  <td className="px-4 py-3 font-semibold text-white">[2] Solar PV Array Sub-Station</td>
                   <td className="px-4 py-3 text-slate-400">6.5 kWp (24 panels) elevated tilt-rack</td>
                   <td className="px-4 py-3 text-amber-300">High-albedo signature with 18° S tilt azimuth</td>
                   <td className="px-4 py-3 text-right text-emerald-400 font-bold">100%</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-3 font-semibold text-white">Control Kiosk &amp; Pump House</td>
+                  <td className="px-4 py-3 font-semibold text-white">[3] Control Kiosk &amp; Pump House</td>
                   <td className="px-4 py-3 text-slate-400">4x4m masonry with galvanized corrugated roof</td>
                   <td className="px-4 py-3 text-sky-400">+48.2% specular reflectance surge over ambient soil</td>
                   <td className="px-4 py-3 text-right text-emerald-400 font-bold">100%</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-3 font-semibold text-white">Elevated Water Tank Tower</td>
+                  <td className="px-4 py-3 font-semibold text-white">[4] Elevated Water Tank Tower</td>
                   <td className="px-4 py-3 text-slate-400">25 m³ storage tank on 6m elevated stand</td>
                   <td className="px-4 py-3 text-slate-300">Westward morning shadow cast confirms vertical elevation</td>
                   <td className="px-4 py-3 text-right text-emerald-400 font-bold">90%</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-3 font-semibold text-white">Livestock Drinking Trough</td>
+                  <td className="px-4 py-3 font-semibold text-white">[5] Livestock Drinking Trough</td>
                   <td className="px-4 py-3 text-slate-400">20m reinforced concrete double trough</td>
                   <td className="px-4 py-3 text-emerald-400">Linear structure confirmed along southeast drainage axis</td>
                   <td className="px-4 py-3 text-right text-emerald-400 font-bold">95%</td>
@@ -306,19 +328,19 @@ export default function SatelliteAuditPage() {
                 3
               </span>
               <div>
-                <h3 className="text-xl font-bold text-white">Dossier Page 3: Hydrological Impact &amp; NDVI Vegetation Plume</h3>
+                <h3 className="text-xl font-bold text-white">Figure Ref: FIG-03-NDVI — Hydrological Impact &amp; NDVI Vegetation Plume</h3>
                 <p className="text-xs text-slate-400">Scientific verification that the borehole is actively discharging potable water and utilized by pastoralists</p>
               </div>
             </div>
             <span className="text-xs font-semibold px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-emerald-300">
-              Figure Ref: FIG-03-NDVI
+              Hydrological Proof
             </span>
           </div>
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl p-2 sm:p-4">
             <img 
               src="/audit/dossier_page3_ndvi_hydrological.png" 
-              alt="Page 3: Hydrological Impact & NDVI Analysis"
+              alt="Figure Ref: FIG-03-NDVI: Hydrological Impact & NDVI Analysis"
               className="w-full h-auto rounded-xl border border-slate-800"
             />
           </div>
@@ -351,7 +373,7 @@ export default function SatelliteAuditPage() {
                 Sell Remote Satellite Verification to International TPM Primes
               </h3>
               <p className="text-sm text-slate-300 max-w-2xl leading-relaxed">
-                Firms like <strong>Integrity Global</strong>, <strong>Altai Consulting</strong>, and <strong>World Bank Project Implementation Units (PIUs)</strong> pay <strong>$500 to $1,500 per site</strong> for independent desk-based satellite audit dossiers like this. You can generate and sell these dossiers 100% from your laptop using open-source Sentinel-2 telemetry and our procurement database.
+                Firms like <strong>Integrity Global</strong>, <strong>Altai Consulting</strong>, and <strong>World Bank Project Implementation Units (PIUs)</strong> pay <strong>$500 to $1,500 per site</strong> for independent desk-based satellite audit dossiers like this. You can generate and sell these dossiers 100% from your laptop using open-source Sentinel-2 telemetry, Google Earth sub-meter imagery, and our procurement database.
               </p>
             </div>
 
