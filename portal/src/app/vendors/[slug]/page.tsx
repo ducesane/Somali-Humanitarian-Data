@@ -67,6 +67,8 @@ export default async function VendorDetailPage({ params }: VendorPageProps) {
   const operatingLocations = (vendor as any).operating_locations || [];
   const firstActivity = (vendor as any).first_activity || 'N/A';
   const latestActivity = (vendor as any).latest_activity || vendor.latest_activity || 'N/A';
+  const latestOrder = vendor.orders.find((o: any) => o.order_date === latestActivity) || vendor.orders[0];
+  const firstOrder = vendor.orders.find((o: any) => o.order_date === firstActivity) || vendor.orders[vendor.orders.length - 1];
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
@@ -104,15 +106,35 @@ export default async function VendorDetailPage({ params }: VendorPageProps) {
               </span>
             )}
             {latestActivity !== 'N/A' && (
-              <span className="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300">
+              <span className="flex flex-wrap items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300">
                 <Calendar className="w-3.5 h-3.5 text-emerald-400" />
                 Latest Disbursement: <strong className="text-white font-mono">{formatDate(latestActivity)}</strong>
+                {latestOrder && (
+                  <span className="text-emerald-400 font-mono text-xs">
+                    (${Number(latestOrder.amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })})
+                  </span>
+                )}
+                {latestOrder && (
+                  <span className="text-slate-400 text-[11px] font-normal hidden sm:inline">
+                    &bull; {latestOrder.project_title}
+                  </span>
+                )}
               </span>
             )}
             {firstActivity !== 'N/A' && (
-              <span className="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-slate-800/80 text-slate-400">
+              <span className="flex flex-wrap items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-slate-800/80 text-slate-400">
                 <Clock className="w-3.5 h-3.5 text-slate-500" />
-                First Award: {formatDate(firstActivity)}
+                First Award: <strong className="text-slate-200 font-mono">{formatDate(firstActivity)}</strong>
+                {firstOrder && (
+                  <span className="text-slate-300 font-mono text-xs">
+                    (${Number(firstOrder.amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })})
+                  </span>
+                )}
+                {firstOrder && (
+                  <span className="text-slate-500 text-[11px] font-normal hidden sm:inline">
+                    &bull; {firstOrder.project_title}
+                  </span>
+                )}
               </span>
             )}
           </div>

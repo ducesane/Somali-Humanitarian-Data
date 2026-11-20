@@ -9,7 +9,8 @@ import {
   Calendar, 
   Download, 
   ArrowUpDown,
-  ExternalLink
+  ExternalLink,
+  FolderGit2
 } from 'lucide-react';
 
 interface OrderItem {
@@ -29,7 +30,7 @@ interface VendorWorkExplorerProps {
 }
 
 function formatDate(dateStr: string): string {
-  if (!dateStr) return 'N/A';
+  if (!dateStr || dateStr === 'N/A') return 'N/A';
   try {
     const parts = dateStr.split('-');
     if (parts.length === 3) {
@@ -37,8 +38,8 @@ function formatDate(dateStr: string): string {
       const monthIdx = parseInt(parts[1], 10) - 1;
       const day = parseInt(parts[2], 10);
       const months = [
-        'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-        'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'
       ];
       if (monthIdx >= 0 && monthIdx < 12) {
         const dayStr = day < 10 ? `0${day}` : `${day}`;
@@ -59,7 +60,7 @@ function cleanDescription(desc: string): string {
   } else if (d.startsWith('b"') && d.endsWith('"')) {
     d = d.slice(2, -1);
   }
-  return d.trim();
+  return d.trim() || 'Standard Procurement';
 }
 
 export default function VendorWorkExplorer({
@@ -69,9 +70,10 @@ export default function VendorWorkExplorer({
 }: VendorWorkExplorerProps) {
   const [search, setSearch] = useState('');
   const [selectedYear, setSelectedYear] = useState('ALL');
+  const [selectedProject, setSelectedProject] = useState('ALL');
   const [sortBy, setSortBy] = useState<'DATE_DESC' | 'DATE_ASC' | 'AMOUNT_DESC' | 'AMOUNT_ASC'>('DATE_DESC');
 
-  // Available unique years in these orders
+  // Available unique years
   const availableYears = useMemo(() => {
     const yrs = new Set<string>();
     orders.forEach((o) => {
@@ -79,6 +81,20 @@ export default function VendorWorkExplorer({
       if (yr && yr.length === 4) yrs.add(yr);
     });
     return Array.from(yrs).sort().reverse();
+  }, [orders]);
+
+  // Available unique projects
+  const availableProjects = useMemo(() => {
+    const pMap = new Map<string, { id: string; title: string; count: number; total: number }>();
+    orders.forEach((o) => {
+      if (!pMap.has(o.project_id)) {
+        pMap.set(o.project_id, { id: o.project_id, title: o.project_title, count: 0, total: 0 });
+      }
+      const entry = pMap.get(o.project_id)!;
+      entry.count += 1;
+      entry.total += o.amount;
+    });
+    return Array.from(pMap.values()).sort((a, b) => b.total - a.total);
   }, [orders]);
 
   // Filter and sort orders
@@ -94,8 +110,9 @@ export default function VendorWorkExplorer({
 
         const yr = (o.order_date || '').split('-')[0];
         const matchYear = selectedYear === 'ALL' || yr === selectedYear;
+        const matchProj = selectedProject === 'ALL' || o.project_id === selectedProject;
 
-        return matchSearch && matchYear;
+        return matchSearch && matchYear && matchProj;
       })
       .sort((a, b) => {
         if (sortBy === 'DATE_DESC') return (b.order_date || '').localeCompare(a.order_date || '');
@@ -104,7 +121,7 @@ export default function VendorWorkExplorer({
         if (sortBy === 'AMOUNT_ASC') return a.amount - b.amount;
         return 0;
       });
-  }, [orders, search, selectedYear, sortBy]);
+  }, [orders, search, selectedYear, selectedProject, sortBy]);
 
   const filteredTotal = useMemo(() => {
     return filteredOrders.reduce((acc, o) => acc + o.amount, 0);
@@ -164,16 +181,37 @@ export default function VendorWorkExplorer({
 
       {/* Filter and Search Bar */}
       <div className="p-4 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col lg:flex-row gap-3 items-center justify-between">
-        <div className="relative w-full lg:w-80">
+        <div className="relative w-full lg:w-72">
           <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
           <input
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search PO ID, description, project, date..."
+            placeholder="Search PO ID, description, date..."
             className="w-full pl-10 pr-4 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500"
           />
         </div>
+
+        {/* Project Selector (if vendor worked on > 1 project) */}
+        {availableProjects.length > 1 && (
+          <div className="flex items-center gap-1.5 w-full lg:w-auto">
+            <span className="text-[10px] uppercase font-bold text-slate-400 flex items-center gap-1 whitespace-nowrap">
+              <FolderGit2 className="w-3 h-3 text-emerald-400" /> Project:
+            </span>
+            <select
+              value={selectedProject}
+              onChange={(e) => setSelectedProject(e.target.value)}
+              className="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-xs text-slate-300 font-semibold focus:outline-none focus:border-emerald-500 max-w-[240px] truncate"
+            >
+              <option value="ALL">All Projects ({orders.length} orders)</option>
+              {availableProjects.map((p) => (
+                <option key={p.id} value={p.id}>
+                  {p.title} ({p.count} orders &bull; ${p.total.toLocaleString()})
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
 
         {/* Year Pills */}
         <div className="flex items-center gap-1.5 w-full lg:w-auto overflow-x-auto pb-1 lg:pb-0">
@@ -188,7 +226,7 @@ export default function VendorWorkExplorer({
                 : 'bg-slate-950 text-slate-400 hover:text-white border border-slate-800'
             }`}
           >
-            All Years ({orders.length})
+            All Years
           </button>
           {availableYears.map((yr) => (
             <button
@@ -229,66 +267,56 @@ export default function VendorWorkExplorer({
           <thead className="bg-slate-950 text-xs font-bold uppercase tracking-wider text-slate-400 border-b border-slate-800">
             <tr>
               <th className="py-3.5 px-4 whitespace-nowrap">PO ID</th>
-              <th className="py-3.5 px-4 min-w-[200px]">Project</th>
+              <th className="py-3.5 px-4 min-w-[220px]">Project</th>
               <th className="py-3.5 px-4 min-w-[300px]">Description of Work Done</th>
               <th className="py-3.5 px-4 whitespace-nowrap">Disbursement Date</th>
               <th className="py-3.5 px-4 text-right whitespace-nowrap">Amount (USD)</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-slate-800/70 font-mono text-xs">
+          <tbody className="divide-y divide-slate-800/70 text-xs">
             {filteredOrders.length > 0 ? (
-              filteredOrders.map((po, idx) => {
-                const yr = (po.order_date || '').split('-')[0];
-                return (
-                  <tr 
-                    key={`${po.order_id}-${idx}`}
-                    className="hover:bg-slate-800/50 transition-colors"
-                  >
-                    {/* PO ID */}
-                    <td className="py-3.5 px-4 font-bold text-emerald-400 whitespace-nowrap">
-                      {po.order_id}
-                    </td>
+              filteredOrders.map((po, idx) => (
+                <tr 
+                  key={`${po.order_id}-${idx}`}
+                  className="hover:bg-slate-800/50 transition-colors"
+                >
+                  {/* PO ID */}
+                  <td className="py-3.5 px-4 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                    {po.order_id}
+                  </td>
 
-                    {/* Project */}
-                    <td className="py-3.5 px-4 font-sans text-xs">
-                      <Link
-                        href={`/undp-projects/${po.project_id}`}
-                        className="font-bold text-slate-200 hover:text-emerald-400 transition-colors line-clamp-1 block"
-                        title={po.project_title}
-                      >
-                        {po.project_title}
-                      </Link>
-                      <span className="text-[10px] text-slate-500 font-mono block">
-                        ID: {po.project_id}
-                      </span>
-                    </td>
+                  {/* Project with clean spacing */}
+                  <td className="py-3.5 px-4 font-sans text-xs">
+                    <Link
+                      href={`/undp-projects/${po.project_id}`}
+                      className="font-bold text-slate-200 hover:text-emerald-400 transition-colors line-clamp-1 block"
+                      title={po.project_title}
+                    >
+                      {po.project_title}
+                    </Link>
+                    <span className="text-[11px] text-slate-500 font-mono mt-0.5 block">
+                      Project ID: {po.project_id}
+                    </span>
+                  </td>
 
-                    {/* Description */}
-                    <td className="py-3.5 px-4 font-sans text-slate-300">
-                      {cleanDescription(po.description)}
-                    </td>
+                  {/* Description */}
+                  <td className="py-3.5 px-4 font-sans text-slate-300">
+                    {cleanDescription(po.description)}
+                  </td>
 
-                    {/* Date with Year Badge */}
-                    <td className="py-3.5 px-4 font-sans whitespace-nowrap">
-                      <div className="flex items-center gap-2">
-                        <span className="font-semibold text-slate-200">
-                          {formatDate(po.order_date)}
-                        </span>
-                        {yr && (
-                          <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-800 text-slate-400 font-mono">
-                            {yr}
-                          </span>
-                        )}
-                      </div>
-                    </td>
+                  {/* Clean Formatted Date without duplicate year badge */}
+                  <td className="py-3.5 px-4 font-sans whitespace-nowrap">
+                    <span className="font-semibold text-slate-200 font-mono">
+                      {formatDate(po.order_date)}
+                    </span>
+                  </td>
 
-                    {/* Amount */}
-                    <td className="py-3.5 px-4 font-bold text-right text-emerald-400 whitespace-nowrap font-mono text-sm">
-                      ${Number(po.amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                    </td>
-                  </tr>
-                );
-              })
+                  {/* Amount */}
+                  <td className="py-3.5 px-4 font-bold text-right text-emerald-400 whitespace-nowrap font-mono text-sm">
+                    ${Number(po.amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                  </td>
+                </tr>
+              ))
             ) : (
               <tr>
                 <td colSpan={5} className="py-8 text-center text-slate-500 font-sans text-xs">
