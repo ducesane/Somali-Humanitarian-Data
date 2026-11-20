@@ -66,16 +66,21 @@ export default function NGOsDirectoryPage() {
               <div className="flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-slate-500" />
                 <span>
-                  Present in <strong>{ngo.districts_present?.length || 0} districts</strong> ({ngo.regions_present?.length || 0} regions)
+                  Present in <strong>{(ngo.districts?.length || ngo.districts_count || 0)} districts</strong> ({(ngo.regions?.length || 0)} regions)
                 </span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Layers className="w-3.5 h-3.5 text-slate-500" />
                 <span className="truncate">
-                  {ngo.clusters_active?.slice(0, 3).join(', ')}
-                  {(ngo.clusters_active?.length || 0) > 3 && ` +${(ngo.clusters_active?.length || 0) - 3}`}
+                  {(ngo.clusters || ngo.clusters_active || []).slice(0, 3).join(', ')}
+                  {((ngo.clusters || ngo.clusters_active || []).length > 3) && ` +${(ngo.clusters || ngo.clusters_active || []).length - 3}`}
                 </span>
               </div>
+              {(ngo.shf_budget || 0) > 0 && (
+                <div className="text-[11px] font-mono text-emerald-400 font-semibold pt-1">
+                  SHF Grant: ${(ngo.shf_budget || 0).toLocaleString()}
+                </div>
+              )}
             </div>
 
             {/* Quick Action Button */}

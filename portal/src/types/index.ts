@@ -44,9 +44,15 @@ export interface NGOData {
   name: string;
   type: 'NNGO' | 'INGO' | 'UN' | 'Government';
   total_activities: number;
-  districts_present: string[];
-  regions_present: string[];
-  clusters_active: string[];
+  districts: string[];
+  districts_count?: number;
+  regions: string[];
+  clusters: string[];
+  shf_budget?: number;
+  // Fallback aliases for backwards compatibility
+  districts_present?: string[];
+  regions_present?: string[];
+  clusters_active?: string[];
   shf_allocated_total?: number;
 }
 

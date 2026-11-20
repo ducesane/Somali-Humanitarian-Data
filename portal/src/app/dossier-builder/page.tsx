@@ -229,6 +229,17 @@ function DossierBuilderContent() {
     );
   }, [district, selectedNgoName]);
 
+  const ngoDistrictsCount = useMemo(() => {
+    return ngo.districts?.length || ngo.districts_count || (ngo as any).districts_present?.length || 0;
+  }, [ngo]);
+
+  const ngoDistrictsList = useMemo(() => {
+    const dList = ngo.districts || (ngo as any).districts_present || [];
+    if (dList.length === 0) return '';
+    if (dList.length <= 4) return dList.join(', ');
+    return `${dList.slice(0, 4).join(', ')} +${dList.length - 4} more`;
+  }, [ngo]);
+
   // Peers active in the selected cluster in this district
   const peersInCluster = useMemo(() => {
     if (!district?.organizations) return [];
@@ -678,7 +689,7 @@ function DossierBuilderContent() {
             4. Implementing Partner Track Record &amp; Operational Capacity
           </h3>
           <p className="text-sm text-slate-300 print:text-slate-800 leading-relaxed">
-            <strong>{ngo.name}</strong> ({ngo.type}) maintains verified operational credentials in Somalia, currently executing <strong>{ngo.total_activities} frontline actions</strong> across <strong>{ngo.districts_present?.length || 0} districts</strong> nationwide.
+            <strong>{ngo.name}</strong> ({ngo.type}) maintains verified operational credentials in Somalia, currently executing <strong>{ngo.total_activities} frontline actions</strong> across <strong>{ngoDistrictsCount} district{ngoDistrictsCount === 1 ? '' : 's'}</strong> {ngoDistrictsList ? `(${ngoDistrictsList})` : ''} nationwide.
           </p>
 
           {localOrgData ? (
@@ -701,7 +712,7 @@ function DossierBuilderContent() {
                 Regional Deployment &amp; Expansion Capacity:
               </span>
               <p className="text-slate-400 print:text-slate-700 leading-relaxed">
-                While {ngo.name} is expanding its footprint directly into {district.district}, its extensive operations across {ngo.districts_present?.length || 0} neighboring districts provide proven technical protocols, established community elder negotiation networks, and rapid deployment supply chains ready to mobilize immediately upon grant award.
+                While {ngo.name} is expanding its footprint directly into {district.district}, its verified operations across {ngoDistrictsCount} neighboring district{ngoDistrictsCount === 1 ? '' : 's'} {ngoDistrictsList ? `(${ngoDistrictsList})` : ''} provide proven technical protocols, established community elder negotiation networks, and rapid deployment supply chains ready to mobilize immediately upon grant award.
               </p>
             </div>
           )}
