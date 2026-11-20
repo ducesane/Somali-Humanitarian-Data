@@ -11,9 +11,11 @@ import {
   Sparkles, 
   MapPin, 
   Building2,
-  TrendingUp
+  TrendingUp,
+  ZoomIn
 } from 'lucide-react';
 import InteractiveAuditViewer from '@/components/InteractiveAuditViewer';
+import BoreholeZoomMap from '@/components/BoreholeZoomMap';
 
 export const metadata = {
   title: 'Independent Satellite Audit (TPM) | Somalia Humanitarian Intelligence',
@@ -33,7 +35,7 @@ export default function SatelliteAuditPage() {
                   Third-Party Monitoring (TPM) Desk Audit
                 </span>
                 <span className="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-slate-900 text-slate-300 border border-slate-700">
-                  Google Earth &bull; Sentinel-2 &bull; Sub-Meter
+                  Google Earth &bull; Zoom 20 &bull; Sub-Meter
                 </span>
                 <span className="px-3 py-1 rounded-full text-xs font-bold bg-amber-950 text-amber-300 border border-amber-800 flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5" />
@@ -124,6 +126,35 @@ export default function SatelliteAuditPage() {
       {/* Main Content Area */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
         
+        {/* ------------------------------------------------------------------ */}
+        {/* FEATURED: INTERACTIVE BOREHOLE ULTRA-ZOOM MAP                     */}
+        {/* ------------------------------------------------------------------ */}
+        <section className="space-y-3">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
+                <ZoomIn className="w-4 h-4 text-blue-400" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                  <span>Interactive Borehole Zoom Map (Post-Installation)</span>
+                  <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-blue-950 text-blue-400 border border-blue-800">
+                    Zoom Down to Level 20
+                  </span>
+                </h3>
+                <p className="text-xs text-slate-400">
+                  Inspect the physical installation in high definition: zoom in with mouse wheel or presets to see the wellhead apron, solar rack, and animal trough
+                </p>
+              </div>
+            </div>
+            <span className="text-xs font-mono text-emerald-400 bg-emerald-950/70 border border-emerald-800/80 px-3 py-1 rounded-full hidden sm:inline-block">
+              Coordinates: 6.44020° N, 47.34180° E
+            </span>
+          </div>
+
+          <BoreholeZoomMap initialZoom={18} />
+        </section>
+
         {/* Project & Contract Metadata Card */}
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl">
           <div className="flex items-center justify-between border-b border-slate-800 pb-4 mb-5">
@@ -132,7 +163,7 @@ export default function SatelliteAuditPage() {
                 <ShieldCheck className="w-5 h-5 text-emerald-400" />
               </div>
               <div>
-                <h2 className="text-lg font-bold text-white">Target Procurement & Audit Parameters</h2>
+                <h2 className="text-lg font-bold text-white">Target Procurement &amp; Audit Parameters</h2>
                 <p className="text-xs text-slate-400">Harmonized UNDP procurement data paired with multi-spectral satellite telemetry</p>
               </div>
             </div>
@@ -171,7 +202,7 @@ export default function SatelliteAuditPage() {
             <div className="space-y-1">
               <div className="text-xs text-slate-500 font-semibold uppercase">Observation Telemetry</div>
               <div className="text-xs text-slate-300">
-                <strong className="text-sky-400">Google Earth:</strong> Sub-Meter Optical (Zoom 18)<br/>
+                <strong className="text-sky-400">Google Earth:</strong> Sub-Meter Optical (Zoom 18-20)<br/>
                 <strong className="text-emerald-400">Sentinel-2:</strong> Multi-Spectral BOA Reflectance
               </div>
             </div>
@@ -185,7 +216,7 @@ export default function SatelliteAuditPage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Layers className="w-5 h-5 text-emerald-400" />
-              <h3 className="text-xl font-bold text-white">Live Multi-Layer Map &amp; Before/After Inspector</h3>
+              <h3 className="text-xl font-bold text-white">Multi-Layer Comparison Suite &amp; Before/After Wipe Slider</h3>
             </div>
             <span className="text-xs text-slate-400">
               Interactive Tools &bull; Toggle Satellite Layers
