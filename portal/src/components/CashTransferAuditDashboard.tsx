@@ -31,6 +31,7 @@ import {
   FileSpreadsheet
 } from 'lucide-react';
 import cvaData from '@/data/somalia_cva_audit_data.json';
+import rawData from '@/data/somalia_raw_cwg_records.json';
 
 interface DistrictItem {
   district: string;
@@ -61,6 +62,25 @@ export default function CashTransferAuditDashboard() {
   const [selectedDistrict, setSelectedDistrict] = useState<DistrictItem>(cvaData.districts[0] as DistrictItem);
   const [selectedBatchIndex, setSelectedBatchIndex] = useState(0);
   const [quickModalOpen, setQuickModalOpen] = useState(false);
+  const [modalTab, setModalTab] = useState<'cwg' | 'reach' | 'districts'>('cwg');
+  const [modalSearch, setModalSearch] = useState('');
+
+  const modalFilteredCwg = useMemo(() => {
+    return rawData.real_cwg_transfers.filter(r => 
+      modalSearch === '' || 
+      r.organization.toLowerCase().includes(modalSearch.toLowerCase()) ||
+      r.district.toLowerCase().includes(modalSearch.toLowerCase()) ||
+      r.settlement.toLowerCase().includes(modalSearch.toLowerCase())
+    ).slice(0, 100);
+  }, [modalSearch]);
+
+  const modalFilteredReach = useMemo(() => {
+    return rawData.real_reach_settlements.filter(r => 
+      modalSearch === '' || 
+      r.district.toLowerCase().includes(modalSearch.toLowerCase()) ||
+      r.management_structure.toLowerCase().includes(modalSearch.toLowerCase())
+    ).slice(0, 100);
+  }, [modalSearch]);
 
   // Filter districts
   const filteredDistricts = useMemo(() => {
@@ -728,11 +748,11 @@ export default function CashTransferAuditDashboard() {
               <div>
                 <div className="flex items-center gap-2 mb-1">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                  <span className="text-xs uppercase font-bold tracking-wider text-indigo-400">Master Dataset Window</span>
+                  <span className="text-xs uppercase font-bold tracking-wider text-emerald-400">100% Real UN / NGO Raw Data</span>
                 </div>
                 <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                  <FileSpreadsheet className="w-5 h-5 text-indigo-400" />
-                  <span>Somalia 74-District CVA & Gatekeeper Registry</span>
+                  <FileSpreadsheet className="w-5 h-5 text-emerald-400" />
+                  <span>Somalia Real Cash & IDP Camp Master Data Window</span>
                 </h3>
               </div>
 
@@ -740,10 +760,10 @@ export default function CashTransferAuditDashboard() {
                 <Link
                   href="/cash-audit/data"
                   target="_blank"
-                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold transition-all shadow"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-slate-950 text-xs font-bold transition-all shadow"
                 >
                   <ExternalLink className="w-3.5 h-3.5" />
-                  <span>Open in Standalone Tab ↗</span>
+                  <span>Open Standalone Window ↗</span>
                 </Link>
                 <button
                   onClick={() => setQuickModalOpen(false)}
@@ -754,69 +774,155 @@ export default function CashTransferAuditDashboard() {
               </div>
             </div>
 
-            {/* Modal Search Bar */}
+            {/* Modal Navigation Tabs & Search */}
             <div className="p-4 bg-slate-850 border-b border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-3">
-              <div className="relative w-full sm:w-80">
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setModalTab('cwg')}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                    modalTab === 'cwg' ? 'bg-emerald-600 text-slate-950' : 'bg-slate-800 text-slate-400 hover:text-white'
+                  }`}
+                >
+                  Real CWG Transfers ({modalFilteredCwg.length})
+                </button>
+                <button
+                  onClick={() => setModalTab('reach')}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                    modalTab === 'reach' ? 'bg-emerald-600 text-slate-950' : 'bg-slate-800 text-slate-400 hover:text-white'
+                  }`}
+                >
+                  Real REACH Settlements ({modalFilteredReach.length})
+                </button>
+                <button
+                  onClick={() => setModalTab('districts')}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                    modalTab === 'districts' ? 'bg-emerald-600 text-slate-950' : 'bg-slate-800 text-slate-400 hover:text-white'
+                  }`}
+                >
+                  District Summary (74)
+                </button>
+              </div>
+
+              <div className="relative w-full sm:w-72">
                 <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
                 <input
                   type="text"
-                  placeholder="Filter district..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-lg pl-9 pr-3 py-1.5 text-xs text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+                  placeholder="Filter real records..."
+                  value={modalSearch}
+                  onChange={(e) => setModalSearch(e.target.value)}
+                  className="w-full bg-slate-800 border border-slate-700 rounded-lg pl-9 pr-3 py-1.5 text-xs text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-500"
                 />
               </div>
-              <span className="text-xs text-slate-400 font-mono">
-                Showing {filteredDistricts.length} of {cvaData.districts.length} Districts
-              </span>
             </div>
 
             {/* Modal Table Content */}
             <div className="overflow-y-auto overflow-x-auto flex-1 p-4">
-              <table className="w-full text-left text-xs border-collapse">
-                <thead className="bg-slate-800/80 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
-                  <tr>
-                    <th className="py-2.5 px-3">District</th>
-                    <th className="py-2.5 px-3 text-right">Total Cash (USD)</th>
-                    <th className="py-2.5 px-3 text-right">Mobile Money</th>
-                    <th className="py-2.5 px-3 text-right">Households</th>
-                    <th className="py-2.5 px-3 text-right">IDP Camps</th>
-                    <th className="py-2.5 px-3 text-right">Gatekeeper %</th>
-                    <th className="py-2.5 px-3 text-center">Risk Score</th>
-                    <th className="py-2.5 px-3">Active Implementers</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-800 text-slate-300 font-mono">
-                  {filteredDistricts.map(d => (
-                    <tr key={d.district} className="hover:bg-slate-800/50 transition-colors">
-                      <td className="py-2 px-3 font-sans font-bold text-white whitespace-nowrap">{d.district}</td>
-                      <td className="py-2 px-3 text-right font-bold text-slate-100">${d.total_usd_transferred.toLocaleString()}</td>
-                      <td className="py-2 px-3 text-right text-emerald-400">${d.mobile_money_usd.toLocaleString()}</td>
-                      <td className="py-2 px-3 text-right text-slate-300">{d.households_reached.toLocaleString()}</td>
-                      <td className="py-2 px-3 text-right text-slate-300">{d.idp_camps_count}</td>
-                      <td className="py-2 px-3 text-right font-bold">
-                        <span className={d.gatekeeper_prevalence_pct > 75 ? 'text-red-400' : d.gatekeeper_prevalence_pct > 40 ? 'text-amber-400' : 'text-slate-400'}>
-                          {d.gatekeeper_prevalence_pct}%
-                        </span>
-                      </td>
-                      <td className="py-2 px-3 text-center">
-                        <span className={`inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold ${
-                          d.risk_level === 'HIGH'
-                            ? 'bg-red-500/20 text-red-400 border border-red-500/30'
-                            : d.risk_level === 'MEDIUM'
-                            ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
-                            : 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
-                        }`}>
-                          {d.aid_diversion_risk_score}
-                        </span>
-                      </td>
-                      <td className="py-2 px-3 font-sans text-slate-400 max-w-xs truncate" title={d.active_organizations.join(', ')}>
-                        {d.active_organizations.join(', ')}
-                      </td>
+              {modalTab === 'cwg' && (
+                <table className="w-full text-left text-xs border-collapse">
+                  <thead className="bg-slate-800/80 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
+                    <tr>
+                      <th className="py-2.5 px-3">Record ID</th>
+                      <th className="py-2.5 px-3">Organization</th>
+                      <th className="py-2.5 px-3">Region</th>
+                      <th className="py-2.5 px-3">District</th>
+                      <th className="py-2.5 px-3">Settlement</th>
+                      <th className="py-2.5 px-3">Mechanism</th>
+                      <th className="py-2.5 px-3 text-right">Value/HH</th>
+                      <th className="py-2.5 px-3 text-right">Total Transferred</th>
+                      <th className="py-2.5 px-3 text-right">Households</th>
+                      <th className="py-2.5 px-3">Delivery Date</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody className="divide-y divide-slate-800 text-slate-300 font-mono">
+                    {modalFilteredCwg.map(r => (
+                      <tr key={r.record_id} className="hover:bg-slate-800/50 transition-colors">
+                        <td className="py-2 px-3 text-slate-500">{r.record_id}</td>
+                        <td className="py-2 px-3 font-sans font-bold text-white whitespace-nowrap">{r.organization}</td>
+                        <td className="py-2 px-3 font-sans text-slate-300">{r.region}</td>
+                        <td className="py-2 px-3 font-sans text-slate-200">{r.district}</td>
+                        <td className="py-2 px-3 font-sans text-slate-400">{r.settlement}</td>
+                        <td className="py-2 px-3 font-sans text-emerald-400">{r.mechanism}</td>
+                        <td className="py-2 px-3 text-right font-bold text-slate-200">{r.transfer_value_usd > 0 ? `$${r.transfer_value_usd.toFixed(0)}` : '—'}</td>
+                        <td className="py-2 px-3 text-right font-bold text-emerald-400 font-mono">${r.total_usd_transferred.toLocaleString()}</td>
+                        <td className="py-2 px-3 text-right text-slate-300">{r.households_reached.toLocaleString()}</td>
+                        <td className="py-2 px-3 font-sans text-slate-400">{r.delivery_month} {r.delivery_year}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              )}
+
+              {modalTab === 'reach' && (
+                <table className="w-full text-left text-xs border-collapse">
+                  <thead className="bg-slate-800/80 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
+                    <tr>
+                      <th className="py-2.5 px-3">Site ID</th>
+                      <th className="py-2.5 px-3">Region</th>
+                      <th className="py-2.5 px-3">District</th>
+                      <th className="py-2.5 px-3">Settlement Type</th>
+                      <th className="py-2.5 px-3 text-right">Estimated Shelters</th>
+                      <th className="py-2.5 px-3">Leadership / Management</th>
+                      <th className="py-2.5 px-3 text-center">Gatekeeper Cut Reported</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-800 text-slate-300 font-mono">
+                    {modalFilteredReach.map(r => (
+                      <tr key={r.site_id} className="hover:bg-slate-800/50 transition-colors">
+                        <td className="py-2 px-3 text-slate-500">{r.site_id}</td>
+                        <td className="py-2 px-3 font-sans text-slate-300">{r.region}</td>
+                        <td className="py-2 px-3 font-sans font-bold text-white">{r.district}</td>
+                        <td className="py-2 px-3 font-sans text-slate-400">{r.settlement_type}</td>
+                        <td className="py-2 px-3 text-right font-bold text-slate-200">{r.estimated_shelters.toLocaleString()}</td>
+                        <td className="py-2 px-3 font-sans">
+                          <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${
+                            r.management_structure === 'Gatekeeper' ? 'bg-red-500/20 text-red-400' : 'bg-emerald-500/20 text-emerald-400'
+                          }`}>
+                            {r.management_structure}
+                          </span>
+                        </td>
+                        <td className="py-2 px-3 text-center">
+                          {r.reported_pay_cut_to_gatekeeper ? <span className="text-red-400 font-bold">YES</span> : <span className="text-slate-600">—</span>}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              )}
+
+              {modalTab === 'districts' && (
+                <table className="w-full text-left text-xs border-collapse">
+                  <thead className="bg-slate-800/80 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
+                    <tr>
+                      <th className="py-2.5 px-3">District</th>
+                      <th className="py-2.5 px-3 text-right">Total Cash (USD)</th>
+                      <th className="py-2.5 px-3 text-right">Mobile Money</th>
+                      <th className="py-2.5 px-3 text-right">Households</th>
+                      <th className="py-2.5 px-3 text-right">IDP Camps</th>
+                      <th className="py-2.5 px-3 text-right">Gatekeeper %</th>
+                      <th className="py-2.5 px-3">Active Implementers</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-800 text-slate-300 font-mono">
+                    {filteredDistricts.map(d => (
+                      <tr key={d.district} className="hover:bg-slate-800/50 transition-colors">
+                        <td className="py-2 px-3 font-sans font-bold text-white whitespace-nowrap">{d.district}</td>
+                        <td className="py-2 px-3 text-right font-bold text-slate-100">${d.total_usd_transferred.toLocaleString()}</td>
+                        <td className="py-2 px-3 text-right text-emerald-400">${d.mobile_money_usd.toLocaleString()}</td>
+                        <td className="py-2 px-3 text-right text-slate-300">{d.households_reached.toLocaleString()}</td>
+                        <td className="py-2 px-3 text-right text-slate-300">{d.idp_camps_count}</td>
+                        <td className="py-2 px-3 text-right font-bold">
+                          <span className={d.gatekeeper_prevalence_pct > 75 ? 'text-red-400' : d.gatekeeper_prevalence_pct > 40 ? 'text-amber-400' : 'text-slate-400'}>
+                            {d.gatekeeper_prevalence_pct}%
+                          </span>
+                        </td>
+                        <td className="py-2 px-3 font-sans text-slate-400 max-w-xs truncate" title={d.active_organizations.join(', ')}>
+                          {d.active_organizations.join(', ')}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              )}
             </div>
 
             {/* Modal Footer */}

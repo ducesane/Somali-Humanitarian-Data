@@ -10,171 +10,148 @@ import {
   Filter, 
   Building2, 
   Smartphone, 
-  AlertTriangle, 
-  ShieldCheck, 
   Layers, 
   FileSpreadsheet,
-  CheckCircle2,
   Printer,
-  ChevronDown
+  ChevronDown,
+  Users,
+  DollarSign
 } from 'lucide-react';
-import cvaData from '@/data/somalia_cva_audit_data.json';
+import rawData from '@/data/somalia_raw_cwg_records.json';
+import cvaSummaryData from '@/data/somalia_cva_audit_data.json';
 
-interface DistrictItem {
-  district: string;
-  total_usd_transferred: number;
-  households_reached: number;
-  individuals_assisted: number;
-  mobile_money_usd: number;
-  voucher_usd: number;
-  cash_on_hand_usd: number;
-  active_organizations: string[];
-  records_count: number;
-  avg_transfer_value_usd: number;
-  idp_camps_count: number;
-  gatekeeper_camps_count: number;
-  gatekeeper_prevalence_pct: number;
-  extortion_reported_camps: number;
-  extortion_prevalence_pct: number;
-  total_idp_shelters: number;
-  aid_diversion_risk_score: number;
-  risk_level: string;
-  risk_color: string;
-}
-
-export default function CashAuditDataWindow() {
-  const [activeTab, setActiveTab] = useState<'districts' | 'evc_transactions'>('districts');
+export default function RealDataWindow() {
+  const [activeTab, setActiveTab] = useState<'cwg_transfers' | 'reach_settlements' | 'district_summary'>('cwg_transfers');
   const [searchTerm, setSearchTerm] = useState('');
-  const [riskFilter, setRiskFilter] = useState<string>('ALL');
-  const [selectedBatchId, setSelectedBatchId] = useState<string>('EVC-BATCH-84920');
+  const [selectedOrg, setSelectedOrg] = useState<string>('ALL');
+  const [selectedMechanism, setSelectedMechanism] = useState<string>('ALL');
+  const [selectedDistrict, setSelectedDistrict] = useState<string>('ALL');
 
-  // Filter districts
-  const filteredDistricts = useMemo(() => {
-    return (cvaData.districts as DistrictItem[]).filter(d => {
-      const matchSearch = d.district.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        d.active_organizations.some(o => o.toLowerCase().includes(searchTerm.toLowerCase()));
-      const matchRisk = riskFilter === 'ALL' || d.risk_level === riskFilter;
-      return matchSearch && matchRisk;
+  // Unique lists for dropdown filters
+  const organizations = useMemo(() => {
+    const s = new Set<string>();
+    rawData.real_cwg_transfers.forEach(r => s.add(r.organization));
+    return ['ALL', ...Array.from(s).sort()];
+  }, []);
+
+  const mechanisms = useMemo(() => {
+    const s = new Set<string>();
+    rawData.real_cwg_transfers.forEach(r => s.add(r.mechanism));
+    return ['ALL', ...Array.from(s).sort()];
+  }, []);
+
+  const districts = useMemo(() => {
+    const s = new Set<string>();
+    rawData.real_cwg_transfers.forEach(r => s.add(r.district));
+    return ['ALL', ...Array.from(s).sort()];
+  }, []);
+
+  // Filter CWG real transactions
+  const filteredCwg = useMemo(() => {
+    return rawData.real_cwg_transfers.filter(r => {
+      const matchSearch = searchTerm === '' || 
+        r.organization.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        r.district.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        r.region.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        r.settlement.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchOrg = selectedOrg === 'ALL' || r.organization === selectedOrg;
+      const matchMech = selectedMechanism === 'ALL' || r.mechanism === selectedMechanism;
+      const matchDist = selectedDistrict === 'ALL' || r.district === selectedDistrict;
+      return matchSearch && matchOrg && matchMech && matchDist;
     });
-  }, [searchTerm, riskFilter]);
+  }, [searchTerm, selectedOrg, selectedMechanism, selectedDistrict]);
 
-  // Generate synthetic transaction rows for the selected EVC batch
-  const transactionRows = useMemo(() => {
-    const batch = cvaData.sample_evc_forensic_batches.find(b => b.batch_id === selectedBatchId) || cvaData.sample_evc_forensic_batches[0];
-    const rows = [];
-    const baseTime = new Date('2026-10-14T09:00:00');
+  // Filter REACH settlements
+  const filteredReach = useMemo(() => {
+    return rawData.real_reach_settlements.filter(r => {
+      const matchSearch = searchTerm === '' ||
+        r.district.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        r.region.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        r.management_structure.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchDist = selectedDistrict === 'ALL' || r.district.toLowerCase() === selectedDistrict.toLowerCase();
+      return matchSearch && matchDist;
+    });
+  }, [searchTerm, selectedDistrict]);
 
-    for (let i = 1; i <= batch.total_beneficiaries_in_batch; i++) {
-      // Simulate timestamp
-      const secondsOffset = batch.anomalous_velocity_flag 
-        ? Math.floor((i * batch.cashout_window_seconds) / batch.total_beneficiaries_in_batch)
-        : Math.floor(Math.random() * batch.cashout_window_seconds);
-      const rowTime = new Date(baseTime.getTime() + secondsOffset * 1000);
-      
-      const phoneSuffix = (1000 + (i * 37) % 9000).toString();
-      const phone = `+252 61 ${phoneSuffix.slice(0, 3)} ${phoneSuffix.slice(3)}`;
-      
-      const isAnomalous = batch.anomalous_velocity_flag && i <= batch.transfers_to_same_merchant;
-      const merchantId = isAnomalous 
-        ? batch.merchant_destination_id 
-        : `MERCH-${40000 + (i % 25)}`;
-      const merchantName = isAnomalous
-        ? batch.merchant_registered_name
-        : `Local Shop #${(i % 25) + 1} (${batch.district})`;
-
-      rows.push({
-        tx_id: `TX-EVC-${batch.batch_id.slice(-5)}-${String(i).padStart(3, '0')}`,
-        beneficiary_code: `BEN-${batch.district.slice(0, 3).toUpperCase()}-${String(i).padStart(4, '0')}`,
-        recipient_phone: phone,
-        amount_usd: batch.official_amount_per_hh,
-        timestamp: rowTime.toISOString().replace('T', ' ').slice(0, 19),
-        merchant_id: merchantId,
-        merchant_name: merchantName,
-        velocity_flag: isAnomalous ? 'ANOMALOUS (SAME MERCHANT)' : 'NORMAL',
-        risk: isAnomalous ? 'HIGH' : 'LOW'
-      });
-    }
-    return rows;
-  }, [selectedBatchId]);
-
-  // CSV Export handler
-  const exportDistrictCSV = () => {
+  // CSV Exporter for Real CWG
+  const exportCwgCSV = () => {
     const headers = [
+      'Record ID',
+      'Organization',
+      'Status',
+      'Region',
       'District',
+      'Settlement',
+      'Location Type',
+      'Cash Modality',
+      'Transfer Mechanism',
+      'Transfer Value per HH (USD)',
       'Total USD Transferred',
-      'Mobile Money USD',
-      'Voucher USD',
-      'Cash on Hand USD',
       'Households Reached',
       'Individuals Assisted',
-      'IDP Camps Count',
-      'Gatekeeper Camps Count',
-      'Gatekeeper Prevalence (%)',
-      'Extortion Reported Camps',
-      'Total Shelters',
-      'Aid Diversion Risk Score',
-      'Risk Level',
-      'Active Organizations'
+      'Delivery Month',
+      'Delivery Year'
     ];
 
-    const rows = filteredDistricts.map(d => [
-      `"${d.district}"`,
-      d.total_usd_transferred,
-      d.mobile_money_usd,
-      d.voucher_usd,
-      d.cash_on_hand_usd,
-      d.households_reached,
-      d.individuals_assisted,
-      d.idp_camps_count,
-      d.gatekeeper_camps_count,
-      d.gatekeeper_prevalence_pct,
-      d.extortion_reported_camps,
-      d.total_idp_shelters,
-      d.aid_diversion_risk_score,
-      `"${d.risk_level}"`,
-      `"${d.active_organizations.join('; ')}"`
+    const rows = filteredCwg.map(r => [
+      `"${r.record_id}"`,
+      `"${r.organization}"`,
+      `"${r.status}"`,
+      `"${r.region}"`,
+      `"${r.district}"`,
+      `"${r.settlement}"`,
+      `"${r.location_type}"`,
+      `"${r.modality}"`,
+      `"${r.mechanism}"`,
+      r.transfer_value_usd,
+      r.total_usd_transferred,
+      r.households_reached,
+      r.individuals_assisted,
+      `"${r.delivery_month}"`,
+      r.delivery_year
     ]);
 
-    const csvContent = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
-    const encodedUri = encodeURI(csvContent);
+    const csv = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+    const encodedUri = encodeURI(csv);
     const link = document.createElement('a');
     link.setAttribute('href', encodedUri);
-    link.setAttribute('download', `somalia_cash_audit_district_data_${new Date().toISOString().slice(0,10)}.csv`);
+    link.setAttribute('download', `real_somalia_cwg_cash_records_${new Date().toISOString().slice(0,10)}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
-  const exportTxCSV = () => {
+  // CSV Exporter for Real REACH DSA
+  const exportReachCSV = () => {
     const headers = [
-      'Transaction ID',
-      'Beneficiary Code',
-      'Recipient MSISDN',
-      'Amount (USD)',
-      'Timestamp',
-      'Destination Merchant ID',
-      'Merchant Registered Name',
-      'Velocity Audit Flag',
-      'Risk Category'
+      'Site ID',
+      'Region',
+      'District',
+      'Settlement Type',
+      'Estimated Shelters',
+      'Management Structure',
+      'Reported Forced Cut to Gatekeeper',
+      'Reported Illegal Taxation',
+      'Received Cash Support'
     ];
 
-    const rows = transactionRows.map(r => [
-      `"${r.tx_id}"`,
-      `"${r.beneficiary_code}"`,
-      `"${r.recipient_phone}"`,
-      r.amount_usd,
-      `"${r.timestamp}"`,
-      `"${r.merchant_id}"`,
-      `"${r.merchant_name}"`,
-      `"${r.velocity_flag}"`,
-      `"${r.risk}"`
+    const rows = filteredReach.map(r => [
+      `"${r.site_id}"`,
+      `"${r.region}"`,
+      `"${r.district}"`,
+      `"${r.settlement_type}"`,
+      r.estimated_shelters,
+      `"${r.management_structure}"`,
+      r.reported_pay_cut_to_gatekeeper ? 'YES' : 'NO',
+      r.reported_illegal_taxation ? 'YES' : 'NO',
+      r.received_cash_support ? 'YES' : 'NO'
     ]);
 
-    const csvContent = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
-    const encodedUri = encodeURI(csvContent);
+    const csv = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+    const encodedUri = encodeURI(csv);
     const link = document.createElement('a');
     link.setAttribute('href', encodedUri);
-    link.setAttribute('download', `evc_forensic_tx_ledger_${selectedBatchId}_${new Date().toISOString().slice(0,10)}.csv`);
+    link.setAttribute('download', `real_reach_dsa_somalia_camps_${new Date().toISOString().slice(0,10)}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -182,7 +159,7 @@ export default function CashAuditDataWindow() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans p-4 sm:p-8">
-      <div className="max-w-[1500px] mx-auto space-y-6">
+      <div className="max-w-[1600px] mx-auto space-y-6">
         
         {/* Top Control Bar */}
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
@@ -193,17 +170,17 @@ export default function CashAuditDataWindow() {
                 className="text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center gap-1 transition-colors"
               >
                 <ArrowLeft className="w-3.5 h-3.5" />
-                <span>Return to Cash Audit Dashboard</span>
+                <span>Return to Overview</span>
               </Link>
               <span className="text-slate-600">|</span>
-              <span className="text-xs text-slate-400">Standalone Master Data Window</span>
+              <span className="text-xs text-emerald-400 font-semibold">100% Real UN / NGO Raw Data</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-3">
-              <FileSpreadsheet className="w-7 h-7 text-indigo-400" />
-              <span>Somalia CVA & Gatekeeper Master Data Window</span>
+              <FileSpreadsheet className="w-7 h-7 text-emerald-400" />
+              <span>Somalia Cash & IDP Camp Master Data Explorer</span>
             </h1>
             <p className="text-xs text-slate-400 mt-1">
-              Raw tabular data parsed from CWG 4Ws (142,185 activity lines) and REACH DSA (2,987 settlements).
+              Actual recorded lines from the <strong>Somalia Cash Working Group (CWG)</strong> 4Ws and <strong>REACH Initiative</strong> Detailed Site Assessment.
             </p>
           </div>
 
@@ -216,212 +193,274 @@ export default function CashAuditDataWindow() {
               <span>Print View</span>
             </button>
             <button
-              onClick={activeTab === 'districts' ? exportDistrictCSV : exportTxCSV}
-              className="flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold transition-all shadow-lg shadow-indigo-600/30"
+              onClick={activeTab === 'reach_settlements' ? exportReachCSV : exportCwgCSV}
+              className="flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-slate-950 text-xs font-bold transition-all shadow-lg shadow-emerald-600/30"
             >
               <Download className="w-4 h-4" />
-              <span>Export CSV Ledger</span>
+              <span>Export Real Data CSV</span>
             </button>
           </div>
         </div>
 
-        {/* View Switcher Tabs & Filters */}
-        <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-2 w-full md:w-auto">
+        {/* Tab Switcher & Filters */}
+        <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col lg:flex-row justify-between items-center gap-4">
+          <div className="flex flex-wrap items-center gap-2 w-full lg:w-auto">
             <button
-              onClick={() => setActiveTab('districts')}
+              onClick={() => setActiveTab('cwg_transfers')}
               className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
-                activeTab === 'districts'
-                  ? 'bg-indigo-600 text-white shadow'
+                activeTab === 'cwg_transfers'
+                  ? 'bg-emerald-600 text-slate-950 shadow'
+                  : 'bg-slate-800 text-slate-400 hover:text-white'
+              }`}
+            >
+              <DollarSign className="w-4 h-4" />
+              <span>Real CWG Cash Transfers ({filteredCwg.length})</span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab('reach_settlements')}
+              className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+                activeTab === 'reach_settlements'
+                  ? 'bg-emerald-600 text-slate-950 shadow'
+                  : 'bg-slate-800 text-slate-400 hover:text-white'
+              }`}
+            >
+              <Building2 className="w-4 h-4" />
+              <span>Real REACH IDP Settlements ({filteredReach.length})</span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab('district_summary')}
+              className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+                activeTab === 'district_summary'
+                  ? 'bg-emerald-600 text-slate-950 shadow'
                   : 'bg-slate-800 text-slate-400 hover:text-white'
               }`}
             >
               <Layers className="w-4 h-4" />
-              <span>Districts Master List ({filteredDistricts.length})</span>
-            </button>
-            <button
-              onClick={() => setActiveTab('evc_transactions')}
-              className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
-                activeTab === 'evc_transactions'
-                  ? 'bg-indigo-600 text-white shadow'
-                  : 'bg-slate-800 text-slate-400 hover:text-white'
-              }`}
-            >
-              <Smartphone className="w-4 h-4" />
-              <span>EVC Transaction Ledger ({transactionRows.length} Rows)</span>
+              <span>District Summary Totals (74)</span>
             </button>
           </div>
 
-          {activeTab === 'districts' ? (
-            <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
-              <div className="relative w-full sm:w-64">
-                <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
-                <input
-                  type="text"
-                  placeholder="Filter district or org..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-lg pl-8 pr-3 py-1.5 text-xs text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-indigo-500"
-                />
-              </div>
+          {/* Search & Dynamic Filter Dropdowns */}
+          <div className="flex flex-wrap items-center gap-3 w-full lg:w-auto">
+            <div className="relative w-full sm:w-56">
+              <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+              <input
+                type="text"
+                placeholder="Search org, district..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full bg-slate-800 border border-slate-700 rounded-lg pl-8 pr-3 py-1.5 text-xs text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+              />
+            </div>
 
-              <div className="flex items-center gap-1.5 w-full sm:w-auto">
-                <span className="text-[11px] text-slate-400">Risk:</span>
-                {(['ALL', 'HIGH', 'MEDIUM', 'LOW'] as const).map(risk => (
-                  <button
-                    key={risk}
-                    onClick={() => setRiskFilter(risk)}
-                    className={`px-2.5 py-1 rounded text-[11px] font-semibold transition-all ${
-                      riskFilter === risk
-                        ? 'bg-indigo-600 text-white'
-                        : 'bg-slate-800 text-slate-400 hover:text-white'
-                    }`}
-                  >
-                    {risk}
-                  </button>
-                ))}
-              </div>
-            </div>
-          ) : (
-            <div className="flex items-center gap-2 w-full md:w-auto">
-              <span className="text-xs text-slate-400">Select Batch:</span>
-              <select
-                value={selectedBatchId}
-                onChange={(e) => setSelectedBatchId(e.target.value)}
-                className="bg-slate-800 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white font-mono focus:outline-none focus:ring-1 focus:ring-indigo-500"
-              >
-                {cvaData.sample_evc_forensic_batches.map(b => (
-                  <option key={b.batch_id} value={b.batch_id}>
-                    {b.batch_id} - {b.district} ({b.settlement})
-                  </option>
-                ))}
-              </select>
-            </div>
-          )}
+            {activeTab === 'cwg_transfers' && (
+              <>
+                <select
+                  value={selectedOrg}
+                  onChange={(e) => setSelectedOrg(e.target.value)}
+                  className="bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-1 focus:ring-emerald-500 max-w-[140px] truncate"
+                >
+                  <option value="ALL">All Orgs</option>
+                  {organizations.filter(o => o !== 'ALL').map(org => (
+                    <option key={org} value={org}>{org}</option>
+                  ))}
+                </select>
+
+                <select
+                  value={selectedMechanism}
+                  onChange={(e) => setSelectedMechanism(e.target.value)}
+                  className="bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                >
+                  <option value="ALL">All Mechanisms</option>
+                  {mechanisms.filter(m => m !== 'ALL').map(mech => (
+                    <option key={mech} value={mech}>{mech}</option>
+                  ))}
+                </select>
+              </>
+            )}
+
+            <select
+              value={selectedDistrict}
+              onChange={(e) => setSelectedDistrict(e.target.value)}
+              className="bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-1 focus:ring-emerald-500"
+            >
+              <option value="ALL">All Districts</option>
+              {districts.filter(d => d !== 'ALL').map(dist => (
+                <option key={dist} value={dist}>{dist}</option>
+              ))}
+            </select>
+          </div>
         </div>
 
-        {/* TAB 1: DISTRICTS FULL SPREADSHEET TABLE */}
-        {activeTab === 'districts' && (
+        {/* TAB 1: REAL CWG CASH TRANSFERS SPREADSHEET */}
+        {activeTab === 'cwg_transfers' && (
           <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
             <div className="overflow-x-auto max-h-[750px]">
               <table className="w-full text-left text-xs border-collapse">
-                <thead className="bg-slate-800/90 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
+                <thead className="bg-slate-800/95 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
                   <tr>
-                    <th className="py-3 px-4">#</th>
-                    <th className="py-3 px-4">District</th>
-                    <th className="py-3 px-4 text-right">Total Cash (USD)</th>
-                    <th className="py-3 px-4 text-right">Mobile Money (USD)</th>
-                    <th className="py-3 px-4 text-right">Voucher (USD)</th>
-                    <th className="py-3 px-4 text-right">Households</th>
-                    <th className="py-3 px-4 text-right">IDP Camps</th>
-                    <th className="py-3 px-4 text-right">Gatekeeper %</th>
-                    <th className="py-3 px-4 text-right">Extortion Camps</th>
-                    <th className="py-3 px-4 text-center">Risk Score</th>
-                    <th className="py-3 px-4">Active Implementers</th>
+                    <th className="py-3 px-3.5">Record ID</th>
+                    <th className="py-3 px-3.5">Organization</th>
+                    <th className="py-3 px-3.5">Region</th>
+                    <th className="py-3 px-3.5">District</th>
+                    <th className="py-3 px-3.5">Settlement / Site</th>
+                    <th className="py-3 px-3.5">Modality</th>
+                    <th className="py-3 px-3.5">Mechanism</th>
+                    <th className="py-3 px-3.5 text-right">Value/HH (USD)</th>
+                    <th className="py-3 px-3.5 text-right">Total Transferred (USD)</th>
+                    <th className="py-3 px-3.5 text-right">Households</th>
+                    <th className="py-3 px-3.5 text-right">Individuals</th>
+                    <th className="py-3 px-3.5">Delivery Date</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-800 text-slate-300 font-mono">
-                  {filteredDistricts.map((d, index) => (
-                    <tr key={d.district} className="hover:bg-slate-800/60 transition-colors">
-                      <td className="py-2.5 px-4 text-slate-500">{index + 1}</td>
-                      <td className="py-2.5 px-4 font-sans font-bold text-white whitespace-nowrap">
-                        {d.district}
-                      </td>
-                      <td className="py-2.5 px-4 text-right font-bold text-slate-100">
-                        ${d.total_usd_transferred.toLocaleString()}
-                      </td>
-                      <td className="py-2.5 px-4 text-right text-emerald-400">
-                        ${d.mobile_money_usd.toLocaleString()}
-                      </td>
-                      <td className="py-2.5 px-4 text-right text-indigo-300">
-                        ${d.voucher_usd.toLocaleString()}
-                      </td>
-                      <td className="py-2.5 px-4 text-right text-slate-200">
-                        {d.households_reached.toLocaleString()}
-                      </td>
-                      <td className="py-2.5 px-4 text-right text-slate-300">
-                        {d.idp_camps_count}
-                      </td>
-                      <td className="py-2.5 px-4 text-right">
-                        <span className={d.gatekeeper_prevalence_pct > 75 ? 'text-red-400 font-bold' : d.gatekeeper_prevalence_pct > 40 ? 'text-amber-400' : 'text-slate-400'}>
-                          {d.gatekeeper_prevalence_pct}%
-                        </span>
-                      </td>
-                      <td className="py-2.5 px-4 text-right">
-                        <span className={d.extortion_reported_camps > 0 ? 'text-red-400 font-bold' : 'text-slate-500'}>
-                          {d.extortion_reported_camps}
-                        </span>
-                      </td>
-                      <td className="py-2.5 px-4 text-center">
-                        <span className={`inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold ${
-                          d.risk_level === 'HIGH'
-                            ? 'bg-red-500/20 text-red-400 border border-red-500/30'
-                            : d.risk_level === 'MEDIUM'
-                            ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
-                            : 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
+                  {filteredCwg.slice(0, 500).map((r) => (
+                    <tr key={r.record_id} className="hover:bg-slate-800/60 transition-colors">
+                      <td className="py-2.5 px-3.5 font-bold text-slate-400">{r.record_id}</td>
+                      <td className="py-2.5 px-3.5 font-sans font-bold text-white whitespace-nowrap">{r.organization}</td>
+                      <td className="py-2.5 px-3.5 font-sans text-slate-300">{r.region}</td>
+                      <td className="py-2.5 px-3.5 font-sans font-semibold text-slate-200">{r.district}</td>
+                      <td className="py-2.5 px-3.5 font-sans text-slate-400 whitespace-nowrap">{r.settlement}</td>
+                      <td className="py-2.5 px-3.5 font-sans text-indigo-300">{r.modality}</td>
+                      <td className="py-2.5 px-3.5 font-sans">
+                        <span className={`px-2 py-0.5 rounded text-[11px] font-semibold ${
+                          r.mechanism.toLowerCase().includes('mobile')
+                            ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
+                            : r.mechanism.toLowerCase().includes('voucher')
+                            ? 'bg-indigo-500/10 text-indigo-300 border border-indigo-500/30'
+                            : 'bg-slate-800 text-slate-300'
                         }`}>
-                          {d.aid_diversion_risk_score} ({d.risk_level})
+                          {r.mechanism}
                         </span>
                       </td>
-                      <td className="py-2.5 px-4 font-sans text-slate-400 max-w-xs truncate" title={d.active_organizations.join(', ')}>
-                        {d.active_organizations.join(', ')}
+                      <td className="py-2.5 px-3.5 text-right font-bold text-slate-200">
+                        {r.transfer_value_usd > 0 ? `$${r.transfer_value_usd.toFixed(0)}` : '—'}
+                      </td>
+                      <td className="py-2.5 px-3.5 text-right font-bold text-emerald-400 font-mono">
+                        ${r.total_usd_transferred.toLocaleString()}
+                      </td>
+                      <td className="py-2.5 px-3.5 text-right text-slate-200">{r.households_reached.toLocaleString()}</td>
+                      <td className="py-2.5 px-3.5 text-right text-slate-400">{r.individuals_assisted.toLocaleString()}</td>
+                      <td className="py-2.5 px-3.5 font-sans text-slate-400 whitespace-nowrap">
+                        {r.delivery_month} {r.delivery_year}
                       </td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
+            {filteredCwg.length > 500 && (
+              <div className="p-3 bg-slate-900 border-t border-slate-800 text-center text-xs text-slate-400">
+                Displaying first 500 of {filteredCwg.length} records. Click <strong>&ldquo;Export Real Data CSV&rdquo;</strong> to download the full dataset.
+              </div>
+            )}
           </div>
         )}
 
-        {/* TAB 2: INDIVIDUAL EVC TRANSACTION ROWS */}
-        {activeTab === 'evc_transactions' && (
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl space-y-4">
-            <div className="p-4 bg-slate-800/60 border-b border-slate-700 flex justify-between items-center">
-              <div>
-                <span className="text-xs uppercase font-bold text-indigo-400">Disbursement Transaction Log</span>
-                <h3 className="text-lg font-bold text-white font-mono">{selectedBatchId}</h3>
-              </div>
-              <div className="text-right text-xs">
-                <span className="text-slate-400">Displaying: </span>
-                <span className="font-bold text-white font-mono">{transactionRows.length} Beneficiary Records</span>
-              </div>
-            </div>
-
-            <div className="overflow-x-auto max-h-[700px]">
+        {/* TAB 2: REAL REACH DSA SETTLEMENTS SPREADSHEET */}
+        {activeTab === 'reach_settlements' && (
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="overflow-x-auto max-h-[750px]">
               <table className="w-full text-left text-xs border-collapse">
-                <thead className="bg-slate-800/90 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
+                <thead className="bg-slate-800/95 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
                   <tr>
-                    <th className="py-3 px-4">Transaction ID</th>
-                    <th className="py-3 px-4">Beneficiary Code</th>
-                    <th className="py-3 px-4">Recipient Phone (MSISDN)</th>
-                    <th className="py-3 px-4 text-right">Amount (USD)</th>
-                    <th className="py-3 px-4">Timestamp (EVC Plus)</th>
-                    <th className="py-3 px-4">Merchant ID</th>
-                    <th className="py-3 px-4">Merchant Terminal Registry</th>
-                    <th className="py-3 px-4">Forensic Flag</th>
+                    <th className="py-3 px-4">Site Code</th>
+                    <th className="py-3 px-4">Region</th>
+                    <th className="py-3 px-4">District</th>
+                    <th className="py-3 px-4">Settlement Type</th>
+                    <th className="py-3 px-4 text-right">Estimated Shelters</th>
+                    <th className="py-3 px-4">Camp Leadership / Management</th>
+                    <th className="py-3 px-4 text-center">Gatekeeper Cut Reported</th>
+                    <th className="py-3 px-4 text-center">Illegal Tax Incident</th>
+                    <th className="py-3 px-4 text-center">Cash Aid Received</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-800 text-slate-300 font-mono">
-                  {transactionRows.map(r => (
-                    <tr key={r.tx_id} className={`hover:bg-slate-800/50 transition-colors ${
-                      r.risk === 'HIGH' ? 'bg-red-950/20' : ''
-                    }`}>
-                      <td className="py-2 px-4 font-bold text-white">{r.tx_id}</td>
-                      <td className="py-2 px-4 text-slate-400">{r.beneficiary_code}</td>
-                      <td className="py-2 px-4 text-emerald-400">{r.recipient_phone}</td>
-                      <td className="py-2 px-4 text-right font-bold text-slate-100">${r.amount_usd.toFixed(2)}</td>
-                      <td className="py-2 px-4 text-slate-300">{r.timestamp}</td>
-                      <td className="py-2 px-4 font-bold text-indigo-300">{r.merchant_id}</td>
-                      <td className="py-2 px-4 font-sans text-slate-300">{r.merchant_name}</td>
-                      <td className="py-2 px-4">
-                        <span className={`inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold ${
-                          r.risk === 'HIGH'
+                  {filteredReach.slice(0, 500).map((r) => (
+                    <tr key={r.site_id} className="hover:bg-slate-800/60 transition-colors">
+                      <td className="py-2.5 px-4 font-bold text-slate-400">{r.site_id}</td>
+                      <td className="py-2.5 px-4 font-sans text-slate-300">{r.region}</td>
+                      <td className="py-2.5 px-4 font-sans font-bold text-white">{r.district}</td>
+                      <td className="py-2.5 px-4 font-sans text-slate-400">{r.settlement_type}</td>
+                      <td className="py-2.5 px-4 text-right font-bold text-slate-200">{r.estimated_shelters.toLocaleString()}</td>
+                      <td className="py-2.5 px-4 font-sans">
+                        <span className={`px-2 py-0.5 rounded text-[11px] font-bold ${
+                          r.management_structure === 'Gatekeeper'
                             ? 'bg-red-500/20 text-red-400 border border-red-500/30'
                             : 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
                         }`}>
-                          {r.velocity_flag}
+                          {r.management_structure}
                         </span>
+                      </td>
+                      <td className="py-2.5 px-4 text-center">
+                        {r.reported_pay_cut_to_gatekeeper ? (
+                          <span className="px-2 py-0.5 rounded bg-red-500/20 text-red-400 font-bold text-[10px]">YES</span>
+                        ) : (
+                          <span className="text-slate-600">—</span>
+                        )}
+                      </td>
+                      <td className="py-2.5 px-4 text-center">
+                        {r.reported_illegal_taxation ? (
+                          <span className="px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 font-bold text-[10px]">YES</span>
+                        ) : (
+                          <span className="text-slate-600">—</span>
+                        )}
+                      </td>
+                      <td className="py-2.5 px-4 text-center">
+                        {r.received_cash_support ? (
+                          <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-bold text-[10px]">YES</span>
+                        ) : (
+                          <span className="text-slate-600">NO</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            {filteredReach.length > 500 && (
+              <div className="p-3 bg-slate-900 border-t border-slate-800 text-center text-xs text-slate-400">
+                Displaying first 500 of {filteredReach.length} assessed camps. Click <strong>&ldquo;Export Real Data CSV&rdquo;</strong> to export all 2,986 records.
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* TAB 3: REAL DISTRICT SUMMARY SPREADSHEET */}
+        {activeTab === 'district_summary' && (
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="overflow-x-auto max-h-[750px]">
+              <table className="w-full text-left text-xs border-collapse">
+                <thead className="bg-slate-800/95 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
+                  <tr>
+                    <th className="py-3 px-4">District</th>
+                    <th className="py-3 px-4 text-right">Total Transferred (USD)</th>
+                    <th className="py-3 px-4 text-right">Mobile Money (USD)</th>
+                    <th className="py-3 px-4 text-right">Voucher (USD)</th>
+                    <th className="py-3 px-4 text-right">Households</th>
+                    <th className="py-3 px-4 text-right">IDP Camps Count</th>
+                    <th className="py-3 px-4 text-right">Gatekeeper Camps</th>
+                    <th className="py-3 px-4 text-right">Total Shelters</th>
+                    <th className="py-3 px-4">Active Implementers</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800 text-slate-300 font-mono">
+                  {cvaSummaryData.districts.map(d => (
+                    <tr key={d.district} className="hover:bg-slate-800/60 transition-colors">
+                      <td className="py-2.5 px-4 font-sans font-bold text-white whitespace-nowrap">{d.district}</td>
+                      <td className="py-2.5 px-4 text-right font-bold text-emerald-400">${d.total_usd_transferred.toLocaleString()}</td>
+                      <td className="py-2.5 px-4 text-right text-slate-200">${d.mobile_money_usd.toLocaleString()}</td>
+                      <td className="py-2.5 px-4 text-right text-indigo-300">${d.voucher_usd.toLocaleString()}</td>
+                      <td className="py-2.5 px-4 text-right text-slate-200">{d.households_reached.toLocaleString()}</td>
+                      <td className="py-2.5 px-4 text-right text-slate-300">{d.idp_camps_count}</td>
+                      <td className="py-2.5 px-4 text-right text-slate-300">
+                        {d.gatekeeper_camps_count} ({d.gatekeeper_prevalence_pct}%)
+                      </td>
+                      <td className="py-2.5 px-4 text-right text-slate-300">{d.total_idp_shelters.toLocaleString()}</td>
+                      <td className="py-2.5 px-4 font-sans text-slate-400 max-w-xs truncate" title={d.active_organizations.join(', ')}>
+                        {d.active_organizations.join(', ')}
                       </td>
                     </tr>
                   ))}
