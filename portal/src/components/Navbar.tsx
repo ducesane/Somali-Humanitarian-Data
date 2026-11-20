@@ -10,7 +10,8 @@ import {
   Activity, 
   Menu, 
   X,
-  ExternalLink 
+  ExternalLink,
+  FolderDown 
 } from 'lucide-react';
 import { useState } from 'react';
 
@@ -18,6 +19,7 @@ const NAV_ITEMS = [
   { href: '/', label: 'Overview', icon: Compass },
   { href: '/districts', label: 'Districts (90)', icon: MapPin },
   { href: '/ngos', label: 'NGOs (204)', icon: Building2 },
+  { href: '/undp-projects', label: 'UNDP Projects (50)', icon: FolderDown },
   { href: '/dossier-builder', label: 'Proposal Dossier Builder', icon: FileText, highlight: true },
   { href: '/pipeline', label: 'Data Pipeline', icon: Activity },
 ];
