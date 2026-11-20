@@ -12,9 +12,12 @@ import {
   CheckCircle2,
   MapPin,
   TrendingUp,
-  FileText
+  FileText,
+  Clock,
+  Coins
 } from 'lucide-react';
 import vendorsData from '@/data/undp_somalia_vendors.json';
+import VendorWorkExplorer from '@/components/VendorWorkExplorer';
 
 interface VendorPageProps {
   params: Promise<{
@@ -29,7 +32,7 @@ export async function generateStaticParams() {
 }
 
 function formatDate(dateStr: string): string {
-  if (!dateStr) return 'N/A';
+  if (!dateStr || dateStr === 'N/A') return 'N/A';
   try {
     const parts = dateStr.split('-');
     if (parts.length === 3) {
@@ -51,17 +54,6 @@ function formatDate(dateStr: string): string {
   }
 }
 
-function cleanDescription(desc: string): string {
-  if (!desc) return 'Standard Procurement';
-  let d = desc.trim();
-  if (d.startsWith("b'") && d.endsWith("'")) {
-    d = d.slice(2, -1);
-  } else if (d.startsWith('b"') && d.endsWith('"')) {
-    d = d.slice(2, -1);
-  }
-  return d.trim();
-}
-
 export default async function VendorDetailPage({ params }: VendorPageProps) {
   const { slug } = await params;
   const vendor = vendorsData.find((v) => v.slug === slug);
@@ -71,6 +63,10 @@ export default async function VendorDetailPage({ params }: VendorPageProps) {
   }
 
   const isTier1 = vendor.total_amount >= 1000000;
+  const yearlyBreakdown = (vendor as any).yearly_breakdown || {};
+  const operatingLocations = (vendor as any).operating_locations || [];
+  const firstActivity = (vendor as any).first_activity || 'N/A';
+  const latestActivity = (vendor as any).latest_activity || vendor.latest_activity || 'N/A';
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
@@ -107,10 +103,16 @@ export default async function VendorDetailPage({ params }: VendorPageProps) {
                 Tier 1 Prime Partner (&gt; $1M)
               </span>
             )}
-            {vendor.latest_activity && vendor.latest_activity !== 'N/A' && (
+            {latestActivity !== 'N/A' && (
               <span className="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300">
-                <Calendar className="w-3.5 h-3.5 text-slate-400" />
-                Latest Contract: {formatDate(vendor.latest_activity)}
+                <Calendar className="w-3.5 h-3.5 text-emerald-400" />
+                Latest Disbursement: <strong className="text-white font-mono">{formatDate(latestActivity)}</strong>
+              </span>
+            )}
+            {firstActivity !== 'N/A' && (
+              <span className="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-slate-800/80 text-slate-400">
+                <Clock className="w-3.5 h-3.5 text-slate-500" />
+                First Award: {formatDate(firstActivity)}
               </span>
             )}
           </div>
@@ -128,9 +130,18 @@ export default async function VendorDetailPage({ params }: VendorPageProps) {
           <h1 className="text-2xl sm:text-4xl font-black text-white leading-tight">
             {vendor.name}
           </h1>
-          <p className="text-sm text-slate-400 mt-2 max-w-3xl leading-relaxed">
-            Consolidated record of commercial contracts, service delivery, and procurement disbursements awarded by the United Nations Development Programme (UNDP) in Somalia.
-          </p>
+          <div className="flex flex-wrap items-center gap-y-1 gap-x-4 text-xs text-slate-400 mt-2.5">
+            <span className="flex items-center gap-1.5">
+              <Clock className="w-3.5 h-3.5 text-emerald-500" />
+              Contract Period: <strong className="text-slate-200">{formatDate(firstActivity)} &ndash; {formatDate(latestActivity)}</strong>
+            </span>
+            {operatingLocations.length > 0 && (
+              <span className="flex items-center gap-1.5">
+                <MapPin className="w-3.5 h-3.5 text-emerald-500" />
+                Operational Footprint: <span className="text-slate-300 font-medium">{operatingLocations.slice(0, 6).join(', ')}{operatingLocations.length > 6 ? ` +${operatingLocations.length - 6} more` : ''}</span>
+              </span>
+            )}
+          </div>
         </div>
 
         {/* Key Metrics */}
@@ -140,6 +151,7 @@ export default async function VendorDetailPage({ params }: VendorPageProps) {
             <div className="text-xl sm:text-3xl font-black text-emerald-400 mt-0.5">
               ${vendor.total_amount.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
             </div>
+            <div className="text-[10px] text-slate-500 mt-1">Across all UNDP Somalia projects</div>
           </div>
 
           <div>
@@ -147,6 +159,7 @@ export default async function VendorDetailPage({ params }: VendorPageProps) {
             <div className="text-xl sm:text-3xl font-black text-white mt-0.5">
               {vendor.orders_count} Orders
             </div>
+            <div className="text-[10px] text-slate-500 mt-1">Individual disbursements</div>
           </div>
 
           <div>
@@ -154,6 +167,7 @@ export default async function VendorDetailPage({ params }: VendorPageProps) {
             <div className="text-xl sm:text-3xl font-black text-white mt-0.5">
               {vendor.projects_count} Projects
             </div>
+            <div className="text-[10px] text-slate-500 mt-1">UN &amp; Joint programmes</div>
           </div>
 
           <div>
@@ -161,9 +175,53 @@ export default async function VendorDetailPage({ params }: VendorPageProps) {
             <div className="text-xl sm:text-3xl font-black text-slate-300 mt-0.5">
               ${(vendor.total_amount / (vendor.orders_count || 1)).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
             </div>
+            <div className="text-[10px] text-slate-500 mt-1">Disbursement average</div>
           </div>
         </div>
       </div>
+
+      {/* Yearly Financial Trajectory Section */}
+      {Object.keys(yearlyBreakdown).length > 0 && (
+        <div className="space-y-3">
+          <div className="flex items-center justify-between">
+            <h2 className="text-base sm:text-lg font-black text-white flex items-center gap-2">
+              <TrendingUp className="w-5 h-5 text-emerald-400" />
+              Yearly Disbursement Trajectory ({Object.keys(yearlyBreakdown).length} Active Years)
+            </h2>
+            <span className="text-xs text-slate-400">
+              Total Cumulative: <strong className="text-emerald-400">${vendor.total_amount.toLocaleString()}</strong>
+            </span>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3">
+            {Object.entries(yearlyBreakdown).map(([year, amount]: [string, any]) => {
+              const pct = vendor.total_amount > 0 ? (amount / vendor.total_amount) * 100 : 0;
+              const yearOrders = vendor.orders.filter((o: any) => o.order_date?.startsWith(year)).length;
+              return (
+                <div 
+                  key={year}
+                  className="p-3.5 rounded-2xl bg-slate-900 border border-slate-800 space-y-1 hover:border-emerald-800/80 transition-all"
+                >
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-bold text-white font-mono bg-slate-800 px-2 py-0.5 rounded">
+                      {year}
+                    </span>
+                    <span className="text-[10px] text-slate-400 font-bold">
+                      {pct.toFixed(1)}%
+                    </span>
+                  </div>
+                  <div className="text-base font-black text-emerald-400 font-mono mt-1">
+                    ${Number(amount).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })}
+                  </div>
+                  <div className="text-[10px] text-slate-500 font-medium">
+                    {yearOrders} order{yearOrders > 1 ? 's' : ''} in {year}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* Cross-Project Distribution */}
       <div className="space-y-4">
@@ -207,6 +265,22 @@ export default async function VendorDetailPage({ params }: VendorPageProps) {
                     <span className="truncate">{proj.locations.join(', ')}</span>
                   </div>
                 )}
+
+                {/* Dates Active on this Project */}
+                <div className="text-[11px] text-slate-400 pt-1 space-y-0.5 border-t border-slate-800/60">
+                  <div className="flex items-center justify-between">
+                    <span className="text-slate-500">Latest Payment:</span>
+                    <span className="font-semibold text-slate-300 font-mono">
+                      {formatDate(proj.latest_date)}
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-slate-500">Period Active:</span>
+                    <span className="text-slate-400 font-mono">
+                      {formatDate(proj.first_date)} &ndash; {formatDate(proj.latest_date)}
+                    </span>
+                  </div>
+                </div>
               </div>
 
               <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between">
@@ -230,89 +304,12 @@ export default async function VendorDetailPage({ params }: VendorPageProps) {
         </div>
       </div>
 
-      {/* Complete Work Done & Purchase Orders Table across all projects */}
-      <div className="space-y-4 pt-4">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <div>
-            <h2 className="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
-              <ReceiptText className="w-6 h-6 text-emerald-400" />
-              All Work Done &amp; Purchase Orders ({vendor.orders.length})
-            </h2>
-            <p className="text-xs text-slate-400 mt-0.5">
-              Line-item breakdown of every completed contract, description of services, dates, and amounts.
-            </p>
-          </div>
-          <div className="text-xs font-bold px-3 py-1.5 rounded-lg bg-emerald-950/80 text-emerald-400 border border-emerald-800/60 w-fit">
-            Total Awarded: ${vendor.total_amount.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-          </div>
-        </div>
-
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900 shadow-xl">
-          <table className="w-full text-left text-sm text-slate-300">
-            <thead className="bg-slate-950 text-xs font-bold uppercase tracking-wider text-slate-400 border-b border-slate-800">
-              <tr>
-                <th className="py-3.5 px-4 whitespace-nowrap">PO ID</th>
-                <th className="py-3.5 px-4 min-w-[200px]">Project</th>
-                <th className="py-3.5 px-4 min-w-[320px]">Description of Work Done</th>
-                <th className="py-3.5 px-4 whitespace-nowrap">Date</th>
-                <th className="py-3.5 px-4 text-right whitespace-nowrap">Amount</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-800/70 font-mono text-xs">
-              {vendor.orders.map((po: any, idx: number) => (
-                <tr 
-                  key={`${po.order_id}-${idx}`}
-                  className="hover:bg-slate-800/50 transition-colors"
-                >
-                  {/* PO ID */}
-                  <td className="py-3.5 px-4 font-bold text-emerald-400 whitespace-nowrap">
-                    {po.order_id}
-                  </td>
-
-                  {/* Project Title with Link */}
-                  <td className="py-3.5 px-4 font-sans text-xs">
-                    <Link
-                      href={`/undp-projects/${po.project_id}`}
-                      className="font-bold text-slate-200 hover:text-emerald-400 transition-colors line-clamp-1 block"
-                      title={po.project_title}
-                    >
-                      {po.project_title}
-                    </Link>
-                    <span className="text-[10px] text-slate-500 font-mono block">
-                      ID: {po.project_id}
-                    </span>
-                  </td>
-
-                  {/* Description of Work Done */}
-                  <td className="py-3.5 px-4 font-sans text-slate-300">
-                    {cleanDescription(po.description)}
-                  </td>
-
-                  {/* Date */}
-                  <td className="py-3.5 px-4 font-sans text-slate-400 whitespace-nowrap">
-                    {formatDate(po.order_date)}
-                  </td>
-
-                  {/* Amount */}
-                  <td className="py-3.5 px-4 font-bold text-right text-emerald-400 whitespace-nowrap font-mono text-sm">
-                    ${Number(po.amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-            <tfoot className="bg-slate-950 font-bold border-t border-slate-800 text-xs">
-              <tr>
-                <td colSpan={4} className="py-3.5 px-4 text-right uppercase text-slate-400">
-                  Total Value of All Work Done:
-                </td>
-                <td className="py-3.5 px-4 text-right text-emerald-400 text-sm font-mono font-black">
-                  ${vendor.total_amount.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                </td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-      </div>
+      {/* Interactive Work Explorer with Year Filter, Search, CSV Export, Dates & Amounts */}
+      <VendorWorkExplorer 
+        orders={vendor.orders}
+        vendorName={vendor.name}
+        totalAmount={vendor.total_amount}
+      />
 
       {/* Back button */}
       <div className="pt-6 border-t border-slate-800">

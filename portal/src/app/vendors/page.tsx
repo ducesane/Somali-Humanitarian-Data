@@ -13,9 +13,31 @@ import {
   ArrowRight,
   TrendingUp,
   ExternalLink,
-  ChevronRight
+  ChevronRight,
+  MapPin,
+  Clock
 } from 'lucide-react';
 import vendorsData from '@/data/undp_somalia_vendors.json';
+
+function formatDate(dateStr: string): string {
+  if (!dateStr || dateStr === 'N/A') return 'N/A';
+  try {
+    const parts = dateStr.split('-');
+    if (parts.length === 3) {
+      const year = parseInt(parts[0], 10);
+      const monthIdx = parseInt(parts[1], 10) - 1;
+      const day = parseInt(parts[2], 10);
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      if (monthIdx >= 0 && monthIdx < 12) {
+        const dayStr = day < 10 ? `0${day}` : `${day}`;
+        return `${dayStr} ${months[monthIdx]} ${year}`;
+      }
+    }
+    return dateStr;
+  } catch {
+    return dateStr;
+  }
+}
 
 export default function VendorsDirectoryPage() {
   const [search, setSearch] = useState('');
@@ -223,7 +245,7 @@ export default function VendorsDirectoryPage() {
                     {vendor.name}
                   </Link>
 
-                  <div className="space-y-1.5 pt-2 border-t border-slate-800/80 text-xs">
+                  <div className="space-y-2 pt-2 border-t border-slate-800/80 text-xs">
                     <div className="flex items-center justify-between">
                       <span className="text-slate-400">Total Awarded:</span>
                       <span className="font-mono font-black text-emerald-400 text-sm">
@@ -231,25 +253,34 @@ export default function VendorsDirectoryPage() {
                       </span>
                     </div>
 
-                    <div className="flex items-center justify-between">
-                      <span className="text-slate-400">Purchase Orders:</span>
-                      <span className="font-semibold text-slate-200">
-                        {vendor.orders_count} orders
-                      </span>
-                    </div>
-
-                    <div className="flex items-center justify-between">
-                      <span className="text-slate-400">Projects Involved:</span>
-                      <span className="font-semibold text-slate-200">
-                        {vendor.projects_count} projects
-                      </span>
-                    </div>
-
                     {vendor.latest_activity && vendor.latest_activity !== 'N/A' && (
-                      <div className="flex items-center justify-between">
-                        <span className="text-slate-400">Latest Contract:</span>
-                        <span className="font-medium text-slate-400">
-                          {vendor.latest_activity}
+                      <div className="flex items-center justify-between bg-slate-950/60 px-2 py-1 rounded-lg border border-slate-800/50">
+                        <span className="text-slate-400 flex items-center gap-1 text-[11px]">
+                          <Calendar className="w-3 h-3 text-emerald-400" />
+                          Latest Payment:
+                        </span>
+                        <span className="font-mono font-bold text-slate-200 text-[11px]">
+                          {formatDate(vendor.latest_activity)}
+                        </span>
+                      </div>
+                    )}
+
+                    <div className="flex items-center justify-between text-[11px]">
+                      <span className="text-slate-400">Purchase Orders:</span>
+                      <span className="font-semibold text-slate-300">
+                        {vendor.orders_count} orders across {vendor.projects_count} projects
+                      </span>
+                    </div>
+
+                    {(vendor as any).operating_locations && (vendor as any).operating_locations.length > 0 && (
+                      <div className="flex items-center justify-between text-[11px] pt-0.5">
+                        <span className="text-slate-400 flex items-center gap-1">
+                          <MapPin className="w-3 h-3 text-emerald-500" />
+                          Locations:
+                        </span>
+                        <span className="text-slate-300 truncate max-w-[170px]" title={(vendor as any).operating_locations.join(', ')}>
+                          {(vendor as any).operating_locations.slice(0, 3).join(', ')}
+                          {(vendor as any).operating_locations.length > 3 ? ` +${(vendor as any).operating_locations.length - 3}` : ''}
                         </span>
                       </div>
                     )}
