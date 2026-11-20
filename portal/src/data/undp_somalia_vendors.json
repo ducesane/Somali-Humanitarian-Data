@@ -203,7 +203,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -1217,7 +1217,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000025495",
         "description": "",
         "order_date": "2018-03-12",
@@ -1685,7 +1685,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000022581",
         "description": "",
         "order_date": "2016-02-24",
@@ -2185,7 +2185,8 @@
       "Shiikh",
       "Taleex",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Individual Consultant",
@@ -3151,7 +3152,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -5423,7 +5424,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000025075",
         "description": "Consultancy Agreement",
         "order_date": "2017-11-20",
@@ -5531,7 +5532,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000024997",
         "description": "Consultancy Agreement",
         "order_date": "2017-11-01",
@@ -5837,7 +5838,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000024488",
         "description": "Consultancy Agreement",
         "order_date": "2017-06-29",
@@ -5927,7 +5928,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000024275",
         "description": "Consultancy Agreement",
         "order_date": "2017-04-27",
@@ -6252,7 +6253,8 @@
       "Shiikh",
       "Taleex",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Consultant",
@@ -6466,7 +6468,7 @@
       },
       {
         "id": "00114198",
-        "title": "Delivering for Results –Support the SDG Implementation",
+        "title": "Delivering for Results \u2013Support the SDG Implementation",
         "locations": [
           "Mogadishu"
         ],
@@ -6710,7 +6712,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -7339,7 +7341,7 @@
       },
       {
         "project_id": "00114198",
-        "project_title": "Delivering for Results –Support the SDG Implementation",
+        "project_title": "Delivering for Results \u2013Support the SDG Implementation",
         "order_id": "0000028679",
         "description": "Consultancy Agreement",
         "order_date": "2020-08-25",
@@ -7348,7 +7350,7 @@
       },
       {
         "project_id": "00114198",
-        "project_title": "Delivering for Results –Support the SDG Implementation",
+        "project_title": "Delivering for Results \u2013Support the SDG Implementation",
         "order_id": "0000028674",
         "description": "Consultancy Agreement",
         "order_date": "2020-08-20",
@@ -7618,7 +7620,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000026964",
         "description": "Consultancy Agreement",
         "order_date": "2019-03-18",
@@ -7717,7 +7719,7 @@
       },
       {
         "project_id": "00114198",
-        "project_title": "Delivering for Results –Support the SDG Implementation",
+        "project_title": "Delivering for Results \u2013Support the SDG Implementation",
         "order_id": "0000026567",
         "description": "Consultancy Agreement",
         "order_date": "2018-12-04",
@@ -8631,7 +8633,8 @@
       "Shiikh",
       "Taleex",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "TOYOTA GIBRALTAR STOCKHOLDINGS LIMITED",
@@ -9176,6 +9179,24 @@
       "Salahly",
       "Shiikh",
       "Taleex"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "161359",
+        "title": "Establishment of Long-Term Agreements for the Supply of Motor Vehicles for UN Web Buy Plus",
+        "agency": "UNOPS",
+        "award_date": "16-Nov-2026",
+        "reference": "ITB/2026/62153",
+        "url": "https://www.ungm.org/Public/ContractAward/161359"
+      },
+      {
+        "award_id": "152013",
+        "title": "BPA for the Provision of Van Based Ambulances",
+        "agency": "UNFPA",
+        "award_date": "15-Sep-2025",
+        "reference": "UNFPA/DNK/ITB/25/006",
+        "url": "https://www.ungm.org/Public/ContractAward/152013"
+      }
     ]
   },
   {
@@ -9284,7 +9305,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -9926,7 +9947,7 @@
       },
       {
         "id": "00114198",
-        "title": "Delivering for Results –Support the SDG Implementation",
+        "title": "Delivering for Results \u2013Support the SDG Implementation",
         "locations": [
           "Mogadishu"
         ],
@@ -11897,7 +11918,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000028344",
         "description": "UNHAS_FEBRUARY_2020_PAYMENT",
         "order_date": "2020-03-15",
@@ -12383,7 +12404,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027599",
         "description": "S) Air Tickets - Domestic",
         "order_date": "2019-08-22",
@@ -12392,7 +12413,7 @@
       },
       {
         "project_id": "00114198",
-        "project_title": "Delivering for Results –Support the SDG Implementation",
+        "project_title": "Delivering for Results \u2013Support the SDG Implementation",
         "order_id": "0000027599",
         "description": "S) Air Tickets - Domestic",
         "order_date": "2019-08-22",
@@ -12626,7 +12647,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027274",
         "description": "S) Air Tickets - Domestic",
         "order_date": "2019-05-24",
@@ -12635,7 +12656,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027274",
         "description": "S) Air Tickets - International",
         "order_date": "2019-05-24",
@@ -12698,7 +12719,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027219",
         "description": "S) Air Tickets - Domestic",
         "order_date": "2019-05-08",
@@ -12761,7 +12782,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027019",
         "description": "Online Src From Req 0000029509",
         "order_date": "2019-03-28",
@@ -12797,7 +12818,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000026982",
         "description": "Online Src From Req 0000029417",
         "order_date": "2019-03-21",
@@ -12878,7 +12899,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000026686",
         "description": "",
         "order_date": "2018-12-21",
@@ -12941,7 +12962,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000026332",
         "description": "Sept UNHAS bills",
         "order_date": "2018-10-22",
@@ -13067,7 +13088,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000026248",
         "description": "Old pending UNHAS invoices",
         "order_date": "2018-10-04",
@@ -13076,7 +13097,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000026239",
         "description": "OPS August bills",
         "order_date": "2018-10-03",
@@ -13364,7 +13385,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000025065",
         "description": "S) Transport Service",
         "order_date": "2017-11-16",
@@ -13463,7 +13484,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000025060",
         "description": "Travel services - Air tickets",
         "order_date": "2017-11-15",
@@ -13562,7 +13583,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000024966",
         "description": "Travel services - Air tickets",
         "order_date": "2017-10-24",
@@ -13670,7 +13691,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000024621",
         "description": "Travel services - Air tickets",
         "order_date": "2017-08-22",
@@ -13778,7 +13799,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000024681",
         "description": "Travel services - Air tickets",
         "order_date": "2017-08-17",
@@ -13904,7 +13925,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000024467",
         "description": "Travel services - Air tickets",
         "order_date": "2017-06-20",
@@ -14084,7 +14105,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000024276",
         "description": "Travel services - Air tickets",
         "order_date": "2017-04-27",
@@ -14174,7 +14195,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000024202",
         "description": "Travel services - Air tickets",
         "order_date": "2017-04-03",
@@ -14291,7 +14312,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000024066",
         "description": "Travel services - Air tickets",
         "order_date": "2017-02-27",
@@ -14516,7 +14537,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000023851",
         "description": "Nov 16 bills",
         "order_date": "2016-12-05",
@@ -14642,7 +14663,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000023711",
         "description": "UNHAS - Oct bills",
         "order_date": "2016-11-07",
@@ -14849,7 +14870,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000023490",
         "description": "September flights - UNHAS",
         "order_date": "2016-09-27",
@@ -14948,7 +14969,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000023302",
         "description": "April UNHAS",
         "order_date": "2016-08-22",
@@ -15047,7 +15068,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000023252",
         "description": "Req: July 2016",
         "order_date": "2016-08-12",
@@ -15155,7 +15176,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000023236",
         "description": "UNHAS Aug (Programme bills)",
         "order_date": "2016-08-10",
@@ -15353,7 +15374,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000022874",
         "description": "March bills",
         "order_date": "2016-04-27",
@@ -15470,7 +15491,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000022865",
         "description": "May 2016 bills",
         "order_date": "2016-04-26",
@@ -15578,7 +15599,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000022802",
         "description": "UNHAS FEB bills",
         "order_date": "2016-04-13",
@@ -15731,7 +15752,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000022712",
         "description": "December 2015 bills + Nov DSS",
         "order_date": "2016-03-21",
@@ -15839,7 +15860,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000022320",
         "description": "UNHAS NOV bills",
         "order_date": "2015-12-22",
@@ -15938,7 +15959,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000022188",
         "description": "Oct bills",
         "order_date": "2015-11-23",
@@ -16136,7 +16157,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000022026",
         "description": "August 2015 bills",
         "order_date": "2015-10-19",
@@ -16316,7 +16337,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000021786",
         "description": "June Bills - UNHAS",
         "order_date": "2015-08-19",
@@ -16415,7 +16436,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000021586",
         "description": "May bills 2015",
         "order_date": "2015-06-29",
@@ -16532,7 +16553,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000021484",
         "description": "April 2015 bills",
         "order_date": "2015-06-08",
@@ -16658,7 +16679,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000021377",
         "description": "March bills",
         "order_date": "2015-05-14",
@@ -16739,7 +16760,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000021255",
         "description": "Feb bills",
         "order_date": "2015-04-01",
@@ -16927,7 +16948,8 @@
       "Shiikh",
       "Taleex",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BCDTRAVEL",
@@ -16975,7 +16997,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -17340,7 +17362,7 @@
       },
       {
         "id": "00114198",
-        "title": "Delivering for Results –Support the SDG Implementation",
+        "title": "Delivering for Results \u2013Support the SDG Implementation",
         "locations": [
           "Mogadishu"
         ],
@@ -17934,7 +17956,7 @@
       },
       {
         "project_id": "00114198",
-        "project_title": "Delivering for Results –Support the SDG Implementation",
+        "project_title": "Delivering for Results \u2013Support the SDG Implementation",
         "order_id": "0000028138",
         "description": "DECEMBER_PAYMENT_BCD",
         "order_date": "2019-12-30",
@@ -18186,7 +18208,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000028099",
         "description": "",
         "order_date": "2019-12-20",
@@ -18195,7 +18217,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000028100",
         "description": "",
         "order_date": "2019-12-20",
@@ -18285,7 +18307,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000028087",
         "description": "BCD_DEC_PAYMENT_2019",
         "order_date": "2019-12-18",
@@ -18735,7 +18757,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027892",
         "description": "S) Air Tickets - Domestic",
         "order_date": "2019-11-08",
@@ -18744,7 +18766,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027892",
         "description": "S) Air Tickets - International",
         "order_date": "2019-11-08",
@@ -18753,7 +18775,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027892",
         "description": "S) Air Tickets",
         "order_date": "2019-11-08",
@@ -18762,7 +18784,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027892",
         "description": "Travel services",
         "order_date": "2019-11-08",
@@ -19338,7 +19360,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027513",
         "description": "E) Air Tickets - Domestic",
         "order_date": "2019-07-29",
@@ -19347,7 +19369,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027513",
         "description": "E) Air Tickets - International",
         "order_date": "2019-07-29",
@@ -19356,7 +19378,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027513",
         "description": "S) Air Tickets - International",
         "order_date": "2019-07-29",
@@ -19572,7 +19594,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027503",
         "description": "S) Air Tickets - Domestic",
         "order_date": "2019-07-25",
@@ -19581,7 +19603,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027503",
         "description": "S) Air Tickets - International",
         "order_date": "2019-07-25",
@@ -19644,7 +19666,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027493",
         "description": "S) Air Tickets - Domestic",
         "order_date": "2019-07-23",
@@ -20238,7 +20260,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027099",
         "description": "S) Air Tickets - Domestic",
         "order_date": "2019-04-15",
@@ -20247,7 +20269,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027099",
         "description": "S) Air Tickets - International",
         "order_date": "2019-04-15",
@@ -20256,7 +20278,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000027099",
         "description": "S) Air Tickets",
         "order_date": "2019-04-15",
@@ -20454,7 +20476,7 @@
       },
       {
         "project_id": "00114198",
-        "project_title": "Delivering for Results –Support the SDG Implementation",
+        "project_title": "Delivering for Results \u2013Support the SDG Implementation",
         "order_id": "0000026840",
         "description": "S) Air Tickets - Domestic",
         "order_date": "2019-02-20",
@@ -20463,7 +20485,7 @@
       },
       {
         "project_id": "00114198",
-        "project_title": "Delivering for Results –Support the SDG Implementation",
+        "project_title": "Delivering for Results \u2013Support the SDG Implementation",
         "order_id": "0000026840",
         "description": "Travel services",
         "order_date": "2019-02-20",
@@ -20526,7 +20548,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000026529",
         "description": "",
         "order_date": "2018-11-28",
@@ -21003,7 +21025,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000025999",
         "description": "Req: 27339 line 2",
         "order_date": "2018-07-26",
@@ -21156,7 +21178,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000025790",
         "description": "",
         "order_date": "2018-05-25",
@@ -21165,7 +21187,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000025788",
         "description": "Hargeisa retreat team",
         "order_date": "2018-05-25",
@@ -21219,7 +21241,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000025780",
         "description": "",
         "order_date": "2018-05-24",
@@ -21327,7 +21349,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000025687",
         "description": "",
         "order_date": "2018-05-02",
@@ -21426,7 +21448,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000025268",
         "description": "Abdi Abdirahman Mohamed",
         "order_date": "2017-12-14",
@@ -21579,7 +21601,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000024800",
         "description": "Travel services - Air tickets",
         "order_date": "2017-09-14",
@@ -21624,7 +21646,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000024760",
         "description": "Travel services - Air tickets",
         "order_date": "2017-09-06",
@@ -21966,7 +21988,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000022733",
         "description": "Req: 21506 (Hargeisa team)",
         "order_date": "2016-03-30",
@@ -21993,7 +22015,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000021258",
         "description": "Req: 19364",
         "order_date": "2015-04-01",
@@ -22060,7 +22082,8 @@
       "Shiikh",
       "Taleex",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "CTG Global Managed Services FZCO",
@@ -22797,7 +22820,8 @@
       "Kismayo",
       "Mogadishu",
       "Sool"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GOBANLE CONSTRUCTIONS AND GENERAL SERVIC",
@@ -23050,7 +23074,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KPMG AG",
@@ -23469,7 +23494,8 @@
       "Mogadishu",
       "Nugaal",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DOCOL CONSTRUCTION REHABILITATION AND TR",
@@ -23594,7 +23620,8 @@
       "Jowhar",
       "Kismayo",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MOGADISHU UNIVERSITY",
@@ -23722,7 +23749,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "WARSHIIKH RURAL DEVELOPMENT ORGANIZATION",
@@ -23838,7 +23866,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Researchcare Africa",
@@ -23861,7 +23890,7 @@
       },
       {
         "id": "00114198",
-        "title": "Delivering for Results –Support the SDG Implementation",
+        "title": "Delivering for Results \u2013Support the SDG Implementation",
         "locations": [
           "Mogadishu"
         ],
@@ -24561,7 +24590,7 @@
       },
       {
         "project_id": "00114198",
-        "project_title": "Delivering for Results –Support the SDG Implementation",
+        "project_title": "Delivering for Results \u2013Support the SDG Implementation",
         "order_id": "0000028657",
         "description": "Online Src From Req 0000032573",
         "order_date": "2020-08-13",
@@ -24598,7 +24627,8 @@
       "Mogadiscio",
       "Mogadishu",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "REHABILITATION CONSTRUCTION  GENERAL SE",
@@ -24881,7 +24911,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "NAPS SYSTEMS OY",
@@ -25022,7 +25053,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DALSAN MEDIA GROUP",
@@ -25204,7 +25236,8 @@
       "Mogadishu",
       "Nugaal",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HUMAN DEVELOPMENT CONCERN",
@@ -25300,7 +25333,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "W. GIERTSEN ENERGY SOLUTIONS",
@@ -25449,7 +25483,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "THE PUNTLAND LEGAL AID CENTRE",
@@ -25662,7 +25697,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "LHASSA CONSULTING FZE",
@@ -25829,7 +25865,8 @@
       "Mogadishu",
       "Nugaal",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DELOITTE  TOUCHE",
@@ -25841,7 +25878,7 @@
     "projects": [
       {
         "id": "00114198",
-        "title": "Delivering for Results –Support the SDG Implementation",
+        "title": "Delivering for Results \u2013Support the SDG Implementation",
         "locations": [
           "Mogadishu"
         ],
@@ -26253,7 +26290,7 @@
       },
       {
         "project_id": "00114198",
-        "project_title": "Delivering for Results –Support the SDG Implementation",
+        "project_title": "Delivering for Results \u2013Support the SDG Implementation",
         "order_id": "0000028792",
         "description": "",
         "order_date": "2020-10-19",
@@ -26334,7 +26371,7 @@
       },
       {
         "project_id": "00114198",
-        "project_title": "Delivering for Results –Support the SDG Implementation",
+        "project_title": "Delivering for Results \u2013Support the SDG Implementation",
         "order_id": "0000028319",
         "description": "Online Src From Req 0000031966",
         "order_date": "2020-03-09",
@@ -26370,7 +26407,7 @@
       },
       {
         "project_id": "00114198",
-        "project_title": "Delivering for Results –Support the SDG Implementation",
+        "project_title": "Delivering for Results \u2013Support the SDG Implementation",
         "order_id": "0000028015",
         "description": "E-REQ- 31500",
         "order_date": "2019-12-05",
@@ -26379,7 +26416,7 @@
       },
       {
         "project_id": "00114198",
-        "project_title": "Delivering for Results –Support the SDG Implementation",
+        "project_title": "Delivering for Results \u2013Support the SDG Implementation",
         "order_id": "0000027818",
         "description": "Online Src From Req 0000030991",
         "order_date": "2019-10-17",
@@ -26505,7 +26542,8 @@
       "Mogadishu",
       "Nugaal",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SYL HOTEL",
@@ -26631,7 +26669,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Baker Tilly Merali's CPA",
@@ -26789,7 +26828,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -27478,7 +27517,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000025177",
         "description": "S) Management development",
         "order_date": "2017-11-30",
@@ -27559,7 +27598,8 @@
       "Shiikh",
       "Taleex",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KAFI BROTHERS CONTRACTING CONSTRUCTION",
@@ -27711,7 +27751,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DANOFFICE Aps",
@@ -28115,7 +28156,8 @@
       "Mogadishu",
       "Nugaal",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOLAR ENERGY CONSULTING AND CONSTRUCTION",
@@ -28289,7 +28331,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "JAZEERA PALACE HOTEL",
@@ -28624,7 +28667,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "REHABILITATION CONSTRUCTION & GENERAL SE",
@@ -28701,7 +28745,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GSOL Energy Global AS",
@@ -28765,7 +28810,8 @@
       "Banadir Region",
       "Mogadiscio",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "JUBBA CONSTRUCTION AND LOGISTICS COMPANY",
@@ -28903,6 +28949,24 @@
       "Salahly",
       "Shiikh",
       "Taleex"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "149235",
+        "title": "Supply and Delivery of Heavy Vehicles Ground Transportation 2025 to Somalia (SNA III)",
+        "agency": "UNOPS",
+        "award_date": "19-Jul-2025",
+        "reference": "RFQ/2025/56780",
+        "url": "https://www.ungm.org/Public/ContractAward/149235"
+      },
+      {
+        "award_id": "149238",
+        "title": "Supply and Delivery of Heavy Vehicles Ground Transportation 2025 to Somalia (SNA III)",
+        "agency": "UNOPS",
+        "award_date": "19-Jul-2025",
+        "reference": "RFQ/2025/56780",
+        "url": "https://www.ungm.org/Public/ContractAward/149238"
+      }
     ]
   },
   {
@@ -29808,7 +29872,8 @@
       "Mogadishu",
       "Nugaal",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DANOFFICE IT APS",
@@ -30418,7 +30483,8 @@
       "Mogadishu",
       "Nugaal",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOMALI CONSULTING AND ENGINEERING SERVIC",
@@ -30600,7 +30666,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Norwegian Refugee Council (NRC) - Somalia",
@@ -30642,7 +30709,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Planson International Corporation",
@@ -30798,7 +30866,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -30910,7 +30978,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000026228",
         "description": "Online Src From Req 0000028099",
         "order_date": "2018-10-01",
@@ -31129,7 +31197,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BILAL CONSTRUCTION & TRADING COMPANY",
@@ -31229,7 +31298,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -31305,7 +31374,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000022197",
         "description": "Online Src From Req 0000020693",
         "order_date": "2015-11-24",
@@ -31360,7 +31429,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "najax Supply and construction Company",
@@ -31485,7 +31555,8 @@
       "Jowhar",
       "Kismayo",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "APTECH AFRICA LIMITED",
@@ -31537,7 +31608,8 @@
       "Jowhar",
       "Kismayo",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HODAN CONSTRUCTION COMPANY",
@@ -31658,7 +31730,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DANIMEX COMMUNICATION LTD",
@@ -31759,6 +31832,16 @@
       "Hargeisa",
       "Mogadishu",
       "Puntland"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "152251",
+        "title": "Telecom Equipment",
+        "agency": "UNHCR",
+        "award_date": "30-Jul-2025",
+        "reference": "UNHCR ITB 330",
+        "url": "https://www.ungm.org/Public/ContractAward/152251"
+      }
     ]
   },
   {
@@ -31981,7 +32064,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MOTOROLA SOLUTIONS UK LIMITED",
@@ -32023,7 +32107,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BILAL CONSTRUCTION  TRADING COMPANY",
@@ -32116,7 +32201,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -32264,7 +32349,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000022781",
         "description": "Online Src From Req 0000021512",
         "order_date": "2016-04-11",
@@ -32289,7 +32374,8 @@
       "Garowe District",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "UN WORLD FOOD PROGRAM - DUBAI",
@@ -32381,7 +32467,8 @@
       "Hargeisa",
       "Mogadishu",
       "Puntland"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AIRPORT HOTEL AND CONFERENCE",
@@ -32756,7 +32843,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GUULEED CONSTRUCTION  GENERAL TRADING C",
@@ -32875,7 +32963,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "OTT HYDROMET GMBH",
@@ -32927,7 +33016,8 @@
       "Jowhar",
       "Kismayo",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "PEACE BUSINESS GROUP",
@@ -33107,7 +33197,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MANCHESTER OUTFITTERS (EA) LIMITED",
@@ -33166,7 +33257,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KPMG SA",
@@ -33178,7 +33270,7 @@
     "projects": [
       {
         "id": "00114198",
-        "title": "Delivering for Results –Support the SDG Implementation",
+        "title": "Delivering for Results \u2013Support the SDG Implementation",
         "locations": [
           "Mogadishu"
         ],
@@ -33349,7 +33441,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -33534,7 +33626,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000099222",
         "description": "Online Src From Req 0000053971",
         "order_date": "2020-12-16",
@@ -33543,7 +33635,7 @@
       },
       {
         "project_id": "00114198",
-        "project_title": "Delivering for Results –Support the SDG Implementation",
+        "project_title": "Delivering for Results \u2013Support the SDG Implementation",
         "order_id": "0000099222",
         "description": "Online Src From Req 0000053971",
         "order_date": "2020-12-16",
@@ -33660,7 +33752,7 @@
       },
       {
         "project_id": "00114198",
-        "project_title": "Delivering for Results –Support the SDG Implementation",
+        "project_title": "Delivering for Results \u2013Support the SDG Implementation",
         "order_id": "0000097358",
         "description": "Online Src From Req 0000051894",
         "order_date": "2020-06-30",
@@ -33725,7 +33817,8 @@
       "Shiikh",
       "Taleex",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Raasi Trading and Logistics Company",
@@ -33812,7 +33905,8 @@
       "Kismayo",
       "Mogadiscio",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "WAYA ARAG CONSTRUCTION COMPANY",
@@ -33969,7 +34063,8 @@
       "Kismayo District",
       "Mogadishu",
       "Puntland"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "INTERTRADE INTERNATIONAL SERVICES SA",
@@ -34061,6 +34156,32 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "147590",
+        "title": "Supply and Delivery of Safety Equipment for UNMAS Somalia Programme",
+        "agency": "UNOPS",
+        "award_date": "25-Apr-2025",
+        "reference": "RFQ/2025/56403",
+        "url": "https://www.ungm.org/Public/ContractAward/147590"
+      },
+      {
+        "award_id": "157652",
+        "title": "ITB - Establishment of Long Term Agreements (LTAs) for the supply of Agriculture and Construction Equipment for UN Web Buy Plus",
+        "agency": "UNOPS",
+        "award_date": "10-Jul-2026",
+        "reference": "ITB/2026/61121",
+        "url": "https://www.ungm.org/Public/ContractAward/157652"
+      },
+      {
+        "award_id": "151491",
+        "title": "Supply and Delivery of Water and Fuel Tanker 2025 to Somalia for SNA III, Mogadishu, Somalia",
+        "agency": "UNOPS",
+        "award_date": "09-Oct-2025",
+        "reference": "RFQ/2025/59041",
+        "url": "https://www.ungm.org/Public/ContractAward/151491"
+      }
     ]
   },
   {
@@ -34118,7 +34239,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Rehan Logistics and Trading Company",
@@ -34202,7 +34324,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "UNOPS",
@@ -34299,7 +34422,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOMGAS COMPANY",
@@ -34377,7 +34501,8 @@
       "Hargeisa",
       "Jowhar",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "IFKA BAY CONSTRUCTION AND TRADING COMPAN",
@@ -34533,7 +34658,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "WARSHIIKH CONSTRUCTION AND GENERAL SERV",
@@ -34618,7 +34744,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -34676,7 +34802,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000026274",
         "description": "",
         "order_date": "2018-10-10",
@@ -34737,7 +34863,8 @@
       "Mogadishu",
       "Nugaal",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "THE UN WORLD FOOD PROGRAMME",
@@ -34847,7 +34974,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GEO-ENVI SOLUTIONS INTERNATIONAL LIMITED",
@@ -34986,7 +35114,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Arkaan Leadership and Innovation Hub",
@@ -35028,7 +35157,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "ADVIZING IT",
@@ -35202,7 +35332,8 @@
       "Hargeisa",
       "Mogadishu",
       "Puntland"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Somali Women's Studies Centre",
@@ -35246,7 +35377,8 @@
     "operating_locations": [
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Hiraal Engineering and Construction Comp",
@@ -35331,7 +35463,8 @@
       "Baidoa District",
       "Mogadishu",
       "Sool"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Gure Construction Company",
@@ -35383,7 +35516,8 @@
       "Jowhar",
       "Kismayo",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SAVE SOMALI WOMEN  CHILDREN",
@@ -35478,7 +35612,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "NATIONAL UNION OF SOMALI JOURNALISTS",
@@ -35553,7 +35688,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Livelihoods, Economic & Agriculture Development Organization",
@@ -35604,7 +35740,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "IPE GLOBAL (AFRICA) LIMITED",
@@ -35657,7 +35794,8 @@
     "operating_locations": [
       "Garowe District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOMALI CONSULTING & ENGINEERING SERVICES(SOMCES)",
@@ -35743,7 +35881,8 @@
       "Kismayo",
       "Mogadishu",
       "Sool"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AL-IKHWA GENERAL TRADING COMPANY",
@@ -35791,7 +35930,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "PUNTLAND YOUTH PEER NETWORK",
@@ -35880,7 +36020,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BBC Media Action",
@@ -35942,7 +36083,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MUMIN CONSTRUCTION COMPANY",
@@ -36001,7 +36143,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GIST RESEARCH LIMITED",
@@ -36065,7 +36208,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GENERAL SERVICE AGENCY",
@@ -36173,7 +36317,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOMALI WOMEN DEVELOPMENT CENTRE",
@@ -36259,7 +36404,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOCIETE TRANSIT MARILL",
@@ -36318,7 +36464,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Individual",
@@ -36490,7 +36637,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BAKER TILLY",
@@ -36832,7 +36980,8 @@
       "Mogadiscio",
       "Mogadishu",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Falko Engineering & Consultant CO",
@@ -36884,7 +37033,8 @@
       "Jowhar",
       "Kismayo",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KASMO CONSTRUCTION COMPANY",
@@ -36943,7 +37093,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Rural Education and Agriculture Development Organization",
@@ -36985,7 +37136,8 @@
     },
     "operating_locations": [
       "Baidoa"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "CARWO TOP",
@@ -37049,7 +37201,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BADBAADO GENERAL TRADING  CONSTRUCTION",
@@ -37228,7 +37381,8 @@
       "Hargeisa",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MUSTAQBAL GENERAL TRADING & CONSTRUCTION",
@@ -37280,7 +37434,8 @@
       "Jowhar",
       "Kismayo",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DCAF THE GENEVA CENTRE FOR SECURITY SECTOR GOVERNANCE GE",
@@ -37373,7 +37528,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "ACOM ENGINEERING AND CONSTRCUTION LTD",
@@ -37440,7 +37596,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BDO LLP",
@@ -37502,7 +37659,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AFRILINK LOGISTICS AND CONSTRUCTION COMPANY",
@@ -37544,7 +37702,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HOPEL",
@@ -37588,7 +37747,8 @@
     "operating_locations": [
       "Baidoa",
       "Kismayo District"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "CENTER FOR RESEARCH AND POLICY ANALYSIS",
@@ -37632,7 +37792,8 @@
     "operating_locations": [
       "Baidoa",
       "Kismayo District"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Holland Greentech Kenya limited",
@@ -37683,7 +37844,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MOORE STEPHENS LLP",
@@ -37754,7 +37916,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "WFP SOMALIA",
@@ -37842,7 +38005,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DAVID PAYNE",
@@ -37922,7 +38086,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "JANKEL ARMOURING LTD",
@@ -37964,7 +38129,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "INTEGRITY RESEARCH AND CONSULTANCY LTD",
@@ -38006,7 +38172,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "TIMACADE CONSTRUCTION",
@@ -38059,7 +38226,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "THE BURWASH CONSULTING GROUP LIMITED",
@@ -38163,7 +38331,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "ABRIMO GLOBAL CONSULTING LIMITED",
@@ -38249,7 +38418,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -38362,7 +38531,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000021634",
         "description": "Contract no. 2014.047.CON.OPS",
         "order_date": "2015-07-08",
@@ -38410,7 +38579,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DAQARE TRAVEL AGENCY AND GENERAL SERVIC",
@@ -38576,7 +38746,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "ATEA A/S",
@@ -38629,7 +38800,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Aabow Group of Company",
@@ -38671,7 +38843,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HYDROC GMBH",
@@ -38770,7 +38943,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BULAALE GENRAL TRADING & CONTRACTING-CO",
@@ -38812,6 +38986,16 @@
     },
     "operating_locations": [
       "Mogadishu"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "152755",
+        "title": "Renovation of UNCC/Clinic, GYM room repairing and construction of underground water",
+        "agency": "UNDP",
+        "award_date": "23-Dec-2025",
+        "reference": "10494377/UNDP-SOM-00572",
+        "url": "https://www.ungm.org/Public/ContractAward/152755"
+      }
     ]
   },
   {
@@ -38929,7 +39113,8 @@
     "operating_locations": [
       "Banadir Region",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOMALI AGRICULTURAL TECHNICAL GROUP",
@@ -39005,7 +39190,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KAALO AID & DEVELOPMENT",
@@ -39047,7 +39233,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BLUE DIAMOND CONSTRUCTION COMPANYCONSUL",
@@ -39089,7 +39276,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "PKF CONSULTING LIMITED",
@@ -39160,7 +39348,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -39313,7 +39501,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000022780",
         "description": "Online Src From Req 0000021478",
         "order_date": "2016-04-08",
@@ -39436,7 +39624,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HORMUUD TELECOM",
@@ -40333,7 +40522,8 @@
       "Shiikh",
       "Taleex",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "PRASOL TRAIN CONSULTING LTD",
@@ -40381,7 +40571,8 @@
       "Mogadishu",
       "Nugaal",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "TRANSIT MARILL SARL",
@@ -40429,7 +40620,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "RED SEA TRADING AND CONSTRUCTION COMPANY",
@@ -40517,7 +40709,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Golden Construction & Logistics",
@@ -40559,7 +40752,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AMIN ENTERPRISES",
@@ -40702,7 +40896,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GEORGE CURTIS CRAWFORD",
@@ -40753,7 +40948,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "JAMHURIYA FROUP (JAMGRO)",
@@ -40795,7 +40991,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GEOPOLICITY INC",
@@ -40886,7 +41083,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "OKI GENERAL TRADING LLC",
@@ -40956,6 +41154,16 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "148735",
+        "title": "Supply of Warehouse Handling Equipment For Tanzania and Sao Tome",
+        "agency": "UNOPS",
+        "award_date": "24-Jun-2025",
+        "reference": "ITB/2024/54095",
+        "url": "https://www.ungm.org/Public/ContractAward/148735"
+      }
     ]
   },
   {
@@ -41004,7 +41212,8 @@
       "Mogadishu",
       "Nugaal",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BULAALE GENRAL TRADING  CONTRACTING-CO",
@@ -41092,7 +41301,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOMALI BUSINESS MACHINES LTD",
@@ -41264,7 +41474,8 @@
       "Garowe District",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "M.IISE CLEARANCE SERVICES AND GENERAL SE",
@@ -41372,7 +41583,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MEDINIQUE HEALTHCARE LTD",
@@ -41485,7 +41697,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "NIMCAAN CONSTRUCTION AND LOGISTICS COMPANY",
@@ -41596,7 +41809,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GOLDEN RELIEF RESOURCES (SOM) LTD.",
@@ -41663,7 +41877,8 @@
       "Hargeisa",
       "Jowhar",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KHALIL CONSTRUCTION COMPANY",
@@ -41736,7 +41951,8 @@
     "operating_locations": [
       "Deex Cayn",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "EMPTOR INTERNATIONAL AS",
@@ -41800,7 +42016,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Deyaarconstruction and Drilling company",
@@ -41842,7 +42059,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Dell Marketing L.P.",
@@ -41893,7 +42111,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HORYAL CONSTRUCTION  WATER ENGINEERING",
@@ -41981,7 +42200,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KINGFINE CORPORATION LIMITED",
@@ -42083,7 +42303,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Bradley Conradie Halton Cheadle",
@@ -42155,7 +42376,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "FREEDOM AIRLINE EXPRESS LTD",
@@ -42241,7 +42463,8 @@
     "operating_locations": [
       "Garowe District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MIDAS INFRATEK INTERNATIONAL TRADING LLC",
@@ -42283,7 +42506,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SPECICOM TECHNOLOGIES LIMITED",
@@ -42415,7 +42639,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MOGADISHU SERVICE LIMITED",
@@ -42467,7 +42692,8 @@
       "Jowhar",
       "Kismayo",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Sight And Sound Computers Ltd",
@@ -42588,7 +42814,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HANIFE KURT",
@@ -42635,7 +42862,8 @@
     "yearly_breakdown": {
       "2015": 82500.0
     },
-    "operating_locations": []
+    "operating_locations": [],
+    "ungm_awards": []
   },
   {
     "name": "ANTHONY JAN MILLS",
@@ -42687,7 +42915,8 @@
       "Jowhar",
       "Kismayo",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Somali Marine and fisheries science institute",
@@ -42729,6 +42958,16 @@
     },
     "operating_locations": [
       "Mogadishu"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "153223",
+        "title": "Long Term Agreement for provision of project design and development services primarily in climate technology innovation for UNIDO on a call-off basis",
+        "agency": "UNIDO",
+        "award_date": "05-Dec-2025",
+        "reference": "UNIDO Long-term Agreement (LTA) No. 4000000766 - UNIDO RFx No. 7000007769",
+        "url": "https://www.ungm.org/Public/ContractAward/153223"
+      }
     ]
   },
   {
@@ -42771,7 +43010,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HORSEED SERVICES",
@@ -42813,7 +43053,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KISMAYO GAS LIMITED",
@@ -42880,7 +43121,8 @@
       "Hargeisa",
       "Jowhar",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KENYA EDITORS GUILD",
@@ -42955,7 +43197,8 @@
     "operating_locations": [
       "Banadir Region",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Innovative Action For Development and Resilience",
@@ -42997,7 +43240,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Horn Afric Development Consultants",
@@ -43066,7 +43310,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "INTERNATIONAL ALERT",
@@ -43078,7 +43323,7 @@
     "projects": [
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -43091,7 +43336,7 @@
     "orders": [
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000025550",
         "description": "",
         "order_date": "2018-03-22",
@@ -43100,7 +43345,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000024501",
         "description": "S) Learning - training of counterparts",
         "order_date": "2017-07-04",
@@ -43119,10 +43364,11 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
-    "name": "Fondation pour l'institut de hautes étud",
+    "name": "Fondation pour l'institut de hautes \u00e9tud",
     "slug": "fondation-pour-l-institut-de-hautes-tud",
     "total_amount": 75000.0,
     "orders_count": 1,
@@ -43167,7 +43413,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Atea A/S",
@@ -43504,7 +43751,8 @@
     "operating_locations": [
       "Banadir Region",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "JAZEERA PALACE HOTEL   -To be merged **",
@@ -43637,7 +43885,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AFRICA'S VOICES FOUNDATION LIMITED",
@@ -43679,7 +43928,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DCAF THE GENEVA CENTRE FOR SECURITY",
@@ -43721,7 +43971,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "PALMS HOTEL LTD",
@@ -43863,7 +44114,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DUNDEX",
@@ -43949,7 +44201,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AL-WAFAA CONSTRUCTION COMPANY",
@@ -44014,7 +44267,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BEWSYS LIMITED",
@@ -44078,7 +44332,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "JUBBA ILAYS WELL DRILLING COMPANY",
@@ -44122,7 +44377,8 @@
     "operating_locations": [
       "Baidoa District",
       "Sool"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BBC MEDIA ACTION",
@@ -44164,7 +44420,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KARE VOLLAN",
@@ -44226,7 +44483,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "CIRCUIT BUSINESS SYSTEMS LTD",
@@ -44316,7 +44574,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOMALI YOUTH DEVELOPMENT NETWORK \"SOYDEN",
@@ -44367,7 +44626,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AMEX Export Import GmbH",
@@ -44409,7 +44669,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "RAYS CONSTRUCTION AND TRADING COMPANY",
@@ -44497,7 +44758,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Somaliland Lawyers Association",
@@ -44541,7 +44803,8 @@
     "operating_locations": [
       "Mogadishu",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DARURO TRAVEL",
@@ -44583,7 +44846,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "YOUTH VOLUNTEERS FOR DEVELOPMENT  ENVIR",
@@ -44639,7 +44903,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DALSAN CONSTRUCTION, TRANSPORTATION & GENERAL SERVICES COMPANY LIMITED",
@@ -44692,7 +44957,8 @@
     "operating_locations": [
       "Baidoa District",
       "Sool"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOULEF GUESSOUM",
@@ -44754,7 +45020,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "WADAJIR GENERAL TRADING & CONTRACTING CO",
@@ -44798,7 +45065,8 @@
     "operating_locations": [
       "Deex Cayn",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "CAMP OPERATING GROUP LTD",
@@ -44842,7 +45110,8 @@
     "operating_locations": [
       "Mogadishu",
       "Puntland"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Star Construction and Logistics Company",
@@ -44907,7 +45176,8 @@
       "Baidoa District",
       "Mogadishu",
       "Sool"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "TRIBE HOTEL LIMITED",
@@ -45029,7 +45299,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "INTERMEDIA DEVELOPMENT CONSULTANTS LTD",
@@ -45168,7 +45439,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GAPUMA (UK) LIMITED",
@@ -45221,7 +45493,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AGAN HOTEL",
@@ -45287,7 +45560,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KALKAAL CONSTRUCTION COMPANY",
@@ -45333,7 +45607,8 @@
       "Deex Cayn",
       "Mogadishu",
       "Puntland"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "PEGASYS GLOBAL CONSULTING PTY LTD",
@@ -45379,7 +45654,8 @@
       "Banadir Region",
       "Mogadiscio",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "IBRASOMGREE SOLAR ENERGY",
@@ -45421,7 +45697,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "WILLIAM GARRISON MCCUEN",
@@ -45463,7 +45740,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "WA PRODUCTS (UK) LIMITED",
@@ -45511,7 +45789,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "TOURISM PROMOTION SERVICES (PAK) LTD",
@@ -45553,7 +45832,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "CITY PALACE HOTEL",
@@ -45636,7 +45916,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "FRANCESCA MARGHERITA DEL MESE",
@@ -45684,7 +45965,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "CITY ROYAL RESORT HOTEL LTD",
@@ -45726,7 +46008,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SKA INTERNATIONAL GROUP LIMITED",
@@ -45770,6 +46053,16 @@
     "operating_locations": [
       "Mogadishu",
       "Puntland"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "152864",
+        "title": "Provision of Training Services for Drivers and Operators of Heavy Duty and Earth Moving Equipment (SNA III)",
+        "agency": "UNOPS",
+        "award_date": "03-Dec-2025",
+        "reference": "RFQ/2025/60014",
+        "url": "https://www.ungm.org/Public/ContractAward/152864"
+      }
     ]
   },
   {
@@ -45821,7 +46114,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Lexus Addis Hotel PLC",
@@ -45863,7 +46157,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "STARCOM BUSINESS CENTER",
@@ -45957,7 +46252,8 @@
       "Jowhar",
       "Kismayo",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "WIRED LIMITED",
@@ -45999,7 +46295,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "EXPRESS AUTOMATION LTD",
@@ -46074,7 +46371,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "IJ SUPPORT LIMITED",
@@ -46116,7 +46414,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AIRPORT HOTEL  CONFERENCE",
@@ -46172,7 +46471,8 @@
       "Hargeisa",
       "Jowhar",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "CITY PALACE",
@@ -46242,7 +46542,8 @@
       "Garowe District",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "PACIFICA TRADING COMPANY KENYA LIMITED",
@@ -46298,7 +46599,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "TAMAAM CONSTRUCTION  CONTRACTOR CO.",
@@ -46354,7 +46656,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SMART ELECTRONICS AND ICT SOLUTIONS LTD",
@@ -46407,7 +46710,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Cordoba Peace Institute - Geneva",
@@ -46449,7 +46753,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Elilly International Hotel( Gemshu",
@@ -46473,7 +46778,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -46486,7 +46791,7 @@
     "orders": [
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000036952",
         "description": "",
         "order_date": "2019-06-20",
@@ -46515,7 +46820,8 @@
     "operating_locations": [
       "Garowe District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MARTISOOR HOTEL",
@@ -46557,7 +46863,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "FOMERS CO. LTD",
@@ -46599,7 +46906,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Community Nexus Consulting",
@@ -46641,7 +46949,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "POLYCOM INC",
@@ -46694,7 +47003,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AL KHAYRAD SUPPLY COMPANY",
@@ -46736,7 +47046,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOUTHERN SUN MAYFAIR NAIROBI",
@@ -46780,7 +47091,8 @@
     "operating_locations": [
       "Garoowe",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Kaafi Horn Renewable Energy Company",
@@ -46822,6 +47134,16 @@
     },
     "operating_locations": [
       "Mogadishu"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "151950",
+        "title": "Title\tSolar-powered freezer sets for Beneficiaries in Berbera to Strengthen Fisheries",
+        "agency": "UNDP",
+        "award_date": "12-Nov-2025",
+        "reference": "10470710/UNDP-SOM-00523",
+        "url": "https://www.ungm.org/Public/ContractAward/151950"
+      }
     ]
   },
   {
@@ -46873,7 +47195,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HARUM E I MUKHAYER",
@@ -46961,7 +47284,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "EXPRESS TRAVEL GROUP",
@@ -46984,7 +47308,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -47006,7 +47330,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000021373",
         "description": "Req: 19557",
         "order_date": "2015-05-13",
@@ -47023,7 +47347,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOMALILAND FIRE AND SAFETY COMPANY",
@@ -47076,7 +47401,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "WADAJIR RURAL DEVELOPMENT ORGANIZATION",
@@ -47118,7 +47444,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "EL-GAR CONSTRUCTION COMPANY",
@@ -47160,7 +47487,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AVALON INTL GENERAL TRADING LLC",
@@ -47202,6 +47530,16 @@
     },
     "operating_locations": [
       "Mogadishu"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "152216",
+        "title": "Achat et livraison des Equipements de protection (Kinshasa en RDC)",
+        "agency": "UNOPS",
+        "award_date": "11-Jun-2025",
+        "reference": "RFQ/2024/50273",
+        "url": "https://www.ungm.org/Public/ContractAward/152216"
+      }
     ]
   },
   {
@@ -47270,7 +47608,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "CUSTOMSOUND LTD",
@@ -47312,7 +47651,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "ISRA CONSTRUCTION & SERVICE CENTRE",
@@ -47368,7 +47708,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "IGNATIUS KENNETH TAKAWIRA",
@@ -47418,7 +47759,8 @@
       "Deex Cayn",
       "Mogadishu",
       "Puntland"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Windsor Trading FZE",
@@ -47462,6 +47804,24 @@
     "operating_locations": [
       "Mogadishu",
       "Woqooyi Galbeed"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "157282",
+        "title": "ICT Equipment for the Somaliland Police /MOI and  Judiciary commission for the  case management",
+        "agency": "UNDP",
+        "award_date": "23-Jun-2026",
+        "reference": "10551476/UNDP-SOM-00634",
+        "url": "https://www.ungm.org/Public/ContractAward/157282"
+      },
+      {
+        "award_id": "147535",
+        "title": "Renewal/Acquisition of Katalon Studio Enterprise and TestCloud (Desktop & Mobile) Licences",
+        "agency": "UNOPS",
+        "award_date": "22-Apr-2025",
+        "reference": "RFQ/2025/56598",
+        "url": "https://www.ungm.org/Public/ContractAward/147535"
+      }
     ]
   },
   {
@@ -47504,7 +47864,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "WARSAME MOHMUD HASSAN",
@@ -47546,7 +47907,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOMTECH ENGINEERING  CONSTRUCTION CO",
@@ -47590,7 +47952,8 @@
     "operating_locations": [
       "Garoowe",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MODERN SUPPLY AND CONSTRUCTION COMPANY",
@@ -47641,7 +48004,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "UNON",
@@ -47731,7 +48095,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -47881,7 +48245,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000024680",
         "description": "RC staff",
         "order_date": "2017-08-17",
@@ -47908,7 +48272,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000023690",
         "description": "Staff shuttle",
         "order_date": "2016-10-31",
@@ -47935,7 +48299,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000023213",
         "description": "UNON bus inv 140000223",
         "order_date": "2016-08-02",
@@ -47985,7 +48349,8 @@
       "Shiikh",
       "Taleex",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Victoria Furnitures Ltd",
@@ -48027,7 +48392,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "FORCIER CONSULTING",
@@ -48069,7 +48435,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Afrolink Consulting",
@@ -48120,7 +48487,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "ALEXANDRA ALICE WILLIAMS",
@@ -48170,7 +48538,8 @@
       "Deex Cayn",
       "Mogadishu",
       "Puntland"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SAROVA PANAFRIC HOTEL",
@@ -48223,7 +48592,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Jubba Hotel (Jubba Group of Company)",
@@ -48274,7 +48644,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MUSTAQBAL ACCOUNTANTS FIRM",
@@ -48316,7 +48687,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "ENVIRONMENTAL SYSTEMS RESEARCH INSTITUTE",
@@ -48378,7 +48750,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "UNITED NATIONS SYSTEM STAFF COLLEGE",
@@ -48420,7 +48793,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SYNERGY INTERNATIONAL SYSTEMS  INC",
@@ -48462,7 +48836,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "CONFLICT MANAGEMENT CONSULTING AISBL",
@@ -48504,7 +48879,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SKYE TURNER-WALKER",
@@ -48555,7 +48931,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KREPS Handelsgesellschafts Nachfolge",
@@ -48612,7 +48989,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Arepo GmbH",
@@ -48654,7 +49032,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BISHAARO FAST FOOD",
@@ -48696,7 +49075,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SAHAL SHIPPING SERVICE   -To be merged **",
@@ -48780,7 +49160,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SEASON GENERAL TRADING LTD",
@@ -48832,7 +49213,8 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "LEMIGO HOTEL",
@@ -48874,7 +49256,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MATTHEW BECK GORDON",
@@ -48916,7 +49299,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "INDIAN OCEAN PROPERTIES",
@@ -48960,7 +49344,8 @@
     "operating_locations": [
       "Mogadishu",
       "Puntland"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "PARADISE SAFARI PARK LIMITED",
@@ -49022,7 +49407,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MONICA RISPO",
@@ -49092,7 +49478,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AXIOM MONITORING AND EVALUATION",
@@ -49134,7 +49521,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "NEWMAN GROUP LIMITED",
@@ -49182,7 +49570,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Amoud University",
@@ -49224,7 +49613,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BANADIR CONSTRUCTION COMPANY  GENERAL S",
@@ -49266,7 +49656,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Aptech Africa Limited",
@@ -49312,7 +49703,8 @@
       "Banadir Region",
       "Mogadiscio",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "FARSIGHT AFRICA GROUP LIMITED",
@@ -49354,7 +49746,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DIIRAD FILMS LTD",
@@ -49396,7 +49789,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "CENTER FOR DEMOCRACY  GOVERNANCE (CDG)",
@@ -49438,7 +49832,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GAMS Software GmbH",
@@ -49480,7 +49875,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SHEARGOLD LIMITED",
@@ -49533,7 +49929,8 @@
     "operating_locations": [
       "Banadir Region",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "OCTOBER CONSTRUCTION AND GENERAL SERVICE",
@@ -49577,7 +49974,8 @@
     "operating_locations": [
       "Baidoa District",
       "Sool"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Gasiin Bistro",
@@ -49619,7 +50017,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Cakaara Construction Company and Development Agency",
@@ -49670,7 +50069,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "TUBALI LIMITED",
@@ -49712,7 +50112,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AXEL GUENTER Dr KOETZ",
@@ -49754,7 +50155,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "STAR TRADING COMPANY LTD",
@@ -49842,7 +50244,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "IMPERIAL BOTANICAL BEACH HOTEL",
@@ -49854,7 +50257,7 @@
     "projects": [
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -49867,7 +50270,7 @@
     "orders": [
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000015166",
         "description": "Transform Leadership Training:<< * Half board accommodation for 50 pax for 6 nights",
         "order_date": "2017-08-29",
@@ -49884,7 +50287,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HEEN MEDIA GROUP",
@@ -49928,7 +50332,8 @@
     "operating_locations": [
       "Banadir Region",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Endale and Families  Private Limited",
@@ -49970,7 +50375,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MOHAMUD MOHAMED",
@@ -50016,7 +50422,8 @@
       "Banadir Region",
       "Mogadiscio",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "ASK DEVELOPMENT",
@@ -50069,7 +50476,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOMALI YOUTH DEVELOPMENT NETWORK SOYDEN\"",
@@ -50111,7 +50519,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MOQDISHO CITY INTERNATIONAL HOTEL",
@@ -50168,7 +50577,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KUCHEN REZEPTE LIMITED",
@@ -50210,7 +50620,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "NOVELTY EXPERIENTIAL CONSULTANTS LIMITED",
@@ -50258,7 +50669,8 @@
       "Mogadishu",
       "Nugaal",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Enreda SCA",
@@ -50311,7 +50723,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "LAKE VICTORIA HOTEL LIMITED",
@@ -50353,7 +50766,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AUSTIN MURANGANWA ZVOMA",
@@ -50395,7 +50809,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "LIGHT TRAVEL AGENCY",
@@ -50437,7 +50852,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "CONSILIUM GROUP ADVISORS LLC",
@@ -50479,7 +50895,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AIR-DJIBOUTI",
@@ -50521,7 +50938,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Plus Minus d.o.o. Sarajevo",
@@ -50559,7 +50977,8 @@
     "yearly_breakdown": {
       "2026": 27300.0
     },
-    "operating_locations": []
+    "operating_locations": [],
+    "ungm_awards": []
   },
   {
     "name": "Centre for Peace and Development Initiatives (CPDI)",
@@ -50601,7 +51020,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BANCROFT GLOBAL DEVELOPMENT",
@@ -50613,7 +51033,7 @@
     "projects": [
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -50626,7 +51046,7 @@
     "orders": [
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000021628",
         "description": "Online Src From Req 0000019915",
         "order_date": "2015-07-08",
@@ -50635,7 +51055,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000021548",
         "description": "Online Src From Req 0000019804",
         "order_date": "2015-06-18",
@@ -50652,7 +51072,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "JAWAHIR YUSUF ADAM",
@@ -50694,7 +51115,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Netzwerk Gewaltfreie Kommunikation Darmstadt Sudhessen e V",
@@ -50771,7 +51193,8 @@
       "Balad District",
       "Banadir Region",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Sahal Shipping Services Ltd",
@@ -50822,7 +51245,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DOMINIQUE PAUL VALERE LAPPRAND",
@@ -50870,7 +51294,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "ELINOR BAJRAKTARI LTD",
@@ -50912,7 +51337,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SoftBD Ltd",
@@ -50954,7 +51380,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KAFI SUPPLY AND LOGISTICS COMPANY",
@@ -50996,7 +51423,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KEVIN MARK-ANDREW HILL",
@@ -51034,7 +51462,8 @@
     "yearly_breakdown": {
       "2015": 25800.0
     },
-    "operating_locations": []
+    "operating_locations": [],
+    "ungm_awards": []
   },
   {
     "name": "ENGINEERS HUB COMPANY",
@@ -51076,7 +51505,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "RAKHIMOVA KOMILA",
@@ -51118,7 +51548,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "CARWO ARLAADI",
@@ -51160,7 +51591,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AL-HAYAT CONSTRUCTION AND LOGISTICS COMP",
@@ -51208,7 +51640,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOMALI CONSULTING  ENGINEERING SERVICES",
@@ -51252,7 +51685,8 @@
     "operating_locations": [
       "Garoowe",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SERENE SAROVAR PREMIERE HOTEL",
@@ -51296,7 +51730,8 @@
     "operating_locations": [
       "Mogadishu",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BOLE AMBASSADOR HOTEL",
@@ -51308,7 +51743,7 @@
     "projects": [
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -51321,7 +51756,7 @@
     "orders": [
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000021306",
         "description": "Online Src From Req 0000019412",
         "order_date": "2015-04-21",
@@ -51338,7 +51773,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SYNERGY INTERNATIONAL SYSTEMS INC",
@@ -51380,7 +51816,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "ANNA SAMBO",
@@ -51434,7 +51871,8 @@
       "Kismayo District",
       "Mogadishu",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "ALPHA LOGISTICS SERVICES (EPZ) LTD",
@@ -51510,7 +51948,8 @@
       "Hargeisa",
       "Mogadishu",
       "Puntland"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DREAMCATCHER PRODUCTIONS LIMITED",
@@ -51554,7 +51993,8 @@
     "operating_locations": [
       "Garowe District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MEDILAB SAL",
@@ -51596,7 +52036,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "ALI DAUD AHMED",
@@ -51646,7 +52087,8 @@
       "Deex Cayn",
       "Mogadishu",
       "Puntland"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HOME STAR CIVIL ENG  CONSTRUCTION CO",
@@ -51734,7 +52176,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AAMIN VOLUNTARY AND RELIEF ORGANIZATION",
@@ -51776,7 +52219,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "3D Research Limited",
@@ -51818,7 +52262,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "FURQAN TRADING AND TRANSPORTATION COMPAN",
@@ -51860,7 +52305,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "TAAKULO SOMALILAND COMMUNITY",
@@ -51902,7 +52348,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "RED SEA SERVICE AGENCY",
@@ -51950,7 +52397,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "STAR EMPIRE GROUP",
@@ -51992,7 +52440,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AL-MANAL CARPETS AND FURNITURE",
@@ -52040,7 +52489,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BANADIR CONSTRUCTION COMPANY & GENERAL S",
@@ -52082,7 +52532,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GSOL ENERGY GLOBAL A/S",
@@ -52126,6 +52577,16 @@
     "operating_locations": [
       "Deex Cayn",
       "Mogadishu"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "148869",
+        "title": "RETENDER - Establishment of Long Term Agreements for the Supply of Containerised Solar Mini-Grids for UN Web Buy Plus",
+        "agency": "UNOPS",
+        "award_date": "04-Jul-2025",
+        "reference": "ITB/2024/54866",
+        "url": "https://www.ungm.org/Public/ContractAward/148869"
+      }
     ]
   },
   {
@@ -52168,7 +52629,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BINU PARTHAN",
@@ -52212,7 +52674,8 @@
     "operating_locations": [
       "Deex Cayn",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "TOP SOURCES TRADING LIMITED",
@@ -52260,7 +52723,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "BANANEY CONSTRUCTION AND GENERAL SERVICE",
@@ -52302,7 +52766,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "TSAMOTA LIMITED",
@@ -52350,6 +52815,16 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "156476",
+        "title": "Supply and Delivery of Forensic Evidence Collection Kits for UNMAS Somalia",
+        "agency": "UNOPS",
+        "award_date": "22-Apr-2026",
+        "reference": "RFQ/2026/62223",
+        "url": "https://www.ungm.org/Public/ContractAward/156476"
+      }
     ]
   },
   {
@@ -52392,7 +52867,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "OCEAN TECHNOLOGIES LIMITED",
@@ -52480,7 +52956,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "National Consultancy Firm",
@@ -52522,7 +52999,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GLOBAL INTERNET COMPANY",
@@ -52556,7 +53034,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -52759,7 +53237,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000023841",
         "description": "",
         "order_date": "2016-12-01",
@@ -52813,7 +53291,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000022866",
         "description": "Online Src From Req 0000021670",
         "order_date": "2016-04-26",
@@ -52840,7 +53318,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000022226",
         "description": "Online Src From Req 0000020677",
         "order_date": "2015-12-02",
@@ -52858,7 +53336,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000021562",
         "description": "Online Src From Req 0000019617",
         "order_date": "2015-06-24",
@@ -52907,7 +53385,8 @@
       "Shiikh",
       "Taleex",
       "Woqooyi Galbeed"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DAHIR ELMI WARSAME",
@@ -52949,7 +53428,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Daruro Air Travel and Logistics",
@@ -52991,6 +53471,24 @@
     },
     "operating_locations": [
       "Mogadishu"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "161149",
+        "title": "Procurement of a flight ticket for a staff mission to Bossaso, Somalia",
+        "agency": "ILO",
+        "award_date": "09-Nov-2026",
+        "reference": "rfx_13781_ROAF",
+        "url": "https://www.ungm.org/Public/ContractAward/161149"
+      },
+      {
+        "award_id": "161039",
+        "title": "Procurement of SIYB Training Participants' Tickets to Mogadishu, Somalia",
+        "agency": "ILO",
+        "award_date": "05-Nov-2026",
+        "reference": "rfx_13619_ROAF",
+        "url": "https://www.ungm.org/Public/ContractAward/161039"
+      }
     ]
   },
   {
@@ -53043,7 +53541,8 @@
       "Jowhar",
       "Kismayo",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "TEXT BOOK CENTRE LIMITED",
@@ -53085,7 +53584,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "ASAD YUSUF",
@@ -53127,7 +53627,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KRISTOFFER NILAUS TARP",
@@ -53169,7 +53670,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "RESPONSE LIMITED",
@@ -53211,7 +53713,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "RAYS CONSTRUCTION  TRADING COMPANY",
@@ -53253,7 +53756,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "KUEHNE+NAGEL LTD",
@@ -53301,7 +53805,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HEIDI TAVAKOLI HEDAYAT POUR",
@@ -53343,7 +53848,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "JUBA STATIONERY  PRINTING",
@@ -53385,7 +53891,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GUULEED CONSTRUCTION AND TRANSPORT CO",
@@ -53438,7 +53945,8 @@
     "operating_locations": [
       "Baidoa District",
       "Sool"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SOFTBD LTD.",
@@ -53480,7 +53988,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SPACE ENGINEERING LTD",
@@ -53524,7 +54033,8 @@
     "operating_locations": [
       "Mogadishu",
       "Puntland"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "REBECCA JANE BENSON",
@@ -53574,7 +54084,8 @@
       "Deex Cayn",
       "Mogadishu",
       "Puntland"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HARAM ELSAFA GASIM IBRAHIM MUKHAYER",
@@ -53618,7 +54129,8 @@
     "operating_locations": [
       "Deex Cayn",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Pillar Construction and Contracting Company",
@@ -53683,7 +54195,8 @@
       "Baidoa District",
       "Mogadishu",
       "Sool"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "PEACE AND DEVELOPMENT RESEARCH CENTRE",
@@ -53731,7 +54244,8 @@
       "Garoowe",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SHEFFIELD STEEL SYSTEMS LIMITED",
@@ -53773,7 +54287,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "RASMI GENERAL TRADING  CONSTRUCTION COM",
@@ -53829,6 +54344,16 @@
       "Jowhar District",
       "Kismayo District",
       "Mogadishu"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "150191",
+        "title": "Supply and Delivery of Sports Training items to General Dhagabadan Training Centre (GDTC) , Mogadishu Somalia.",
+        "agency": "UNOPS",
+        "award_date": "28-Aug-2025",
+        "reference": "RFQ/2025/58930",
+        "url": "https://www.ungm.org/Public/ContractAward/150191"
+      }
     ]
   },
   {
@@ -53917,7 +54442,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "URURKA QAREENADA SOOMAALIYEED",
@@ -53959,7 +54485,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "GISCON MIDDLE EAST W.L.L.",
@@ -54001,7 +54528,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "DAYAX TRADING COMPANY (DCT)",
@@ -54043,6 +54571,16 @@
     },
     "operating_locations": [
       "Mogadishu"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "150503",
+        "title": "Supply and Delivery of  Life Saver Equipment for SNA , Mogadishu Somalia.",
+        "agency": "UNOPS",
+        "award_date": "09-Sep-2025",
+        "reference": "RFQ/2025/59105",
+        "url": "https://www.ungm.org/Public/ContractAward/150503"
+      }
     ]
   },
   {
@@ -54085,7 +54623,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "NADIIF ACCOMMODATION COMPANY",
@@ -54127,7 +54666,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "IBRAHIM ABDULLAHI ADAN",
@@ -54169,7 +54709,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "AP SERVICES A/S",
@@ -54213,6 +54754,16 @@
     "operating_locations": [
       "Mogadishu",
       "Puntland"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "157608",
+        "title": "Invitation To Bid for Long Term Agreement (LTA) for Medical Supplies",
+        "agency": "UNOPS",
+        "award_date": "04-Jun-2026",
+        "reference": "ITB/2025/57955",
+        "url": "https://www.ungm.org/Public/ContractAward/157608"
+      }
     ]
   },
   {
@@ -54255,7 +54806,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HAYALI INVESTMENT LIMITED",
@@ -54297,7 +54849,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Novelty Experiential Consultants Limited",
@@ -54339,7 +54892,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "HORMUUD TELECOM SOMALIA INC.",
@@ -54410,7 +54964,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -54488,7 +55042,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000023816",
         "description": "",
         "order_date": "2016-11-28",
@@ -54509,7 +55063,8 @@
       "Garowe District",
       "Hargeisa",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SAGAL JET PRINTING COMPANY",
@@ -54553,6 +55108,16 @@
     "operating_locations": [
       "Mogadishu",
       "Woqooyi Galbeed"
+    ],
+    "ungm_awards": [
+      {
+        "award_id": "152376",
+        "title": "Printing materials and visibilities items .",
+        "agency": "UNDP",
+        "award_date": "02-Dec-2025",
+        "reference": "10483799/UNDP-SOM-00564-2",
+        "url": "https://www.ungm.org/Public/ContractAward/152376"
+      }
     ]
   },
   {
@@ -54618,7 +55183,8 @@
     "operating_locations": [
       "Kismayo District",
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "MIDNIMO HALL & RESTAURANT",
@@ -54660,7 +55226,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "PARKWAY TECHNOLOGY LIMITED",
@@ -54702,7 +55269,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SHEAR GOLD LTD",
@@ -54736,7 +55304,7 @@
       },
       {
         "id": "00085380",
-        "title": "Strengthening Gender Equality and Women’s Empowerment",
+        "title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "locations": [
           "Mogadishu"
         ],
@@ -54767,7 +55335,7 @@
       },
       {
         "project_id": "00085380",
-        "project_title": "Strengthening Gender Equality and Women’s Empowerment",
+        "project_title": "Strengthening Gender Equality and Women\u2019s Empowerment",
         "order_id": "0000025610",
         "description": "",
         "order_date": "2018-04-13",
@@ -54784,7 +55352,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Aestas Inc",
@@ -54835,7 +55404,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "Somali Storytellers",
@@ -54877,7 +55447,8 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SAFARICOM LTD",
@@ -55052,7 +55623,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "SIAM PROPERTY DEVELOPMENT CO LTD",
@@ -55140,7 +55712,8 @@
       "Salahly",
       "Shiikh",
       "Taleex"
-    ]
+    ],
+    "ungm_awards": []
   },
   {
     "name": "WILLIS LIMITED",
@@ -55182,6 +55755,7 @@
     },
     "operating_locations": [
       "Mogadishu"
-    ]
+    ],
+    "ungm_awards": []
   }
 ]
