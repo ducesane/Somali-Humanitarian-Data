@@ -81,7 +81,105 @@
         "url": "http://open.undp.org/projects/01003198"
       }
     ],
-    "documents_count": 7
+    "documents_count": 7,
+    "purchase_orders": [
+      {
+        "order_id": "10394176",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)",
+        "raw_description": "b'Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)'",
+        "order_date": "2026-11-02",
+        "amount": 2435.56
+      },
+      {
+        "order_id": "10394176",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)",
+        "raw_description": "b'Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)'",
+        "order_date": "2026-06-30",
+        "amount": 11873.34
+      },
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 12000.0
+      },
+      {
+        "order_id": "10394176",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)",
+        "raw_description": "b'Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)'",
+        "order_date": "2025-12-23",
+        "amount": 33711.7
+      },
+      {
+        "order_id": "10491292",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Spot Check for Q1-4 2025 - first round",
+        "raw_description": "b'HACT Spot Check for Q1-4 2025 - first round'",
+        "order_date": "2025-12-16",
+        "amount": 4000.0
+      },
+      {
+        "order_id": "10394176",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)",
+        "raw_description": "b'Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)'",
+        "order_date": "2025-11-12",
+        "amount": 8615.0
+      },
+      {
+        "order_id": "10447102",
+        "vendor_name": "Researchcare Africa",
+        "description": "Q3-4 2025 - TPM request for ERID, IP and ROLS.",
+        "raw_description": "b'Q3-4 2025 - TPM request for ERID, IP and ROLS.'",
+        "order_date": "2025-09-24",
+        "amount": 5000.0
+      },
+      {
+        "order_id": "10401137",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-06-11",
+        "amount": 28050.0
+      },
+      {
+        "order_id": "10394176",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)",
+        "raw_description": "b'Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)'",
+        "order_date": "2025-05-25",
+        "amount": 31474.48
+      },
+      {
+        "order_id": "10368627",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit plan 2024",
+        "raw_description": "b'HACT Audit plan 2024'",
+        "order_date": "2025-03-21",
+        "amount": 15000.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2025-03-09",
+        "amount": 2000.0
+      },
+      {
+        "order_id": "10342778",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-01-14",
+        "amount": 15750.0
+      }
+    ]
   },
   {
     "id": "01005998",
@@ -173,7 +271,105 @@
         "url": "http://open.undp.org/projects/01005998"
       }
     ],
-    "documents_count": 5
+    "documents_count": 5,
+    "purchase_orders": [
+      {
+        "order_id": "10394176",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)",
+        "raw_description": "b'Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)'",
+        "order_date": "2026-11-02",
+        "amount": 9968.0
+      },
+      {
+        "order_id": "10588946",
+        "vendor_name": "JUBBA ILAYS WELL DRILLING COMPANY",
+        "description": "Rehabilitation of Boreholes in Haadweyne Location.",
+        "raw_description": "b'Rehabilitation of Boreholes in Haadweyne Location.'",
+        "order_date": "2026-09-03",
+        "amount": 70325.2
+      },
+      {
+        "order_id": "10588945",
+        "vendor_name": "SOMALI CONSULTING & ENGINEERING SERVICES(SOMCES)",
+        "description": "Rehabilitation of Boreholes in Sadex Location",
+        "raw_description": "b'Rehabilitation of Boreholes in Sadex Location'",
+        "order_date": "2026-09-03",
+        "amount": 65527.67
+      },
+      {
+        "order_id": "10588949",
+        "vendor_name": "OCTOBER CONSTRUCTION AND GENERAL SERVICE",
+        "description": "Rehabilitation of Boreholes in Xuunshalow Location.",
+        "raw_description": "b'Rehabilitation of Boreholes in Xuunshalow Location.'",
+        "order_date": "2026-09-03",
+        "amount": 33458.88
+      },
+      {
+        "order_id": "10585702",
+        "vendor_name": "Hiraal Engineering and Construction Comp",
+        "description": "Drilling new borehole and related civil works in Gacal Guule",
+        "raw_description": "b'Drilling new borehole and related civil works in Gacal Guule'",
+        "order_date": "2026-08-27",
+        "amount": 95069.37
+      },
+      {
+        "order_id": "10585700",
+        "vendor_name": "DALSAN CONSTRUCTION, TRANSPORTATION & GENERAL SERVICES COMPANY LIMITED",
+        "description": "Rehabilitation of Boreholes in Boonkaay Location",
+        "raw_description": "b'Rehabilitation of Boreholes in Boonkaay Location'",
+        "order_date": "2026-08-27",
+        "amount": 58347.36
+      },
+      {
+        "order_id": "10585702",
+        "vendor_name": "Hiraal Engineering and Construction Comp",
+        "description": "Drilling new borehole and related civil works in Gacal Guule",
+        "raw_description": "b'Drilling new borehole and related civil works in Gacal Guule'",
+        "order_date": "2026-08-26",
+        "amount": 63379.57
+      },
+      {
+        "order_id": "10585700",
+        "vendor_name": "DALSAN CONSTRUCTION, TRANSPORTATION & GENERAL SERVICES COMPANY LIMITED",
+        "description": "Rehabilitation of Boreholes in Boonkaay Location",
+        "raw_description": "b'Rehabilitation of Boreholes in Boonkaay Location'",
+        "order_date": "2026-08-26",
+        "amount": 6483.04
+      },
+      {
+        "order_id": "10585703",
+        "vendor_name": "Star Construction and Logistics Company",
+        "description": "Rehabilitation of Boreholes in Hudur Location",
+        "raw_description": "b'Rehabilitation of Boreholes in Hudur Location'",
+        "order_date": "2026-08-26",
+        "amount": 56646.0
+      },
+      {
+        "order_id": "10583567",
+        "vendor_name": "Pillar Construction and Contracting Company",
+        "description": "Rehabilitation of Boreholes in Somaliland - Garaac",
+        "raw_description": "b'Rehabilitation of Boreholes in Somaliland - Garaac'",
+        "order_date": "2026-08-24",
+        "amount": 15014.25
+      },
+      {
+        "order_id": "10583568",
+        "vendor_name": "GUULEED CONSTRUCTION AND TRANSPORT CO",
+        "description": "Rehabilitation of Boreholes in Somaliland- Gabileey Location",
+        "raw_description": "b'Rehabilitation of Boreholes in Somaliland- Gabileey Location'",
+        "order_date": "2026-08-24",
+        "amount": 1728.0
+      },
+      {
+        "order_id": "10583568",
+        "vendor_name": "GUULEED CONSTRUCTION AND TRANSPORT CO",
+        "description": "Rehabilitation of Boreholes in Somaliland- Gabileey Location",
+        "raw_description": "b'Rehabilitation of Boreholes in Somaliland- Gabileey Location'",
+        "order_date": "2026-08-20",
+        "amount": 15552.0
+      }
+    ]
   },
   {
     "id": "01005518",
@@ -223,7 +419,17 @@
         "url": "http://open.undp.org/projects/01005518"
       }
     ],
-    "documents_count": 4
+    "documents_count": 4,
+    "purchase_orders": [
+      {
+        "order_id": "10616170",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-10-30",
+        "amount": 24000.0
+      }
+    ]
   },
   {
     "id": "01004635",
@@ -304,7 +510,73 @@
         "url": "http://open.undp.org/projects/01004635/po"
       }
     ],
-    "documents_count": 5
+    "documents_count": 5,
+    "purchase_orders": [
+      {
+        "order_id": "10613496",
+        "vendor_name": "Holland Greentech Kenya limited",
+        "description": "Provision of Technology in vegetable production and commercial horticulture.",
+        "raw_description": "b'Provision of Technology in vegetable production and commercial horticulture.'",
+        "order_date": "2026-10-29",
+        "amount": 15000.0
+      },
+      {
+        "order_id": "10613496",
+        "vendor_name": "Holland Greentech Kenya limited",
+        "description": "Provision of Technology in vegetable production and commercial horticulture.",
+        "raw_description": "b'Provision of Technology in vegetable production and commercial horticulture.'",
+        "order_date": "2026-10-26",
+        "amount": 135000.0
+      },
+      {
+        "order_id": "10601806",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-10-01",
+        "amount": 22750.0
+      },
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 8000.0
+      },
+      {
+        "order_id": "10536878",
+        "vendor_name": "M.IISE CLEARANCE SERVICES AND GENERAL SE",
+        "description": "Vehicle clearance and forwarding",
+        "raw_description": "b'Vehicle clearance and forwarding'",
+        "order_date": "2026-04-29",
+        "amount": 11819.9
+      },
+      {
+        "order_id": "10491292",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Spot Check for Q1-4 2025 - first round",
+        "raw_description": "b'HACT Spot Check for Q1-4 2025 - first round'",
+        "order_date": "2026-04-07",
+        "amount": 4000.0
+      },
+      {
+        "order_id": "10503762",
+        "vendor_name": "TOYOTA GIBRALTAR STOCKHOLDINGS LIMITED",
+        "description": "Supply and Delivery of Toyota Hilux Double Cabin 5 seater Pick-Up 3.0 L Non-Turbo Diesel LHD J DECK LAN125L-DNMLEN SFX : A2 - (4 units) to Mogadishu",
+        "raw_description": "b'Supply and Delivery of Toyota Hilux Double Cabin 5 seater Pick-Up 3.0 L Non-Turbo Diesel LHD J DECK LAN125L-DNMLEN SFX : A2 - (4 units) to Mogadishu'",
+        "order_date": "2026-01-28",
+        "amount": 110944.68
+      },
+      {
+        "order_id": "10438680",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "PMU Senior Project Specialist& E Analyst, Operations Analyst. COO-202598",
+        "raw_description": "b'PMU Senior Project Specialist& E Analyst, Operations Analyst. COO-202598'",
+        "order_date": "2025-09-08",
+        "amount": 278845.24
+      }
+    ]
   },
   {
     "id": "00145707",
@@ -401,7 +673,145 @@
         "url": "http://open.undp.org/projects/00145707"
       }
     ],
-    "documents_count": 6
+    "documents_count": 6,
+    "purchase_orders": [
+      {
+        "order_id": "10614816",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-10-28",
+        "amount": 10000.0
+      },
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 14500.0
+      },
+      {
+        "order_id": "10207311",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Monitoring, reporting and communications Officer (CTG Consultant LICA 10)",
+        "raw_description": "b'Monitoring, reporting and communications Officer (CTG Consultant LICA 10)'",
+        "order_date": "2026-05-26",
+        "amount": 29890.6
+      },
+      {
+        "order_id": "10509258",
+        "vendor_name": "DUNDEX",
+        "description": "Consultancy for fine turning the co-creation workshop and develop 4 project concept notes.",
+        "raw_description": "b'Consultancy for fine turning the co-creation workshop and develop 4 project concept notes.'",
+        "order_date": "2026-04-28",
+        "amount": 25730.0
+      },
+      {
+        "order_id": "10508354",
+        "vendor_name": "DAQARE TRAVEL AGENCY AND GENERAL SERVIC",
+        "description": "Training of Trainers on WPS 25 Participants Flight Tickets for FMS participants of TOT under Joint Police Programme,Five Federal member states and Go and Return",
+        "raw_description": "b'Training of Trainers on WPS 25 Participants Flight Tickets for FMS participants of TOT under Joint Police Programme,Five Federal member states and Go and Return'",
+        "order_date": "2026-02-10",
+        "amount": 16380.0
+      },
+      {
+        "order_id": "10491292",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Spot Check for Q1-4 2025 - first round",
+        "raw_description": "b'HACT Spot Check for Q1-4 2025 - first round'",
+        "order_date": "2025-12-16",
+        "amount": 0.0
+      },
+      {
+        "order_id": "10207311",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Monitoring, reporting and communications Officer (CTG Consultant LICA 10)",
+        "raw_description": "b'Monitoring, reporting and communications Officer (CTG Consultant LICA 10)'",
+        "order_date": "2025-12-10",
+        "amount": 1646.7
+      },
+      {
+        "order_id": "10207311",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Monitoring, reporting and communications Officer (CTG Consultant LICA 10)",
+        "raw_description": "b'Monitoring, reporting and communications Officer (CTG Consultant LICA 10)'",
+        "order_date": "2025-11-19",
+        "amount": 38442.6
+      },
+      {
+        "order_id": "10460106",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.'",
+        "order_date": "2025-10-21",
+        "amount": 2092.0
+      },
+      {
+        "order_id": "10389823",
+        "vendor_name": "Innovative Action For Development and Resilience",
+        "description": "Grant Award for Civil Society Organizations (CSOs): Women, Peace, and Security in Somalia",
+        "raw_description": "b'Grant Award for Civil Society Organizations (CSOs): Women, Peace, and Security in Somalia'",
+        "order_date": "2025-05-15",
+        "amount": 76500.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2025-03-09",
+        "amount": 2000.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2024-12-31",
+        "amount": 8000.0
+      },
+      {
+        "order_id": "10327507",
+        "vendor_name": "DCAF THE GENEVA CENTRE FOR SECURITY SECTOR GOVERNANCE GE",
+        "description": "Design and implementation of Affordability and Security Strategy Workshop UNDP-UNSOM SSR Programmes November 20241 SSR Expert SSR2 Days Preparation + Travel, 3 days facilitation of workshop",
+        "raw_description": "b'Design and implementation of Affordability and Security Strategy Workshop UNDP-UNSOM SSR Programmes November 20241 SSR Expert SSR2 Days Preparation + Travel, 3 days facilitation of workshop'",
+        "order_date": "2024-12-06",
+        "amount": 11921.0
+      },
+      {
+        "order_id": "10280826",
+        "vendor_name": "Researchcare Africa",
+        "description": "Third Party Monitoring for Q3 - 2024",
+        "raw_description": "b'Third Party Monitoring for Q3 - 2024'",
+        "order_date": "2024-09-18",
+        "amount": 16840.0
+      },
+      {
+        "order_id": "10270192",
+        "vendor_name": "JAZEERA PALACE HOTEL",
+        "description": "Half Board accomodation for High-level conference for BASIS project hosted by Office of National Security and UNDP  to take place between 4 and 9 September 2024",
+        "raw_description": "b'Half Board accomodation for High-level conference for BASIS project hosted by Office of National Security and UNDP  to take place between 4 and 9 September 2024'",
+        "order_date": "2024-08-27",
+        "amount": 30000.0
+      },
+      {
+        "order_id": "10121576",
+        "vendor_name": "DCAF THE GENEVA CENTRE FOR SECURITY SECTOR GOVERNANCE GE",
+        "description": "Contract for Professional Service-Affordability Study in the Somalia Security Sector.",
+        "raw_description": "b'Contract for Professional Service-Affordability Study in the Somalia Security Sector.'",
+        "order_date": "2023-10-12",
+        "amount": 6600.0
+      },
+      {
+        "order_id": "0000030574",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS_NOV_PAYMENT_2022",
+        "raw_description": "b'UNHAS_NOV_PAYMENT_2022'",
+        "order_date": "2022-12-11",
+        "amount": 760.0
+      }
+    ]
   },
   {
     "id": "01000758",
@@ -504,7 +914,241 @@
         "url": "http://open.undp.org/projects/01000758/results"
       }
     ],
-    "documents_count": 7
+    "documents_count": 7,
+    "purchase_orders": [
+      {
+        "order_id": "10601190",
+        "vendor_name": "PALMS HOTEL LTD",
+        "description": "Catering and Conferencing services for conflict sensitive Training which will be held in Palms Hotel from4-7 October and 11-14 October 2026.",
+        "raw_description": "b'Catering and Conferencing services for conflict sensitive Training which will be held in Palms Hotel from4-7 October and 11-14 October 2026.'",
+        "order_date": "2026-10-28",
+        "amount": 920.0
+      },
+      {
+        "order_id": "10601190",
+        "vendor_name": "PALMS HOTEL LTD",
+        "description": "Catering and Conferencing services for conflict sensitive Training which will be held in Palms Hotel from4-7 October and 11-14 October 2026.",
+        "raw_description": "b'Catering and Conferencing services for conflict sensitive Training which will be held in Palms Hotel from4-7 October and 11-14 October 2026.'",
+        "order_date": "2026-10-01",
+        "amount": 2850.0
+      },
+      {
+        "order_id": "10601190",
+        "vendor_name": "PALMS HOTEL LTD",
+        "description": "Catering and Conferencing services for conflict sensitive Training which will be held in Palms Hotel from4-7 October and 11-14 October 2026.",
+        "raw_description": "b'Catering and Conferencing services for conflict sensitive Training which will be held in Palms Hotel from4-7 October and 11-14 October 2026.'",
+        "order_date": "2026-09-30",
+        "amount": 12180.0
+      },
+      {
+        "order_id": "10592027",
+        "vendor_name": "Researchcare Africa",
+        "description": "Third Party Monitoringrequest for Projects - 2026",
+        "raw_description": "b'Third Party Monitoringrequest for Projects - 2026'",
+        "order_date": "2026-09-10",
+        "amount": 15000.0
+      },
+      {
+        "order_id": "10589816",
+        "vendor_name": "Centre for Peace and Development Initiatives (CPDI)",
+        "description": "Peer Learning Mission on Sectoral Integration of Legal Identity",
+        "raw_description": "b'Peer Learning Mission on Sectoral Integration of Legal Identity'",
+        "order_date": "2026-09-04",
+        "amount": 27278.88
+      },
+      {
+        "order_id": "10585899",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-08-26",
+        "amount": 20000.0
+      },
+      {
+        "order_id": "10582057",
+        "vendor_name": "BAKER TILLY",
+        "description": "Third Party Monitoring request for Portfolios - 2026",
+        "raw_description": "b'Third Party Monitoring request for Portfolios - 2026'",
+        "order_date": "2026-08-17",
+        "amount": 9000.0
+      },
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 22000.0
+      },
+      {
+        "order_id": "10537356",
+        "vendor_name": "BBC Media Action",
+        "description": "Conduct Media Training on Conflict Sensitive Journalism and Behavioral Diagnostics on National ID Enrolment.",
+        "raw_description": "b'Conduct Media Training on Conflict Sensitive Journalism and Behavioral Diagnostics on National ID Enrolment.'",
+        "order_date": "2026-04-30",
+        "amount": 170796.0
+      },
+      {
+        "order_id": "10532866",
+        "vendor_name": "BAKER TILLY",
+        "description": "Provision of HACT Micro assessment for UNDP Somalia.",
+        "raw_description": "b'Provision of HACT Micro assessment for UNDP Somalia.'",
+        "order_date": "2026-04-20",
+        "amount": 8500.0
+      },
+      {
+        "order_id": "10491292",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Spot Check for Q1-4 2025 - first round",
+        "raw_description": "b'HACT Spot Check for Q1-4 2025 - first round'",
+        "order_date": "2026-04-07",
+        "amount": 2000.0
+      },
+      {
+        "order_id": "10491292",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Spot Check for Q1-4 2025 - first round",
+        "raw_description": "b'HACT Spot Check for Q1-4 2025 - first round'",
+        "order_date": "2025-12-16",
+        "amount": 6000.0
+      },
+      {
+        "order_id": "10484512",
+        "vendor_name": "STAR EMPIRE GROUP",
+        "description": "Civil Society Summit -8-11 Dec 2025Hangar",
+        "raw_description": "b'Civil Society Summit -8-11 Dec 2025Hangar'",
+        "order_date": "2025-12-03",
+        "amount": 21550.0
+      },
+      {
+        "order_id": "10447102",
+        "vendor_name": "Researchcare Africa",
+        "description": "Q3-4 2025 - TPM request for ERID, IP and ROLS.",
+        "raw_description": "b'Q3-4 2025 - TPM request for ERID, IP and ROLS.'",
+        "order_date": "2025-09-24",
+        "amount": 7650.0
+      },
+      {
+        "order_id": "10444430",
+        "vendor_name": "MARTISOOR HOTEL",
+        "description": "PDRC Annual Conference Garowe",
+        "raw_description": "b'PDRC Annual Conference Garowe'",
+        "order_date": "2025-09-18",
+        "amount": 49330.0
+      },
+      {
+        "order_id": "10442100",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-15",
+        "amount": 40500.0
+      },
+      {
+        "order_id": "10435602",
+        "vendor_name": "DAQARE TRAVEL AGENCY AND GENERAL SERVIC",
+        "description": "Flight Tickets for SRSP Capacity building workshop participants from Federal member states.",
+        "raw_description": "b'Flight Tickets for SRSP Capacity building workshop participants from Federal member states.'",
+        "order_date": "2025-09-01",
+        "amount": 10230.0
+      },
+      {
+        "order_id": "10377186",
+        "vendor_name": "TRIBE HOTEL LIMITED",
+        "description": "Somalia Functional Unbundling Process Workshop 21-24 2025-Nairobi",
+        "raw_description": "b'Somalia Functional Unbundling Process Workshop 21-24 2025-Nairobi'",
+        "order_date": "2025-08-21",
+        "amount": 6115.35
+      },
+      {
+        "order_id": "10406786",
+        "vendor_name": "Researchcare Africa",
+        "description": "Third Party Monitoring for RoL's,SRSP and RCC projects",
+        "raw_description": "b\"Third Party Monitoring for RoL's,SRSP and RCC projects\"",
+        "order_date": "2025-06-24",
+        "amount": 11060.0
+      },
+      {
+        "order_id": "10377186",
+        "vendor_name": "TRIBE HOTEL LIMITED",
+        "description": "Somalia Functional Unbundling Process Workshop 21-24 2025-Nairobi",
+        "raw_description": "b'Somalia Functional Unbundling Process Workshop 21-24 2025-Nairobi'",
+        "order_date": "2025-04-14",
+        "amount": 14778.3
+      },
+      {
+        "order_id": "10368627",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit plan 2024",
+        "raw_description": "b'HACT Audit plan 2024'",
+        "order_date": "2025-03-21",
+        "amount": 15000.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2025-03-09",
+        "amount": 6000.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2024-12-31",
+        "amount": 16000.0
+      },
+      {
+        "order_id": "10262856",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-08-11",
+        "amount": 8525.0
+      },
+      {
+        "order_id": "10208980",
+        "vendor_name": "Deloitte & Touche",
+        "description": "2023 HACT Financial Audit",
+        "raw_description": "b'2023 HACT Financial Audit'",
+        "order_date": "2024-04-17",
+        "amount": 15000.0
+      },
+      {
+        "order_id": "10156608",
+        "vendor_name": "KPMG AG",
+        "description": "Q1-4 SPOT CHECKS PLAN - 2023",
+        "raw_description": "b'Q1-4 SPOT CHECKS PLAN - 2023'",
+        "order_date": "2023-12-07",
+        "amount": 30680.0
+      },
+      {
+        "order_id": "10149335",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-11-28",
+        "amount": 5687.73
+      },
+      {
+        "order_id": "10126201",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-10-20",
+        "amount": 6750.0
+      },
+      {
+        "order_id": "10126201",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-10-19",
+        "amount": 6750.0
+      }
+    ]
   },
   {
     "id": "01002141",
@@ -598,7 +1242,97 @@
         "url": "http://open.undp.org/projects/01002141"
       }
     ],
-    "documents_count": 8
+    "documents_count": 8,
+    "purchase_orders": [
+      {
+        "order_id": "10614816",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-10-28",
+        "amount": 10000.0
+      },
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 8500.0
+      },
+      {
+        "order_id": "10491292",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Spot Check for Q1-4 2025 - first round",
+        "raw_description": "b'HACT Spot Check for Q1-4 2025 - first round'",
+        "order_date": "2025-12-16",
+        "amount": 2000.0
+      },
+      {
+        "order_id": "10460106",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.'",
+        "order_date": "2025-10-22",
+        "amount": 797.9
+      },
+      {
+        "order_id": "10460106",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.'",
+        "order_date": "2025-10-21",
+        "amount": 6276.0
+      },
+      {
+        "order_id": "10447102",
+        "vendor_name": "Researchcare Africa",
+        "description": "Q3-4 2025 - TPM request for ERID, IP and ROLS.",
+        "raw_description": "b'Q3-4 2025 - TPM request for ERID, IP and ROLS.'",
+        "order_date": "2025-09-24",
+        "amount": 15360.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2025-03-09",
+        "amount": 6000.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2024-12-31",
+        "amount": 4000.0
+      },
+      {
+        "order_id": "10291771",
+        "vendor_name": "DANOFFICE IT APS",
+        "description": "Supply and Delivery of Laptops and its accessories to Somalia Country Office",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to Somalia Country Office'",
+        "order_date": "2024-10-14",
+        "amount": 2104.0
+      },
+      {
+        "order_id": "10291771",
+        "vendor_name": "DANOFFICE IT APS",
+        "description": "Supply and Delivery of Laptops and its accessories to Somalia Country Office",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to Somalia Country Office'",
+        "order_date": "2024-10-09",
+        "amount": 150.0
+      },
+      {
+        "order_id": "10280826",
+        "vendor_name": "Researchcare Africa",
+        "description": "Third Party Monitoring for Q3 - 2024",
+        "raw_description": "b'Third Party Monitoring for Q3 - 2024'",
+        "order_date": "2024-09-18",
+        "amount": 14040.02
+      }
+    ]
   },
   {
     "id": "01001540",
@@ -701,7 +1435,265 @@
         "url": "http://open.undp.org/projects/01001540/po"
       }
     ],
-    "documents_count": 7
+    "documents_count": 7,
+    "purchase_orders": [
+      {
+        "order_id": "10610271",
+        "vendor_name": "NIMCAAN CONSTRUCTION AND LOGISTICS COMPANY",
+        "description": "Renovation of Biyakulule police station in Bosaso",
+        "raw_description": "b'Renovation of Biyakulule police station in Bosaso'",
+        "order_date": "2026-10-19",
+        "amount": 16389.55
+      },
+      {
+        "order_id": "10207311",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Monitoring, reporting and communications Officer (CTG Consultant LICA 10)",
+        "raw_description": "b'Monitoring, reporting and communications Officer (CTG Consultant LICA 10)'",
+        "order_date": "2026-09-29",
+        "amount": 25755.48
+      },
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 15500.0
+      },
+      {
+        "order_id": "10536159",
+        "vendor_name": "SAHAL SHIPPING SERVICE   -To be merged **",
+        "description": "Shipping of 1 Toyota Hilux Double cabin to Bosasso.",
+        "raw_description": "b'Shipping of 1 Toyota Hilux Double cabin to Bosasso.'",
+        "order_date": "2026-04-28",
+        "amount": 12485.0
+      },
+      {
+        "order_id": "10499078",
+        "vendor_name": "JAZEERA PALACE HOTEL",
+        "description": "PTC and PSC MeetingSunday 18 - 20 Jan - 2026Accommodation-Standard Single Room ( Room and Breakfast)",
+        "raw_description": "b'PTC and PSC MeetingSunday 18 - 20 Jan - 2026Accommodation-Standard Single Room ( Room and Breakfast)'",
+        "order_date": "2026-01-12",
+        "amount": 12400.0
+      },
+      {
+        "order_id": "10497243",
+        "vendor_name": "M.IISE CLEARANCE SERVICES AND GENERAL SE",
+        "description": "Clearing of AVs for the office + Pick up for ROL.",
+        "raw_description": "b'Clearing of AVs for the office + Pick up for ROL.'",
+        "order_date": "2025-12-31",
+        "amount": 13754.18
+      },
+      {
+        "order_id": "10491292",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Spot Check for Q1-4 2025 - first round",
+        "raw_description": "b'HACT Spot Check for Q1-4 2025 - first round'",
+        "order_date": "2025-12-16",
+        "amount": 2000.0
+      },
+      {
+        "order_id": "10394176",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)",
+        "raw_description": "b'Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)'",
+        "order_date": "2025-11-12",
+        "amount": 3040.0
+      },
+      {
+        "order_id": "10460106",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.'",
+        "order_date": "2025-10-21",
+        "amount": 2092.0
+      },
+      {
+        "order_id": "10447102",
+        "vendor_name": "Researchcare Africa",
+        "description": "Q3-4 2025 - TPM request for ERID, IP and ROLS.",
+        "raw_description": "b'Q3-4 2025 - TPM request for ERID, IP and ROLS.'",
+        "order_date": "2025-09-24",
+        "amount": 15800.0
+      },
+      {
+        "order_id": "10436139",
+        "vendor_name": "DAQARE TRAVEL AGENCY AND GENERAL SERVIC",
+        "description": "Flight Tickets from 5 FM States 4-Day Workshop on Crime Prevention and Community 29th Sep and 2nd Oct 2025.",
+        "raw_description": "b'Flight Tickets from 5 FM States 4-Day Workshop on Crime Prevention and Community 29th Sep and 2nd Oct 2025.'",
+        "order_date": "2025-09-02",
+        "amount": 16180.0
+      },
+      {
+        "order_id": "10416205",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of ICT Equipments to Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of ICT Equipments to Somalia Country Office.'",
+        "order_date": "2025-07-30",
+        "amount": 4122.0
+      },
+      {
+        "order_id": "10401673",
+        "vendor_name": "TOYOTA GIBRALTAR STOCKHOLDINGS LIMITED",
+        "description": "Hilux Double Cabin 3.0L Diesel 5-Seater LHD:USD 27,200 Hilux Double Cabin 2.4 Turbo Diesel 5-Seater LHD:",
+        "raw_description": "b'Hilux Double Cabin 3.0L Diesel 5-Seater LHD:USD 27,200 Hilux Double Cabin 2.4 Turbo Diesel 5-Seater LHD:'",
+        "order_date": "2025-06-12",
+        "amount": 209034.72
+      },
+      {
+        "order_id": "10398688",
+        "vendor_name": "JAZEERA PALACE HOTEL",
+        "description": "Accommodation for Programme Technical committee meeting participants.Full Board Accomodation-14th and 17th June 2025(18*170*2 days=6,120$)Half Board Accomodation-15th,16th and 18th June 2025 (18*3days*130=7020$)Total Participants-18Pax.",
+        "raw_description": "b'Accommodation for Programme Technical committee meeting participants.Full Board Accomodation-14th and 17th June 2025(18*170*2 days=6,120$)Half Board Accomodation-15th,16th and 18th June 2025 (18*3days*130=7020$)Total Participants-18Pax.'",
+        "order_date": "2025-06-04",
+        "amount": 13140.0
+      },
+      {
+        "order_id": "10368627",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit plan 2024",
+        "raw_description": "b'HACT Audit plan 2024'",
+        "order_date": "2025-03-21",
+        "amount": 5000.0
+      },
+      {
+        "order_id": "10248261",
+        "vendor_name": "AIRPORT HOTEL AND CONFERENCE",
+        "description": "Theory of change Workshop form 14th to 18 July 2024venue Airport Hotel.",
+        "raw_description": "b'Theory of change Workshop form 14th to 18 July 2024venue Airport Hotel.'",
+        "order_date": "2024-07-10",
+        "amount": 490.0
+      },
+      {
+        "order_id": "10248261",
+        "vendor_name": "AIRPORT HOTEL AND CONFERENCE",
+        "description": "Theory of change Workshop form 14th to 18 July 2024venue Airport Hotel.",
+        "raw_description": "b'Theory of change Workshop form 14th to 18 July 2024venue Airport Hotel.'",
+        "order_date": "2024-07-08",
+        "amount": 12400.0
+      },
+      {
+        "order_id": "10225585",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024'",
+        "order_date": "2024-06-03",
+        "amount": 1520.0
+      },
+      {
+        "order_id": "10175270",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-04-29",
+        "amount": 10887.5
+      },
+      {
+        "order_id": "10200616",
+        "vendor_name": "JAZEERA PALACE HOTEL",
+        "description": "Accomodation for JPP 2  and BASIS technical meeting participants. 1 Day full accomodation for 20 pax3 days half board accomodation for 20 pax",
+        "raw_description": "b'Accomodation for JPP 2  and BASIS technical meeting participants. 1 Day full accomodation for 20 pax3 days half board accomodation for 20 pax'",
+        "order_date": "2024-04-04",
+        "amount": 15400.0
+      },
+      {
+        "order_id": "10200623",
+        "vendor_name": "DAQARE TRAVEL AGENCY AND GENERAL SERVIC",
+        "description": "Round trip tickets for FM States participants for JPP 2 and BASIS technical meeting.",
+        "raw_description": "b'Round trip tickets for FM States participants for JPP 2 and BASIS technical meeting.'",
+        "order_date": "2024-04-04",
+        "amount": 5400.0
+      },
+      {
+        "order_id": "10200616",
+        "vendor_name": "JAZEERA PALACE HOTEL",
+        "description": "Accomodation for JPP 2  and BASIS technical meeting participants. 1 Day full accomodation for 20 pax3 days half board accomodation for 20 pax",
+        "raw_description": "b'Accomodation for JPP 2  and BASIS technical meeting participants. 1 Day full accomodation for 20 pax3 days half board accomodation for 20 pax'",
+        "order_date": "2024-03-27",
+        "amount": 12400.0
+      },
+      {
+        "order_id": "10200623",
+        "vendor_name": "DAQARE TRAVEL AGENCY AND GENERAL SERVIC",
+        "description": "Round trip tickets for FM States participants for JPP 2 and BASIS technical meeting.",
+        "raw_description": "b'Round trip tickets for FM States participants for JPP 2 and BASIS technical meeting.'",
+        "order_date": "2024-03-27",
+        "amount": 5400.0
+      },
+      {
+        "order_id": "10193210",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS ticket payments for February 2024",
+        "raw_description": "b'UNHAS ticket payments for February 2024'",
+        "order_date": "2024-03-09",
+        "amount": 3442.0
+      },
+      {
+        "order_id": "10187415",
+        "vendor_name": "JAZEERA PALACE HOTEL",
+        "description": "Full board and Half board accomodation for JPP phase 2 participants. Total=20,550$15 Pax full accommodation for 1 day*170=2,550$15 pax Half accomodation for 8 days*150=18000$",
+        "raw_description": "b'Full board and Half board accomodation for JPP phase 2 participants. Total=20,550$15 Pax full accommodation for 1 day*170=2,550$15 pax Half accomodation for 8 days*150=18000$'",
+        "order_date": "2024-02-26",
+        "amount": 20550.0
+      },
+      {
+        "order_id": "10182680",
+        "vendor_name": "AIRPORT HOTEL AND CONFERENCE",
+        "description": "Conferencing and Catering services for technical level Workshop on the JPP Phase II development",
+        "raw_description": "b'Conferencing and Catering services for technical level Workshop on the JPP Phase II development'",
+        "order_date": "2024-02-14",
+        "amount": 12440.0
+      },
+      {
+        "order_id": "10176586",
+        "vendor_name": "JAZEERA PALACE HOTEL",
+        "description": "Accommodation-Standard Single Room (Full Board) *20*170*5 daysPPDB meeting to discuss and endorse the community policing policy and Somali training strategy from 5th Feb -8th Feb 2024 and require the below arrangements and support.",
+        "raw_description": "b'Accommodation-Standard Single Room (Full Board) *20*170*5 daysPPDB meeting to discuss and endorse the community policing policy and Somali training strategy from 5th Feb -8th Feb 2024 and require the below arrangements and support.'",
+        "order_date": "2024-01-30",
+        "amount": 17000.0
+      },
+      {
+        "order_id": "10175270",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-01-29",
+        "amount": 10887.5
+      },
+      {
+        "order_id": "10175270",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-01-25",
+        "amount": 21775.0
+      },
+      {
+        "order_id": "10172729",
+        "vendor_name": "JAZEERA PALACE HOTEL   -To be merged **",
+        "description": "Jazeera Hotel Half Borad Accommodation",
+        "raw_description": "b'Jazeera Hotel Half Borad Accommodation'",
+        "order_date": "2024-01-18",
+        "amount": 11692.8
+      },
+      {
+        "order_id": "10170550",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET PAYMENTS FOR THE MONTH OF DEC-2023.",
+        "raw_description": "b'UNHAS TICKET PAYMENTS FOR THE MONTH OF DEC-2023.'",
+        "order_date": "2024-01-15",
+        "amount": 275.0
+      },
+      {
+        "order_id": "10170550",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET PAYMENTS FOR THE MONTH OF DEC-2023.",
+        "raw_description": "b'UNHAS TICKET PAYMENTS FOR THE MONTH OF DEC-2023.'",
+        "order_date": "2024-01-10",
+        "amount": 5543.0
+      }
+    ]
   },
   {
     "id": "01004055",
@@ -782,7 +1774,57 @@
         "url": "http://open.undp.org/projects/01004055"
       }
     ],
-    "documents_count": 5
+    "documents_count": 5,
+    "purchase_orders": [
+      {
+        "order_id": "10610197",
+        "vendor_name": "AIRPORT HOTEL AND CONFERENCE",
+        "description": "Strengthening Bilateral Cooperation in Support of Somalia's National Ownership, Institutional Transition, Peacebuilding and Sustainable Development200 PAX three days 21- 23 October 2026 200x3x3",
+        "raw_description": "b\"Strengthening Bilateral Cooperation in Support of Somalia's National Ownership, Institutional Transition, Peacebuilding and Sustainable Development200 PAX three days 21- 23 October 2026 200x3x3\"",
+        "order_date": "2026-10-19",
+        "amount": 22139.0
+      },
+      {
+        "order_id": "10582057",
+        "vendor_name": "BAKER TILLY",
+        "description": "Third Party Monitoring request for Portfolios - 2026",
+        "raw_description": "b'Third Party Monitoring request for Portfolios - 2026'",
+        "order_date": "2026-08-17",
+        "amount": 3000.0
+      },
+      {
+        "order_id": "10491292",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Spot Check for Q1-4 2025 - first round",
+        "raw_description": "b'HACT Spot Check for Q1-4 2025 - first round'",
+        "order_date": "2025-12-16",
+        "amount": 4000.0
+      },
+      {
+        "order_id": "10472098",
+        "vendor_name": "Transition International",
+        "description": "International Consultant - Facilitator for the Co-Creation workshop",
+        "raw_description": "b'International Consultant - Facilitator for the Co-Creation workshop'",
+        "order_date": "2025-11-12",
+        "amount": 7200.0
+      },
+      {
+        "order_id": "10442180",
+        "vendor_name": "Cordoba Peace Institute - Geneva",
+        "description": "International Technical Institute Conflict Transformation and Social Cohesion Capacity Building Services.",
+        "raw_description": "b'International Technical Institute Conflict Transformation and Social Cohesion Capacity Building Services.'",
+        "order_date": "2025-09-15",
+        "amount": 50000.0
+      },
+      {
+        "order_id": "10406786",
+        "vendor_name": "Researchcare Africa",
+        "description": "Third Party Monitoring for RoL's,SRSP and RCC projects",
+        "raw_description": "b\"Third Party Monitoring for RoL's,SRSP and RCC projects\"",
+        "order_date": "2025-06-24",
+        "amount": 10400.0
+      }
+    ]
   },
   {
     "id": "01005980",
@@ -838,7 +1880,17 @@
         "url": "http://open.undp.org/projects/01005980"
       }
     ],
-    "documents_count": 5
+    "documents_count": 5,
+    "purchase_orders": [
+      {
+        "order_id": "10608496",
+        "vendor_name": "NATIONAL UNION OF SOMALI JOURNALISTS",
+        "description": "National Union of Somali Journalists (NUSOJ)",
+        "raw_description": "b'National Union of Somali Journalists (NUSOJ)'",
+        "order_date": "2026-10-15",
+        "amount": 60000.0
+      }
+    ]
   },
   {
     "id": "00135174",
@@ -920,7 +1972,129 @@
         "url": "http://open.undp.org/projects/00135174/results"
       }
     ],
-    "documents_count": 6
+    "documents_count": 6,
+    "purchase_orders": [
+      {
+        "order_id": "10607938",
+        "vendor_name": "Lochan & Co",
+        "description": "Independent Assessor (IA): Somalia AMP - Solar-Battery Mini-Grid Pilots, Somalia",
+        "raw_description": "b'Independent Assessor (IA): Somalia AMP - Solar-Battery Mini-Grid Pilots, Somalia'",
+        "order_date": "2026-10-14",
+        "amount": 80760.0
+      },
+      {
+        "order_id": "10167222",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-06-05",
+        "amount": 9900.0
+      },
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 4500.0
+      },
+      {
+        "order_id": "10497371",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-12-31",
+        "amount": 45000.0
+      },
+      {
+        "order_id": "10460106",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.'",
+        "order_date": "2025-10-22",
+        "amount": 1595.8
+      },
+      {
+        "order_id": "10460106",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.'",
+        "order_date": "2025-10-21",
+        "amount": 2092.0
+      },
+      {
+        "order_id": "10428579",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-08-15",
+        "amount": 24800.0
+      },
+      {
+        "order_id": "10416557",
+        "vendor_name": "Arepo GmbH",
+        "description": "AMP Mid-Terminal Evaluation for Somalia - 2025",
+        "raw_description": "b'AMP Mid-Terminal Evaluation for Somalia - 2025'",
+        "order_date": "2025-07-17",
+        "amount": 38900.0
+      },
+      {
+        "order_id": "10356848",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-02-20",
+        "amount": 72000.0
+      },
+      {
+        "order_id": "10167222",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-12-24",
+        "amount": 17500.0
+      },
+      {
+        "order_id": "10304539",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-10-30",
+        "amount": 20000.0
+      },
+      {
+        "order_id": "10300825",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-10-24",
+        "amount": 13500.0
+      },
+      {
+        "order_id": "10167222",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-08-30",
+        "amount": 9400.0
+      },
+      {
+        "order_id": "10167222",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-12-27",
+        "amount": 9000.0
+      },
+      {
+        "order_id": "10126071",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-10-19",
+        "amount": 20000.0
+      }
+    ]
   },
   {
     "id": "01001196",
@@ -1024,7 +2198,113 @@
         "url": "http://open.undp.org/projects/01001196/po"
       }
     ],
-    "documents_count": 8
+    "documents_count": 8,
+    "purchase_orders": [
+      {
+        "order_id": "10606445",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-10-12",
+        "amount": 24000.0
+      },
+      {
+        "order_id": "10590696",
+        "vendor_name": "Astaan Media",
+        "description": "COP 31 Content Production - 2026",
+        "raw_description": "b'COP 31 Content Production - 2026'",
+        "order_date": "2026-09-08",
+        "amount": 13000.0
+      },
+      {
+        "order_id": "10566400",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-07-07",
+        "amount": 17000.0
+      },
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 3000.0
+      },
+      {
+        "order_id": "10491292",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Spot Check for Q1-4 2025 - first round",
+        "raw_description": "b'HACT Spot Check for Q1-4 2025 - first round'",
+        "order_date": "2025-12-16",
+        "amount": 0.0
+      },
+      {
+        "order_id": "10424507",
+        "vendor_name": "Aestas Inc",
+        "description": "Economic and Financial Analysis for the Biyo iyo Baad climate-risk-resilient water security in Somalia",
+        "raw_description": "b'Economic and Financial Analysis for the Biyo iyo Baad climate-risk-resilient water security in Somalia'",
+        "order_date": "2025-11-27",
+        "amount": 1800.0
+      },
+      {
+        "order_id": "10475656",
+        "vendor_name": "SKYE TURNER-WALKER",
+        "description": "Project Development Specialist (GEF/GCF PPG Team Leader)",
+        "raw_description": "b'Project Development Specialist (GEF/GCF PPG Team Leader)'",
+        "order_date": "2025-11-18",
+        "amount": 15000.0
+      },
+      {
+        "order_id": "10460106",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.'",
+        "order_date": "2025-10-21",
+        "amount": 4184.0
+      },
+      {
+        "order_id": "10431987",
+        "vendor_name": "IBRASOMGREE SOLAR ENERGY",
+        "description": "Construct a 45x45 m x 40 cm deep evaporation pond with wire mesh fencing.",
+        "raw_description": "b'Construct a 45x45 m x 40 cm deep evaporation pond with wire mesh fencing.'",
+        "order_date": "2025-08-22",
+        "amount": 58980.0
+      },
+      {
+        "order_id": "10430487",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-08-20",
+        "amount": 10000.0
+      },
+      {
+        "order_id": "10424507",
+        "vendor_name": "Aestas Inc",
+        "description": "Economic and Financial Analysis for the Biyo iyo Baad climate-risk-resilient water security in Somalia",
+        "raw_description": "b'Economic and Financial Analysis for the Biyo iyo Baad climate-risk-resilient water security in Somalia'",
+        "order_date": "2025-08-06",
+        "amount": 9000.0
+      },
+      {
+        "order_id": "10375992",
+        "vendor_name": "SKYE TURNER-WALKER",
+        "description": "GCF Project Development Specialist-GCF Water Security Project Biyo iyo Baad in Somalia.",
+        "raw_description": "b'GCF Project Development Specialist-GCF Water Security Project Biyo iyo Baad in Somalia.'",
+        "order_date": "2025-04-10",
+        "amount": 24000.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2025-03-09",
+        "amount": 4000.0
+      }
+    ]
   },
   {
     "id": "01004924",
@@ -1085,7 +2365,25 @@
         "url": "http://open.undp.org/projects/01004924"
       }
     ],
-    "documents_count": 5
+    "documents_count": 5,
+    "purchase_orders": [
+      {
+        "order_id": "10604217",
+        "vendor_name": "Arkaan Leadership and Innovation Hub",
+        "description": "Provision of Integrated Entrepreneurship, Skills Development, Digital Platforms, and Innovation Lab Services",
+        "raw_description": "b'Provision of Integrated Entrepreneurship, Skills Development, Digital Platforms, and Innovation Lab Services'",
+        "order_date": "2026-10-07",
+        "amount": 279890.07
+      },
+      {
+        "order_id": "10394176",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)",
+        "raw_description": "b'Technical Civil Engineer for Dowlad-kaab program  (30.09.2026)'",
+        "order_date": "2026-10-05",
+        "amount": 6217.78
+      }
+    ]
   },
   {
     "id": "01004988",
@@ -1166,7 +2464,17 @@
         "url": "http://open.undp.org/projects/01004988"
       }
     ],
-    "documents_count": 9
+    "documents_count": 9,
+    "purchase_orders": [
+      {
+        "order_id": "10603029",
+        "vendor_name": "Netzwerk Gewaltfreie Kommunikation Darmstadt Sudhessen e V",
+        "description": "Training Facilitating -NVC Training in Nairobi 2026",
+        "raw_description": "b'Training Facilitating -NVC Training in Nairobi 2026'",
+        "order_date": "2026-10-05",
+        "amount": 11430.0
+      }
+    ]
   },
   {
     "id": "01000088",
@@ -1276,7 +2584,233 @@
         "url": "http://open.undp.org/projects/01000088/results"
       }
     ],
-    "documents_count": 8
+    "documents_count": 8,
+    "purchase_orders": [
+      {
+        "order_id": "10596463",
+        "vendor_name": "Astaan Media",
+        "description": "Production and broadcasting of a 12-episode reality show on Somali women journalists with the participation of Bilan Team",
+        "raw_description": "b'Production and broadcasting of a 12-episode reality show on Somali women journalists with the participation of Bilan Team'",
+        "order_date": "2026-09-20",
+        "amount": 25000.0
+      },
+      {
+        "order_id": "10592027",
+        "vendor_name": "Researchcare Africa",
+        "description": "Third Party Monitoringrequest for Projects - 2026",
+        "raw_description": "b'Third Party Monitoringrequest for Projects - 2026'",
+        "order_date": "2026-09-10",
+        "amount": 3750.0
+      },
+      {
+        "order_id": "10582057",
+        "vendor_name": "BAKER TILLY",
+        "description": "Third Party Monitoring request for Portfolios - 2026",
+        "raw_description": "b'Third Party Monitoring request for Portfolios - 2026'",
+        "order_date": "2026-08-17",
+        "amount": 3000.0
+      },
+      {
+        "order_id": "10575605",
+        "vendor_name": "HEEN MEDIA GROUP",
+        "description": "Provision of Media Technical Training, Training of Trainers (ToT) and support to the design of Bilan Media Training offer for Bilan Media.",
+        "raw_description": "b'Provision of Media Technical Training, Training of Trainers (ToT) and support to the design of Bilan Media Training offer for Bilan Media.'",
+        "order_date": "2026-07-30",
+        "amount": 32260.0
+      },
+      {
+        "order_id": "10566359",
+        "vendor_name": "SHEARGOLD LIMITED",
+        "description": "Supply and Delivery of Media Equipment's.",
+        "raw_description": "b\"Supply and Delivery of Media Equipment's.\"",
+        "order_date": "2026-07-09",
+        "amount": 150.0
+      },
+      {
+        "order_id": "10566359",
+        "vendor_name": "SHEARGOLD LIMITED",
+        "description": "Supply and Delivery of Media Equipment's.",
+        "raw_description": "b\"Supply and Delivery of Media Equipment's.\"",
+        "order_date": "2026-07-07",
+        "amount": 33429.5
+      },
+      {
+        "order_id": "10457532",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-04-28",
+        "amount": 27000.0
+      },
+      {
+        "order_id": "10503727",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-01-28",
+        "amount": 36000.0
+      },
+      {
+        "order_id": "10457532",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-10-16",
+        "amount": 51000.0
+      },
+      {
+        "order_id": "10457532",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-10-15",
+        "amount": 9000.0
+      },
+      {
+        "order_id": "10241875",
+        "vendor_name": "DALSAN MEDIA GROUP",
+        "description": "Somali Media Women - SUPPORT FOR THE BILAN MEDIA TEAM AND WOMEN JOURNALISTS IN FEDERAL MEMBERS STATES01.07.2024 - 31.12.2026",
+        "raw_description": "b'Somali Media Women - SUPPORT FOR THE BILAN MEDIA TEAM AND WOMEN JOURNALISTS IN FEDERAL MEMBERS STATES01.07.2024 - 31.12.2026'",
+        "order_date": "2025-10-07",
+        "amount": 170679.0
+      },
+      {
+        "order_id": "10447102",
+        "vendor_name": "Researchcare Africa",
+        "description": "Q3-4 2025 - TPM request for ERID, IP and ROLS.",
+        "raw_description": "b'Q3-4 2025 - TPM request for ERID, IP and ROLS.'",
+        "order_date": "2025-09-24",
+        "amount": 2980.0
+      },
+      {
+        "order_id": "10353983",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-10",
+        "amount": 16800.0
+      },
+      {
+        "order_id": "10416205",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of ICT Equipments to Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of ICT Equipments to Somalia Country Office.'",
+        "order_date": "2025-07-30",
+        "amount": 2061.0
+      },
+      {
+        "order_id": "10241875",
+        "vendor_name": "DALSAN MEDIA GROUP",
+        "description": "Somali Media Women - SUPPORT FOR THE BILAN MEDIA TEAM AND WOMEN JOURNALISTS IN FEDERAL MEMBERS STATES01.07.2024 - 31.12.2026",
+        "raw_description": "b'Somali Media Women - SUPPORT FOR THE BILAN MEDIA TEAM AND WOMEN JOURNALISTS IN FEDERAL MEMBERS STATES01.07.2024 - 31.12.2026'",
+        "order_date": "2025-07-21",
+        "amount": 43600.0
+      },
+      {
+        "order_id": "10372482",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-06-03",
+        "amount": 23400.0
+      },
+      {
+        "order_id": "10372482",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-04-02",
+        "amount": 8100.0
+      },
+      {
+        "order_id": "10353983",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-02-13",
+        "amount": 37200.0
+      },
+      {
+        "order_id": "10055072",
+        "vendor_name": "DALSAN MEDIA GROUP",
+        "description": "Contract Cost Amendment for Bilan Media Team-April_May 2024.",
+        "raw_description": "b'Contract Cost Amendment for Bilan Media Team-April_May 2024.'",
+        "order_date": "2024-10-28",
+        "amount": 8800.0
+      },
+      {
+        "order_id": "10281126",
+        "vendor_name": "KENYA EDITORS GUILD",
+        "description": "Work Placements, Journalism Training and Media Networking for Bilan Media (PRC0090152)",
+        "raw_description": "b'Work Placements, Journalism Training and Media Networking for Bilan Media (PRC0090152)'",
+        "order_date": "2024-09-18",
+        "amount": 44163.0
+      },
+      {
+        "order_id": "10241875",
+        "vendor_name": "DALSAN MEDIA GROUP",
+        "description": "Somali Media Women - SUPPORT FOR THE BILAN MEDIA TEAM AND WOMEN JOURNALISTS IN FEDERAL MEMBERS STATES01.07.2024 - 31.12.2026",
+        "raw_description": "b'Somali Media Women - SUPPORT FOR THE BILAN MEDIA TEAM AND WOMEN JOURNALISTS IN FEDERAL MEMBERS STATES01.07.2024 - 31.12.2026'",
+        "order_date": "2024-06-24",
+        "amount": 395471.0
+      },
+      {
+        "order_id": "10230853",
+        "vendor_name": "Researchcare Africa",
+        "description": "TPM service for Q1-2 2024",
+        "raw_description": "b'TPM service for Q1-2 2024'",
+        "order_date": "2024-05-30",
+        "amount": 4000.0
+      },
+      {
+        "order_id": "10055072",
+        "vendor_name": "DALSAN MEDIA GROUP",
+        "description": "Contract Cost Amendment for Bilan Media Team-April_May 2024.",
+        "raw_description": "b'Contract Cost Amendment for Bilan Media Team-April_May 2024.'",
+        "order_date": "2024-04-25",
+        "amount": 16480.0
+      },
+      {
+        "order_id": "10055072",
+        "vendor_name": "DALSAN MEDIA GROUP",
+        "description": "Contract Cost Amendment for Bilan Media Team-April_May 2024.",
+        "raw_description": "b'Contract Cost Amendment for Bilan Media Team-April_May 2024.'",
+        "order_date": "2024-02-27",
+        "amount": 8240.0
+      },
+      {
+        "order_id": "10170550",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET PAYMENTS FOR THE MONTH OF DEC-2023.",
+        "raw_description": "b'UNHAS TICKET PAYMENTS FOR THE MONTH OF DEC-2023.'",
+        "order_date": "2024-01-10",
+        "amount": 832.0
+      },
+      {
+        "order_id": "10144177",
+        "vendor_name": "KENYA EDITORS GUILD",
+        "description": "Work Placements, Safety Training and Media Networking for Bilan Media",
+        "raw_description": "b'Work Placements, Safety Training and Media Networking for Bilan Media'",
+        "order_date": "2023-11-20",
+        "amount": 26768.0
+      },
+      {
+        "order_id": "10055072",
+        "vendor_name": "DALSAN MEDIA GROUP",
+        "description": "Contract Cost Amendment for Bilan Media Team-April_May 2024.",
+        "raw_description": "b'Contract Cost Amendment for Bilan Media Team-April_May 2024.'",
+        "order_date": "2023-11-08",
+        "amount": 17700.0
+      },
+      {
+        "order_id": "10055072",
+        "vendor_name": "DALSAN MEDIA GROUP",
+        "description": "Contract Cost Amendment for Bilan Media Team-April_May 2024.",
+        "raw_description": "b'Contract Cost Amendment for Bilan Media Team-April_May 2024.'",
+        "order_date": "2023-05-31",
+        "amount": 40370.0
+      }
+    ]
   },
   {
     "id": "01000753",
@@ -1386,7 +2920,369 @@
         "url": "http://open.undp.org/projects/01000753/po"
       }
     ],
-    "documents_count": 8
+    "documents_count": 8,
+    "purchase_orders": [
+      {
+        "order_id": "10592027",
+        "vendor_name": "Researchcare Africa",
+        "description": "Third Party Monitoringrequest for Projects - 2026",
+        "raw_description": "b'Third Party Monitoringrequest for Projects - 2026'",
+        "order_date": "2026-09-10",
+        "amount": 19960.0
+      },
+      {
+        "order_id": "10582057",
+        "vendor_name": "BAKER TILLY",
+        "description": "Third Party Monitoring request for Portfolios - 2026",
+        "raw_description": "b'Third Party Monitoring request for Portfolios - 2026'",
+        "order_date": "2026-08-17",
+        "amount": 3000.0
+      },
+      {
+        "order_id": "10101939",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Trainer on Non-violent Communication (Local)",
+        "raw_description": "b'Trainer on Non-violent Communication (Local)'",
+        "order_date": "2026-08-10",
+        "amount": 24330.25
+      },
+      {
+        "order_id": "10101937",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Integrative Justice Consultant",
+        "raw_description": "b'Integrative Justice Consultant'",
+        "order_date": "2026-08-06",
+        "amount": 29221.45
+      },
+      {
+        "order_id": "10561227",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-06-24",
+        "amount": 12000.0
+      },
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 11000.0
+      },
+      {
+        "order_id": "10101939",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Trainer on Non-violent Communication (Local)",
+        "raw_description": "b'Trainer on Non-violent Communication (Local)'",
+        "order_date": "2026-05-04",
+        "amount": 17143.14
+      },
+      {
+        "order_id": "10532866",
+        "vendor_name": "BAKER TILLY",
+        "description": "Provision of HACT Micro assessment for UNDP Somalia.",
+        "raw_description": "b'Provision of HACT Micro assessment for UNDP Somalia.'",
+        "order_date": "2026-04-20",
+        "amount": 17350.0
+      },
+      {
+        "order_id": "10101937",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Integrative Justice Consultant",
+        "raw_description": "b'Integrative Justice Consultant'",
+        "order_date": "2026-03-31",
+        "amount": 18582.17
+      },
+      {
+        "order_id": "10493159",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "CTG CONTRACT UNOPS LTA ID 1000374 Integrative Justice Consultant (Khawla Abdow) Dec - 2025 - April 2026",
+        "raw_description": "b'CTG CONTRACT UNOPS LTA ID 1000374 Integrative Justice Consultant (Khawla Abdow) Dec - 2025 - April 2026'",
+        "order_date": "2026-02-05",
+        "amount": 8895.69
+      },
+      {
+        "order_id": "10101939",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Trainer on Non-violent Communication (Local)",
+        "raw_description": "b'Trainer on Non-violent Communication (Local)'",
+        "order_date": "2026-02-05",
+        "amount": 13884.0
+      },
+      {
+        "order_id": "10493159",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "CTG CONTRACT UNOPS LTA ID 1000374 Integrative Justice Consultant (Khawla Abdow) Dec - 2025 - April 2026",
+        "raw_description": "b'CTG CONTRACT UNOPS LTA ID 1000374 Integrative Justice Consultant (Khawla Abdow) Dec - 2025 - April 2026'",
+        "order_date": "2025-12-19",
+        "amount": 15111.48
+      },
+      {
+        "order_id": "10491292",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Spot Check for Q1-4 2025 - first round",
+        "raw_description": "b'HACT Spot Check for Q1-4 2025 - first round'",
+        "order_date": "2025-12-16",
+        "amount": 8000.0
+      },
+      {
+        "order_id": "10442025",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-11-19",
+        "amount": 1200.0
+      },
+      {
+        "order_id": "10451706",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-10-04",
+        "amount": 21000.0
+      },
+      {
+        "order_id": "10451706",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-10-03",
+        "amount": 5250.0
+      },
+      {
+        "order_id": "10447102",
+        "vendor_name": "Researchcare Africa",
+        "description": "Q3-4 2025 - TPM request for ERID, IP and ROLS.",
+        "raw_description": "b'Q3-4 2025 - TPM request for ERID, IP and ROLS.'",
+        "order_date": "2025-09-24",
+        "amount": 5000.0
+      },
+      {
+        "order_id": "10442025",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-15",
+        "amount": 12600.0
+      },
+      {
+        "order_id": "10416205",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of ICT Equipments to Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of ICT Equipments to Somalia Country Office.'",
+        "order_date": "2025-07-30",
+        "amount": 5459.5
+      },
+      {
+        "order_id": "10406786",
+        "vendor_name": "Researchcare Africa",
+        "description": "Third Party Monitoring for RoL's,SRSP and RCC projects",
+        "raw_description": "b\"Third Party Monitoring for RoL's,SRSP and RCC projects\"",
+        "order_date": "2025-06-24",
+        "amount": 6240.0
+      },
+      {
+        "order_id": "10368627",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit plan 2024",
+        "raw_description": "b'HACT Audit plan 2024'",
+        "order_date": "2025-03-21",
+        "amount": 5000.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2024-12-31",
+        "amount": 12000.0
+      },
+      {
+        "order_id": "10101937",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Integrative Justice Consultant",
+        "raw_description": "b'Integrative Justice Consultant'",
+        "order_date": "2024-12-10",
+        "amount": 80936.44
+      },
+      {
+        "order_id": "10314876",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS ticket costs for the month of Oct,2024",
+        "raw_description": "b'UNHAS ticket costs for the month of Oct,2024'",
+        "order_date": "2024-11-17",
+        "amount": 550.0
+      },
+      {
+        "order_id": "10314876",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS ticket costs for the month of Oct,2024",
+        "raw_description": "b'UNHAS ticket costs for the month of Oct,2024'",
+        "order_date": "2024-11-16",
+        "amount": 2200.0
+      },
+      {
+        "order_id": "10162128",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-10-29",
+        "amount": 52800.0
+      },
+      {
+        "order_id": "10286643",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2024'",
+        "order_date": "2024-10-09",
+        "amount": 825.0
+      },
+      {
+        "order_id": "10101939",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Trainer on Non-violent Communication (Local)",
+        "raw_description": "b'Trainer on Non-violent Communication (Local)'",
+        "order_date": "2024-09-05",
+        "amount": 74574.9
+      },
+      {
+        "order_id": "10263563",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF JULY,2024.",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF JULY,2024.'",
+        "order_date": "2024-08-15",
+        "amount": 565.0
+      },
+      {
+        "order_id": "10263563",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF JULY,2024.",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF JULY,2024.'",
+        "order_date": "2024-08-13",
+        "amount": 2475.0
+      },
+      {
+        "order_id": "10250109",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF JUNE,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF JUNE,2024'",
+        "order_date": "2024-07-11",
+        "amount": 5638.2
+      },
+      {
+        "order_id": "10245670",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-07-01",
+        "amount": 14200.0
+      },
+      {
+        "order_id": "10101935",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Peacebuilding Consultant (Local)",
+        "raw_description": "b'Peacebuilding Consultant (Local)'",
+        "order_date": "2024-06-20",
+        "amount": 21331.28
+      },
+      {
+        "order_id": "10237134",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Procurement of Consultant Service- to provide Strategic Engagement and Generative Dialogue Consultation (Local Consultant)",
+        "raw_description": "b'Procurement of Consultant Service- to provide Strategic Engagement and Generative Dialogue Consultation (Local Consultant)'",
+        "order_date": "2024-06-13",
+        "amount": 28663.35
+      },
+      {
+        "order_id": "10230853",
+        "vendor_name": "Researchcare Africa",
+        "description": "TPM service for Q1-2 2024",
+        "raw_description": "b'TPM service for Q1-2 2024'",
+        "order_date": "2024-05-30",
+        "amount": 9600.0
+      },
+      {
+        "order_id": "10225585",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024'",
+        "order_date": "2024-05-26",
+        "amount": 380.0
+      },
+      {
+        "order_id": "10208980",
+        "vendor_name": "Deloitte & Touche",
+        "description": "2023 HACT Financial Audit",
+        "raw_description": "b'2023 HACT Financial Audit'",
+        "order_date": "2024-04-17",
+        "amount": 5000.0
+      },
+      {
+        "order_id": "10162128",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-12-15",
+        "amount": 51562.5
+      },
+      {
+        "order_id": "10158035",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF NOV-2023.",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF NOV-2023.'",
+        "order_date": "2023-12-11",
+        "amount": 380.0
+      },
+      {
+        "order_id": "10153011",
+        "vendor_name": "Netzwerk Gewaltfreie Kommunikation Darmstadt Sudhessen e V",
+        "description": "Non-Violence Communication training",
+        "raw_description": "b'Non-Violence Communication training'",
+        "order_date": "2023-12-07",
+        "amount": 1290.0
+      },
+      {
+        "order_id": "10153011",
+        "vendor_name": "Netzwerk Gewaltfreie Kommunikation Darmstadt Sudhessen e V",
+        "description": "Non-Violence Communication training",
+        "raw_description": "b'Non-Violence Communication training'",
+        "order_date": "2023-12-04",
+        "amount": 13815.24
+      },
+      {
+        "order_id": "10149130",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-11-28",
+        "amount": 19550.0
+      },
+      {
+        "order_id": "10149335",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-11-28",
+        "amount": 5687.42
+      },
+      {
+        "order_id": "10139151",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-11-10",
+        "amount": 96000.0
+      },
+      {
+        "order_id": "10092389",
+        "vendor_name": "BAKER TILLY",
+        "description": "Attorney General Office -FGS",
+        "raw_description": "b'Attorney General Office -FGS'",
+        "order_date": "2023-08-17",
+        "amount": 20286.0
+      }
+    ]
   },
   {
     "id": "01004054",
@@ -1483,7 +3379,105 @@
         "url": "http://open.undp.org/projects/01004054"
       }
     ],
-    "documents_count": 6
+    "documents_count": 6,
+    "purchase_orders": [
+      {
+        "order_id": "10577611",
+        "vendor_name": "NIMCAAN CONSTRUCTION AND LOGISTICS COMPANY",
+        "description": "Office Furniture and ICT Equipment - JSB Bosaso",
+        "raw_description": "b'Office Furniture and ICT Equipment - JSB Bosaso'",
+        "order_date": "2026-09-07",
+        "amount": 7140.0
+      },
+      {
+        "order_id": "10577232",
+        "vendor_name": "Jubba Hotel (Jubba Group of Company)",
+        "description": "KOBAN Model for Somali Police Officers in PuntlandLocation: Bosaso, Bari Region, Puntland",
+        "raw_description": "b'KOBAN Model for Somali Police Officers in PuntlandLocation: Bosaso, Bari Region, Puntland'",
+        "order_date": "2026-08-24",
+        "amount": 33000.0
+      },
+      {
+        "order_id": "10581769",
+        "vendor_name": "Deyaarconstruction and Drilling company",
+        "description": "Civil work contract: Renovation Works at Biyo Kulule Police Station, Bosaso, Puntland State of Somalia.",
+        "raw_description": "b'Civil work contract: Renovation Works at Biyo Kulule Police Station, Bosaso, Puntland State of Somalia.'",
+        "order_date": "2026-08-16",
+        "amount": 88220.55
+      },
+      {
+        "order_id": "10577611",
+        "vendor_name": "NIMCAAN CONSTRUCTION AND LOGISTICS COMPANY",
+        "description": "Office Furniture and ICT Equipment - JSB Bosaso",
+        "raw_description": "b'Office Furniture and ICT Equipment - JSB Bosaso'",
+        "order_date": "2026-08-14",
+        "amount": 8650.0
+      },
+      {
+        "order_id": "10577611",
+        "vendor_name": "NIMCAAN CONSTRUCTION AND LOGISTICS COMPANY",
+        "description": "Office Furniture and ICT Equipment - JSB Bosaso",
+        "raw_description": "b'Office Furniture and ICT Equipment - JSB Bosaso'",
+        "order_date": "2026-08-05",
+        "amount": 12700.0
+      },
+      {
+        "order_id": "10577165",
+        "vendor_name": "Gasiin Bistro",
+        "description": "Consultation Workshops to Identify Digital Service SolutionsLocation: Garowe, Bari Region, Puntland",
+        "raw_description": "b'Consultation Workshops to Identify Digital Service SolutionsLocation: Garowe, Bari Region, Puntland'",
+        "order_date": "2026-08-04",
+        "amount": 33330.0
+      },
+      {
+        "order_id": "10577232",
+        "vendor_name": "Jubba Hotel (Jubba Group of Company)",
+        "description": "KOBAN Model for Somali Police Officers in PuntlandLocation: Bosaso, Bari Region, Puntland",
+        "raw_description": "b'KOBAN Model for Somali Police Officers in PuntlandLocation: Bosaso, Bari Region, Puntland'",
+        "order_date": "2026-08-04",
+        "amount": 7045.0
+      },
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 11000.0
+      },
+      {
+        "order_id": "10472321",
+        "vendor_name": "Community Nexus Consulting",
+        "description": "Development of a Crisis Preparedness and Response Framework for Somali Police.",
+        "raw_description": "b'Development of a Crisis Preparedness and Response Framework for Somali Police.'",
+        "order_date": "2025-11-12",
+        "amount": 49000.0
+      },
+      {
+        "order_id": "10460106",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.'",
+        "order_date": "2025-10-22",
+        "amount": 797.9
+      },
+      {
+        "order_id": "10460106",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.'",
+        "order_date": "2025-10-21",
+        "amount": 2092.0
+      },
+      {
+        "order_id": "10207311",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Monitoring, reporting and communications Officer (CTG Consultant LICA 10)",
+        "raw_description": "b'Monitoring, reporting and communications Officer (CTG Consultant LICA 10)'",
+        "order_date": "2025-05-22",
+        "amount": 27137.4
+      }
+    ]
   },
   {
     "id": "01004092",
@@ -1569,7 +3563,105 @@
         "url": "http://open.undp.org/projects/01004092"
       }
     ],
-    "documents_count": 5
+    "documents_count": 5,
+    "purchase_orders": [
+      {
+        "order_id": "10588947",
+        "vendor_name": "AFRILINK LOGISTICS AND CONSTRUCTION COMPANY",
+        "description": "Drilling new borehole and related civil works in Hadweyne",
+        "raw_description": "b'Drilling new borehole and related civil works in Hadweyne'",
+        "order_date": "2026-09-03",
+        "amount": 159950.0
+      },
+      {
+        "order_id": "10588948",
+        "vendor_name": "JAMHURIYA FROUP (JAMGRO)",
+        "description": "Drilling new borehole and related civil works in Ina Gabille",
+        "raw_description": "b'Drilling new borehole and related civil works in Ina Gabille'",
+        "order_date": "2026-09-03",
+        "amount": 100014.45
+      },
+      {
+        "order_id": "10583582",
+        "vendor_name": "Golden Construction & Logistics",
+        "description": "Drilling new borehole and related civil works in Yeed - Southwest State.",
+        "raw_description": "b'Drilling new borehole and related civil works in Yeed - Southwest State.'",
+        "order_date": "2026-08-20",
+        "amount": 105834.16
+      },
+      {
+        "order_id": "10444120",
+        "vendor_name": "Rehan Logistics and Trading Company",
+        "description": "Civil works - Borehole Drilling- Hagooran Buuhoodle District, Cayn region-SOMALIABorehole Drilling, Construction of Auxiliary and Solar Works.",
+        "raw_description": "b'Civil works - Borehole Drilling- Hagooran Buuhoodle District, Cayn region-SOMALIABorehole Drilling, Construction of Auxiliary and Solar Works.'",
+        "order_date": "2026-07-14",
+        "amount": 6450.0
+      },
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 3000.0
+      },
+      {
+        "order_id": "10440909",
+        "vendor_name": "najax Supply and construction Company",
+        "description": "Civil works  LOT1: Awrboogays village, Xudun District, Sool region",
+        "raw_description": "b'Civil works  LOT1: Awrboogays village, Xudun District, Sool region'",
+        "order_date": "2026-02-13",
+        "amount": 3416.6
+      },
+      {
+        "order_id": "10444120",
+        "vendor_name": "Rehan Logistics and Trading Company",
+        "description": "Civil works - Borehole Drilling- Hagooran Buuhoodle District, Cayn region-SOMALIABorehole Drilling, Construction of Auxiliary and Solar Works.",
+        "raw_description": "b'Civil works - Borehole Drilling- Hagooran Buuhoodle District, Cayn region-SOMALIABorehole Drilling, Construction of Auxiliary and Solar Works.'",
+        "order_date": "2025-12-23",
+        "amount": 4518.83
+      },
+      {
+        "order_id": "10440911",
+        "vendor_name": "Hiraal Engineering and Construction Comp",
+        "description": "Civil works  LOT3: Bacadweyn village, Galkacayo-Civil works - Borehole Drilling, Construction of Auxiliary and Solar Works.",
+        "raw_description": "b'Civil works  LOT3: Bacadweyn village, Galkacayo-Civil works - Borehole Drilling, Construction of Auxiliary and Solar Works.'",
+        "order_date": "2025-12-15",
+        "amount": 6305.0
+      },
+      {
+        "order_id": "10490582",
+        "vendor_name": "najax Supply and construction Company",
+        "description": "Civil works - LOT2: Qararo village, Buuhoodle District, Cayn region.Borehole Drilling, Construction of Auxiliary and Solar Works.",
+        "raw_description": "b'Civil works - LOT2: Qararo village, Buuhoodle District, Cayn region.Borehole Drilling, Construction of Auxiliary and Solar Works.'",
+        "order_date": "2025-12-15",
+        "amount": 159522.01
+      },
+      {
+        "order_id": "10444120",
+        "vendor_name": "Rehan Logistics and Trading Company",
+        "description": "Civil works - Borehole Drilling- Hagooran Buuhoodle District, Cayn region-SOMALIABorehole Drilling, Construction of Auxiliary and Solar Works.",
+        "raw_description": "b'Civil works - Borehole Drilling- Hagooran Buuhoodle District, Cayn region-SOMALIABorehole Drilling, Construction of Auxiliary and Solar Works.'",
+        "order_date": "2025-09-18",
+        "amount": 150627.65
+      },
+      {
+        "order_id": "10440909",
+        "vendor_name": "najax Supply and construction Company",
+        "description": "Civil works  LOT1: Awrboogays village, Xudun District, Sool region",
+        "raw_description": "b'Civil works  LOT1: Awrboogays village, Xudun District, Sool region'",
+        "order_date": "2025-09-11",
+        "amount": 103535.74
+      },
+      {
+        "order_id": "10440911",
+        "vendor_name": "Hiraal Engineering and Construction Comp",
+        "description": "Civil works  LOT3: Bacadweyn village, Galkacayo-Civil works - Borehole Drilling, Construction of Auxiliary and Solar Works.",
+        "raw_description": "b'Civil works  LOT3: Bacadweyn village, Galkacayo-Civil works - Borehole Drilling, Construction of Auxiliary and Solar Works.'",
+        "order_date": "2025-09-11",
+        "amount": 108066.23
+      }
+    ]
   },
   {
     "id": "01005984",
@@ -1644,7 +3736,81 @@
         "url": "http://open.undp.org/projects/01005984"
       }
     ],
-    "documents_count": 4
+    "documents_count": 4,
+    "purchase_orders": [
+      {
+        "order_id": "10585703",
+        "vendor_name": "Star Construction and Logistics Company",
+        "description": "Rehabilitation of Boreholes in Hudur Location",
+        "raw_description": "b'Rehabilitation of Boreholes in Hudur Location'",
+        "order_date": "2026-08-28",
+        "amount": 6294.0
+      },
+      {
+        "order_id": "10585701",
+        "vendor_name": "MODERN SUPPLY AND CONSTRUCTION COMPANY",
+        "description": "Rehabilitation of Boreholes in Ambaresa Location",
+        "raw_description": "b'Rehabilitation of Boreholes in Ambaresa Location'",
+        "order_date": "2026-08-27",
+        "amount": 38323.14
+      },
+      {
+        "order_id": "10585701",
+        "vendor_name": "MODERN SUPPLY AND CONSTRUCTION COMPANY",
+        "description": "Rehabilitation of Boreholes in Ambaresa Location",
+        "raw_description": "b'Rehabilitation of Boreholes in Ambaresa Location'",
+        "order_date": "2026-08-26",
+        "amount": 4258.13
+      },
+      {
+        "order_id": "10583570",
+        "vendor_name": "Cakaara Construction Company and Development Agency",
+        "description": "Rehabilitation of Boreholes in Somaliland-Kaarto Location.",
+        "raw_description": "b'Rehabilitation of Boreholes in Somaliland-Kaarto Location.'",
+        "order_date": "2026-08-25",
+        "amount": 29435.26
+      },
+      {
+        "order_id": "10583567",
+        "vendor_name": "Pillar Construction and Contracting Company",
+        "description": "Rehabilitation of Boreholes in Somaliland - Garaac",
+        "raw_description": "b'Rehabilitation of Boreholes in Somaliland - Garaac'",
+        "order_date": "2026-08-20",
+        "amount": 1668.25
+      },
+      {
+        "order_id": "10583570",
+        "vendor_name": "Cakaara Construction Company and Development Agency",
+        "description": "Rehabilitation of Boreholes in Somaliland-Kaarto Location.",
+        "raw_description": "b'Rehabilitation of Boreholes in Somaliland-Kaarto Location.'",
+        "order_date": "2026-08-20",
+        "amount": 3270.58
+      },
+      {
+        "order_id": "10583569",
+        "vendor_name": "ENGINEERS HUB COMPANY",
+        "description": "Rehabilitation of Boreholes in Somaliland-Qolijeed Location",
+        "raw_description": "b'Rehabilitation of Boreholes in Somaliland-Qolijeed Location'",
+        "order_date": "2026-08-20",
+        "amount": 25578.15
+      },
+      {
+        "order_id": "10567844",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-07-14",
+        "amount": 7200.0
+      },
+      {
+        "order_id": "10567844",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-07-10",
+        "amount": 10800.0
+      }
+    ]
   },
   {
     "id": "01006038",
@@ -1686,7 +3852,17 @@
         "url": "http://open.undp.org/projects/01006038"
       }
     ],
-    "documents_count": 3
+    "documents_count": 3,
+    "purchase_orders": [
+      {
+        "order_id": "10583672",
+        "vendor_name": "Plus Minus d.o.o. Sarajevo",
+        "description": "International Expert for UNDP-GEF Project Development (Project Preparation Grant Team Leader",
+        "raw_description": "b'International Expert for UNDP-GEF Project Development (Project Preparation Grant Team Leader'",
+        "order_date": "2026-08-20",
+        "amount": 27300.0
+      }
+    ]
   },
   {
     "id": "00147149",
@@ -1784,7 +3960,113 @@
         "url": "http://open.undp.org/projects/00147149/po"
       }
     ],
-    "documents_count": 6
+    "documents_count": 6,
+    "purchase_orders": [
+      {
+        "order_id": "10571755",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-07-21",
+        "amount": 22500.0
+      },
+      {
+        "order_id": "10551476",
+        "vendor_name": "Windsor Trading FZE",
+        "description": "ICT Equipment for the Somaliland Police /MOI and Judiciary commission for the case management.",
+        "raw_description": "b'ICT Equipment for the Somaliland Police /MOI and Judiciary commission for the case management.'",
+        "order_date": "2026-06-03",
+        "amount": 43698.31
+      },
+      {
+        "order_id": "10532866",
+        "vendor_name": "BAKER TILLY",
+        "description": "Provision of HACT Micro assessment for UNDP Somalia.",
+        "raw_description": "b'Provision of HACT Micro assessment for UNDP Somalia.'",
+        "order_date": "2026-04-20",
+        "amount": 3500.0
+      },
+      {
+        "order_id": "10483799",
+        "vendor_name": "SAGAL JET PRINTING COMPANY",
+        "description": "Printing materials and visibilities items for the upcoming Justice Conference scheduled be to be held at Hargeisa Serene Hotel from 02 to 03 December 2025",
+        "raw_description": "b'Printing materials and visibilities items for the upcoming Justice Conference scheduled be to be held at Hargeisa Serene Hotel from 02 to 03 December 2025'",
+        "order_date": "2025-12-02",
+        "amount": 13619.84
+      },
+      {
+        "order_id": "10474941",
+        "vendor_name": "SERENE SAROVAR PREMIERE HOTEL",
+        "description": "ROL-SL-NATIONAL JUSTICE REFORM CONFERENCE -02-03 Dec 2025150 Pax x35",
+        "raw_description": "b'ROL-SL-NATIONAL JUSTICE REFORM CONFERENCE -02-03 Dec 2025150 Pax x35'",
+        "order_date": "2025-11-17",
+        "amount": 24080.0
+      },
+      {
+        "order_id": "10464746",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-10-29",
+        "amount": 13500.0
+      },
+      {
+        "order_id": "10446468",
+        "vendor_name": "Somaliland Lawyers Association",
+        "description": "Engagement of NGOs and Civil Society Organizations in Somaliland JROL for 2025",
+        "raw_description": "b'Engagement of NGOs and Civil Society Organizations in Somaliland JROL for 2025'",
+        "order_date": "2025-09-23",
+        "amount": 67800.0
+      },
+      {
+        "order_id": "10406786",
+        "vendor_name": "Researchcare Africa",
+        "description": "Third Party Monitoring for RoL's,SRSP and RCC projects",
+        "raw_description": "b\"Third Party Monitoring for RoL's,SRSP and RCC projects\"",
+        "order_date": "2025-06-24",
+        "amount": 13500.0
+      },
+      {
+        "order_id": "10392396",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-05-21",
+        "amount": 24750.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2025-03-09",
+        "amount": 2000.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2024-12-31",
+        "amount": 2000.0
+      },
+      {
+        "order_id": "10303319",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-10-29",
+        "amount": 17500.0
+      },
+      {
+        "order_id": "10136506",
+        "vendor_name": "Researchcare Africa",
+        "description": "Q3-4 Third Party Monitoring services request",
+        "raw_description": "b'Q3-4 Third Party Monitoring services request'",
+        "order_date": "2023-11-07",
+        "amount": 18160.0
+      }
+    ]
   },
   {
     "id": "01004596",
@@ -1860,7 +4142,73 @@
         "url": "http://open.undp.org/projects/01004596"
       }
     ],
-    "documents_count": 5
+    "documents_count": 5,
+    "purchase_orders": [
+      {
+        "order_id": "10571868",
+        "vendor_name": "HAYALI INVESTMENT LIMITED",
+        "description": "Supply and Delivery of Assorted ICT Equipment's for the Ministry of Foreign Affairs and Int'l Cooperation Department of East African Community.",
+        "raw_description": "b\"Supply and Delivery of Assorted ICT Equipment's for the Ministry of Foreign Affairs and Int'l Cooperation Department of East African Community.\"",
+        "order_date": "2026-07-21",
+        "amount": 15000.0
+      },
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 6000.0
+      },
+      {
+        "order_id": "10497308",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-12-31",
+        "amount": 16500.0
+      },
+      {
+        "order_id": "10492440",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-12-18",
+        "amount": 14750.59
+      },
+      {
+        "order_id": "10491464",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-12-16",
+        "amount": 27000.0
+      },
+      {
+        "order_id": "10460106",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.'",
+        "order_date": "2025-10-22",
+        "amount": 797.9
+      },
+      {
+        "order_id": "10460106",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.'",
+        "order_date": "2025-10-21",
+        "amount": 6121.0
+      },
+      {
+        "order_id": "10435379",
+        "vendor_name": "RESPONSE LIMITED",
+        "description": "Logistical Support for the Fireside Chats (inside Dhaka & Outside Dhaka), Policy Caf and Seminar",
+        "raw_description": "b'Logistical Support for the Fireside Chats (inside Dhaka & Outside Dhaka), Policy Caf and Seminar'",
+        "order_date": "2025-08-31",
+        "amount": 17788.62
+      }
+    ]
   },
   {
     "id": "01003683",
@@ -1922,7 +4270,41 @@
         "url": "http://open.undp.org/projects/01003683/results"
       }
     ],
-    "documents_count": 6
+    "documents_count": 6,
+    "purchase_orders": [
+      {
+        "order_id": "10569612",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-07-15",
+        "amount": 10000.0
+      },
+      {
+        "order_id": "10509205",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-02-12",
+        "amount": 10000.0
+      },
+      {
+        "order_id": "10483007",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-12-01",
+        "amount": 64000.0
+      },
+      {
+        "order_id": "10421292",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-07-29",
+        "amount": 36000.0
+      }
+    ]
   },
   {
     "id": "00128746",
@@ -2231,7 +4613,329 @@
         "url": "https://undpngddlsprod01.blob.core.windows.net/pdc/00128746-PPM3.6.3 g3.6.3.i Consolidated CVCA Report in Bari Mudug and  Sanaag region final.pdf"
       }
     ],
-    "documents_count": 41
+    "documents_count": 41,
+    "purchase_orders": [
+      {
+        "order_id": "10566813",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-07-08",
+        "amount": 22500.0
+      },
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 7500.0
+      },
+      {
+        "order_id": "10406786",
+        "vendor_name": "Researchcare Africa",
+        "description": "Third Party Monitoring for RoL's,SRSP and RCC projects",
+        "raw_description": "b\"Third Party Monitoring for RoL's,SRSP and RCC projects\"",
+        "order_date": "2025-06-24",
+        "amount": 14980.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2025-03-09",
+        "amount": 6000.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2024-12-31",
+        "amount": 10000.0
+      },
+      {
+        "order_id": "10327487",
+        "vendor_name": "Researchcare Africa",
+        "description": "TPM Service for RCC WED Project - Quarter 4 2024.",
+        "raw_description": "b'TPM Service for RCC WED Project - Quarter 4 2024.'",
+        "order_date": "2024-12-06",
+        "amount": 37840.0
+      },
+      {
+        "order_id": "10314876",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS ticket costs for the month of Oct,2024",
+        "raw_description": "b'UNHAS ticket costs for the month of Oct,2024'",
+        "order_date": "2024-11-17",
+        "amount": 825.0
+      },
+      {
+        "order_id": "10314876",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS ticket costs for the month of Oct,2024",
+        "raw_description": "b'UNHAS ticket costs for the month of Oct,2024'",
+        "order_date": "2024-11-16",
+        "amount": 550.0
+      },
+      {
+        "order_id": "10291771",
+        "vendor_name": "DANOFFICE IT APS",
+        "description": "Supply and Delivery of Laptops and its accessories to Somalia Country Office",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to Somalia Country Office'",
+        "order_date": "2024-10-14",
+        "amount": 2104.0
+      },
+      {
+        "order_id": "10291771",
+        "vendor_name": "DANOFFICE IT APS",
+        "description": "Supply and Delivery of Laptops and its accessories to Somalia Country Office",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to Somalia Country Office'",
+        "order_date": "2024-10-09",
+        "amount": 310.0
+      },
+      {
+        "order_id": "10266492",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-08-19",
+        "amount": 14880.0
+      },
+      {
+        "order_id": "10250109",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF JUNE,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF JUNE,2024'",
+        "order_date": "2024-07-11",
+        "amount": 1650.0
+      },
+      {
+        "order_id": "10208980",
+        "vendor_name": "Deloitte & Touche",
+        "description": "2023 HACT Financial Audit",
+        "raw_description": "b'2023 HACT Financial Audit'",
+        "order_date": "2024-04-17",
+        "amount": 50000.0
+      },
+      {
+        "order_id": "10208204",
+        "vendor_name": "Raasi Trading and Logistics Company",
+        "description": "CIVIL WORKS-Bandiiradley Water Catchment",
+        "raw_description": "b'CIVIL WORKS-Bandiiradley Water Catchment'",
+        "order_date": "2024-04-16",
+        "amount": 70804.31
+      },
+      {
+        "order_id": "10129588",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-02-01",
+        "amount": 28000.0
+      },
+      {
+        "order_id": "10009868",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-12-31",
+        "amount": 25800.0
+      },
+      {
+        "order_id": "10055072",
+        "vendor_name": "DALSAN MEDIA GROUP",
+        "description": "Contract Cost Amendment for Bilan Media Team-April_May 2024.",
+        "raw_description": "b'Contract Cost Amendment for Bilan Media Team-April_May 2024.'",
+        "order_date": "2023-12-29",
+        "amount": 8800.0
+      },
+      {
+        "order_id": "10149335",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-11-28",
+        "amount": 5687.43
+      },
+      {
+        "order_id": "10141502",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-11-15",
+        "amount": 24000.0
+      },
+      {
+        "order_id": "10130741",
+        "vendor_name": "GSOL Energy Global AS",
+        "description": "GP601305_Solar Desalination Plant",
+        "raw_description": "b'GP601305_Solar Desalination Plant'",
+        "order_date": "2023-10-27",
+        "amount": 309546.0
+      },
+      {
+        "order_id": "10120084",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2023.",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2023.'",
+        "order_date": "2023-10-10",
+        "amount": 760.0
+      },
+      {
+        "order_id": "10111639",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-09-25",
+        "amount": 42000.0
+      },
+      {
+        "order_id": "10105146",
+        "vendor_name": "Aptech Africa Limited",
+        "description": "SOLAR EQUIPMENT-SOMALILAND",
+        "raw_description": "b'SOLAR EQUIPMENT-SOMALILAND'",
+        "order_date": "2023-09-13",
+        "amount": 34159.0
+      },
+      {
+        "order_id": "10102161",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-09-07",
+        "amount": 17500.0
+      },
+      {
+        "order_id": "10092389",
+        "vendor_name": "BAKER TILLY",
+        "description": "Attorney General Office -FGS",
+        "raw_description": "b'Attorney General Office -FGS'",
+        "order_date": "2023-08-17",
+        "amount": 27636.0
+      },
+      {
+        "order_id": "10086848",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF JULY,2023",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF JULY,2023'",
+        "order_date": "2023-08-09",
+        "amount": 930.0
+      },
+      {
+        "order_id": "10073261",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET PAYMENTS FOR THE MONTH OF JUNE,2023",
+        "raw_description": "b'UNHAS TICKET PAYMENTS FOR THE MONTH OF JUNE,2023'",
+        "order_date": "2023-07-08",
+        "amount": 3106.0
+      },
+      {
+        "order_id": "10059166",
+        "vendor_name": "Researchcare Africa",
+        "description": "Third-Party Monitoring for for Q1-2 2023",
+        "raw_description": "b'Third-Party Monitoring for for Q1-2 2023'",
+        "order_date": "2023-06-08",
+        "amount": 10066.5
+      },
+      {
+        "order_id": "10008388",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-02-21",
+        "amount": 6405.0
+      },
+      {
+        "order_id": "0000030609",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS_OCT-2022_PAYMENT",
+        "raw_description": "b'UNHAS_OCT-2022_PAYMENT'",
+        "order_date": "2022-12-20",
+        "amount": 1166.0
+      },
+      {
+        "order_id": "0000030463",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS_OCT_2022",
+        "raw_description": "b'UNHAS_OCT_2022'",
+        "order_date": "2022-11-13",
+        "amount": 1166.0
+      },
+      {
+        "order_id": "0000030442",
+        "vendor_name": "Consultant",
+        "description": "Consultancy agreement",
+        "raw_description": "b'Consultancy agreement'",
+        "order_date": "2022-11-08",
+        "amount": 12500.0
+      },
+      {
+        "order_id": "0000030305",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS_AUGSUT_2022",
+        "raw_description": "b'UNHAS_AUGSUT_2022'",
+        "order_date": "2022-09-11",
+        "amount": 3432.0
+      },
+      {
+        "order_id": "0000030243",
+        "vendor_name": "MOHAMUD MOHAMED",
+        "description": "Online Src From Req 0000035039",
+        "raw_description": "b'Online Src From Req 0000035039'",
+        "order_date": "2022-08-03",
+        "amount": 31465.0
+      },
+      {
+        "order_id": "0000030196",
+        "vendor_name": "PEGASYS GLOBAL CONSULTING PTY LTD",
+        "description": "Online Src From Req 0000035204",
+        "raw_description": "b'Online Src From Req 0000035204'",
+        "order_date": "2022-07-14",
+        "amount": 59650.0
+      },
+      {
+        "order_id": "0000030032",
+        "vendor_name": "DANOFFICE IT APS",
+        "description": "Online Src From Req 0000034918",
+        "raw_description": "b'Online Src From Req 0000034918'",
+        "order_date": "2022-05-05",
+        "amount": 7666.0
+      },
+      {
+        "order_id": "0000029653",
+        "vendor_name": "Baker Tilly Merali's CPA",
+        "description": "Online Src From Req 0000034239",
+        "raw_description": "b'Online Src From Req 0000034239'",
+        "order_date": "2021-11-15",
+        "amount": 4931.0
+      },
+      {
+        "order_id": "0000029631",
+        "vendor_name": "DANOFFICE IT APS",
+        "description": "REQ#0000034120",
+        "raw_description": "b'REQ#0000034120'",
+        "order_date": "2021-11-09",
+        "amount": 5466.0
+      },
+      {
+        "order_id": "141497",
+        "vendor_name": "HORMUUD TELECOM",
+        "description": "",
+        "raw_description": "b''",
+        "order_date": "2021-05-19",
+        "amount": 70.0
+      },
+      {
+        "order_id": "0000029162",
+        "vendor_name": "HORMUUD TELECOM",
+        "description": "Online Src From Req 0000033412",
+        "raw_description": "b'Online Src From Req 0000033412'",
+        "order_date": "2021-03-23",
+        "amount": 390.0
+      }
+    ]
   },
   {
     "id": "00140771",
@@ -2400,7 +5104,305 @@
         "url": "http://open.undp.org/projects/00140771/results"
       }
     ],
-    "documents_count": 18
+    "documents_count": 18,
+    "purchase_orders": [
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 6500.0
+      },
+      {
+        "order_id": "10491292",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Spot Check for Q1-4 2025 - first round",
+        "raw_description": "b'HACT Spot Check for Q1-4 2025 - first round'",
+        "order_date": "2026-04-07",
+        "amount": 4000.0
+      },
+      {
+        "order_id": "10242304",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-11-03",
+        "amount": 12870.0
+      },
+      {
+        "order_id": "10447102",
+        "vendor_name": "Researchcare Africa",
+        "description": "Q3-4 2025 - TPM request for ERID, IP and ROLS.",
+        "raw_description": "b'Q3-4 2025 - TPM request for ERID, IP and ROLS.'",
+        "order_date": "2025-09-24",
+        "amount": 6040.0
+      },
+      {
+        "order_id": "10374397",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-04-07",
+        "amount": 11500.0
+      },
+      {
+        "order_id": "10373188",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-04-03",
+        "amount": 22500.0
+      },
+      {
+        "order_id": "10369716",
+        "vendor_name": "BAKER TILLY",
+        "description": "Request for HACT micro assessment for Baidoa and Bosaso Municipality.",
+        "raw_description": "b'Request for HACT micro assessment for Baidoa and Bosaso Municipality.'",
+        "order_date": "2025-03-25",
+        "amount": 7850.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2024-12-31",
+        "amount": 2000.0
+      },
+      {
+        "order_id": "10338963",
+        "vendor_name": "Norwegian Refugee Council (NRC) - Somalia",
+        "description": "Enhancing Livelihood Development through SME and MSME Support IDPS and Host communities in Bossaso, Somalia",
+        "raw_description": "b'Enhancing Livelihood Development through SME and MSME Support IDPS and Host communities in Bossaso, Somalia'",
+        "order_date": "2024-12-30",
+        "amount": 454621.0
+      },
+      {
+        "order_id": "10316019",
+        "vendor_name": "Somali Marine and fisheries science institute",
+        "description": "Fisheries, fishing, and fish processing skills development programme for IDPs in Girible, Bosaso - Needs assessment, curriculum development and training delivery.",
+        "raw_description": "b'Fisheries, fishing, and fish processing skills development programme for IDPs in Girible, Bosaso - Needs assessment, curriculum development and training delivery.'",
+        "order_date": "2024-11-19",
+        "amount": 81960.0
+      },
+      {
+        "order_id": "10314876",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS ticket costs for the month of Oct,2024",
+        "raw_description": "b'UNHAS ticket costs for the month of Oct,2024'",
+        "order_date": "2024-11-16",
+        "amount": 1520.0
+      },
+      {
+        "order_id": "10300067",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-10-23",
+        "amount": 28800.0
+      },
+      {
+        "order_id": "10286643",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2024'",
+        "order_date": "2024-10-09",
+        "amount": 655.0
+      },
+      {
+        "order_id": "10275992",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF AUGUST,2024.",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF AUGUST,2024.'",
+        "order_date": "2024-09-11",
+        "amount": 5725.0
+      },
+      {
+        "order_id": "10263563",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF JULY,2024.",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF JULY,2024.'",
+        "order_date": "2024-08-15",
+        "amount": 1035.0
+      },
+      {
+        "order_id": "10246515",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-07-03",
+        "amount": 30000.0
+      },
+      {
+        "order_id": "10242304",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-06-25",
+        "amount": 39000.0
+      },
+      {
+        "order_id": "10230853",
+        "vendor_name": "Researchcare Africa",
+        "description": "TPM service for Q1-2 2024",
+        "raw_description": "b'TPM service for Q1-2 2024'",
+        "order_date": "2024-05-30",
+        "amount": 3500.0
+      },
+      {
+        "order_id": "10229704",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-05-29",
+        "amount": 31500.0
+      },
+      {
+        "order_id": "10226767",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-05-23",
+        "amount": 40000.0
+      },
+      {
+        "order_id": "10061439",
+        "vendor_name": "Enreda SCA",
+        "description": "Professional Services for Citizen Digital e-Participation Platform Development and Maintenance. From 01 May to 30 April 2024.",
+        "raw_description": "b'Professional Services for Citizen Digital e-Participation Platform Development and Maintenance. From 01 May to 30 April 2024.'",
+        "order_date": "2024-03-21",
+        "amount": 15000.0
+      },
+      {
+        "order_id": "10198179",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-03-20",
+        "amount": 39000.0
+      },
+      {
+        "order_id": "10170550",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET PAYMENTS FOR THE MONTH OF DEC-2023.",
+        "raw_description": "b'UNHAS TICKET PAYMENTS FOR THE MONTH OF DEC-2023.'",
+        "order_date": "2024-01-15",
+        "amount": 252.0
+      },
+      {
+        "order_id": "10170550",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET PAYMENTS FOR THE MONTH OF DEC-2023.",
+        "raw_description": "b'UNHAS TICKET PAYMENTS FOR THE MONTH OF DEC-2023.'",
+        "order_date": "2024-01-10",
+        "amount": 550.0
+      },
+      {
+        "order_id": "10149335",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-11-28",
+        "amount": 5687.42
+      },
+      {
+        "order_id": "10139325",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-11-12",
+        "amount": 51405.0
+      },
+      {
+        "order_id": "10039529",
+        "vendor_name": "Livelihoods, Economic & Agriculture Development Organization",
+        "description": "LABOUR MARKET NEEDS ANALYSIS IN BAIDOA AND SOUTH-WEST STATE OF SOMALIA",
+        "raw_description": "b'LABOUR MARKET NEEDS ANALYSIS IN BAIDOA AND SOUTH-WEST STATE OF SOMALIA'",
+        "order_date": "2023-09-11",
+        "amount": 104854.0
+      },
+      {
+        "order_id": "10015513",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-07-31",
+        "amount": 12750.0
+      },
+      {
+        "order_id": "10028582",
+        "vendor_name": "Horn Afric Development Consultants",
+        "description": "National Consultant - Support for farm mechanization/JP Saameynta - PRC0005497",
+        "raw_description": "b'National Consultant - Support for farm mechanization/JP Saameynta - PRC0005497'",
+        "order_date": "2023-07-31",
+        "amount": 5400.0
+      },
+      {
+        "order_id": "10032808",
+        "vendor_name": "Horn Afric Development Consultants",
+        "description": "National consultant for Livestock production in Baidoa city.  PRC0005498",
+        "raw_description": "b'National consultant for Livestock production in Baidoa city.  PRC0005498'",
+        "order_date": "2023-07-30",
+        "amount": 5400.0
+      },
+      {
+        "order_id": "10061439",
+        "vendor_name": "Enreda SCA",
+        "description": "Professional Services for Citizen Digital e-Participation Platform Development and Maintenance. From 01 May to 30 April 2024.",
+        "raw_description": "b'Professional Services for Citizen Digital e-Participation Platform Development and Maintenance. From 01 May to 30 April 2024.'",
+        "order_date": "2023-06-13",
+        "amount": 15000.0
+      },
+      {
+        "order_id": "10057012",
+        "vendor_name": "THE BURWASH CONSULTING GROUP LIMITED",
+        "description": "Economics and Financial Analysis Expert - Saameynta (Impact) Programme",
+        "raw_description": "b'Economics and Financial Analysis Expert - Saameynta (Impact) Programme'",
+        "order_date": "2023-06-05",
+        "amount": 51000.0
+      },
+      {
+        "order_id": "10039529",
+        "vendor_name": "Livelihoods, Economic & Agriculture Development Organization",
+        "description": "LABOUR MARKET NEEDS ANALYSIS IN BAIDOA AND SOUTH-WEST STATE OF SOMALIA",
+        "raw_description": "b'LABOUR MARKET NEEDS ANALYSIS IN BAIDOA AND SOUTH-WEST STATE OF SOMALIA'",
+        "order_date": "2023-05-02",
+        "amount": 129053.4
+      },
+      {
+        "order_id": "10032808",
+        "vendor_name": "Horn Afric Development Consultants",
+        "description": "National consultant for Livestock production in Baidoa city.  PRC0005498",
+        "raw_description": "b'National consultant for Livestock production in Baidoa city.  PRC0005498'",
+        "order_date": "2023-04-16",
+        "amount": 32723.4
+      },
+      {
+        "order_id": "10028582",
+        "vendor_name": "Horn Afric Development Consultants",
+        "description": "National Consultant - Support for farm mechanization/JP Saameynta - PRC0005497",
+        "raw_description": "b'National Consultant - Support for farm mechanization/JP Saameynta - PRC0005497'",
+        "order_date": "2023-04-06",
+        "amount": 32906.1
+      },
+      {
+        "order_id": "10015513",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-03-09",
+        "amount": 63750.0
+      },
+      {
+        "order_id": "0000030120",
+        "vendor_name": "KINGFINE CORPORATION LIMITED",
+        "description": "PROMPT-169896",
+        "raw_description": "b'PROMPT-169896'",
+        "order_date": "2022-06-10",
+        "amount": 29750.0
+      }
+    ]
   },
   {
     "id": "01001093",
@@ -2461,7 +5463,25 @@
         "url": "http://open.undp.org/projects/01001093/results"
       }
     ],
-    "documents_count": 5
+    "documents_count": 5,
+    "purchase_orders": [
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 1500.0
+      },
+      {
+        "order_id": "10440648",
+        "vendor_name": "GIST RESEARCH LIMITED",
+        "description": "Conflict Analysis in the Federal Republic of Somalia Commissioned by the United Nations Peacebuilding Fund (UNPBF) in Support of Somalias 2025 Eligibility Renewal Process-Piggy backing on IOM LTA.",
+        "raw_description": "b'Conflict Analysis in the Federal Republic of Somalia Commissioned by the United Nations Peacebuilding Fund (UNPBF) in Support of Somalias 2025 Eligibility Renewal Process-Piggy backing on IOM LTA.'",
+        "order_date": "2025-09-11",
+        "amount": 97406.25
+      }
+    ]
   },
   {
     "id": "01003747",
@@ -2528,7 +5548,33 @@
         "url": "http://open.undp.org/projects/01003747"
       }
     ],
-    "documents_count": 6
+    "documents_count": 6,
+    "purchase_orders": [
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 1500.0
+      },
+      {
+        "order_id": "10491292",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Spot Check for Q1-4 2025 - first round",
+        "raw_description": "b'HACT Spot Check for Q1-4 2025 - first round'",
+        "order_date": "2025-12-16",
+        "amount": 2000.0
+      },
+      {
+        "order_id": "10369716",
+        "vendor_name": "BAKER TILLY",
+        "description": "Request for HACT micro assessment for Baidoa and Bosaso Municipality.",
+        "raw_description": "b'Request for HACT micro assessment for Baidoa and Bosaso Municipality.'",
+        "order_date": "2025-04-03",
+        "amount": 4500.0
+      }
+    ]
   },
   {
     "id": "01004592",
@@ -2614,7 +5660,169 @@
         "url": "http://open.undp.org/projects/01004592"
       }
     ],
-    "documents_count": 5
+    "documents_count": 5,
+    "purchase_orders": [
+      {
+        "order_id": "10551658",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit - 2025",
+        "raw_description": "b'HACT Audit - 2025'",
+        "order_date": "2026-06-03",
+        "amount": 4500.0
+      },
+      {
+        "order_id": "10501480",
+        "vendor_name": "Somali Storytellers",
+        "description": "National Consultant for Unlocking Somalias Creative and Cultural Industries",
+        "raw_description": "b'National Consultant for Unlocking Somalias Creative and Cultural Industries'",
+        "order_date": "2026-01-21",
+        "amount": 10000.0
+      },
+      {
+        "order_id": "10494805",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-12-23",
+        "amount": 67500.0
+      },
+      {
+        "order_id": "10493174",
+        "vendor_name": "GAMS Software GmbH",
+        "description": "Licenses for CGE module development",
+        "raw_description": "b'Licenses for CGE module development'",
+        "order_date": "2025-12-19",
+        "amount": 33600.0
+      },
+      {
+        "order_id": "10485205",
+        "vendor_name": "Novotel Nairobi Westlands",
+        "description": "CGE-Model Training  Nairobi, 713 December 2025",
+        "raw_description": "b'CGE-Model Training  Nairobi, 713 December 2025'",
+        "order_date": "2025-12-04",
+        "amount": 22438.0
+      },
+      {
+        "order_id": "10421292",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-11-30",
+        "amount": 32000.0
+      },
+      {
+        "order_id": "10430495",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-11-20",
+        "amount": 7000.0
+      },
+      {
+        "order_id": "10472954",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-11-17",
+        "amount": 79625.0
+      },
+      {
+        "order_id": "10472954",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-11-13",
+        "amount": 34125.0
+      },
+      {
+        "order_id": "10470710",
+        "vendor_name": "Kaafi Horn Renewable Energy Company",
+        "description": "Solar-powered freezer sets for Beneficiaries in Berbera to Strengthen Fisheries.",
+        "raw_description": "b'Solar-powered freezer sets for Beneficiaries in Berbera to Strengthen Fisheries.'",
+        "order_date": "2025-11-10",
+        "amount": 48160.0
+      },
+      {
+        "order_id": "10437282",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-11-06",
+        "amount": 2000.0
+      },
+      {
+        "order_id": "10464062",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-10-28",
+        "amount": 17400.0
+      },
+      {
+        "order_id": "10451080",
+        "vendor_name": "BAKER TILLY",
+        "description": "Micro-assessment for Ministry of Fisheries and Marine Resources- Hargeisa and Puntland.",
+        "raw_description": "b'Micro-assessment for Ministry of Fisheries and Marine Resources- Hargeisa and Puntland.'",
+        "order_date": "2025-10-02",
+        "amount": 10850.0
+      },
+      {
+        "order_id": "10450496",
+        "vendor_name": "Novotel Nairobi Westlands",
+        "description": "CGE Workshop in Nairobi, 6th10th October 2025",
+        "raw_description": "b'CGE Workshop in Nairobi, 6th10th October 2025'",
+        "order_date": "2025-10-01",
+        "amount": 25606.0
+      },
+      {
+        "order_id": "10443387",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-17",
+        "amount": 31500.0
+      },
+      {
+        "order_id": "10441916",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-14",
+        "amount": 10800.0
+      },
+      {
+        "order_id": "10438733",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-08",
+        "amount": 10000.0
+      },
+      {
+        "order_id": "10437866",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-05",
+        "amount": 11250.0
+      },
+      {
+        "order_id": "10437282",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-04",
+        "amount": 8000.0
+      },
+      {
+        "order_id": "10430495",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-08-20",
+        "amount": 24800.0
+      }
+    ]
   },
   {
     "id": "01002167",
@@ -2676,7 +5884,33 @@
         "url": "http://open.undp.org/projects/01002167"
       }
     ],
-    "documents_count": 6
+    "documents_count": 6,
+    "purchase_orders": [
+      {
+        "order_id": "10548416",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-05-26",
+        "amount": 13000.0
+      },
+      {
+        "order_id": "10546684",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-05-21",
+        "amount": 19074.0
+      },
+      {
+        "order_id": "10542361",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-05-12",
+        "amount": 19074.0
+      }
+    ]
   },
   {
     "id": "01003721",
@@ -2749,7 +5983,25 @@
         "url": "http://open.undp.org/projects/01003721"
       }
     ],
-    "documents_count": 7
+    "documents_count": 7,
+    "purchase_orders": [
+      {
+        "order_id": "10537356",
+        "vendor_name": "BBC Media Action",
+        "description": "Conduct Media Training on Conflict Sensitive Journalism and Behavioral Diagnostics on National ID Enrolment.",
+        "raw_description": "b'Conduct Media Training on Conflict Sensitive Journalism and Behavioral Diagnostics on National ID Enrolment.'",
+        "order_date": "2026-04-30",
+        "amount": 40000.0
+      },
+      {
+        "order_id": "10457100",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-10-14",
+        "amount": 28000.0
+      }
+    ]
   },
   {
     "id": "01004019",
@@ -2814,7 +6066,73 @@
         "url": "http://open.undp.org/projects/01004019"
       }
     ],
-    "documents_count": 4
+    "documents_count": 4,
+    "purchase_orders": [
+      {
+        "order_id": "10536328",
+        "vendor_name": "DAQARE TRAVEL AGENCY AND GENERAL SERVIC",
+        "description": "Charter flight for the Assistant Secretary-General, Assistant Administrator, and Director of the Crisis Bureau of the United Nations Development Programme (UNDP) for an official visit to Bosaso, Somalia on 5th May,2026.",
+        "raw_description": "b'Charter flight for the Assistant Secretary-General, Assistant Administrator, and Director of the Crisis Bureau of the United Nations Development Programme (UNDP) for an official visit to Bosaso, Somalia on 5th May,2026.'",
+        "order_date": "2026-04-28",
+        "amount": 25300.0
+      },
+      {
+        "order_id": "10460106",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.'",
+        "order_date": "2025-10-22",
+        "amount": 797.9
+      },
+      {
+        "order_id": "10460106",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.'",
+        "order_date": "2025-10-21",
+        "amount": 6276.0
+      },
+      {
+        "order_id": "10416205",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of ICT Equipments to Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of ICT Equipments to Somalia Country Office.'",
+        "order_date": "2025-07-30",
+        "amount": 1337.5
+      },
+      {
+        "order_id": "10416205",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of ICT Equipments to Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of ICT Equipments to Somalia Country Office.'",
+        "order_date": "2025-07-27",
+        "amount": 10933.0
+      },
+      {
+        "order_id": "10401655",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-06-12",
+        "amount": 54000.0
+      },
+      {
+        "order_id": "10381096",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-04-24",
+        "amount": 76500.0
+      },
+      {
+        "order_id": "10368627",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Audit plan 2024",
+        "raw_description": "b'HACT Audit plan 2024'",
+        "order_date": "2025-03-21",
+        "amount": 5000.0
+      }
+    ]
   },
   {
     "id": "01005233",
@@ -2880,7 +6198,33 @@
         "url": "http://open.undp.org/projects/01005233"
       }
     ],
-    "documents_count": 5
+    "documents_count": 5,
+    "purchase_orders": [
+      {
+        "order_id": "10532866",
+        "vendor_name": "BAKER TILLY",
+        "description": "Provision of HACT Micro assessment for UNDP Somalia.",
+        "raw_description": "b'Provision of HACT Micro assessment for UNDP Somalia.'",
+        "order_date": "2026-04-20",
+        "amount": 13000.0
+      },
+      {
+        "order_id": "10508788",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-02-11",
+        "amount": 34000.0
+      },
+      {
+        "order_id": "10472098",
+        "vendor_name": "Transition International",
+        "description": "International Consultant - Facilitator for the Co-Creation workshop",
+        "raw_description": "b'International Consultant - Facilitator for the Co-Creation workshop'",
+        "order_date": "2026-01-23",
+        "amount": 5600.0
+      }
+    ]
   },
   {
     "id": "00147799",
@@ -2959,7 +6303,153 @@
         "url": "http://open.undp.org/projects/00147799"
       }
     ],
-    "documents_count": 3
+    "documents_count": 3,
+    "purchase_orders": [
+      {
+        "order_id": "10491292",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Spot Check for Q1-4 2025 - first round",
+        "raw_description": "b'HACT Spot Check for Q1-4 2025 - first round'",
+        "order_date": "2026-04-07",
+        "amount": 9000.0
+      },
+      {
+        "order_id": "10330640",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-12-11",
+        "amount": 36900.0
+      },
+      {
+        "order_id": "10225585",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024'",
+        "order_date": "2024-06-03",
+        "amount": 1520.0
+      },
+      {
+        "order_id": "10217453",
+        "vendor_name": "JAZEERA PALACE HOTEL",
+        "description": "Quick book training for South Central somalia(9 Days)",
+        "raw_description": "b'Quick book training for South Central somalia(9 Days)'",
+        "order_date": "2024-05-06",
+        "amount": 18675.0
+      },
+      {
+        "order_id": "10217473",
+        "vendor_name": "DAQARE TRAVEL AGENCY AND GENERAL SERVIC",
+        "description": "Ticket preparation for Quick Book training FMS participants",
+        "raw_description": "b'Ticket preparation for Quick Book training FMS participants'",
+        "order_date": "2024-05-06",
+        "amount": 20800.0
+      },
+      {
+        "order_id": "10211057",
+        "vendor_name": "MUSTAQBAL ACCOUNTANTS FIRM",
+        "description": "Quick Books Online for UNDP partners",
+        "raw_description": "b'Quick Books Online for UNDP partners'",
+        "order_date": "2024-04-22",
+        "amount": 39780.0
+      },
+      {
+        "order_id": "10156608",
+        "vendor_name": "KPMG AG",
+        "description": "Q1-4 SPOT CHECKS PLAN - 2023",
+        "raw_description": "b'Q1-4 SPOT CHECKS PLAN - 2023'",
+        "order_date": "2024-03-08",
+        "amount": 63324.0
+      },
+      {
+        "order_id": "10156608",
+        "vendor_name": "KPMG AG",
+        "description": "Q1-4 SPOT CHECKS PLAN - 2023",
+        "raw_description": "b'Q1-4 SPOT CHECKS PLAN - 2023'",
+        "order_date": "2023-12-07",
+        "amount": 112493.0
+      },
+      {
+        "order_id": "10136506",
+        "vendor_name": "Researchcare Africa",
+        "description": "Q3-4 Third Party Monitoring services request",
+        "raw_description": "b'Q3-4 Third Party Monitoring services request'",
+        "order_date": "2023-11-22",
+        "amount": 38550.0
+      },
+      {
+        "order_id": "10080404",
+        "vendor_name": "Novelty Experiential Consultants Limited",
+        "description": "accounting software system for 50 partners which will cover installation and training.",
+        "raw_description": "b'accounting software system for 50 partners which will cover installation and training.'",
+        "order_date": "2023-07-24",
+        "amount": 13700.0
+      },
+      {
+        "order_id": "10061086",
+        "vendor_name": "JAZEERA PALACE HOTEL   -To be merged **",
+        "description": "This is FMS training at Jazeera hotel conducted by POQA",
+        "raw_description": "b'This is FMS training at Jazeera hotel conducted by POQA'",
+        "order_date": "2023-06-15",
+        "amount": 7164.78
+      },
+      {
+        "order_id": "10061086",
+        "vendor_name": "JAZEERA PALACE HOTEL   -To be merged **",
+        "description": "This is FMS training at Jazeera hotel conducted by POQA",
+        "raw_description": "b'This is FMS training at Jazeera hotel conducted by POQA'",
+        "order_date": "2023-06-13",
+        "amount": 5000.0
+      },
+      {
+        "order_id": "10056568",
+        "vendor_name": "KPMG AG",
+        "description": "Legal services - Q1-3 2022 SPOT CHECK, Hargeisa Group Hospital (SGBV) 8081 Rule of Law Prog. Somaliland 00113476 SL ROLS $124,937.00",
+        "raw_description": "b'Legal services - Q1-3 2022 SPOT CHECK, Hargeisa Group Hospital (SGBV) 8081 Rule of Law Prog. Somaliland 00113476 SL ROLS $124,937.00'",
+        "order_date": "2023-06-05",
+        "amount": 18681.75
+      },
+      {
+        "order_id": "10056654",
+        "vendor_name": "Daruro Air Travel and Logistics",
+        "description": "training for FMS - TRAVEL of participants from their location to Mogadishu and return their original location.",
+        "raw_description": "b'training for FMS - TRAVEL of participants from their location to Mogadishu and return their original location.'",
+        "order_date": "2023-06-05",
+        "amount": 18574.5
+      },
+      {
+        "order_id": "10039471",
+        "vendor_name": "DANOFFICE IT APS",
+        "description": "Procurement of Laptops for the CO",
+        "raw_description": "b'Procurement of Laptops for the CO'",
+        "order_date": "2023-05-03",
+        "amount": 1300.0
+      },
+      {
+        "order_id": "10039471",
+        "vendor_name": "DANOFFICE IT APS",
+        "description": "Procurement of Laptops for the CO",
+        "raw_description": "b'Procurement of Laptops for the CO'",
+        "order_date": "2023-05-02",
+        "amount": 6224.0
+      },
+      {
+        "order_id": "10034601",
+        "vendor_name": "KPMG AG",
+        "description": "HACT Spot Checks Q1-Q3 2022.",
+        "raw_description": "b'HACT Spot Checks Q1-Q3 2022.'",
+        "order_date": "2023-04-19",
+        "amount": 371413.9
+      },
+      {
+        "order_id": "10006143",
+        "vendor_name": "Deloitte & Touche",
+        "description": "legal service and audit",
+        "raw_description": "b'legal service and audit'",
+        "order_date": "2023-02-14",
+        "amount": 25000.0
+      }
+    ]
   },
   {
     "id": "00140359",
@@ -3047,7 +6537,185 @@
         "url": "http://open.undp.org/projects/00140359"
       }
     ],
-    "documents_count": 7
+    "documents_count": 7,
+    "purchase_orders": [
+      {
+        "order_id": "10511492",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-02-24",
+        "amount": 21900.0
+      },
+      {
+        "order_id": "10511580",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-02-20",
+        "amount": 22400.51
+      },
+      {
+        "order_id": "10511704",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-02-20",
+        "amount": 18000.0
+      },
+      {
+        "order_id": "10511492",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-02-19",
+        "amount": 5475.0
+      },
+      {
+        "order_id": "10511580",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-02-19",
+        "amount": 5599.99
+      },
+      {
+        "order_id": "10511704",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-02-19",
+        "amount": 9000.0
+      },
+      {
+        "order_id": "10438539",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-08",
+        "amount": 24000.0
+      },
+      {
+        "order_id": "10426888",
+        "vendor_name": "AIRPORT HOTEL AND CONFERENCE",
+        "description": "CIMS and CIRT Workshop to be held from 1st to 3rd September 2025. RMU Training to be held from 8th to 9th September 2025.",
+        "raw_description": "b'CIMS and CIRT Workshop to be held from 1st to 3rd September 2025. RMU Training to be held from 8th to 9th September 2025.'",
+        "order_date": "2025-08-12",
+        "amount": 10420.0
+      },
+      {
+        "order_id": "10286643",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2024'",
+        "order_date": "2024-10-09",
+        "amount": 248.0
+      },
+      {
+        "order_id": "10264244",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-08-14",
+        "amount": 15000.0
+      },
+      {
+        "order_id": "10208265",
+        "vendor_name": "DANOFFICE IT APS",
+        "description": "Supply of Laptops and its accessories to Somalia RCO",
+        "raw_description": "b'Supply of Laptops and its accessories to Somalia RCO'",
+        "order_date": "2024-04-16",
+        "amount": 32452.0
+      },
+      {
+        "order_id": "10112925",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-09-27",
+        "amount": 42560.0
+      },
+      {
+        "order_id": "10103641",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-09-11",
+        "amount": 72960.0
+      },
+      {
+        "order_id": "0000030609",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS_OCT-2022_PAYMENT",
+        "raw_description": "b'UNHAS_OCT-2022_PAYMENT'",
+        "order_date": "2022-12-20",
+        "amount": 1123.0
+      },
+      {
+        "order_id": "0000030574",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS_NOV_PAYMENT_2022",
+        "raw_description": "b'UNHAS_NOV_PAYMENT_2022'",
+        "order_date": "2022-12-11",
+        "amount": 1110.0
+      },
+      {
+        "order_id": "0000030463",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS_OCT_2022",
+        "raw_description": "b'UNHAS_OCT_2022'",
+        "order_date": "2022-11-13",
+        "amount": 1123.0
+      },
+      {
+        "order_id": "0000030461",
+        "vendor_name": "Consultant",
+        "description": "Consultancy agreement",
+        "raw_description": "b'Consultancy agreement'",
+        "order_date": "2022-11-11",
+        "amount": 17762.5
+      },
+      {
+        "order_id": "0000030366",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS_TICKET COST_SEPT_2022_",
+        "raw_description": "b'UNHAS_TICKET COST_SEPT_2022_'",
+        "order_date": "2022-10-10",
+        "amount": 681.0
+      },
+      {
+        "order_id": "0000030345",
+        "vendor_name": "Consultant",
+        "description": "Consultancy agreement",
+        "raw_description": "b'Consultancy agreement'",
+        "order_date": "2022-09-28",
+        "amount": 21000.0
+      },
+      {
+        "order_id": "0000030190",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "JUNE_2022_TICKET_COST_UNHAS",
+        "raw_description": "b'JUNE_2022_TICKET_COST_UNHAS'",
+        "order_date": "2022-07-12",
+        "amount": 786.0
+      },
+      {
+        "order_id": "0000029988",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS_BILL_MARCH 2022",
+        "raw_description": "b'UNHAS_BILL_MARCH 2022'",
+        "order_date": "2022-04-10",
+        "amount": 760.0
+      },
+      {
+        "order_id": "0000029809",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS_BILL_DEC_2021",
+        "raw_description": "b'UNHAS_BILL_DEC_2021'",
+        "order_date": "2022-03-06",
+        "amount": 1286.0
+      }
+    ]
   },
   {
     "id": "01002199",
@@ -3108,7 +6776,33 @@
         "url": "http://open.undp.org/projects/01002199"
       }
     ],
-    "documents_count": 5
+    "documents_count": 5,
+    "purchase_orders": [
+      {
+        "order_id": "10499481",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-01-15",
+        "amount": 20000.0
+      },
+      {
+        "order_id": "10499481",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2026-01-13",
+        "amount": 12000.0
+      },
+      {
+        "order_id": "10416205",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of ICT Equipments to Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of ICT Equipments to Somalia Country Office.'",
+        "order_date": "2025-07-30",
+        "amount": 4924.5
+      }
+    ]
   },
   {
     "id": "01004579",
@@ -3175,7 +6869,25 @@
         "url": "http://open.undp.org/projects/01004579"
       }
     ],
-    "documents_count": 6
+    "documents_count": 6,
+    "purchase_orders": [
+      {
+        "order_id": "10497601",
+        "vendor_name": "3D Research Limited",
+        "description": "International Expert: Project Development for INSIGHT-SDG  Improving National Statistics for Inclusive Growth and Tracking SDGs.",
+        "raw_description": "b'International Expert: Project Development for INSIGHT-SDG  Improving National Statistics for Inclusive Growth and Tracking SDGs.'",
+        "order_date": "2025-12-31",
+        "amount": 22500.0
+      },
+      {
+        "order_id": "10434191",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-10-01",
+        "amount": 24000.0
+      }
+    ]
   },
   {
     "id": "00128743",
@@ -3296,7 +7008,233 @@
         "url": "http://open.undp.org/projects/00128743/po"
       }
     ],
-    "documents_count": 10
+    "documents_count": 10,
+    "purchase_orders": [
+      {
+        "order_id": "10491292",
+        "vendor_name": "Deloitte & Touche",
+        "description": "HACT Spot Check for Q1-4 2025 - first round",
+        "raw_description": "b'HACT Spot Check for Q1-4 2025 - first round'",
+        "order_date": "2025-12-16",
+        "amount": 10000.0
+      },
+      {
+        "order_id": "10442725",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-16",
+        "amount": 36000.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2025-03-09",
+        "amount": 2000.0
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2024-12-31",
+        "amount": 8000.0
+      },
+      {
+        "order_id": "10254934",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Special Audit",
+        "raw_description": "b'Special Audit'",
+        "order_date": "2024-07-23",
+        "amount": 30000.0
+      },
+      {
+        "order_id": "10225585",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024'",
+        "order_date": "2024-06-18",
+        "amount": 2085.0
+      },
+      {
+        "order_id": "10230853",
+        "vendor_name": "Researchcare Africa",
+        "description": "TPM service for Q1-2 2024",
+        "raw_description": "b'TPM service for Q1-2 2024'",
+        "order_date": "2024-05-30",
+        "amount": 4540.0
+      },
+      {
+        "order_id": "10225585",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024'",
+        "order_date": "2024-05-26",
+        "amount": 7258.0
+      },
+      {
+        "order_id": "10225585",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024'",
+        "order_date": "2024-05-21",
+        "amount": 1750.0
+      },
+      {
+        "order_id": "10208980",
+        "vendor_name": "Deloitte & Touche",
+        "description": "2023 HACT Financial Audit",
+        "raw_description": "b'2023 HACT Financial Audit'",
+        "order_date": "2024-04-17",
+        "amount": 5000.0
+      },
+      {
+        "order_id": "10201301",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-03-28",
+        "amount": 26000.0
+      },
+      {
+        "order_id": "10199308",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-03-24",
+        "amount": 32500.0
+      },
+      {
+        "order_id": "10157733",
+        "vendor_name": "JAZEERA PALACE HOTEL   -To be merged **",
+        "description": "4th  Annual Somali Women Parliamentarians Conference",
+        "raw_description": "b'4th  Annual Somali Women Parliamentarians Conference'",
+        "order_date": "2023-12-10",
+        "amount": 16350.0
+      },
+      {
+        "order_id": "10144177",
+        "vendor_name": "KENYA EDITORS GUILD",
+        "description": "Work Placements, Safety Training and Media Networking for Bilan Media",
+        "raw_description": "b'Work Placements, Safety Training and Media Networking for Bilan Media'",
+        "order_date": "2023-11-20",
+        "amount": 7927.0
+      },
+      {
+        "order_id": "10136506",
+        "vendor_name": "Researchcare Africa",
+        "description": "Q3-4 Third Party Monitoring services request",
+        "raw_description": "b'Q3-4 Third Party Monitoring services request'",
+        "order_date": "2023-11-07",
+        "amount": 13950.0
+      },
+      {
+        "order_id": "10120084",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2023.",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2023.'",
+        "order_date": "2023-10-11",
+        "amount": 750.0
+      },
+      {
+        "order_id": "10092389",
+        "vendor_name": "BAKER TILLY",
+        "description": "Attorney General Office -FGS",
+        "raw_description": "b'Attorney General Office -FGS'",
+        "order_date": "2023-08-17",
+        "amount": 4410.0
+      },
+      {
+        "order_id": "10059166",
+        "vendor_name": "Researchcare Africa",
+        "description": "Third-Party Monitoring for for Q1-2 2023",
+        "raw_description": "b'Third-Party Monitoring for for Q1-2 2023'",
+        "order_date": "2023-06-08",
+        "amount": 8345.0
+      },
+      {
+        "order_id": "10056113",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-06-02",
+        "amount": 11750.0
+      },
+      {
+        "order_id": "10021944",
+        "vendor_name": "NATIONAL UNION OF SOMALI JOURNALISTS",
+        "description": "Replacement of closed Atlas PO SOM-10-30495 for Contract Ref: UNDPSOM/ROL/RFP/22/182836",
+        "raw_description": "b'Replacement of closed Atlas PO SOM-10-30495 for Contract Ref: UNDPSOM/ROL/RFP/22/182836'",
+        "order_date": "2023-03-23",
+        "amount": 88649.69
+      },
+      {
+        "order_id": "10004177",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS Ticket costs for the month of December,2022.",
+        "raw_description": "b'UNHAS Ticket costs for the month of December,2022.'",
+        "order_date": "2023-02-07",
+        "amount": 380.0
+      },
+      {
+        "order_id": "0000030495",
+        "vendor_name": "NATIONAL UNION OF SOMALI JOURNALISTS",
+        "description": "PROMPT ID 182836",
+        "raw_description": "b'PROMPT ID 182836'",
+        "order_date": "2022-11-21",
+        "amount": 98499.66
+      },
+      {
+        "order_id": "0000030366",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS_TICKET COST_SEPT_2022_",
+        "raw_description": "b'UNHAS_TICKET COST_SEPT_2022_'",
+        "order_date": "2022-10-10",
+        "amount": 4520.0
+      },
+      {
+        "order_id": "0000030246",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS_TICKET_PAYMENT_JULY_2022",
+        "raw_description": "b'UNHAS_TICKET_PAYMENT_JULY_2022'",
+        "order_date": "2022-08-07",
+        "amount": 5830.0
+      },
+      {
+        "order_id": "0000030190",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "JUNE_2022_TICKET_COST_UNHAS",
+        "raw_description": "b'JUNE_2022_TICKET_COST_UNHAS'",
+        "order_date": "2022-07-12",
+        "amount": 380.0
+      },
+      {
+        "order_id": "0000030124",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS_TICKET_PAYMENT_MAY_2022",
+        "raw_description": "b'UNHAS_TICKET_PAYMENT_MAY_2022'",
+        "order_date": "2022-06-13",
+        "amount": 380.0
+      },
+      {
+        "order_id": "0000030064",
+        "vendor_name": "Baker Tilly Merali's CPA",
+        "description": "Prompt ID 184800",
+        "raw_description": "b'Prompt ID 184800'",
+        "order_date": "2022-05-23",
+        "amount": 4931.0
+      },
+      {
+        "order_id": "0000030040",
+        "vendor_name": "Consultant",
+        "description": "Consultancy agreement",
+        "raw_description": "b'Consultancy agreement'",
+        "order_date": "2022-05-11",
+        "amount": 30000.0
+      }
+    ]
   },
   {
     "id": "01004548",
@@ -3357,7 +7295,57 @@
         "url": "http://open.undp.org/projects/01004548"
       }
     ],
-    "documents_count": 5
+    "documents_count": 5,
+    "purchase_orders": [
+      {
+        "order_id": "10476294",
+        "vendor_name": "DECALE HOTEL MANAGEMENT AND TOURISM",
+        "description": "Logistical arrangements for The 2nd Somalia Conference on development Solutions",
+        "raw_description": "b'Logistical arrangements for The 2nd Somalia Conference on development Solutions'",
+        "order_date": "2025-11-19",
+        "amount": 15000.0
+      },
+      {
+        "order_id": "10449785",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-30",
+        "amount": 32000.0
+      },
+      {
+        "order_id": "10445532",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-22",
+        "amount": 12000.0
+      },
+      {
+        "order_id": "10444421",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-18",
+        "amount": 10000.0
+      },
+      {
+        "order_id": "10435529",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-01",
+        "amount": 20000.0
+      },
+      {
+        "order_id": "10430571",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-08-20",
+        "amount": 24000.0
+      }
+    ]
   },
   {
     "id": "01004476",
@@ -3419,7 +7407,17 @@
         "url": "http://open.undp.org/projects/01004476"
       }
     ],
-    "documents_count": 6
+    "documents_count": 6,
+    "purchase_orders": [
+      {
+        "order_id": "10460106",
+        "vendor_name": "Atea A/S",
+        "description": "Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to UNDP Somalia Country Office.'",
+        "order_date": "2025-10-21",
+        "amount": 8368.0
+      }
+    ]
   },
   {
     "id": "01003684",
@@ -3474,7 +7472,25 @@
         "url": "http://open.undp.org/projects/01003684"
       }
     ],
-    "documents_count": 4
+    "documents_count": 4,
+    "purchase_orders": [
+      {
+        "order_id": "10442063",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-15",
+        "amount": 16800.0
+      },
+      {
+        "order_id": "10427400",
+        "vendor_name": "Rural Education and Agriculture Development Organization",
+        "description": "Scaling up women led micro and small enterprises for the social and economic inclusion of internally displaced persons (IDPs) in Baidoa, Somalia",
+        "raw_description": "b'Scaling up women led micro and small enterprises for the social and economic inclusion of internally displaced persons (IDPs) in Baidoa, Somalia'",
+        "order_date": "2025-08-13",
+        "amount": 176060.0
+      }
+    ]
   },
   {
     "id": "01003103",
@@ -3559,7 +7575,49 @@
         "url": "http://open.undp.org/projects/01003103"
       }
     ],
-    "documents_count": 8
+    "documents_count": 8,
+    "purchase_orders": [
+      {
+        "order_id": "10437063",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-09-03",
+        "amount": 11800.0
+      },
+      {
+        "order_id": "10373568",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-04-04",
+        "amount": 21000.0
+      },
+      {
+        "order_id": "10364610",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-03-12",
+        "amount": 21000.0
+      },
+      {
+        "order_id": "10334972",
+        "vendor_name": "ANNA SAMBO",
+        "description": "International IC- Social and Environment Safeguards expert -Urban Resilience.",
+        "raw_description": "b'International IC- Social and Environment Safeguards expert -Urban Resilience.'",
+        "order_date": "2024-12-19",
+        "amount": 23800.0
+      },
+      {
+        "order_id": "10332056",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-12-13",
+        "amount": 56000.0
+      }
+    ]
   },
   {
     "id": "01003502",
@@ -3626,7 +7684,33 @@
         "url": "http://open.undp.org/projects/01003502"
       }
     ],
-    "documents_count": 6
+    "documents_count": 6,
+    "purchase_orders": [
+      {
+        "order_id": "10419004",
+        "vendor_name": "TRIBE HOTEL LIMITED",
+        "description": "WORKSHOP IN NAIROBI Skills Training in Negotiation and Mediation for Somali Womens NetworksVENUE: Tribe Hotel | Trademark HotelParticipants: 31 PAX.",
+        "raw_description": "b'WORKSHOP IN NAIROBI Skills Training in Negotiation and Mediation for Somali Womens NetworksVENUE: Tribe Hotel | Trademark HotelParticipants: 31 PAX.'",
+        "order_date": "2025-09-03",
+        "amount": 561.71
+      },
+      {
+        "order_id": "10101939",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Trainer on Non-violent Communication (Local)",
+        "raw_description": "b'Trainer on Non-violent Communication (Local)'",
+        "order_date": "2025-08-27",
+        "amount": 12264.18
+      },
+      {
+        "order_id": "10419004",
+        "vendor_name": "TRIBE HOTEL LIMITED",
+        "description": "WORKSHOP IN NAIROBI Skills Training in Negotiation and Mediation for Somali Womens NetworksVENUE: Tribe Hotel | Trademark HotelParticipants: 31 PAX.",
+        "raw_description": "b'WORKSHOP IN NAIROBI Skills Training in Negotiation and Mediation for Somali Womens NetworksVENUE: Tribe Hotel | Trademark HotelParticipants: 31 PAX.'",
+        "order_date": "2025-07-23",
+        "amount": 19796.75
+      }
+    ]
   },
   {
     "id": "01003582",
@@ -3689,7 +7773,17 @@
         "url": "http://open.undp.org/projects/01003582"
       }
     ],
-    "documents_count": 6
+    "documents_count": 6,
+    "purchase_orders": [
+      {
+        "order_id": "10433712",
+        "vendor_name": "Somali Women's Studies Centre",
+        "description": "Provision of  development solutions to IDPs and wider-displacement affected communities, Support government-led solutions .",
+        "raw_description": "b'Provision of  development solutions to IDPs and wider-displacement affected communities, Support government-led solutions .'",
+        "order_date": "2025-08-27",
+        "amount": 275235.74
+      }
+    ]
   },
   {
     "id": "01003099",
@@ -3763,7 +7857,57 @@
         "url": "http://open.undp.org/projects/01003099"
       }
     ],
-    "documents_count": 8
+    "documents_count": 8,
+    "purchase_orders": [
+      {
+        "order_id": "10343473",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-07-24",
+        "amount": 24000.0
+      },
+      {
+        "order_id": "10377555",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-04-15",
+        "amount": 17500.0
+      },
+      {
+        "order_id": "10365010",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-03-13",
+        "amount": 17500.0
+      },
+      {
+        "order_id": "10359660",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-02-27",
+        "amount": 21000.0
+      },
+      {
+        "order_id": "10343473",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-01-16",
+        "amount": 56000.0
+      },
+      {
+        "order_id": "10342417",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2025-01-13",
+        "amount": 14000.0
+      }
+    ]
   },
   {
     "id": "01001562",
@@ -3861,7 +8005,97 @@
         "url": "http://open.undp.org/projects/01001562/po"
       }
     ],
-    "documents_count": 7
+    "documents_count": 7,
+    "purchase_orders": [
+      {
+        "order_id": "10408604",
+        "vendor_name": "National Consultancy Firm",
+        "description": "PWD Project Evaluation Consultancy RLA",
+        "raw_description": "b'PWD Project Evaluation Consultancy RLA'",
+        "order_date": "2025-06-27",
+        "amount": 20050.0
+      },
+      {
+        "order_id": "10349456",
+        "vendor_name": "Astaan Media",
+        "description": "Communication and Visibility Coverage for the Capacity Development and Empowerment for Persons with Disabilities (PWD) Project.",
+        "raw_description": "b'Communication and Visibility Coverage for the Capacity Development and Empowerment for Persons with Disabilities (PWD) Project.'",
+        "order_date": "2025-05-12",
+        "amount": 15306.5
+      },
+      {
+        "order_id": "10355329",
+        "vendor_name": "Sahal Shipping Services Ltd",
+        "description": "Shipment of Disability Items from Mogadishu to Hargeisa.",
+        "raw_description": "b'Shipment of Disability Items from Mogadishu to Hargeisa.'",
+        "order_date": "2025-03-25",
+        "amount": 1830.91
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2025-03-09",
+        "amount": 2000.0
+      },
+      {
+        "order_id": "10355329",
+        "vendor_name": "Sahal Shipping Services Ltd",
+        "description": "Shipment of Disability Items from Mogadishu to Hargeisa.",
+        "raw_description": "b'Shipment of Disability Items from Mogadishu to Hargeisa.'",
+        "order_date": "2025-02-17",
+        "amount": 24497.12
+      },
+      {
+        "order_id": "10349456",
+        "vendor_name": "Astaan Media",
+        "description": "Communication and Visibility Coverage for the Capacity Development and Empowerment for Persons with Disabilities (PWD) Project.",
+        "raw_description": "b'Communication and Visibility Coverage for the Capacity Development and Empowerment for Persons with Disabilities (PWD) Project.'",
+        "order_date": "2025-02-02",
+        "amount": 9993.5
+      },
+      {
+        "order_id": "10264743",
+        "vendor_name": "TOYOTA GIBRALTAR STOCKHOLDINGS LIMITED",
+        "description": "15-seater minibus customized for disabled individuals",
+        "raw_description": "b'15-seater minibus customized for disabled individuals'",
+        "order_date": "2024-11-13",
+        "amount": 381.72
+      },
+      {
+        "order_id": "10283621",
+        "vendor_name": "Rehan Logistics and Trading Company",
+        "description": "UNDP-SOM-00320-Supply and Delivery of Wheelchairs, Crutches and White cane",
+        "raw_description": "b'UNDP-SOM-00320-Supply and Delivery of Wheelchairs, Crutches and White cane'",
+        "order_date": "2024-09-24",
+        "amount": 143250.0
+      },
+      {
+        "order_id": "10264743",
+        "vendor_name": "TOYOTA GIBRALTAR STOCKHOLDINGS LIMITED",
+        "description": "15-seater minibus customized for disabled individuals",
+        "raw_description": "b'15-seater minibus customized for disabled individuals'",
+        "order_date": "2024-08-15",
+        "amount": 36997.18
+      },
+      {
+        "order_id": "10207311",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Monitoring, reporting and communications Officer (CTG Consultant LICA 10)",
+        "raw_description": "b'Monitoring, reporting and communications Officer (CTG Consultant LICA 10)'",
+        "order_date": "2024-04-24",
+        "amount": 274.29
+      },
+      {
+        "order_id": "10207311",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Monitoring, reporting and communications Officer (CTG Consultant LICA 10)",
+        "raw_description": "b'Monitoring, reporting and communications Officer (CTG Consultant LICA 10)'",
+        "order_date": "2024-04-12",
+        "amount": 14687.84
+      }
+    ]
   },
   {
     "id": "01001557",
@@ -3977,7 +8211,89 @@
         "url": "http://open.undp.org/projects/01001557/po"
       }
     ],
-    "documents_count": 10
+    "documents_count": 10,
+    "purchase_orders": [
+      {
+        "order_id": "10207311",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Monitoring, reporting and communications Officer (CTG Consultant LICA 10)",
+        "raw_description": "b'Monitoring, reporting and communications Officer (CTG Consultant LICA 10)'",
+        "order_date": "2025-05-22",
+        "amount": 19221.3
+      },
+      {
+        "order_id": "10340248",
+        "vendor_name": "Deloitte & Touche",
+        "description": "Spot Check plan for Q1-4 2024",
+        "raw_description": "b'Spot Check plan for Q1-4 2024'",
+        "order_date": "2024-12-31",
+        "amount": 2000.0
+      },
+      {
+        "order_id": "10332589",
+        "vendor_name": "M.IISE CLEARANCE SERVICES AND GENERAL SE",
+        "description": "Custom Clearance for Rule of law 6 pickup vehicles",
+        "raw_description": "b'Custom Clearance for Rule of law 6 pickup vehicles'",
+        "order_date": "2024-12-15",
+        "amount": 13754.18
+      },
+      {
+        "order_id": "10291771",
+        "vendor_name": "DANOFFICE IT APS",
+        "description": "Supply and Delivery of Laptops and its accessories to Somalia Country Office",
+        "raw_description": "b'Supply and Delivery of Laptops and its accessories to Somalia Country Office'",
+        "order_date": "2024-10-14",
+        "amount": 12206.0
+      },
+      {
+        "order_id": "10267417",
+        "vendor_name": "HEMINGWAYS TRAVEL LIMITED USD",
+        "description": "Flight International tickets for 24 Somali Police Force (SPF) officers who will be travelling to Serbia and ReturnTURKISH AIRLINETK 647   09SEP    MGQIST   1005    TK1084  30NOV  BEGIST     2010",
+        "raw_description": "b'Flight International tickets for 24 Somali Police Force (SPF) officers who will be travelling to Serbia and ReturnTURKISH AIRLINETK 647   09SEP    MGQIST   1005    TK1084  30NOV  BEGIST     2010'",
+        "order_date": "2024-09-20",
+        "amount": 2950.0
+      },
+      {
+        "order_id": "10272892",
+        "vendor_name": "TOYOTA GIBRALTAR STOCKHOLDINGS LIMITED",
+        "description": "NEW Hilux Double Cabin 5 Seat Turbo Diesel LHD Model: GUN125L-DNFSXN -A2",
+        "raw_description": "b'NEW Hilux Double Cabin 5 Seat Turbo Diesel LHD Model: GUN125L-DNFSXN -A2'",
+        "order_date": "2024-09-03",
+        "amount": 176488.6
+      },
+      {
+        "order_id": "10272892",
+        "vendor_name": "TOYOTA GIBRALTAR STOCKHOLDINGS LIMITED",
+        "description": "NEW Hilux Double Cabin 5 Seat Turbo Diesel LHD Model: GUN125L-DNFSXN -A2",
+        "raw_description": "b'NEW Hilux Double Cabin 5 Seat Turbo Diesel LHD Model: GUN125L-DNFSXN -A2'",
+        "order_date": "2024-09-02",
+        "amount": 35297.72
+      },
+      {
+        "order_id": "10267417",
+        "vendor_name": "HEMINGWAYS TRAVEL LIMITED USD",
+        "description": "Flight International tickets for 24 Somali Police Force (SPF) officers who will be travelling to Serbia and ReturnTURKISH AIRLINETK 647   09SEP    MGQIST   1005    TK1084  30NOV  BEGIST     2010",
+        "raw_description": "b'Flight International tickets for 24 Somali Police Force (SPF) officers who will be travelling to Serbia and ReturnTURKISH AIRLINETK 647   09SEP    MGQIST   1005    TK1084  30NOV  BEGIST     2010'",
+        "order_date": "2024-08-21",
+        "amount": 52560.0
+      },
+      {
+        "order_id": "10207311",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Monitoring, reporting and communications Officer (CTG Consultant LICA 10)",
+        "raw_description": "b'Monitoring, reporting and communications Officer (CTG Consultant LICA 10)'",
+        "order_date": "2024-06-19",
+        "amount": 37405.33
+      },
+      {
+        "order_id": "10230853",
+        "vendor_name": "Researchcare Africa",
+        "description": "TPM service for Q1-2 2024",
+        "raw_description": "b'TPM service for Q1-2 2024'",
+        "order_date": "2024-05-30",
+        "amount": 10390.0
+      }
+    ]
   },
   {
     "id": "01003931",
@@ -4027,7 +8343,17 @@
         "url": "http://open.undp.org/projects/01003931"
       }
     ],
-    "documents_count": 4
+    "documents_count": 4,
+    "purchase_orders": [
+      {
+        "order_id": "10330640",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-12-11",
+        "amount": 21600.0
+      }
+    ]
   },
   {
     "id": "01001075",
@@ -4095,7 +8421,89 @@
         "url": "http://open.undp.org/projects/01001075"
       }
     ],
-    "documents_count": 4
+    "documents_count": 4,
+    "purchase_orders": [
+      {
+        "order_id": "10314876",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS ticket costs for the month of Oct,2024",
+        "raw_description": "b'UNHAS ticket costs for the month of Oct,2024'",
+        "order_date": "2024-11-16",
+        "amount": 11690.68
+      },
+      {
+        "order_id": "10286643",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2024'",
+        "order_date": "2024-10-09",
+        "amount": 380.0
+      },
+      {
+        "order_id": "10280826",
+        "vendor_name": "Researchcare Africa",
+        "description": "Third Party Monitoring for Q3 - 2024",
+        "raw_description": "b'Third Party Monitoring for Q3 - 2024'",
+        "order_date": "2024-09-18",
+        "amount": 5940.0
+      },
+      {
+        "order_id": "10120130",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Community Engagement & Mobilisation Specialist",
+        "raw_description": "b'Community Engagement & Mobilisation Specialist'",
+        "order_date": "2024-08-27",
+        "amount": 4184.52
+      },
+      {
+        "order_id": "10250109",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF JUNE,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF JUNE,2024'",
+        "order_date": "2024-07-11",
+        "amount": 550.0
+      },
+      {
+        "order_id": "10193210",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS ticket payments for February 2024",
+        "raw_description": "b'UNHAS ticket payments for February 2024'",
+        "order_date": "2024-03-09",
+        "amount": 300.0
+      },
+      {
+        "order_id": "10146671",
+        "vendor_name": "DANOFFICE IT APS",
+        "description": "Supply of Office Laptops and its accessories to Somalia Country Office",
+        "raw_description": "b'Supply of Office Laptops and its accessories to Somalia Country Office'",
+        "order_date": "2023-11-26",
+        "amount": 8197.0
+      },
+      {
+        "order_id": "10146858",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Stabilization Advisor to Mayor's Office, Hudur.",
+        "raw_description": "b\"Stabilization Advisor to Mayor's Office, Hudur.\"",
+        "order_date": "2023-11-23",
+        "amount": 41251.59
+      },
+      {
+        "order_id": "10130741",
+        "vendor_name": "GSOL Energy Global AS",
+        "description": "GP601305_Solar Desalination Plant",
+        "raw_description": "b'GP601305_Solar Desalination Plant'",
+        "order_date": "2023-10-27",
+        "amount": 196984.0
+      },
+      {
+        "order_id": "10120130",
+        "vendor_name": "CTG Global Managed Services FZCO",
+        "description": "Community Engagement & Mobilisation Specialist",
+        "raw_description": "b'Community Engagement & Mobilisation Specialist'",
+        "order_date": "2023-10-10",
+        "amount": 30184.47
+      }
+    ]
   },
   {
     "id": "01000521",
@@ -4168,7 +8576,41 @@
         "url": "http://open.undp.org/projects/01000521/results"
       }
     ],
-    "documents_count": 7
+    "documents_count": 7,
+    "purchase_orders": [
+      {
+        "order_id": "10312678",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2024-11-13",
+        "amount": 16380.0
+      },
+      {
+        "order_id": "10166649",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-12-26",
+        "amount": 18000.0
+      },
+      {
+        "order_id": "10141288",
+        "vendor_name": "Individual Consultant",
+        "description": "Individual Consultantcy Agreement",
+        "raw_description": "b'Individual Consultantcy Agreement'",
+        "order_date": "2023-11-15",
+        "amount": 28000.0
+      },
+      {
+        "order_id": "10136506",
+        "vendor_name": "Researchcare Africa",
+        "description": "Q3-4 Third Party Monitoring services request",
+        "raw_description": "b'Q3-4 Third Party Monitoring services request'",
+        "order_date": "2023-11-07",
+        "amount": 2735.0
+      }
+    ]
   },
   {
     "id": "01000607",
@@ -4236,6 +8678,72 @@
         "url": "http://open.undp.org/projects/01000607"
       }
     ],
-    "documents_count": 7
+    "documents_count": 7,
+    "purchase_orders": [
+      {
+        "order_id": "10286643",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2024'",
+        "order_date": "2024-10-09",
+        "amount": 1650.0
+      },
+      {
+        "order_id": "10263563",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF JULY,2024.",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF JULY,2024.'",
+        "order_date": "2024-08-15",
+        "amount": 930.0
+      },
+      {
+        "order_id": "10250109",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF JUNE,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF JUNE,2024'",
+        "order_date": "2024-07-11",
+        "amount": 1755.0
+      },
+      {
+        "order_id": "10225585",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024'",
+        "order_date": "2024-06-19",
+        "amount": 2350.68
+      },
+      {
+        "order_id": "10225585",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024'",
+        "order_date": "2024-06-03",
+        "amount": 1375.0
+      },
+      {
+        "order_id": "10225585",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE  MONTH OF MAY,2024'",
+        "order_date": "2024-05-21",
+        "amount": 786.0
+      },
+      {
+        "order_id": "10193210",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS ticket payments for February 2024",
+        "raw_description": "b'UNHAS ticket payments for February 2024'",
+        "order_date": "2024-03-10",
+        "amount": 380.0
+      },
+      {
+        "order_id": "10120084",
+        "vendor_name": "WFP SOMALIA - UNHAS",
+        "description": "UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2023.",
+        "raw_description": "b'UNHAS TICKET COSTS FOR THE MONTH OF SEPT,2023.'",
+        "order_date": "2023-10-10",
+        "amount": 380.0
+      }
+    ]
   }
 ]

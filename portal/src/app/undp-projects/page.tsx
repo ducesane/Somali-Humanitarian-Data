@@ -17,7 +17,8 @@ import {
   FileSpreadsheet, 
   FileCheck,
   ChevronDown,
-  ChevronUp
+  ChevronUp,
+  ChevronRight
 } from 'lucide-react';
 import undpData from '@/data/undp_somalia_projects_documents.json';
 
@@ -203,9 +204,12 @@ export default function UndpProjectsPage() {
                     </span>
                   </div>
 
-                  <h2 className="text-lg font-bold text-white leading-snug">
+                  <Link
+                    href={`/undp-projects/${proj.id}`}
+                    className="text-lg font-bold text-white hover:text-emerald-400 transition-colors leading-snug block"
+                  >
                     {proj.title}
-                  </h2>
+                  </Link>
 
                   {/* Footprint / locations */}
                   <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-400">
@@ -312,6 +316,20 @@ export default function UndpProjectsPage() {
                         </div>
                       ))}
                     </div>
+                  </div>
+
+                  {/* Open Dedicated Project Dossier */}
+                  <div className="pt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-t border-slate-800">
+                    <span className="text-xs text-slate-400">
+                      View full line-item purchase order breakdown and official project records:
+                    </span>
+                    <Link
+                      href={`/undp-projects/${proj.id}`}
+                      className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950"
+                    >
+                      <span>Open Full Project &amp; {proj.total_orders} Purchase Orders</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </Link>
                   </div>
                 </div>
               )}
