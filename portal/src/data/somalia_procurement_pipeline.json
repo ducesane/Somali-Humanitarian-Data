@@ -1,0 +1,4988 @@
+[
+  {
+    "id": "321403",
+    "title": "THE SUPPLY OF MEDICINES FOR THE MANAGEMENT OF CANCER IN CHILDREN AND ADOLESCENTS",
+    "agency": "UNICEF",
+    "notice_type": "Request for proposal",
+    "reference": "RFP-DAN-2026-503942",
+    "published_date": "05-Nov-2026",
+    "deadline": "18-Jan-2027 16:59 (GMT 2.00)",
+    "url": "https://www.ungm.org/Public/Notice/321403",
+    "sector": "Health, Medical & Pharmaceuticals",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "MEDINIQUE HEALTHCARE LTD",
+        "slug": "medinique-healthcare-ltd",
+        "total_amount": 96300.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "SAHAL SHIPPING SERVICE   -To be merged **",
+        "slug": "sahal-shipping-service-to-be-merged",
+        "total_amount": 37672.23,
+        "orders_count": 3,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KPMG AG",
+        "slug": "kpmg-ag",
+        "total_amount": 1196565.8,
+        "orders_count": 23,
+        "operating_locations": [
+          "Bay",
+          "Garoowe",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01001075",
+        "title": "Stabilization Programme in South- West Federal Member State"
+      },
+      {
+        "id": "01002141",
+        "title": "Support to Democratization and Achieving Social Contract through Inclusive Constitutional Development Process- UNDP-SOM"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      }
+    ]
+  },
+  {
+    "id": "323139",
+    "title": "RFQ for Blanket Purchase Agreement (BPA) for Medical Supplies",
+    "agency": "UNOPS",
+    "notice_type": "Request for quotation",
+    "reference": "RFQ/2026/65274",
+    "published_date": "19-Nov-2026",
+    "deadline": "15-Jan-2027 13:00 (GMT 0.00)",
+    "url": "https://www.ungm.org/Public/Notice/323139",
+    "sector": "Health, Medical & Pharmaceuticals",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "MEDINIQUE HEALTHCARE LTD",
+        "slug": "medinique-healthcare-ltd",
+        "total_amount": 96300.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "SAHAL SHIPPING SERVICE   -To be merged **",
+        "slug": "sahal-shipping-service-to-be-merged",
+        "total_amount": 37672.23,
+        "orders_count": 3,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KPMG AG",
+        "slug": "kpmg-ag",
+        "total_amount": 1196565.8,
+        "orders_count": 23,
+        "operating_locations": [
+          "Bay",
+          "Garoowe",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01001075",
+        "title": "Stabilization Programme in South- West Federal Member State"
+      },
+      {
+        "id": "01002141",
+        "title": "Support to Democratization and Achieving Social Contract through Inclusive Constitutional Development Process- UNDP-SOM"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      }
+    ]
+  },
+  {
+    "id": "294079",
+    "title": "Air Charter Services for long term contracts (Fixed-Wing and Rotary-Wing aircraft)",
+    "agency": "UN Secretariat",
+    "notice_type": "Request for EOI",
+    "reference": "EOIUNPD24254",
+    "published_date": "16-Mar-2026",
+    "deadline": "11-Jan-2027 23:59 (GMT -4.00)",
+    "url": "https://www.ungm.org/Public/Notice/294079",
+    "sector": "Logistics, Air & Freight Transport",
+    "location": "Strategic Air / Sea Ports (Mogadishu, Berbera, Bosaso)",
+    "matched_vendors": [
+      {
+        "name": "WFP SOMALIA - UNHAS",
+        "slug": "wfp-somalia-unhas",
+        "total_amount": 3504335.38,
+        "orders_count": 744,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Baidoa District",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bargaal",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Caluula",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dhusamareb District",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Galguduud",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "W. GIERTSEN ENERGY SOLUTIONS",
+        "slug": "w-giertsen-energy-solutions",
+        "total_amount": 753887.06,
+        "orders_count": 4,
+        "operating_locations": [
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "WFP SOMALIA",
+        "slug": "wfp-somalia",
+        "total_amount": 142736.55,
+        "orders_count": 4,
+        "operating_locations": [
+          "Gaalkacyo",
+          "Garoowe",
+          "Hargeisa",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "TOYOTA GIBRALTAR STOCKHOLDINGS LIMITED",
+        "slug": "toyota-gibraltar-stockholdings-limited",
+        "total_amount": 3664612.58,
+        "orders_count": 30,
+        "operating_locations": [
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01005980",
+        "title": "Women Peace & Protection Joint Programme - Phase II (WPP-II)."
+      },
+      {
+        "id": "01005998",
+        "title": "Integrated Drought Response Plan, Water Management and Economic Recovery Support for Somalia"
+      }
+    ]
+  },
+  {
+    "id": "322861",
+    "title": "2026 61 AK - Farmers,  MSME, Entrepreneurship Support, Financial Inclusion, and BSO Capacity Building in IRAQ",
+    "agency": "ITC",
+    "notice_type": "Request for proposal",
+    "reference": "RFP 2026 61 AK",
+    "published_date": "19-Nov-2026",
+    "deadline": "03-Jan-2027 23:59 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/322861",
+    "sector": "Infrastructure & Civil Works",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "GOBANLE CONSTRUCTIONS AND GENERAL SERVIC",
+        "slug": "gobanle-constructions-and-general-servic",
+        "total_amount": 1321006.43,
+        "orders_count": 11,
+        "operating_locations": [
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "DOCOL CONSTRUCTION REHABILITATION AND TR",
+        "slug": "docol-construction-rehabilitation-and-tr",
+        "total_amount": 1039803.29,
+        "orders_count": 5,
+        "operating_locations": [
+          "Baidoa District",
+          "Dhusamareb District",
+          "Garoowe",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "REHABILITATION CONSTRUCTION  GENERAL SE",
+        "slug": "rehabilitation-construction-general-se",
+        "total_amount": 878067.44,
+        "orders_count": 12,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "KAFI BROTHERS CONTRACTING CONSTRUCTION",
+        "slug": "kafi-brothers-contracting-construction",
+        "total_amount": 578041.48,
+        "orders_count": 7,
+        "operating_locations": [
+          "Abudwak District",
+          "Baidoa",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01004635",
+        "title": "Support to Somalia Transformational Governance Program of the Federal Government of Somalia (FGS) and the Federal Member States (FMS)"
+      },
+      {
+        "id": "00145707",
+        "title": "Building accountable and sustainable security in Somali Federal Member States (BASIS)"
+      }
+    ]
+  },
+  {
+    "id": "288090",
+    "title": "Provision of Air Transportation Services for the Movement of Cargo in Support of United Nations Operations Worldwide",
+    "agency": "UN Secretariat",
+    "notice_type": "Request for EOI",
+    "reference": "EOIUNPD24054",
+    "published_date": "02-Jan-2026",
+    "deadline": "31-Dec-2026 23:59 (GMT -4.00)",
+    "url": "https://www.ungm.org/Public/Notice/288090",
+    "sector": "Logistics, Air & Freight Transport",
+    "location": "Strategic Air / Sea Ports (Mogadishu, Berbera, Bosaso)",
+    "matched_vendors": [
+      {
+        "name": "WFP SOMALIA - UNHAS",
+        "slug": "wfp-somalia-unhas",
+        "total_amount": 3504335.38,
+        "orders_count": 744,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Baidoa District",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bargaal",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Caluula",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dhusamareb District",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Galguduud",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "W. GIERTSEN ENERGY SOLUTIONS",
+        "slug": "w-giertsen-energy-solutions",
+        "total_amount": 753887.06,
+        "orders_count": 4,
+        "operating_locations": [
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "WFP SOMALIA",
+        "slug": "wfp-somalia",
+        "total_amount": 142736.55,
+        "orders_count": 4,
+        "operating_locations": [
+          "Gaalkacyo",
+          "Garoowe",
+          "Hargeisa",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "TOYOTA GIBRALTAR STOCKHOLDINGS LIMITED",
+        "slug": "toyota-gibraltar-stockholdings-limited",
+        "total_amount": 3664612.58,
+        "orders_count": 30,
+        "operating_locations": [
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01005980",
+        "title": "Women Peace & Protection Joint Programme - Phase II (WPP-II)."
+      },
+      {
+        "id": "01005998",
+        "title": "Integrated Drought Response Plan, Water Management and Economic Recovery Support for Somalia"
+      }
+    ]
+  },
+  {
+    "id": "290361",
+    "title": "Multimodal Surface Transportation Services for Contingent Owned Equipment in Support of the United Nations",
+    "agency": "UN Secretariat",
+    "notice_type": "Request for EOI",
+    "reference": "EOIUNPD24150",
+    "published_date": "04-Feb-2026",
+    "deadline": "31-Dec-2026 23:59 (GMT -4.00)",
+    "url": "https://www.ungm.org/Public/Notice/290361",
+    "sector": "Logistics, Air & Freight Transport",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "WFP SOMALIA - UNHAS",
+        "slug": "wfp-somalia-unhas",
+        "total_amount": 3504335.38,
+        "orders_count": 744,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Baidoa District",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bargaal",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Caluula",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dhusamareb District",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Galguduud",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "W. GIERTSEN ENERGY SOLUTIONS",
+        "slug": "w-giertsen-energy-solutions",
+        "total_amount": 753887.06,
+        "orders_count": 4,
+        "operating_locations": [
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "WFP SOMALIA",
+        "slug": "wfp-somalia",
+        "total_amount": 142736.55,
+        "orders_count": 4,
+        "operating_locations": [
+          "Gaalkacyo",
+          "Garoowe",
+          "Hargeisa",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "TOYOTA GIBRALTAR STOCKHOLDINGS LIMITED",
+        "slug": "toyota-gibraltar-stockholdings-limited",
+        "total_amount": 3664612.58,
+        "orders_count": 30,
+        "operating_locations": [
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01005980",
+        "title": "Women Peace & Protection Joint Programme - Phase II (WPP-II)."
+      },
+      {
+        "id": "01005998",
+        "title": "Integrated Drought Response Plan, Water Management and Economic Recovery Support for Somalia"
+      }
+    ]
+  },
+  {
+    "id": "291325",
+    "title": "Provision of Multimodal (Sea/Surface) Freight Forwarding Services (Door to Door, Port to Door, Door to Port, etc) for Movement of Cargo in Support of UN Operations Worldwide.",
+    "agency": "UN Secretariat",
+    "notice_type": "Request for EOI",
+    "reference": "EOIUNPD24180",
+    "published_date": "16-Feb-2026",
+    "deadline": "31-Dec-2026 23:59 (GMT -4.00)",
+    "url": "https://www.ungm.org/Public/Notice/291325",
+    "sector": "Logistics, Air & Freight Transport",
+    "location": "Strategic Air / Sea Ports (Mogadishu, Berbera, Bosaso)",
+    "matched_vendors": [
+      {
+        "name": "WFP SOMALIA - UNHAS",
+        "slug": "wfp-somalia-unhas",
+        "total_amount": 3504335.38,
+        "orders_count": 744,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Baidoa District",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bargaal",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Caluula",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dhusamareb District",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Galguduud",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "W. GIERTSEN ENERGY SOLUTIONS",
+        "slug": "w-giertsen-energy-solutions",
+        "total_amount": 753887.06,
+        "orders_count": 4,
+        "operating_locations": [
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "WFP SOMALIA",
+        "slug": "wfp-somalia",
+        "total_amount": 142736.55,
+        "orders_count": 4,
+        "operating_locations": [
+          "Gaalkacyo",
+          "Garoowe",
+          "Hargeisa",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "TOYOTA GIBRALTAR STOCKHOLDINGS LIMITED",
+        "slug": "toyota-gibraltar-stockholdings-limited",
+        "total_amount": 3664612.58,
+        "orders_count": 30,
+        "operating_locations": [
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01005980",
+        "title": "Women Peace & Protection Joint Programme - Phase II (WPP-II)."
+      },
+      {
+        "id": "01005998",
+        "title": "Integrated Drought Response Plan, Water Management and Economic Recovery Support for Somalia"
+      }
+    ]
+  },
+  {
+    "id": "320901",
+    "title": "SANTIAGO NETWORK - CFP/SN/24039/2026/LDReport/001 - Preparation of the first regular report on loss and damage",
+    "agency": "UNOPS",
+    "notice_type": "Grant support-call for proposal",
+    "reference": "UNOPS/FO/2026/135",
+    "published_date": "02-Nov-2026",
+    "deadline": "31-Dec-2026 22:59 (GMT 0.00)",
+    "url": "https://www.ungm.org/Public/Notice/320901",
+    "sector": "Technical Advisory, TVET & TPM",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "DELOITTE  TOUCHE",
+        "slug": "deloitte-touche",
+        "total_amount": 650135.0,
+        "orders_count": 39,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Baidoa",
+          "Baidoa District",
+          "Bay",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Dhusamareb District",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "Deloitte & Touche",
+        "slug": "deloitte-and-touche",
+        "total_amount": 493500.0,
+        "orders_count": 63,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01000753",
+        "title": "Joint Justice and Corrections Programme"
+      },
+      {
+        "id": "01003502",
+        "title": "Security 4 Peace Global Flagship_SOM"
+      },
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      }
+    ]
+  },
+  {
+    "id": "321801",
+    "title": "Digital Product Development and Technology Services",
+    "agency": "UNHCR",
+    "notice_type": "Request for proposal",
+    "reference": "UNHCR_RFP_3565",
+    "published_date": "09-Nov-2026",
+    "deadline": "17-Dec-2026 14:00 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/321801",
+    "sector": "Digital, IT & Media Communications",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "DALSAN MEDIA GROUP",
+        "slug": "dalsan-media-group",
+        "total_amount": 790771.6,
+        "orders_count": 11,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "BBC Media Action",
+        "slug": "bbc-media-action-314",
+        "total_amount": 210796.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Astaan Media",
+        "slug": "astaan-media",
+        "total_amount": 118759.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KENYA EDITORS GUILD",
+        "slug": "kenya-editors-guild",
+        "total_amount": 78858.0,
+        "orders_count": 3,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01004055",
+        "title": "Religious Scholars (Ulema) as insider mediators building peace in Somalia"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      },
+      {
+        "id": "01004924",
+        "title": "Accelerating Socio-Economic Development in Somalia by Enhancing Business Environment, Youth Employability and Digitalization"
+      }
+    ]
+  },
+  {
+    "id": "322996",
+    "title": "Request for Proposal for provision of Asset Management Services for UNOPS Working Capital Portfolio",
+    "agency": "UNOPS",
+    "notice_type": "Request for proposal",
+    "reference": "RFP/2026/64835",
+    "published_date": "18-Nov-2026",
+    "deadline": "10-Dec-2026 11:00 (GMT 0.00)",
+    "url": "https://www.ungm.org/Public/Notice/322996",
+    "sector": "Technical Advisory, TVET & TPM",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "DELOITTE  TOUCHE",
+        "slug": "deloitte-touche",
+        "total_amount": 650135.0,
+        "orders_count": 39,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Baidoa",
+          "Baidoa District",
+          "Bay",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Dhusamareb District",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "Deloitte & Touche",
+        "slug": "deloitte-and-touche",
+        "total_amount": 493500.0,
+        "orders_count": 63,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01000753",
+        "title": "Joint Justice and Corrections Programme"
+      },
+      {
+        "id": "01003502",
+        "title": "Security 4 Peace Global Flagship_SOM"
+      },
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      }
+    ]
+  },
+  {
+    "id": "321506",
+    "title": "Software Reseller",
+    "agency": "UN Secretariat",
+    "notice_type": "Request for EOI",
+    "reference": "EOIUNPD24877",
+    "published_date": "09-Nov-2026",
+    "deadline": "09-Dec-2026 23:59 (GMT -4.00)",
+    "url": "https://www.ungm.org/Public/Notice/321506",
+    "sector": "Digital, IT & Media Communications",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "DALSAN MEDIA GROUP",
+        "slug": "dalsan-media-group",
+        "total_amount": 790771.6,
+        "orders_count": 11,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "BBC Media Action",
+        "slug": "bbc-media-action-314",
+        "total_amount": 210796.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Astaan Media",
+        "slug": "astaan-media",
+        "total_amount": 118759.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KENYA EDITORS GUILD",
+        "slug": "kenya-editors-guild",
+        "total_amount": 78858.0,
+        "orders_count": 3,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01004055",
+        "title": "Religious Scholars (Ulema) as insider mediators building peace in Somalia"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      },
+      {
+        "id": "01004924",
+        "title": "Accelerating Socio-Economic Development in Somalia by Enhancing Business Environment, Youth Employability and Digitalization"
+      }
+    ]
+  },
+  {
+    "id": "322839",
+    "title": "Request for Information (RFI) for Dynamic Purchasing System Provider",
+    "agency": "UNICEF",
+    "notice_type": "Request for information",
+    "reference": "Dynamic Purchasing System RFI",
+    "published_date": "19-Nov-2026",
+    "deadline": "09-Dec-2026 23:59 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/322839",
+    "sector": "Specialized Supply & Services",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "GSOL Energy Global AS",
+        "slug": "gsol-energy-global-as",
+        "total_amount": 506530.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadiscio",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "IPE GLOBAL (AFRICA) LIMITED",
+        "slug": "ipe-global-africa-limited",
+        "total_amount": 231325.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Garowe District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01005980",
+        "title": "Women Peace & Protection Joint Programme - Phase II (WPP-II)."
+      },
+      {
+        "id": "01000758",
+        "title": "State-building and Reconciliation Support Program- UNDP-SOM"
+      }
+    ]
+  },
+  {
+    "id": "322934",
+    "title": "Request for Information (RFI) Market Intelligence Services",
+    "agency": "UNICEF",
+    "notice_type": "Request for information",
+    "reference": "Market Intelligence Service RFI",
+    "published_date": "19-Nov-2026",
+    "deadline": "09-Dec-2026 23:59 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/322934",
+    "sector": "Specialized Supply & Services",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "GSOL Energy Global AS",
+        "slug": "gsol-energy-global-as",
+        "total_amount": 506530.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadiscio",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "IPE GLOBAL (AFRICA) LIMITED",
+        "slug": "ipe-global-africa-limited",
+        "total_amount": 231325.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Garowe District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01005980",
+        "title": "Women Peace & Protection Joint Programme - Phase II (WPP-II)."
+      },
+      {
+        "id": "01000758",
+        "title": "State-building and Reconciliation Support Program- UNDP-SOM"
+      }
+    ]
+  },
+  {
+    "id": "322992",
+    "title": "Strengthening manufacturing capacity in LMICs through technology assessment and prioritization and, technology transfer",
+    "agency": "WHO",
+    "notice_type": "Request for proposal",
+    "reference": "WHO-SHQ-RFP-26-2047-LTA",
+    "published_date": "18-Nov-2026",
+    "deadline": "09-Dec-2026 23:59 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/322992",
+    "sector": "Digital, IT & Media Communications",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "DALSAN MEDIA GROUP",
+        "slug": "dalsan-media-group",
+        "total_amount": 790771.6,
+        "orders_count": 11,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "BBC Media Action",
+        "slug": "bbc-media-action-314",
+        "total_amount": 210796.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Astaan Media",
+        "slug": "astaan-media",
+        "total_amount": 118759.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KENYA EDITORS GUILD",
+        "slug": "kenya-editors-guild",
+        "total_amount": 78858.0,
+        "orders_count": 3,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01004055",
+        "title": "Religious Scholars (Ulema) as insider mediators building peace in Somalia"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      },
+      {
+        "id": "01004924",
+        "title": "Accelerating Socio-Economic Development in Somalia by Enhancing Business Environment, Youth Employability and Digitalization"
+      }
+    ]
+  },
+  {
+    "id": "322729",
+    "title": "RFPS-2026-503979 \u2013 Hosting Platform and Managed Services for R Shiny Applications",
+    "agency": "UNICEF",
+    "notice_type": "Request for proposal",
+    "reference": "RFPS-2026-503979",
+    "published_date": "16-Nov-2026",
+    "deadline": "07-Dec-2026 23:59 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/322729",
+    "sector": "Digital, IT & Media Communications",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "DALSAN MEDIA GROUP",
+        "slug": "dalsan-media-group",
+        "total_amount": 790771.6,
+        "orders_count": 11,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "BBC Media Action",
+        "slug": "bbc-media-action-314",
+        "total_amount": 210796.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Astaan Media",
+        "slug": "astaan-media",
+        "total_amount": 118759.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KENYA EDITORS GUILD",
+        "slug": "kenya-editors-guild",
+        "total_amount": 78858.0,
+        "orders_count": 3,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01004055",
+        "title": "Religious Scholars (Ulema) as insider mediators building peace in Somalia"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      },
+      {
+        "id": "01004924",
+        "title": "Accelerating Socio-Economic Development in Somalia by Enhancing Business Environment, Youth Employability and Digitalization"
+      }
+    ]
+  },
+  {
+    "id": "317935",
+    "title": "Development of the TCIM Research Methods-and-Evidence Architecture and Digital Navigator \u2013 Phase 1",
+    "agency": "WHO",
+    "notice_type": "Request for proposal",
+    "reference": "WHO-SHQ-GTMC-RFP-26-2035",
+    "published_date": "13-Oct-2026",
+    "deadline": "07-Dec-2026 23:59 (GMT 5.30)",
+    "url": "https://www.ungm.org/Public/Notice/317935",
+    "sector": "Digital, IT & Media Communications",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "DALSAN MEDIA GROUP",
+        "slug": "dalsan-media-group",
+        "total_amount": 790771.6,
+        "orders_count": 11,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "BBC Media Action",
+        "slug": "bbc-media-action-314",
+        "total_amount": 210796.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Astaan Media",
+        "slug": "astaan-media",
+        "total_amount": 118759.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KENYA EDITORS GUILD",
+        "slug": "kenya-editors-guild",
+        "total_amount": 78858.0,
+        "orders_count": 3,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01004055",
+        "title": "Religious Scholars (Ulema) as insider mediators building peace in Somalia"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      },
+      {
+        "id": "01004924",
+        "title": "Accelerating Socio-Economic Development in Somalia by Enhancing Business Environment, Youth Employability and Digitalization"
+      }
+    ]
+  },
+  {
+    "id": "320362",
+    "title": "Consultancy Services \u2013 Data Governance Framework Design and Data Catalog System Implementation, UNICEF Supply Division",
+    "agency": "UNICEF",
+    "notice_type": "Request for proposal",
+    "reference": "RFPS-NYH-2026-503973",
+    "published_date": "29-Oct-2026",
+    "deadline": "07-Dec-2026 23:59 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/320362",
+    "sector": "Digital, IT & Media Communications",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "DALSAN MEDIA GROUP",
+        "slug": "dalsan-media-group",
+        "total_amount": 790771.6,
+        "orders_count": 11,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "BBC Media Action",
+        "slug": "bbc-media-action-314",
+        "total_amount": 210796.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Astaan Media",
+        "slug": "astaan-media",
+        "total_amount": 118759.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KENYA EDITORS GUILD",
+        "slug": "kenya-editors-guild",
+        "total_amount": 78858.0,
+        "orders_count": 3,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01004055",
+        "title": "Religious Scholars (Ulema) as insider mediators building peace in Somalia"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      },
+      {
+        "id": "01004924",
+        "title": "Accelerating Socio-Economic Development in Somalia by Enhancing Business Environment, Youth Employability and Digitalization"
+      }
+    ]
+  },
+  {
+    "id": "321522",
+    "title": "Broadcast Monitoring and Digital Content Tracking Services for UNifeed Video Products",
+    "agency": "UN Secretariat",
+    "notice_type": "Request for information",
+    "reference": "RFIUNPD24878",
+    "published_date": "05-Nov-2026",
+    "deadline": "04-Dec-2026 23:59 (GMT -4.00)",
+    "url": "https://www.ungm.org/Public/Notice/321522",
+    "sector": "Digital, IT & Media Communications",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "DALSAN MEDIA GROUP",
+        "slug": "dalsan-media-group",
+        "total_amount": 790771.6,
+        "orders_count": 11,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "BBC Media Action",
+        "slug": "bbc-media-action-314",
+        "total_amount": 210796.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Astaan Media",
+        "slug": "astaan-media",
+        "total_amount": 118759.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KENYA EDITORS GUILD",
+        "slug": "kenya-editors-guild",
+        "total_amount": 78858.0,
+        "orders_count": 3,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01004055",
+        "title": "Religious Scholars (Ulema) as insider mediators building peace in Somalia"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      },
+      {
+        "id": "01004924",
+        "title": "Accelerating Socio-Economic Development in Somalia by Enhancing Business Environment, Youth Employability and Digitalization"
+      }
+    ]
+  },
+  {
+    "id": "322733",
+    "title": "RFP-DAN-2026-503978 for Therapeutic Food",
+    "agency": "UNICEF",
+    "notice_type": "Request for proposal",
+    "reference": "RFP-DAN-2026-503978",
+    "published_date": "17-Nov-2026",
+    "deadline": "04-Dec-2026 23:59 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/322733",
+    "sector": "Emergency Response, Food & WASH",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "THE PUNTLAND LEGAL AID CENTRE",
+        "slug": "the-puntland-legal-aid-centre",
+        "total_amount": 750063.65,
+        "orders_count": 17,
+        "operating_locations": [
+          "Gaalkacyo",
+          "Garoowe",
+          "Hargeisa",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Livelihoods, Economic & Agriculture Development Organization",
+        "slug": "livelihoods-economic-and-agriculture-development-organization",
+        "total_amount": 233907.4,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "BAKER TILLY",
+        "slug": "baker-tilly",
+        "total_amount": 191007.0,
+        "orders_count": 17,
+        "operating_locations": [
+          "Banadir Region",
+          "Kismayo District",
+          "Mogadiscio",
+          "Mogadishu",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "Falko Engineering & Consultant CO",
+        "slug": "falko-engineering-and-consultant-co",
+        "total_amount": 179552.4,
+        "orders_count": 1,
+        "operating_locations": [
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01005998",
+        "title": "Integrated Drought Response Plan, Water Management and Economic Recovery Support for Somalia"
+      },
+      {
+        "id": "01005518",
+        "title": "PIMS-6330-Conserving terrestrial and marine biodiversity and restoring ecosystem services in globally relevant and vulnerable sites in Somalia"
+      },
+      {
+        "id": "01004092",
+        "title": "Sustainable Access to Water for Rural Communities"
+      }
+    ]
+  },
+  {
+    "id": "323017",
+    "title": "Interlocking Building Block System for Construction",
+    "agency": "UN Secretariat",
+    "notice_type": "Request for EOI",
+    "reference": "EOIUNPD24917",
+    "published_date": "18-Nov-2026",
+    "deadline": "02-Dec-2026 23:59 (GMT -4.00)",
+    "url": "https://www.ungm.org/Public/Notice/323017",
+    "sector": "Infrastructure & Civil Works",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "GOBANLE CONSTRUCTIONS AND GENERAL SERVIC",
+        "slug": "gobanle-constructions-and-general-servic",
+        "total_amount": 1321006.43,
+        "orders_count": 11,
+        "operating_locations": [
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "DOCOL CONSTRUCTION REHABILITATION AND TR",
+        "slug": "docol-construction-rehabilitation-and-tr",
+        "total_amount": 1039803.29,
+        "orders_count": 5,
+        "operating_locations": [
+          "Baidoa District",
+          "Dhusamareb District",
+          "Garoowe",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "REHABILITATION CONSTRUCTION  GENERAL SE",
+        "slug": "rehabilitation-construction-general-se",
+        "total_amount": 878067.44,
+        "orders_count": 12,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "KAFI BROTHERS CONTRACTING CONSTRUCTION",
+        "slug": "kafi-brothers-contracting-construction",
+        "total_amount": 578041.48,
+        "orders_count": 7,
+        "operating_locations": [
+          "Abudwak District",
+          "Baidoa",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01004635",
+        "title": "Support to Somalia Transformational Governance Program of the Federal Government of Somalia (FGS) and the Federal Member States (FMS)"
+      },
+      {
+        "id": "00145707",
+        "title": "Building accountable and sustainable security in Somali Federal Member States (BASIS)"
+      }
+    ]
+  },
+  {
+    "id": "320618",
+    "title": "Waste removal and recycling services for the United Nations Headquarters (UNHQ) and other United Nations premises in New York",
+    "agency": "UN Secretariat",
+    "notice_type": "Request for EOI",
+    "reference": "EOIUNPD24857",
+    "published_date": "19-Nov-2026",
+    "deadline": "01-Dec-2026 23:59 (GMT -4.00)",
+    "url": "https://www.ungm.org/Public/Notice/320618",
+    "sector": "Emergency Response, Food & WASH",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "THE PUNTLAND LEGAL AID CENTRE",
+        "slug": "the-puntland-legal-aid-centre",
+        "total_amount": 750063.65,
+        "orders_count": 17,
+        "operating_locations": [
+          "Gaalkacyo",
+          "Garoowe",
+          "Hargeisa",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Livelihoods, Economic & Agriculture Development Organization",
+        "slug": "livelihoods-economic-and-agriculture-development-organization",
+        "total_amount": 233907.4,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "BAKER TILLY",
+        "slug": "baker-tilly",
+        "total_amount": 191007.0,
+        "orders_count": 17,
+        "operating_locations": [
+          "Banadir Region",
+          "Kismayo District",
+          "Mogadiscio",
+          "Mogadishu",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "Falko Engineering & Consultant CO",
+        "slug": "falko-engineering-and-consultant-co",
+        "total_amount": 179552.4,
+        "orders_count": 1,
+        "operating_locations": [
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01005998",
+        "title": "Integrated Drought Response Plan, Water Management and Economic Recovery Support for Somalia"
+      },
+      {
+        "id": "01005518",
+        "title": "PIMS-6330-Conserving terrestrial and marine biodiversity and restoring ecosystem services in globally relevant and vulnerable sites in Somalia"
+      },
+      {
+        "id": "01004092",
+        "title": "Sustainable Access to Water for Rural Communities"
+      }
+    ]
+  },
+  {
+    "id": "321620",
+    "title": "Long Term Agreement for the Provision of WHO Prequalification Website Maintenance and Support",
+    "agency": "WHO",
+    "notice_type": "Request for proposal",
+    "reference": "WHO-SHQ-RFP-26-2039-LTA",
+    "published_date": "06-Nov-2026",
+    "deadline": "01-Dec-2026 23:59 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/321620",
+    "sector": "Specialized Supply & Services",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "GSOL Energy Global AS",
+        "slug": "gsol-energy-global-as",
+        "total_amount": 506530.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadiscio",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "IPE GLOBAL (AFRICA) LIMITED",
+        "slug": "ipe-global-africa-limited",
+        "total_amount": 231325.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Garowe District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01005980",
+        "title": "Women Peace & Protection Joint Programme - Phase II (WPP-II)."
+      },
+      {
+        "id": "01000758",
+        "title": "State-building and Reconciliation Support Program- UNDP-SOM"
+      }
+    ]
+  },
+  {
+    "id": "322677",
+    "title": "Development of School Health Policy and Implementation Guidelines",
+    "agency": "UNICEF",
+    "notice_type": "Request for quotation",
+    "reference": "LRQS-2026-9207350",
+    "published_date": "16-Nov-2026",
+    "deadline": "30-Nov-2026 23:59 (GMT 3.00)",
+    "url": "https://www.ungm.org/Public/Notice/322677",
+    "sector": "Health, Medical & Pharmaceuticals",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "MEDINIQUE HEALTHCARE LTD",
+        "slug": "medinique-healthcare-ltd",
+        "total_amount": 96300.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "SAHAL SHIPPING SERVICE   -To be merged **",
+        "slug": "sahal-shipping-service-to-be-merged",
+        "total_amount": 37672.23,
+        "orders_count": 3,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KPMG AG",
+        "slug": "kpmg-ag",
+        "total_amount": 1196565.8,
+        "orders_count": 23,
+        "operating_locations": [
+          "Bay",
+          "Garoowe",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01001075",
+        "title": "Stabilization Programme in South- West Federal Member State"
+      },
+      {
+        "id": "01002141",
+        "title": "Support to Democratization and Achieving Social Contract through Inclusive Constitutional Development Process- UNDP-SOM"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      }
+    ]
+  },
+  {
+    "id": "322600",
+    "title": "CONSTRUCTION OF DISPENSARY CLINIC IN SAAXO, MUDUG REGION, PUNTLAND STATE- SOMALIA. PR 26/138",
+    "agency": "FAO",
+    "notice_type": "Invitation to bid",
+    "reference": "2026/FRSOM/FRSOM/138946",
+    "published_date": "15-Nov-2026",
+    "deadline": "30-Nov-2026 12:00 (GMT 3.00)",
+    "url": "https://www.ungm.org/Public/Notice/322600",
+    "sector": "Infrastructure & Civil Works",
+    "location": "Saaxo, Mudug (Puntland)",
+    "matched_vendors": [
+      {
+        "name": "GOBANLE CONSTRUCTIONS AND GENERAL SERVIC",
+        "slug": "gobanle-constructions-and-general-servic",
+        "total_amount": 1321006.43,
+        "orders_count": 11,
+        "operating_locations": [
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "DOCOL CONSTRUCTION REHABILITATION AND TR",
+        "slug": "docol-construction-rehabilitation-and-tr",
+        "total_amount": 1039803.29,
+        "orders_count": 5,
+        "operating_locations": [
+          "Baidoa District",
+          "Dhusamareb District",
+          "Garoowe",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "REHABILITATION CONSTRUCTION  GENERAL SE",
+        "slug": "rehabilitation-construction-general-se",
+        "total_amount": 878067.44,
+        "orders_count": 12,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "KAFI BROTHERS CONTRACTING CONSTRUCTION",
+        "slug": "kafi-brothers-contracting-construction",
+        "total_amount": 578041.48,
+        "orders_count": 7,
+        "operating_locations": [
+          "Abudwak District",
+          "Baidoa",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01004635",
+        "title": "Support to Somalia Transformational Governance Program of the Federal Government of Somalia (FGS) and the Federal Member States (FMS)"
+      },
+      {
+        "id": "00145707",
+        "title": "Building accountable and sustainable security in Somali Federal Member States (BASIS)"
+      }
+    ]
+  },
+  {
+    "id": "323128",
+    "title": "Provision of Fish Processing and Cooking Kits, and Integrated Training and Coaching Services to Vulnerable Female-Headed Households in Mogadishu, Banadir Region-Retender",
+    "agency": "FAO",
+    "notice_type": "Request for proposal",
+    "reference": "2026/FRSOM/FRSOM/139072",
+    "published_date": "19-Nov-2026",
+    "deadline": "30-Nov-2026 12:00 (GMT 3.00)",
+    "url": "https://www.ungm.org/Public/Notice/323128",
+    "sector": "Technical Advisory, TVET & TPM",
+    "location": "Mogadishu (Banadir)",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "DELOITTE  TOUCHE",
+        "slug": "deloitte-touche",
+        "total_amount": 650135.0,
+        "orders_count": 39,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Baidoa",
+          "Baidoa District",
+          "Bay",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Dhusamareb District",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "Deloitte & Touche",
+        "slug": "deloitte-and-touche",
+        "total_amount": 493500.0,
+        "orders_count": 63,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01000753",
+        "title": "Joint Justice and Corrections Programme"
+      },
+      {
+        "id": "01003502",
+        "title": "Security 4 Peace Global Flagship_SOM"
+      },
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      }
+    ]
+  },
+  {
+    "id": "318781",
+    "title": "Establishment of Long-Term Agreements (LTAs) for the Supply of manual and electric Material Handling Equipment for UN Web Buy Plus",
+    "agency": "UNOPS",
+    "notice_type": "Invitation to bid",
+    "reference": "ITB/2026/64524",
+    "published_date": "19-Oct-2026",
+    "deadline": "30-Nov-2026 11:00 (GMT 0.00)",
+    "url": "https://www.ungm.org/Public/Notice/318781",
+    "sector": "Specialized Supply & Services",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "GSOL Energy Global AS",
+        "slug": "gsol-energy-global-as",
+        "total_amount": 506530.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadiscio",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "IPE GLOBAL (AFRICA) LIMITED",
+        "slug": "ipe-global-africa-limited",
+        "total_amount": 231325.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Garowe District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01005980",
+        "title": "Women Peace & Protection Joint Programme - Phase II (WPP-II)."
+      },
+      {
+        "id": "01000758",
+        "title": "State-building and Reconciliation Support Program- UNDP-SOM"
+      }
+    ]
+  },
+  {
+    "id": "318517",
+    "title": "ESTABLISHMENT OF FRAME AGREEMENT(S) FOR THE PROVISION OF ESA REGIONAL ROAD FREIGHT FORWARDING SERVICES",
+    "agency": "UNHCR",
+    "notice_type": "Invitation to bid",
+    "reference": "RBESA - UNHCR ITB 3740",
+    "published_date": "16-Oct-2026",
+    "deadline": "29-Nov-2026 23:59 (GMT 3.00)",
+    "url": "https://www.ungm.org/Public/Notice/318517",
+    "sector": "Logistics, Air & Freight Transport",
+    "location": "Strategic Air / Sea Ports (Mogadishu, Berbera, Bosaso)",
+    "matched_vendors": [
+      {
+        "name": "WFP SOMALIA - UNHAS",
+        "slug": "wfp-somalia-unhas",
+        "total_amount": 3504335.38,
+        "orders_count": 744,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Baidoa District",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bargaal",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Caluula",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dhusamareb District",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Galguduud",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "W. GIERTSEN ENERGY SOLUTIONS",
+        "slug": "w-giertsen-energy-solutions",
+        "total_amount": 753887.06,
+        "orders_count": 4,
+        "operating_locations": [
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "WFP SOMALIA",
+        "slug": "wfp-somalia",
+        "total_amount": 142736.55,
+        "orders_count": 4,
+        "operating_locations": [
+          "Gaalkacyo",
+          "Garoowe",
+          "Hargeisa",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "TOYOTA GIBRALTAR STOCKHOLDINGS LIMITED",
+        "slug": "toyota-gibraltar-stockholdings-limited",
+        "total_amount": 3664612.58,
+        "orders_count": 30,
+        "operating_locations": [
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01005980",
+        "title": "Women Peace & Protection Joint Programme - Phase II (WPP-II)."
+      },
+      {
+        "id": "01005998",
+        "title": "Integrated Drought Response Plan, Water Management and Economic Recovery Support for Somalia"
+      }
+    ]
+  },
+  {
+    "id": "323057",
+    "title": "Supply and Delivery of FDU Equipment for IOM Garowe, Puntland, Somalia",
+    "agency": "IOM",
+    "notice_type": "Request for quotation",
+    "reference": "30000036997",
+    "published_date": "19-Nov-2026",
+    "deadline": "29-Nov-2026 10:27 (GMT 0.00)",
+    "url": "https://www.ungm.org/Public/Notice/323057",
+    "sector": "Specialized Supply & Services",
+    "location": "Garowe (Puntland)",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "GSOL Energy Global AS",
+        "slug": "gsol-energy-global-as",
+        "total_amount": 506530.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadiscio",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "IPE GLOBAL (AFRICA) LIMITED",
+        "slug": "ipe-global-africa-limited",
+        "total_amount": 231325.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Garowe District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01005980",
+        "title": "Women Peace & Protection Joint Programme - Phase II (WPP-II)."
+      },
+      {
+        "id": "01000758",
+        "title": "State-building and Reconciliation Support Program- UNDP-SOM"
+      }
+    ]
+  },
+  {
+    "id": "322095",
+    "title": "Call for External Collaborator \u2013 Final internal evaluation of the ILO project \u2018\u2019Building effective OSH qualification systems and improving access to national occupational health services\u201d, OSHE Branch",
+    "agency": "ILO",
+    "notice_type": "Call for individual consultants",
+    "reference": "rfx_14103_HQ",
+    "published_date": "11-Nov-2026",
+    "deadline": "27-Nov-2026 12:00 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/322095",
+    "sector": "Infrastructure & Civil Works",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "GOBANLE CONSTRUCTIONS AND GENERAL SERVIC",
+        "slug": "gobanle-constructions-and-general-servic",
+        "total_amount": 1321006.43,
+        "orders_count": 11,
+        "operating_locations": [
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "DOCOL CONSTRUCTION REHABILITATION AND TR",
+        "slug": "docol-construction-rehabilitation-and-tr",
+        "total_amount": 1039803.29,
+        "orders_count": 5,
+        "operating_locations": [
+          "Baidoa District",
+          "Dhusamareb District",
+          "Garoowe",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "REHABILITATION CONSTRUCTION  GENERAL SE",
+        "slug": "rehabilitation-construction-general-se",
+        "total_amount": 878067.44,
+        "orders_count": 12,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "KAFI BROTHERS CONTRACTING CONSTRUCTION",
+        "slug": "kafi-brothers-contracting-construction",
+        "total_amount": 578041.48,
+        "orders_count": 7,
+        "operating_locations": [
+          "Abudwak District",
+          "Baidoa",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01004635",
+        "title": "Support to Somalia Transformational Governance Program of the Federal Government of Somalia (FGS) and the Federal Member States (FMS)"
+      },
+      {
+        "id": "00145707",
+        "title": "Building accountable and sustainable security in Somali Federal Member States (BASIS)"
+      }
+    ]
+  },
+  {
+    "id": "320868",
+    "title": "Procurement of RFID equipment",
+    "agency": "UPU",
+    "notice_type": "Invitation to bid",
+    "reference": "RFP-2026-019-DOP",
+    "published_date": "02-Nov-2026",
+    "deadline": "26-Nov-2026 17:00 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/320868",
+    "sector": "Digital, IT & Media Communications",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "DALSAN MEDIA GROUP",
+        "slug": "dalsan-media-group",
+        "total_amount": 790771.6,
+        "orders_count": 11,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "BBC Media Action",
+        "slug": "bbc-media-action-314",
+        "total_amount": 210796.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Astaan Media",
+        "slug": "astaan-media",
+        "total_amount": 118759.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KENYA EDITORS GUILD",
+        "slug": "kenya-editors-guild",
+        "total_amount": 78858.0,
+        "orders_count": 3,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01004055",
+        "title": "Religious Scholars (Ulema) as insider mediators building peace in Somalia"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      },
+      {
+        "id": "01004924",
+        "title": "Accelerating Socio-Economic Development in Somalia by Enhancing Business Environment, Youth Employability and Digitalization"
+      }
+    ]
+  },
+  {
+    "id": "322585",
+    "title": "Procurement of Materials for TVET centers in Somalia",
+    "agency": "ILO",
+    "notice_type": "Request for quotation",
+    "reference": "rfx_14148_ROAF",
+    "published_date": "13-Nov-2026",
+    "deadline": "26-Nov-2026 15:00 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/322585",
+    "sector": "Technical Advisory, TVET & TPM",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "DELOITTE  TOUCHE",
+        "slug": "deloitte-touche",
+        "total_amount": 650135.0,
+        "orders_count": 39,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Baidoa",
+          "Baidoa District",
+          "Bay",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Dhusamareb District",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "Deloitte & Touche",
+        "slug": "deloitte-and-touche",
+        "total_amount": 493500.0,
+        "orders_count": 63,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01000753",
+        "title": "Joint Justice and Corrections Programme"
+      },
+      {
+        "id": "01003502",
+        "title": "Security 4 Peace Global Flagship_SOM"
+      },
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      }
+    ]
+  },
+  {
+    "id": "322674",
+    "title": "Request for Quotation Consultancy for Hospitality Sector TVET Curriculum Develop",
+    "agency": "IOM",
+    "notice_type": "Request for quotation",
+    "reference": "30000037246",
+    "published_date": "16-Nov-2026",
+    "deadline": "26-Nov-2026 13:18 (GMT 3.00)",
+    "url": "https://www.ungm.org/Public/Notice/322674",
+    "sector": "Technical Advisory, TVET & TPM",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "DELOITTE  TOUCHE",
+        "slug": "deloitte-touche",
+        "total_amount": 650135.0,
+        "orders_count": 39,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Baidoa",
+          "Baidoa District",
+          "Bay",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Dhusamareb District",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "Deloitte & Touche",
+        "slug": "deloitte-and-touche",
+        "total_amount": 493500.0,
+        "orders_count": 63,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01000753",
+        "title": "Joint Justice and Corrections Programme"
+      },
+      {
+        "id": "01003502",
+        "title": "Security 4 Peace Global Flagship_SOM"
+      },
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      }
+    ]
+  },
+  {
+    "id": "322366",
+    "title": "Supply and Installation of Sabuun Barrage  Gates, Stop Logs, Operating Gear and Head Regulator in Jowhar, Hirshabelle State \u2013 Somalia - 26/021",
+    "agency": "FAO",
+    "notice_type": "Invitation to bid",
+    "reference": "2026/FRSOM/FRSOM/138970",
+    "published_date": "12-Nov-2026",
+    "deadline": "26-Nov-2026 12:00 (GMT 3.00)",
+    "url": "https://www.ungm.org/Public/Notice/322366",
+    "sector": "Infrastructure & Civil Works",
+    "location": "Jowhar, Middle Shabelle (Hirshabelle)",
+    "matched_vendors": [
+      {
+        "name": "GOBANLE CONSTRUCTIONS AND GENERAL SERVIC",
+        "slug": "gobanle-constructions-and-general-servic",
+        "total_amount": 1321006.43,
+        "orders_count": 11,
+        "operating_locations": [
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "DOCOL CONSTRUCTION REHABILITATION AND TR",
+        "slug": "docol-construction-rehabilitation-and-tr",
+        "total_amount": 1039803.29,
+        "orders_count": 5,
+        "operating_locations": [
+          "Baidoa District",
+          "Dhusamareb District",
+          "Garoowe",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "REHABILITATION CONSTRUCTION  GENERAL SE",
+        "slug": "rehabilitation-construction-general-se",
+        "total_amount": 878067.44,
+        "orders_count": 12,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "KAFI BROTHERS CONTRACTING CONSTRUCTION",
+        "slug": "kafi-brothers-contracting-construction",
+        "total_amount": 578041.48,
+        "orders_count": 7,
+        "operating_locations": [
+          "Abudwak District",
+          "Baidoa",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01004635",
+        "title": "Support to Somalia Transformational Governance Program of the Federal Government of Somalia (FGS) and the Federal Member States (FMS)"
+      },
+      {
+        "id": "00145707",
+        "title": "Building accountable and sustainable security in Somali Federal Member States (BASIS)"
+      }
+    ]
+  },
+  {
+    "id": "317910",
+    "title": "Request for Proposal for the Provision of Digital Intelligence and SEO Services.",
+    "agency": "UNICEF",
+    "notice_type": "Request for proposal",
+    "reference": "RFPS-NYH-2026-503962",
+    "published_date": "13-Oct-2026",
+    "deadline": "25-Nov-2026 23:59 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/317910",
+    "sector": "Digital, IT & Media Communications",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "DALSAN MEDIA GROUP",
+        "slug": "dalsan-media-group",
+        "total_amount": 790771.6,
+        "orders_count": 11,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "BBC Media Action",
+        "slug": "bbc-media-action-314",
+        "total_amount": 210796.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Astaan Media",
+        "slug": "astaan-media",
+        "total_amount": 118759.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KENYA EDITORS GUILD",
+        "slug": "kenya-editors-guild",
+        "total_amount": 78858.0,
+        "orders_count": 3,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01004055",
+        "title": "Religious Scholars (Ulema) as insider mediators building peace in Somalia"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      },
+      {
+        "id": "01004924",
+        "title": "Accelerating Socio-Economic Development in Somalia by Enhancing Business Environment, Youth Employability and Digitalization"
+      }
+    ]
+  },
+  {
+    "id": "321245",
+    "title": "RFQ 2200345913 \u2013 Incubator and Accelerator Programme for wool and mohair enterprises in Lesotho from December 2026 to July 2027",
+    "agency": "ITC",
+    "notice_type": "Request for quotation",
+    "reference": "RFQ 2200345913",
+    "published_date": "09-Nov-2026",
+    "deadline": "25-Nov-2026 23:59 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/321245",
+    "sector": "Specialized Supply & Services",
+    "location": "Strategic Air / Sea Ports (Mogadishu, Berbera, Bosaso)",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "GSOL Energy Global AS",
+        "slug": "gsol-energy-global-as",
+        "total_amount": 506530.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadiscio",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "IPE GLOBAL (AFRICA) LIMITED",
+        "slug": "ipe-global-africa-limited",
+        "total_amount": 231325.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Garowe District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01005980",
+        "title": "Women Peace & Protection Joint Programme - Phase II (WPP-II)."
+      },
+      {
+        "id": "01000758",
+        "title": "State-building and Reconciliation Support Program- UNDP-SOM"
+      }
+    ]
+  },
+  {
+    "id": "322046",
+    "title": "RFQ 1001265870 \u2013 B2B matchmaking, sales coaching and market orientation for Zimbabwean companies at Fruit Logistica 2027 in Berlin, 3-5 February 2027",
+    "agency": "ITC",
+    "notice_type": "Request for quotation",
+    "reference": "RFQ 1001265870",
+    "published_date": "10-Nov-2026",
+    "deadline": "24-Nov-2026 23:59 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/322046",
+    "sector": "Specialized Supply & Services",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "GSOL Energy Global AS",
+        "slug": "gsol-energy-global-as",
+        "total_amount": 506530.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadiscio",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "IPE GLOBAL (AFRICA) LIMITED",
+        "slug": "ipe-global-africa-limited",
+        "total_amount": 231325.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Garowe District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01005980",
+        "title": "Women Peace & Protection Joint Programme - Phase II (WPP-II)."
+      },
+      {
+        "id": "01000758",
+        "title": "State-building and Reconciliation Support Program- UNDP-SOM"
+      }
+    ]
+  },
+  {
+    "id": "321815",
+    "title": "Request for Quotation (RFQ) to establish Blanket Purchase Agreement (BPA) for the Provision of Technical Consultancy Services for Article 6 Carbon Project Assessment and Pipeline Development in Target Countries",
+    "agency": "UNOPS",
+    "notice_type": "Request for quotation",
+    "reference": "RFQ/2026/63575",
+    "published_date": "09-Nov-2026",
+    "deadline": "24-Nov-2026 13:00 (GMT 0.00)",
+    "url": "https://www.ungm.org/Public/Notice/321815",
+    "sector": "Technical Advisory, TVET & TPM",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "DELOITTE  TOUCHE",
+        "slug": "deloitte-touche",
+        "total_amount": 650135.0,
+        "orders_count": 39,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Baidoa",
+          "Baidoa District",
+          "Bay",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Dhusamareb District",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "Deloitte & Touche",
+        "slug": "deloitte-and-touche",
+        "total_amount": 493500.0,
+        "orders_count": 63,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01000753",
+        "title": "Joint Justice and Corrections Programme"
+      },
+      {
+        "id": "01003502",
+        "title": "Security 4 Peace Global Flagship_SOM"
+      },
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      }
+    ]
+  },
+  {
+    "id": "320650",
+    "title": "Development of a diabetes workplan and activities related to access to medicines as part of the WHO HQ Diabetes Programme",
+    "agency": "WHO",
+    "notice_type": "Request for proposal",
+    "reference": "WHO-RFP-MND-2026-2",
+    "published_date": "30-Oct-2026",
+    "deadline": "23-Nov-2026 23:59 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/320650",
+    "sector": "Health, Medical & Pharmaceuticals",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "MEDINIQUE HEALTHCARE LTD",
+        "slug": "medinique-healthcare-ltd",
+        "total_amount": 96300.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "SAHAL SHIPPING SERVICE   -To be merged **",
+        "slug": "sahal-shipping-service-to-be-merged",
+        "total_amount": 37672.23,
+        "orders_count": 3,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KPMG AG",
+        "slug": "kpmg-ag",
+        "total_amount": 1196565.8,
+        "orders_count": 23,
+        "operating_locations": [
+          "Bay",
+          "Garoowe",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01001075",
+        "title": "Stabilization Programme in South- West Federal Member State"
+      },
+      {
+        "id": "01002141",
+        "title": "Support to Democratization and Achieving Social Contract through Inclusive Constitutional Development Process- UNDP-SOM"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      }
+    ]
+  },
+  {
+    "id": "322099",
+    "title": "Procurement of laboratory supplies- Schistosomiasis and STH Impact Assessment",
+    "agency": "WHO",
+    "notice_type": "Invitation to bid",
+    "reference": "EM/ACO/SOM/P/0009760",
+    "published_date": "11-Nov-2026",
+    "deadline": "23-Nov-2026 23:59 (GMT 3.00)",
+    "url": "https://www.ungm.org/Public/Notice/322099",
+    "sector": "Health, Medical & Pharmaceuticals",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "MEDINIQUE HEALTHCARE LTD",
+        "slug": "medinique-healthcare-ltd",
+        "total_amount": 96300.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "SAHAL SHIPPING SERVICE   -To be merged **",
+        "slug": "sahal-shipping-service-to-be-merged",
+        "total_amount": 37672.23,
+        "orders_count": 3,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KPMG AG",
+        "slug": "kpmg-ag",
+        "total_amount": 1196565.8,
+        "orders_count": 23,
+        "operating_locations": [
+          "Bay",
+          "Garoowe",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01001075",
+        "title": "Stabilization Programme in South- West Federal Member State"
+      },
+      {
+        "id": "01002141",
+        "title": "Support to Democratization and Achieving Social Contract through Inclusive Constitutional Development Process- UNDP-SOM"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      }
+    ]
+  },
+  {
+    "id": "322710",
+    "title": "Infrastructure Construction and Rehabilitation in Wisil and Bahdo",
+    "agency": "IOM",
+    "notice_type": "Request for quotation",
+    "reference": "30000037397",
+    "published_date": "16-Nov-2026",
+    "deadline": "23-Nov-2026 13:29 (GMT 0.00)",
+    "url": "https://www.ungm.org/Public/Notice/322710",
+    "sector": "Infrastructure & Civil Works",
+    "location": "Wisil & Bahdo (Galmudug)",
+    "matched_vendors": [
+      {
+        "name": "GOBANLE CONSTRUCTIONS AND GENERAL SERVIC",
+        "slug": "gobanle-constructions-and-general-servic",
+        "total_amount": 1321006.43,
+        "orders_count": 11,
+        "operating_locations": [
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "DOCOL CONSTRUCTION REHABILITATION AND TR",
+        "slug": "docol-construction-rehabilitation-and-tr",
+        "total_amount": 1039803.29,
+        "orders_count": 5,
+        "operating_locations": [
+          "Baidoa District",
+          "Dhusamareb District",
+          "Garoowe",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "REHABILITATION CONSTRUCTION  GENERAL SE",
+        "slug": "rehabilitation-construction-general-se",
+        "total_amount": 878067.44,
+        "orders_count": 12,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu",
+          "Oodweyne",
+          "Salahly",
+          "Shiikh",
+          "Taleex"
+        ]
+      },
+      {
+        "name": "KAFI BROTHERS CONTRACTING CONSTRUCTION",
+        "slug": "kafi-brothers-contracting-construction",
+        "total_amount": 578041.48,
+        "orders_count": 7,
+        "operating_locations": [
+          "Abudwak District",
+          "Baidoa",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Jowhar District",
+          "Kismayo District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01004635",
+        "title": "Support to Somalia Transformational Governance Program of the Federal Government of Somalia (FGS) and the Federal Member States (FMS)"
+      },
+      {
+        "id": "00145707",
+        "title": "Building accountable and sustainable security in Somali Federal Member States (BASIS)"
+      }
+    ]
+  },
+  {
+    "id": "322678",
+    "title": "Purchase of NFI Kits for MRC Bossaso",
+    "agency": "IOM",
+    "notice_type": "Request for quotation",
+    "reference": "30000035761-3",
+    "published_date": "16-Nov-2026",
+    "deadline": "23-Nov-2026 10:32 (GMT 0.00)",
+    "url": "https://www.ungm.org/Public/Notice/322678",
+    "sector": "Emergency Response, Food & WASH",
+    "location": "Bossaso, Bari (Puntland)",
+    "matched_vendors": [
+      {
+        "name": "THE PUNTLAND LEGAL AID CENTRE",
+        "slug": "the-puntland-legal-aid-centre",
+        "total_amount": 750063.65,
+        "orders_count": 17,
+        "operating_locations": [
+          "Gaalkacyo",
+          "Garoowe",
+          "Hargeisa",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Livelihoods, Economic & Agriculture Development Organization",
+        "slug": "livelihoods-economic-and-agriculture-development-organization",
+        "total_amount": 233907.4,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "BAKER TILLY",
+        "slug": "baker-tilly",
+        "total_amount": 191007.0,
+        "orders_count": 17,
+        "operating_locations": [
+          "Banadir Region",
+          "Kismayo District",
+          "Mogadiscio",
+          "Mogadishu",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "Falko Engineering & Consultant CO",
+        "slug": "falko-engineering-and-consultant-co",
+        "total_amount": 179552.4,
+        "orders_count": 1,
+        "operating_locations": [
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01005998",
+        "title": "Integrated Drought Response Plan, Water Management and Economic Recovery Support for Somalia"
+      },
+      {
+        "id": "01005518",
+        "title": "PIMS-6330-Conserving terrestrial and marine biodiversity and restoring ecosystem services in globally relevant and vulnerable sites in Somalia"
+      },
+      {
+        "id": "01004092",
+        "title": "Sustainable Access to Water for Rural Communities"
+      }
+    ]
+  },
+  {
+    "id": "319084",
+    "title": "RFQ 2200348310 - For Provision of Conference Services in Eswatini in January-June 2027",
+    "agency": "ITC",
+    "notice_type": "Request for quotation",
+    "reference": "RFQ 2200348310",
+    "published_date": "21-Oct-2026",
+    "deadline": "22-Nov-2026 23:59 (GMT 2.00)",
+    "url": "https://www.ungm.org/Public/Notice/319084",
+    "sector": "Specialized Supply & Services",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "GSOL Energy Global AS",
+        "slug": "gsol-energy-global-as",
+        "total_amount": 506530.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadiscio",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "IPE GLOBAL (AFRICA) LIMITED",
+        "slug": "ipe-global-africa-limited",
+        "total_amount": 231325.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Garowe District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01005980",
+        "title": "Women Peace & Protection Joint Programme - Phase II (WPP-II)."
+      },
+      {
+        "id": "01000758",
+        "title": "State-building and Reconciliation Support Program- UNDP-SOM"
+      }
+    ]
+  },
+  {
+    "id": "322517",
+    "title": "Call for External Collaborator: Baseline analysis, results framework and monitoring tool for the ILO Living Wage Programme, coordinated by the ILO Inclusive Labour Markets, Working Conditions and Labour Migration Branch (FAIRWORK)",
+    "agency": "ILO",
+    "notice_type": "Call for individual consultants",
+    "reference": "rfx_14266_HQ",
+    "published_date": "13-Nov-2026",
+    "deadline": "22-Nov-2026 12:00 (GMT 1.00)",
+    "url": "https://www.ungm.org/Public/Notice/322517",
+    "sector": "Technical Advisory, TVET & TPM",
+    "location": "Strategic Air / Sea Ports (Mogadishu, Berbera, Bosaso)",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "DELOITTE  TOUCHE",
+        "slug": "deloitte-touche",
+        "total_amount": 650135.0,
+        "orders_count": 39,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Baidoa",
+          "Baidoa District",
+          "Bay",
+          "Beledweyne District",
+          "Berbera District",
+          "Bosaso District",
+          "Dhusamareb District",
+          "Dusa Marreb",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "Deloitte & Touche",
+        "slug": "deloitte-and-touche",
+        "total_amount": 493500.0,
+        "orders_count": 63,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01000753",
+        "title": "Joint Justice and Corrections Programme"
+      },
+      {
+        "id": "01003502",
+        "title": "Security 4 Peace Global Flagship_SOM"
+      },
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      }
+    ]
+  },
+  {
+    "id": "322322",
+    "title": "IT Equipment and furniture to Ministry of Labour Hargeisa Somaliland",
+    "agency": "IOM",
+    "notice_type": "Request for quotation",
+    "reference": "30000037026,1",
+    "published_date": "17-Nov-2026",
+    "deadline": "22-Nov-2026 06:33 (GMT 0.00)",
+    "url": "https://www.ungm.org/Public/Notice/322322",
+    "sector": "Digital, IT & Media Communications",
+    "location": "Hargeisa (Somaliland)",
+    "matched_vendors": [
+      {
+        "name": "DALSAN MEDIA GROUP",
+        "slug": "dalsan-media-group",
+        "total_amount": 790771.6,
+        "orders_count": 11,
+        "operating_locations": [
+          "Banadir Region",
+          "Bay",
+          "Mogadiscio",
+          "Mogadishu",
+          "Nugaal",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "BBC Media Action",
+        "slug": "bbc-media-action-314",
+        "total_amount": 210796.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Astaan Media",
+        "slug": "astaan-media",
+        "total_amount": 118759.0,
+        "orders_count": 5,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "KENYA EDITORS GUILD",
+        "slug": "kenya-editors-guild",
+        "total_amount": 78858.0,
+        "orders_count": 3,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01004055",
+        "title": "Religious Scholars (Ulema) as insider mediators building peace in Somalia"
+      },
+      {
+        "id": "01000088",
+        "title": "Bilan - Somali Women Media Project"
+      },
+      {
+        "id": "01004924",
+        "title": "Accelerating Socio-Economic Development in Somalia by Enhancing Business Environment, Youth Employability and Digitalization"
+      }
+    ]
+  },
+  {
+    "id": "322635",
+    "title": "Request for Quotation for CCCM El Ni\u00f1o flood preparedness, response in Beledwein",
+    "agency": "IOM",
+    "notice_type": "Request for quotation",
+    "reference": "30000037286",
+    "published_date": "16-Nov-2026",
+    "deadline": "21-Nov-2026 06:25 (GMT 0.00)",
+    "url": "https://www.ungm.org/Public/Notice/322635",
+    "sector": "Emergency Response, Food & WASH",
+    "location": "Beledweyne, Hiran (Hirshabelle)",
+    "matched_vendors": [
+      {
+        "name": "THE PUNTLAND LEGAL AID CENTRE",
+        "slug": "the-puntland-legal-aid-centre",
+        "total_amount": 750063.65,
+        "orders_count": 17,
+        "operating_locations": [
+          "Gaalkacyo",
+          "Garoowe",
+          "Hargeisa",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Livelihoods, Economic & Agriculture Development Organization",
+        "slug": "livelihoods-economic-and-agriculture-development-organization",
+        "total_amount": 233907.4,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "BAKER TILLY",
+        "slug": "baker-tilly",
+        "total_amount": 191007.0,
+        "orders_count": 17,
+        "operating_locations": [
+          "Banadir Region",
+          "Kismayo District",
+          "Mogadiscio",
+          "Mogadishu",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "Falko Engineering & Consultant CO",
+        "slug": "falko-engineering-and-consultant-co",
+        "total_amount": 179552.4,
+        "orders_count": 1,
+        "operating_locations": [
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01005998",
+        "title": "Integrated Drought Response Plan, Water Management and Economic Recovery Support for Somalia"
+      },
+      {
+        "id": "01005518",
+        "title": "PIMS-6330-Conserving terrestrial and marine biodiversity and restoring ecosystem services in globally relevant and vulnerable sites in Somalia"
+      },
+      {
+        "id": "01004092",
+        "title": "Sustainable Access to Water for Rural Communities"
+      }
+    ]
+  },
+  {
+    "id": "318627",
+    "title": "Long term global contract for the supply of UN Ballistic Helmets for the United Nations",
+    "agency": "UN Secretariat",
+    "notice_type": "Request for EOI",
+    "reference": "EOIUNPD24823",
+    "published_date": "16-Oct-2026",
+    "deadline": "20-Nov-2026 23:59 (GMT -4.00)",
+    "url": "https://www.ungm.org/Public/Notice/318627",
+    "sector": "Specialized Supply & Services",
+    "location": "Somalia Nationwide / Multi-hub",
+    "matched_vendors": [
+      {
+        "name": "CTG GLOBAL MANAGED SERVICES DMCC",
+        "slug": "ctg-global-managed-services-dmcc",
+        "total_amount": 11078553.12,
+        "orders_count": 180,
+        "operating_locations": [
+          "Abudwak District",
+          "Adado District",
+          "Afgooye",
+          "Baidoa",
+          "Balanbal",
+          "Baligubadle",
+          "Banadir Region",
+          "Bandarbeyla",
+          "Bay",
+          "Beledweyne District",
+          "Berbera",
+          "Berbera District",
+          "Bosaso District",
+          "Burao",
+          "Buraokibir",
+          "Cadaadley",
+          "Ceel Afweyn",
+          "Deex Cayn",
+          "Dilla",
+          "Dusa Marreb",
+          "Gaalkacyo",
+          "Gardo",
+          "Garoowe",
+          "Garowe District",
+          "Gobwen",
+          "Guri Ceel",
+          "Har",
+          "Hargeisa",
+          "Jowhar",
+          "Jowhar District",
+          "Kismayo",
+          "Kismayo District",
+          "Mogadishu",
+          "Nugaal",
+          "Oodweyne",
+          "Puntland",
+          "Salahly",
+          "Shiikh",
+          "Taleex",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "CTG Global Managed Services FZCO",
+        "slug": "ctg-global-managed-services-fzco",
+        "total_amount": 1764061.14,
+        "orders_count": 54,
+        "operating_locations": [
+          "Baidoa District",
+          "Banadir Region",
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu",
+          "Sool"
+        ]
+      },
+      {
+        "name": "GSOL Energy Global AS",
+        "slug": "gsol-energy-global-as",
+        "total_amount": 506530.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Banadir Region",
+          "Mogadiscio",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "IPE GLOBAL (AFRICA) LIMITED",
+        "slug": "ipe-global-africa-limited",
+        "total_amount": 231325.0,
+        "orders_count": 2,
+        "operating_locations": [
+          "Garowe District",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01003198",
+        "title": "Dowlad-kaab Program - Joint Programme Stregthening Local Governance and Decentralized Service Delivery"
+      },
+      {
+        "id": "01005980",
+        "title": "Women Peace & Protection Joint Programme - Phase II (WPP-II)."
+      },
+      {
+        "id": "01000758",
+        "title": "State-building and Reconciliation Support Program- UNDP-SOM"
+      }
+    ]
+  },
+  {
+    "id": "320297",
+    "title": "Solid Waste Management Plan and Community-Driven Valorisation in Afgooye Town",
+    "agency": "IOM",
+    "notice_type": "Request for quotation",
+    "reference": "30000036142,1",
+    "published_date": "05-Nov-2026",
+    "deadline": "20-Nov-2026 15:08 (GMT 0.00)",
+    "url": "https://www.ungm.org/Public/Notice/320297",
+    "sector": "Emergency Response, Food & WASH",
+    "location": "Afgooye, Lower Shabelle (South West State)",
+    "matched_vendors": [
+      {
+        "name": "THE PUNTLAND LEGAL AID CENTRE",
+        "slug": "the-puntland-legal-aid-centre",
+        "total_amount": 750063.65,
+        "orders_count": 17,
+        "operating_locations": [
+          "Gaalkacyo",
+          "Garoowe",
+          "Hargeisa",
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "Livelihoods, Economic & Agriculture Development Organization",
+        "slug": "livelihoods-economic-and-agriculture-development-organization",
+        "total_amount": 233907.4,
+        "orders_count": 2,
+        "operating_locations": [
+          "Mogadishu"
+        ]
+      },
+      {
+        "name": "BAKER TILLY",
+        "slug": "baker-tilly",
+        "total_amount": 191007.0,
+        "orders_count": 17,
+        "operating_locations": [
+          "Banadir Region",
+          "Kismayo District",
+          "Mogadiscio",
+          "Mogadishu",
+          "Woqooyi Galbeed"
+        ]
+      },
+      {
+        "name": "Falko Engineering & Consultant CO",
+        "slug": "falko-engineering-and-consultant-co",
+        "total_amount": 179552.4,
+        "orders_count": 1,
+        "operating_locations": [
+          "Dusa Marreb",
+          "Garoowe",
+          "Har",
+          "Jowhar",
+          "Kismayo",
+          "Mogadishu"
+        ]
+      }
+    ],
+    "matched_projects": [
+      {
+        "id": "01005998",
+        "title": "Integrated Drought Response Plan, Water Management and Economic Recovery Support for Somalia"
+      },
+      {
+        "id": "01005518",
+        "title": "PIMS-6330-Conserving terrestrial and marine biodiversity and restoring ecosystem services in globally relevant and vulnerable sites in Somalia"
+      },
+      {
+        "id": "01004092",
+        "title": "Sustainable Access to Water for Rural Communities"
+      }
+    ]
+  }
+]

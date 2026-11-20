@@ -12,7 +12,8 @@ import {
   X,
   ExternalLink,
   FolderDown,
-  ReceiptText 
+  ReceiptText,
+  Radio 
 } from 'lucide-react';
 import { useState } from 'react';
 
@@ -22,6 +23,7 @@ const NAV_ITEMS = [
   { href: '/ngos', label: 'NGOs (204)', icon: Building2 },
   { href: '/undp-projects', label: 'UNDP Projects (50)', icon: FolderDown },
   { href: '/vendors', label: 'Vendors (364)', icon: ReceiptText },
+  { href: '/tenders', label: 'Live Tenders (47)', icon: Radio },
   { href: '/dossier-builder', label: 'Proposal Dossier Builder', icon: FileText, highlight: true },
   { href: '/pipeline', label: 'Data Pipeline', icon: Activity },
 ];
