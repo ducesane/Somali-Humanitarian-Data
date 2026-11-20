@@ -21,9 +21,10 @@ import {
 } from 'lucide-react';
 import rawData from '@/data/somalia_raw_cwg_records.json';
 import cvaSummaryData from '@/data/somalia_cva_audit_data.json';
+import householdsData from '@/data/somalia_reach_households.json';
 
 export default function RealDataWindow() {
-  const [activeTab, setActiveTab] = useState<'district_summary' | 'cwg_transfers' | 'reach_settlements'>('district_summary');
+  const [activeTab, setActiveTab] = useState<'district_summary' | 'household_microdata' | 'cwg_transfers' | 'reach_settlements'>('district_summary');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedOrg, setSelectedOrg] = useState<string>('ALL');
   const [selectedMechanism, setSelectedMechanism] = useState<string>('ALL');
@@ -140,6 +141,64 @@ export default function RealDataWindow() {
     const link = document.createElement('a');
     link.setAttribute('href', encodedUri);
     link.setAttribute('download', `somalia_cva_district_summary_${new Date().toISOString().slice(0,10)}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  // Filter REACH individual surveyed households
+  const filteredHouseholds = useMemo(() => {
+    return householdsData.households.filter(h => {
+      const matchSearch = searchTerm === '' ||
+        h.household_id.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        h.settlement_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        h.area.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        h.resp_gender.toLowerCase().includes(searchTerm.toLowerCase());
+      return matchSearch;
+    });
+  }, [searchTerm]);
+
+  // CSV Exporter for Individual Household Microdata
+  const exportHouseholdCSV = () => {
+    const headers = [
+      'Household ID',
+      'District',
+      'Area',
+      'Settlement Name',
+      'Respondent Gender',
+      'Head of Household',
+      'Head Age',
+      'Family Size',
+      'Children Count',
+      'Pregnant/Lactating',
+      'Registered for Aid',
+      'Horjooge Gatekeeper Registration',
+      'Pays Camp Rent/Tax',
+      'Camp Charge USD'
+    ];
+
+    const rows = filteredHouseholds.map(h => [
+      `"${h.household_id}"`,
+      `"${h.district}"`,
+      `"${h.area}"`,
+      `"${h.settlement_name}"`,
+      `"${h.resp_gender}"`,
+      `"${h.head_of_household}"`,
+      h.head_age,
+      h.family_size,
+      h.children_count,
+      h.pregnant_lactating,
+      `"${h.registered_for_aid}"`,
+      `"${h.registered_by_horjooge_gatekeeper}"`,
+      `"${h.pays_camp_rent_tax}"`,
+      h.camp_charge_usd
+    ]);
+
+    const csv = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+    const encodedUri = encodeURI(csv);
+    const link = document.createElement('a');
+    link.setAttribute('href', encodedUri);
+    link.setAttribute('download', `somalia_reach_surveyed_households_${new Date().toISOString().slice(0,10)}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -268,6 +327,8 @@ export default function RealDataWindow() {
               onClick={
                 activeTab === 'district_summary'
                   ? exportDistrictCSV
+                  : activeTab === 'household_microdata'
+                  ? exportHouseholdCSV
                   : activeTab === 'reach_settlements'
                   ? exportReachCSV
                   : exportCwgCSV
@@ -293,6 +354,18 @@ export default function RealDataWindow() {
             >
               <Layers className="w-4 h-4" />
               <span>District Summary Real Totals ({filteredDistricts.length})</span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab('household_microdata')}
+              className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+                activeTab === 'household_microdata'
+                  ? 'bg-emerald-600 text-slate-950 shadow'
+                  : 'bg-slate-800 text-slate-400 hover:text-white'
+              }`}
+            >
+              <Users className="w-4 h-4" />
+              <span>Individual Surveyed Households ({filteredHouseholds.length})</span>
             </button>
 
             <button
@@ -636,6 +709,110 @@ export default function RealDataWindow() {
             <div className="p-3 bg-slate-900 border-t border-slate-800 text-center text-xs text-slate-400">
               Showing {filteredDistricts.length} active Somali districts sorted by <strong>{districtSortField.replace(/_/g, ' ')}</strong> ({districtSortAsc ? 'Ascending' : 'Descending'}). Click any column header to sort.
             </div>
+          </div>
+        )}
+
+        {/* TAB 4: REAL INDIVIDUAL HOUSEHOLDS MICRODATA */}
+        {activeTab === 'household_microdata' && (
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="p-4 bg-slate-900/90 border-b border-slate-800 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+              <div>
+                <h3 className="text-sm font-bold text-white flex items-center gap-2">
+                  <Users className="w-4 h-4 text-emerald-400" />
+                  <span>Real In-Person Field Survey Microdata (1,211 Surveyed Families)</span>
+                </h3>
+                <p className="text-xs text-slate-400 mt-0.5">
+                  Source: REACH Initiative Settlement Assessment. Microdata covering family demographics, Horjooge gatekeeper registration, and camp fees.
+                </p>
+              </div>
+              <div className="flex items-center gap-4 text-xs font-mono">
+                <span className="text-slate-400">Avg Family Size: <strong className="text-white">6.3</strong></span>
+                <span className="text-slate-400">Female Head: <strong className="text-emerald-400">59.8%</strong></span>
+                <span className="text-slate-400">Gatekeeper Registered: <strong className="text-red-400">26.4%</strong></span>
+              </div>
+            </div>
+
+            <div className="overflow-x-auto max-h-[750px]">
+              <table className="w-full text-left text-xs border-collapse">
+                <thead className="bg-slate-800/95 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
+                  <tr>
+                    <th className="py-3 px-4">Household ID</th>
+                    <th className="py-3 px-4">District / Area</th>
+                    <th className="py-3 px-4">Settlement Name</th>
+                    <th className="py-3 px-4">Head Gender</th>
+                    <th className="py-3 px-4 text-right">Head Age</th>
+                    <th className="py-3 px-4 text-right">Family Size</th>
+                    <th className="py-3 px-4 text-right">Children</th>
+                    <th className="py-3 px-4 text-center">Pregnant / Lactating</th>
+                    <th className="py-3 px-4 text-center">Aid Registered</th>
+                    <th className="py-3 px-4 text-center">Horjooge (Gatekeeper)</th>
+                    <th className="py-3 px-4 text-right">Camp Tax / Rent</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800 text-slate-300 font-mono">
+                  {filteredHouseholds.length === 0 ? (
+                    <tr>
+                      <td colSpan={11} className="py-8 text-center text-slate-400 font-sans">
+                        No households found matching &ldquo;{searchTerm}&rdquo;
+                      </td>
+                    </tr>
+                  ) : (
+                    filteredHouseholds.slice(0, 500).map(h => (
+                      <tr key={h.household_id} className="hover:bg-slate-800/60 transition-colors">
+                        <td className="py-2.5 px-4 font-bold text-slate-400 whitespace-nowrap">{h.household_id}</td>
+                        <td className="py-2.5 px-4 font-sans text-slate-300">{h.district} ({h.area})</td>
+                        <td className="py-2.5 px-4 font-sans font-bold text-white whitespace-nowrap">{h.settlement_name}</td>
+                        <td className="py-2.5 px-4 font-sans">
+                          <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${
+                            h.resp_gender === 'female' ? 'bg-pink-500/20 text-pink-400' : 'bg-blue-500/20 text-blue-400'
+                          }`}>
+                            {h.resp_gender.toUpperCase()}
+                          </span>
+                        </td>
+                        <td className="py-2.5 px-4 text-right text-slate-200">{h.head_age > 0 ? h.head_age : '—'}</td>
+                        <td className="py-2.5 px-4 text-right font-bold text-slate-100">{h.family_size}</td>
+                        <td className="py-2.5 px-4 text-right text-slate-300">{h.children_count}</td>
+                        <td className="py-2.5 px-4 text-center">
+                          {h.pregnant_lactating > 0 ? (
+                            <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">YES ({h.pregnant_lactating})</span>
+                          ) : <span className="text-slate-600">—</span>}
+                        </td>
+                        <td className="py-2.5 px-4 text-center">
+                          <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${
+                            h.registered_for_aid === 'yes' ? 'bg-emerald-500/20 text-emerald-400' : 'bg-slate-800 text-slate-500'
+                          }`}>
+                            {h.registered_for_aid.toUpperCase()}
+                          </span>
+                        </td>
+                        <td className="py-2.5 px-4 text-center">
+                          <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${
+                            h.registered_by_horjooge_gatekeeper === 'YES'
+                              ? 'bg-red-500/20 text-red-400 border border-red-500/30'
+                              : 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
+                          }`}>
+                            {h.registered_by_horjooge_gatekeeper}
+                          </span>
+                        </td>
+                        <td className="py-2.5 px-4 text-right font-sans">
+                          {h.camp_charge_usd > 0 ? (
+                            <span className="font-mono text-amber-400 font-bold">${h.camp_charge_usd}/mo</span>
+                          ) : h.pays_camp_rent_tax === 'yes' ? (
+                            <span className="text-amber-400 text-xs">Yes (In-kind)</span>
+                          ) : (
+                            <span className="text-slate-600">None</span>
+                          )}
+                        </td>
+                      </tr>
+                    ))
+                  )}
+                </tbody>
+              </table>
+            </div>
+            {filteredHouseholds.length > 500 && (
+              <div className="p-3 bg-slate-900 border-t border-slate-800 text-center text-xs text-slate-400">
+                Displaying first 500 of {filteredHouseholds.length} surveyed households. Click <strong>&ldquo;Export Real Data CSV&rdquo;</strong> to download all 1,211 household interviews.
+              </div>
+            )}
           </div>
         )}
 
