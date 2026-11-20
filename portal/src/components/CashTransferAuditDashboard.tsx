@@ -5,19 +5,22 @@ import Link from 'next/link';
 import { 
   Smartphone, 
   Search, 
-  Filter, 
   Building2, 
   Users, 
   DollarSign, 
   CreditCard, 
   ExternalLink,
-  ChevronDown,
-  Layers,
   ChevronRight,
   Maximize2,
   X,
   Download,
-  FileSpreadsheet
+  FileSpreadsheet,
+  Layers,
+  ArrowUpDown,
+  ChevronUp,
+  ChevronDown,
+  MapPin,
+  Home
 } from 'lucide-react';
 import cvaData from '@/data/somalia_cva_audit_data.json';
 import rawData from '@/data/somalia_raw_cwg_records.json';
@@ -45,24 +48,45 @@ interface DistrictItem {
 export default function CashTransferAuditDashboard() {
   const [activeTab, setActiveTab] = useState<'districts' | 'households' | 'organizations'>('districts');
   const [searchTerm, setSearchTerm] = useState('');
+  const [sortField, setSortField] = useState<string>('total_usd_transferred');
+  const [sortAsc, setSortAsc] = useState<boolean>(false);
   const [selectedDistrict, setSelectedDistrict] = useState<DistrictItem>(cvaData.districts[0] as DistrictItem);
   const [quickModalOpen, setQuickModalOpen] = useState(false);
   const [modalTab, setModalTab] = useState<'districts' | 'households' | 'cwg' | 'reach'>('districts');
   const [modalSearch, setModalSearch] = useState('');
 
+  // Total summary calculations
   const totalCamps = useMemo(() => cvaData.districts.reduce((acc, d) => acc + (d.idp_camps_count || 0), 0), []);
   const totalShelters = useMemo(() => cvaData.districts.reduce((acc, d) => acc + (d.total_idp_shelters || 0), 0), []);
 
-  // Filter districts
+  // Filter & sort districts
   const filteredDistricts = useMemo(() => {
-    return (cvaData.districts as DistrictItem[]).filter(d => {
-      if (d.district === 'Localisation_District_Label') return false;
-      const matchesSearch = searchTerm === '' || 
-        d.district.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        d.active_organizations.some(org => org.toLowerCase().includes(searchTerm.toLowerCase()));
-      return matchesSearch;
-    });
-  }, [searchTerm]);
+    return (cvaData.districts as DistrictItem[])
+      .filter(d => {
+        if (d.district === 'Localisation_District_Label') return false;
+        const matchesSearch = searchTerm === '' || 
+          d.district.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          d.active_organizations.some(org => org.toLowerCase().includes(searchTerm.toLowerCase()));
+        return matchesSearch;
+      })
+      .sort((a, b) => {
+        const valA = (a as Record<string, any>)[sortField];
+        const valB = (b as Record<string, any>)[sortField];
+        if (typeof valA === 'string') {
+          return sortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
+        }
+        return sortAsc ? (valA - valB) : (valB - valA);
+      });
+  }, [searchTerm, sortField, sortAsc]);
+
+  const toggleSort = (field: string) => {
+    if (sortField === field) {
+      setSortAsc(!sortAsc);
+    } else {
+      setSortField(field);
+      setSortAsc(false);
+    }
+  };
 
   // Filter households
   const filteredHouseholds = useMemo(() => {
@@ -103,106 +127,144 @@ export default function CashTransferAuditDashboard() {
     ).slice(0, 100);
   }, [modalSearch]);
 
+  // Export district CSV
+  const exportDistrictCSV = () => {
+    const headers = [
+      'District',
+      'Total Transferred (USD)',
+      'Mobile Money (USD)',
+      'Voucher (USD)',
+      'Households',
+      'IDP Camps Count',
+      'Total Shelters',
+      'Active Implementers'
+    ];
+
+    const rows = filteredDistricts.map(d => [
+      `"${d.district}"`,
+      d.total_usd_transferred,
+      d.mobile_money_usd,
+      d.voucher_usd,
+      d.households_reached,
+      d.idp_camps_count,
+      d.total_idp_shelters,
+      `"${d.active_organizations.join(', ')}"`
+    ]);
+
+    const csv = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+    const encodedUri = encodeURI(csv);
+    const link = document.createElement('a');
+    link.setAttribute('href', encodedUri);
+    link.setAttribute('download', `somalia_cva_districts_${new Date().toISOString().slice(0,10)}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <div className="space-y-10">
+    <div className="space-y-8">
       
       {/* ------------------------------------------------------------- */}
-      {/* TOP HEADER / HERO BANNER                                      */}
+      {/* 1. HERO BANNER & EXECUTIVE SUMMARY                            */}
       {/* ------------------------------------------------------------- */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-slate-900 via-slate-900 to-indigo-950 border border-slate-800 p-8 shadow-2xl">
-        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-          <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/20 text-emerald-300 text-xs font-semibold mb-4">
-              <Smartphone className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Somalia Cash Working Group (CWG) & REACH Initiative</span>
+      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
+        
+        <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold mb-3">
+              <Smartphone className="w-3.5 h-3.5" />
+              <span>UN Somalia Cash Working Group (CWG) &amp; REACH Initiative</span>
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
             </div>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Humanitarian Cash &amp; Voucher Assistance (CVA) Explorer
+              Somalia Humanitarian Cash Transfers (CVA)
             </h1>
-            <p className="mt-2 text-slate-300 text-base max-w-2xl leading-relaxed">
-              Empirical records of <strong>$592.1M in humanitarian cash distributions</strong> across Somalia. Real operational lines tracking mobile money transfers (Hormuud EVC Plus / Telesom ZAAD), food vouchers, surveyed IDP households, and active international implementers.
+            <p className="mt-2 text-slate-300 text-sm sm:text-base leading-relaxed">
+              Operational registry of <strong>$592.1M in humanitarian cash distributions</strong> across Somalia. Real operational lines tracking mobile money transfers (Hormuud EVC Plus / Telesom ZAAD), food vouchers, surveyed IDP households, and active international implementers.
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-3">
+          <div className="flex flex-wrap sm:flex-nowrap items-center gap-3">
             <Link
               href="/cash-audit/data"
               target="_blank"
-              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-bold text-sm transition-all shadow-lg shadow-emerald-600/30"
-              title="Open full data spreadsheet in a new window"
+              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-bold text-xs sm:text-sm transition-all shadow-lg shadow-emerald-600/20 whitespace-nowrap"
             >
               <ExternalLink className="w-4 h-4" />
-              <span>Open List in New Window</span>
+              <span>Open in New Window ↗</span>
             </Link>
             <button
               onClick={() => setQuickModalOpen(true)}
-              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold text-sm transition-all"
+              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold text-xs sm:text-sm transition-all whitespace-nowrap"
             >
               <Maximize2 className="w-4 h-4 text-slate-400" />
-              <span>Quick Data Popup</span>
+              <span>Quick Inspector</span>
             </button>
           </div>
         </div>
 
         {/* TOP LEVEL METRIC CARDS */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 pt-8 border-t border-slate-800/80">
-          <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-4">
-            <span className="text-xs font-medium text-slate-400 block mb-1">Total Tracked Cash Flow</span>
-            <span className="text-2xl font-bold text-white tracking-tight">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8 pt-6 border-t border-slate-800">
+          <div className="bg-slate-950/60 border border-slate-800/80 rounded-xl p-4">
+            <span className="text-xs font-medium text-slate-400 block mb-1">Total Cash Assistance</span>
+            <span className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
               ${(cvaData.summary.total_usd_transferred / 1e6).toFixed(1)}M
             </span>
-            <span className="text-xs text-slate-400 block mt-1">74 Somali Districts</span>
+            <span className="text-xs text-slate-400 block mt-1">74 Somali Districts Tracked</span>
           </div>
 
-          <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-4">
+          <div className="bg-slate-950/60 border border-slate-800/80 rounded-xl p-4">
             <span className="text-xs font-medium text-slate-400 block mb-1">Mobile Money (EVC/ZAAD)</span>
             <div className="flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-emerald-400">
+              <span className="text-2xl sm:text-3xl font-extrabold text-emerald-400">
                 ${(cvaData.summary.mobile_money_usd / 1e6).toFixed(1)}M
               </span>
-              <span className="text-xs font-bold text-emerald-500 bg-emerald-500/10 px-1.5 py-0.5 rounded">
+              <span className="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded border border-emerald-500/20">
                 {cvaData.summary.mobile_money_pct}%
               </span>
             </div>
             <span className="text-xs text-slate-400 block mt-1">Digital Payout Backbone</span>
           </div>
 
-          <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-4">
-            <span className="text-xs font-medium text-slate-400 block mb-1">Households Reached</span>
-            <span className="text-2xl font-bold text-white tracking-tight">
-              {(cvaData.summary.total_households_reached / 1e6).toFixed(2)}M
-            </span>
-            <span className="text-xs text-slate-400 block mt-1">
-              {(cvaData.summary.total_individuals_assisted / 1e6).toFixed(2)}M Individuals
-            </span>
+          <div className="bg-slate-950/60 border border-slate-800/80 rounded-xl p-4">
+            <span className="text-xs font-medium text-slate-400 block mb-1">Voucher Assistance</span>
+            <div className="flex items-baseline gap-2">
+              <span className="text-2xl sm:text-3xl font-extrabold text-indigo-400">
+                ${(cvaData.summary.voucher_usd / 1e6).toFixed(1)}M
+              </span>
+              <span className="text-xs font-bold text-indigo-300 bg-indigo-500/10 px-1.5 py-0.5 rounded border border-indigo-500/20">
+                28.6%
+              </span>
+            </div>
+            <span className="text-xs text-slate-400 block mt-1">Contracted Food Retailers</span>
           </div>
 
-          <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-4">
+          <div className="bg-slate-950/60 border border-slate-800/80 rounded-xl p-4">
             <span className="text-xs font-medium text-slate-400 block mb-1">Assessed IDP Settlements</span>
             <div className="flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-slate-200">
+              <span className="text-2xl sm:text-3xl font-extrabold text-slate-200">
                 {totalCamps.toLocaleString()}
               </span>
               <span className="text-xs text-slate-400">Camps</span>
             </div>
             <span className="text-xs text-slate-400 block mt-1">
-              {totalShelters.toLocaleString()} Shelters
+              {totalShelters.toLocaleString()} Recorded Shelters
             </span>
           </div>
         </div>
       </div>
 
       {/* ------------------------------------------------------------- */}
-      {/* NAVIGATION TABS                                               */}
+      {/* 2. NAVIGATION PILLS                                           */}
       {/* ------------------------------------------------------------- */}
-      <div className="flex border-b border-slate-800 pb-px gap-4">
+      <div className="flex flex-wrap items-center gap-2 border-b border-slate-800 pb-3">
         <button
           onClick={() => setActiveTab('districts')}
-          className={`flex items-center gap-2 pb-3 px-1 text-sm font-semibold transition-colors border-b-2 ${
+          className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${
             activeTab === 'districts'
-              ? 'border-emerald-500 text-emerald-400'
-              : 'border-transparent text-slate-400 hover:text-slate-200'
+              ? 'bg-emerald-600 text-slate-950 shadow-md'
+              : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800'
           }`}
         >
           <Layers className="w-4 h-4" />
@@ -211,10 +273,10 @@ export default function CashTransferAuditDashboard() {
 
         <button
           onClick={() => setActiveTab('households')}
-          className={`flex items-center gap-2 pb-3 px-1 text-sm font-semibold transition-colors border-b-2 ${
+          className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${
             activeTab === 'households'
-              ? 'border-emerald-500 text-emerald-400'
-              : 'border-transparent text-slate-400 hover:text-slate-200'
+              ? 'bg-emerald-600 text-slate-950 shadow-md'
+              : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800'
           }`}
         >
           <Users className="w-4 h-4" />
@@ -223,79 +285,141 @@ export default function CashTransferAuditDashboard() {
 
         <button
           onClick={() => setActiveTab('organizations')}
-          className={`flex items-center gap-2 pb-3 px-1 text-sm font-semibold transition-colors border-b-2 ${
+          className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${
             activeTab === 'organizations'
-              ? 'border-emerald-500 text-emerald-400'
-              : 'border-transparent text-slate-400 hover:text-slate-200'
+              ? 'bg-emerald-600 text-slate-950 shadow-md'
+              : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800'
           }`}
         >
           <Building2 className="w-4 h-4" />
-          <span>Top Implementing Agencies (WFP, FAO, CARE)</span>
+          <span>Top Implementing Agencies ({cvaData.top_cash_organizations.length})</span>
         </button>
       </div>
 
       {/* ------------------------------------------------------------- */}
-      {/* TAB 1: DISTRICT SUMMARY OVERVIEW                              */}
+      {/* 3. TAB CONTENT: DISTRICTS OVERVIEW                            */}
       {/* ------------------------------------------------------------- */}
       {activeTab === 'districts' && (
         <div className="space-y-6">
-          <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 flex flex-col md:flex-row gap-4 justify-between items-center">
-            {/* Search */}
-            <div className="relative w-full md:w-80">
+          {/* Controls Bar */}
+          <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col sm:flex-row gap-3 justify-between items-center">
+            <div className="relative w-full sm:w-80">
               <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
-                placeholder="Search district (e.g. Baydhaba, Cabudwaaq, Belet Weyne)..."
+                placeholder="Filter by district name or implementer..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-slate-800 border border-slate-700/80 rounded-lg pl-9 pr-4 py-2 text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                className="w-full bg-slate-800/80 border border-slate-700 rounded-lg pl-9 pr-4 py-2 text-xs sm:text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-500"
               />
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
+              <button
+                onClick={exportDistrictCSV}
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold transition-all"
+              >
+                <Download className="w-3.5 h-3.5 text-slate-400" />
+                <span>Export CSV</span>
+              </button>
               <Link
                 href="/cash-audit/data"
                 target="_blank"
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-bold text-xs transition-colors shadow"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 border border-emerald-500/30 text-xs font-semibold transition-all"
               >
-                <ExternalLink className="w-3.5 h-3.5" />
-                <span>Open Full 74-District Table ↗</span>
+                <ExternalLink className="w-3.5 h-3.5 text-emerald-400" />
+                <span>Open in Standalone Window</span>
               </Link>
             </div>
           </div>
 
-          {/* Master District Grid & Details */}
+          {/* Master District Grid & Side Dossier */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             
             {/* Left 2 Columns: Interactive District Table */}
-            <div className="lg:col-span-2 bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-xl">
-              <div className="p-4 border-b border-slate-800 bg-slate-900/80 flex justify-between items-center">
-                <span className="text-xs uppercase tracking-wider font-semibold text-slate-400">
+            <div className="lg:col-span-2 bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
+              <div className="p-4 border-b border-slate-800 bg-slate-900/90 flex justify-between items-center">
+                <span className="text-xs uppercase tracking-wider font-bold text-slate-300">
                   Somalia Districts Master Table ({filteredDistricts.length})
                 </span>
-                <span className="text-xs text-slate-500">
-                  Click any row to inspect district breakdown
+                <span className="text-xs text-slate-500 hidden sm:inline">
+                  Click any row to view operational breakdown
                 </span>
               </div>
 
-              <div className="overflow-x-auto max-h-[600px]">
+              <div className="overflow-x-auto max-h-[620px]">
                 <table className="w-full text-left text-xs border-collapse">
-                  <thead className="bg-slate-800/80 text-slate-300 text-xs font-semibold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
+                  <thead className="bg-slate-800/90 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
                     <tr>
-                      <th className="py-3 px-4">District</th>
-                      <th className="py-3 px-4 text-right">Total Transferred</th>
-                      <th className="py-3 px-4 text-right">Mobile Money</th>
-                      <th className="py-3 px-4 text-right">Voucher</th>
-                      <th className="py-3 px-4 text-right">Households</th>
-                      <th className="py-3 px-4 text-right">IDP Camps</th>
-                      <th className="py-3 px-4 text-right">Shelters</th>
-                      <th className="py-3 px-4 text-right">Inspect</th>
+                      <th 
+                        onClick={() => toggleSort('district')}
+                        className="py-3 px-4 cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center gap-1">
+                          <span>District</span>
+                          <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                        </div>
+                      </th>
+                      <th 
+                        onClick={() => toggleSort('total_usd_transferred')}
+                        className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center justify-end gap-1">
+                          <span>Total Transferred</span>
+                          <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                        </div>
+                      </th>
+                      <th 
+                        onClick={() => toggleSort('mobile_money_usd')}
+                        className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center justify-end gap-1">
+                          <span>Mobile Money</span>
+                          <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                        </div>
+                      </th>
+                      <th 
+                        onClick={() => toggleSort('voucher_usd')}
+                        className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center justify-end gap-1">
+                          <span>Voucher</span>
+                          <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                        </div>
+                      </th>
+                      <th 
+                        onClick={() => toggleSort('households_reached')}
+                        className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center justify-end gap-1">
+                          <span>Households</span>
+                          <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                        </div>
+                      </th>
+                      <th 
+                        onClick={() => toggleSort('idp_camps_count')}
+                        className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center justify-end gap-1">
+                          <span>IDP Camps</span>
+                          <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                        </div>
+                      </th>
+                      <th 
+                        onClick={() => toggleSort('total_idp_shelters')}
+                        className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                      >
+                        <div className="flex items-center justify-end gap-1">
+                          <span>Shelters</span>
+                          <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                        </div>
+                      </th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-800 text-slate-300 font-mono">
                     {filteredDistricts.length === 0 ? (
                       <tr>
-                        <td colSpan={8} className="py-8 text-center text-slate-400 font-sans">
+                        <td colSpan={7} className="py-8 text-center text-slate-400 font-sans">
                           No districts found matching &ldquo;{searchTerm}&rdquo;
                         </td>
                       </tr>
@@ -309,7 +433,7 @@ export default function CashTransferAuditDashboard() {
                             className={`cursor-pointer transition-colors ${
                               isSelected
                                 ? 'bg-emerald-950/40 border-l-4 border-emerald-500'
-                                : 'hover:bg-slate-800/50'
+                                : 'hover:bg-slate-800/60'
                             }`}
                           >
                             <td className="py-3 px-4 font-sans font-bold text-white whitespace-nowrap">
@@ -333,9 +457,6 @@ export default function CashTransferAuditDashboard() {
                             <td className="py-3 px-4 text-right text-slate-400">
                               {d.total_idp_shelters.toLocaleString()}
                             </td>
-                            <td className="py-3 px-4 text-right">
-                              <ChevronRight className="w-4 h-4 text-slate-500 inline" />
-                            </td>
                           </tr>
                         );
                       })
@@ -345,42 +466,42 @@ export default function CashTransferAuditDashboard() {
               </div>
             </div>
 
-            {/* Selected District Deep-Dive Panel */}
-            <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl flex flex-col justify-between">
+            {/* Right Column: Selected District Detail Panel */}
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
               {selectedDistrict ? (
                 <div className="space-y-6">
                   <div className="border-b border-slate-800 pb-4">
-                    <span className="text-xs uppercase tracking-wider font-semibold text-slate-400">District Operational Summary</span>
-                    <h3 className="text-2xl font-bold text-white mt-1">{selectedDistrict.district}</h3>
+                    <span className="text-xs uppercase tracking-wider font-bold text-slate-400">District Operational Dossier</span>
+                    <h3 className="text-2xl font-extrabold text-white mt-1">{selectedDistrict.district}</h3>
                     <p className="text-xs text-slate-400 mt-1">
                       {selectedDistrict.idp_camps_count} Assessed IDP Camps · {selectedDistrict.total_idp_shelters.toLocaleString()} Shelters
                     </p>
                   </div>
 
-                  {/* Transfer Breakdown */}
-                  <div className="space-y-3">
-                    <h4 className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Financial Breakdown</h4>
+                  {/* Financial Breakdown Cards */}
+                  <div className="space-y-2">
+                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider block">Financial Breakdown</span>
                     <div className="grid grid-cols-2 gap-3">
-                      <div className="bg-slate-800/60 p-3 rounded-lg border border-slate-700/60">
+                      <div className="bg-slate-800/60 p-3 rounded-xl border border-slate-700/60">
                         <span className="text-[11px] text-slate-400 block">Total Transferred</span>
-                        <span className="text-base font-bold text-white font-mono">
+                        <span className="text-base font-bold text-emerald-400 font-mono">
                           ${selectedDistrict.total_usd_transferred.toLocaleString()}
                         </span>
                       </div>
-                      <div className="bg-slate-800/60 p-3 rounded-lg border border-slate-700/60">
+                      <div className="bg-slate-800/60 p-3 rounded-xl border border-slate-700/60">
                         <span className="text-[11px] text-slate-400 block">Mobile Money</span>
-                        <span className="text-base font-bold text-emerald-400 font-mono">
+                        <span className="text-base font-bold text-white font-mono">
                           ${selectedDistrict.mobile_money_usd.toLocaleString()}
                         </span>
                       </div>
-                      <div className="bg-slate-800/60 p-3 rounded-lg border border-slate-700/60">
-                        <span className="text-[11px] text-slate-400 block">Voucher Assistance</span>
+                      <div className="bg-slate-800/60 p-3 rounded-xl border border-slate-700/60">
+                        <span className="text-[11px] text-slate-400 block">Vouchers</span>
                         <span className="text-base font-bold text-indigo-300 font-mono">
                           ${selectedDistrict.voucher_usd.toLocaleString()}
                         </span>
                       </div>
-                      <div className="bg-slate-800/60 p-3 rounded-lg border border-slate-700/60">
-                        <span className="text-[11px] text-slate-400 block">Households Reached</span>
+                      <div className="bg-slate-800/60 p-3 rounded-xl border border-slate-700/60">
+                        <span className="text-[11px] text-slate-400 block">Households</span>
                         <span className="text-base font-bold text-slate-200 font-mono">
                           {selectedDistrict.households_reached.toLocaleString()}
                         </span>
@@ -388,12 +509,12 @@ export default function CashTransferAuditDashboard() {
                     </div>
                   </div>
 
-                  {/* Camp Demographics */}
+                  {/* IDP Camp Demographics */}
                   <div className="space-y-2">
-                    <h4 className="text-xs font-semibold text-slate-400 uppercase tracking-wider">IDP Camp Presence</h4>
-                    <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700/60 space-y-2 text-xs">
+                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider block">IDP Camp Presence</span>
+                    <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700/60 space-y-2 text-xs">
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Total Assessed Camps:</span>
+                        <span className="text-slate-400">Assessed Camps Count:</span>
                         <span className="font-mono text-white font-bold">{selectedDistrict.idp_camps_count}</span>
                       </div>
                       <div className="flex justify-between">
@@ -411,7 +532,7 @@ export default function CashTransferAuditDashboard() {
 
                   {/* Active Implementing Partners */}
                   <div className="space-y-2">
-                    <h4 className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Active Implementing Partners</h4>
+                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider block">Active Implementing Partners</span>
                     <div className="flex flex-wrap gap-1.5">
                       {selectedDistrict.active_organizations.length > 0 ? (
                         selectedDistrict.active_organizations.map((org) => (
@@ -434,7 +555,7 @@ export default function CashTransferAuditDashboard() {
                 <Link
                   href="/cash-audit/data"
                   target="_blank"
-                  className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-bold text-xs transition-colors shadow"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-bold text-xs transition-colors shadow"
                 >
                   <ExternalLink className="w-4 h-4" />
                   <span>Inspect All 74 Districts in New Window</span>
@@ -446,19 +567,19 @@ export default function CashTransferAuditDashboard() {
       )}
 
       {/* ------------------------------------------------------------- */}
-      {/* TAB 2: INDIVIDUAL SURVEYED HOUSEHOLDS (1,211 HHs)             */}
+      {/* 4. TAB CONTENT: INDIVIDUAL SURVEYED HOUSEHOLDS                */}
       {/* ------------------------------------------------------------- */}
       {activeTab === 'households' && (
         <div className="space-y-6">
-          <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 flex flex-col md:flex-row gap-4 justify-between items-center">
-            <div className="relative w-full md:w-80">
+          <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col sm:flex-row gap-3 justify-between items-center">
+            <div className="relative w-full sm:w-80">
               <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
-                placeholder="Search household, settlement, area..."
+                placeholder="Search household ID, settlement, or area..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-slate-800 border border-slate-700/80 rounded-lg pl-9 pr-4 py-2 text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                className="w-full bg-slate-800/80 border border-slate-700 rounded-lg pl-9 pr-4 py-2 text-xs sm:text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-500"
               />
             </div>
 
@@ -469,7 +590,7 @@ export default function CashTransferAuditDashboard() {
                 className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-bold text-xs transition-colors shadow"
               >
                 <ExternalLink className="w-3.5 h-3.5" />
-                <span>Open Household Explorer & CSV ↗</span>
+                <span>Open in Standalone Window ↗</span>
               </Link>
             </div>
           </div>
@@ -552,18 +673,18 @@ export default function CashTransferAuditDashboard() {
               </table>
             </div>
             <div className="p-3 bg-slate-900 border-t border-slate-800 text-center text-xs text-slate-400">
-              Showing first 100 of {filteredHouseholds.length} surveyed households. Click &ldquo;Open Household Explorer &amp; CSV&rdquo; to view or export all 1,211 household interviews.
+              Showing first 100 of {filteredHouseholds.length} surveyed households. Open in standalone window to view or export all 1,211 household interviews.
             </div>
           </div>
         </div>
       )}
 
       {/* ------------------------------------------------------------- */}
-      {/* TAB 3: TOP IMPLEMENTING AGENCIES BREAKDOWN                     */}
+      {/* 5. TAB CONTENT: TOP IMPLEMENTING AGENCIES                     */}
       {/* ------------------------------------------------------------- */}
       {activeTab === 'organizations' && (
         <div className="space-y-6">
-          <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
             <h3 className="text-xl font-bold text-white">Top Humanitarian Cash Implementers in Somalia</h3>
             <p className="text-sm text-slate-400 mt-1">
               Ranked by cumulative cash and voucher assistance (CVA) disbursements recorded in the Somalia Cash Working Group (CWG) repository.
@@ -575,7 +696,7 @@ export default function CashTransferAuditDashboard() {
                 return (
                   <div key={item.org} className="bg-slate-800/50 border border-slate-700/60 rounded-xl p-4 flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <span className="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-300 font-bold text-xs flex items-center justify-center">
+                      <span className="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-300 font-bold text-xs flex items-center justify-center">
                         {idx + 1}
                       </span>
                       <div>
@@ -597,7 +718,7 @@ export default function CashTransferAuditDashboard() {
       )}
 
       {/* ------------------------------------------------------------- */}
-      {/* QUICK MODAL WINDOW OVERLAY (IN-PAGE POPUP)                    */}
+      {/* 6. QUICK MODAL WINDOW OVERLAY (IN-PAGE POPUP)                 */}
       {/* ------------------------------------------------------------- */}
       {quickModalOpen && (
         <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 animate-in fade-in duration-200">
@@ -636,7 +757,7 @@ export default function CashTransferAuditDashboard() {
 
             {/* Modal Tab Switcher & Search */}
             <div className="p-4 border-b border-slate-800 bg-slate-900 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 <button
                   onClick={() => setModalTab('districts')}
                   className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
