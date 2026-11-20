@@ -894,27 +894,29 @@ export default function CashTransferAuditDashboard() {
                   <thead className="bg-slate-800/80 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
                     <tr>
                       <th className="py-2.5 px-3">District</th>
-                      <th className="py-2.5 px-3 text-right">Total Cash (USD)</th>
-                      <th className="py-2.5 px-3 text-right">Mobile Money</th>
+                      <th className="py-2.5 px-3 text-right">Total Transferred (USD)</th>
+                      <th className="py-2.5 px-3 text-right">Mobile Money (USD)</th>
+                      <th className="py-2.5 px-3 text-right">Voucher (USD)</th>
                       <th className="py-2.5 px-3 text-right">Households</th>
-                      <th className="py-2.5 px-3 text-right">IDP Camps</th>
-                      <th className="py-2.5 px-3 text-right">Gatekeeper %</th>
+                      <th className="py-2.5 px-3 text-right">IDP Camps Count</th>
+                      <th className="py-2.5 px-3 text-right">Gatekeeper Camps</th>
+                      <th className="py-2.5 px-3 text-right">Total Shelters</th>
                       <th className="py-2.5 px-3">Active Implementers</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-800 text-slate-300 font-mono">
                     {filteredDistricts.map(d => (
-                      <tr key={d.district} className="hover:bg-slate-800/50 transition-colors">
+                      <tr key={d.district} className={`hover:bg-slate-800/50 transition-colors ${d.district === 'Cabudwaaq' ? 'bg-indigo-950/20' : ''}`}>
                         <td className="py-2 px-3 font-sans font-bold text-white whitespace-nowrap">{d.district}</td>
-                        <td className="py-2 px-3 text-right font-bold text-slate-100">${d.total_usd_transferred.toLocaleString()}</td>
-                        <td className="py-2 px-3 text-right text-emerald-400">${d.mobile_money_usd.toLocaleString()}</td>
-                        <td className="py-2 px-3 text-right text-slate-300">{d.households_reached.toLocaleString()}</td>
+                        <td className="py-2 px-3 text-right font-bold text-emerald-400">${d.total_usd_transferred.toLocaleString()}</td>
+                        <td className="py-2 px-3 text-right text-slate-200">${d.mobile_money_usd.toLocaleString()}</td>
+                        <td className="py-2 px-3 text-right text-indigo-300">${d.voucher_usd.toLocaleString()}</td>
+                        <td className="py-2 px-3 text-right text-slate-200">{d.households_reached.toLocaleString()}</td>
                         <td className="py-2 px-3 text-right text-slate-300">{d.idp_camps_count}</td>
-                        <td className="py-2 px-3 text-right font-bold">
-                          <span className={d.gatekeeper_prevalence_pct > 75 ? 'text-red-400' : d.gatekeeper_prevalence_pct > 40 ? 'text-amber-400' : 'text-slate-400'}>
-                            {d.gatekeeper_prevalence_pct}%
-                          </span>
+                        <td className="py-2 px-3 text-right text-slate-300">
+                          {d.gatekeeper_camps_count} ({d.gatekeeper_prevalence_pct}%)
                         </td>
+                        <td className="py-2 px-3 text-right text-slate-300">{d.total_idp_shelters.toLocaleString()}</td>
                         <td className="py-2 px-3 font-sans text-slate-400 max-w-xs truncate" title={d.active_organizations.join(', ')}>
                           {d.active_organizations.join(', ')}
                         </td>

@@ -14,6 +14,8 @@ import {
   FileSpreadsheet,
   Printer,
   ChevronDown,
+  ChevronUp,
+  ArrowUpDown,
   Users,
   DollarSign
 } from 'lucide-react';
@@ -21,11 +23,13 @@ import rawData from '@/data/somalia_raw_cwg_records.json';
 import cvaSummaryData from '@/data/somalia_cva_audit_data.json';
 
 export default function RealDataWindow() {
-  const [activeTab, setActiveTab] = useState<'cwg_transfers' | 'reach_settlements' | 'district_summary'>('cwg_transfers');
+  const [activeTab, setActiveTab] = useState<'district_summary' | 'cwg_transfers' | 'reach_settlements'>('district_summary');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedOrg, setSelectedOrg] = useState<string>('ALL');
   const [selectedMechanism, setSelectedMechanism] = useState<string>('ALL');
   const [selectedDistrict, setSelectedDistrict] = useState<string>('ALL');
+  const [districtSortField, setDistrictSortField] = useState<string>('total_usd_transferred');
+  const [districtSortAsc, setDistrictSortAsc] = useState<boolean>(false);
 
   // Unique lists for dropdown filters
   const organizations = useMemo(() => {
@@ -72,6 +76,74 @@ export default function RealDataWindow() {
       return matchSearch && matchDist;
     });
   }, [searchTerm, selectedDistrict]);
+
+  // Filter & sort District Summary
+  const filteredDistricts = useMemo(() => {
+    return cvaSummaryData.districts
+      .filter(d => {
+        if (d.total_usd_transferred === 0 && d.idp_camps_count === 0) return false;
+        if (d.district === 'Localisation_District_Label') return false;
+        const matchSearch = searchTerm === '' ||
+          d.district.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          d.active_organizations.some(org => org.toLowerCase().includes(searchTerm.toLowerCase()));
+        return matchSearch;
+      })
+      .sort((a, b) => {
+        let valA = (a as Record<string, any>)[districtSortField];
+        let valB = (b as Record<string, any>)[districtSortField];
+        if (typeof valA === 'string') {
+          return districtSortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
+        }
+        return districtSortAsc ? (valA - valB) : (valB - valA);
+      });
+  }, [searchTerm, districtSortField, districtSortAsc]);
+
+  const toggleDistrictSort = (field: string) => {
+    if (districtSortField === field) {
+      setDistrictSortAsc(!districtSortAsc);
+    } else {
+      setDistrictSortField(field);
+      setDistrictSortAsc(false); // Default descending for metrics
+    }
+  };
+
+  // CSV Exporter for District Summary
+  const exportDistrictCSV = () => {
+    const headers = [
+      'District',
+      'Total Transferred (USD)',
+      'Mobile Money (USD)',
+      'Voucher (USD)',
+      'Households',
+      'IDP Camps Count',
+      'Gatekeeper Camps',
+      'Gatekeeper %',
+      'Total Shelters',
+      'Active Implementers'
+    ];
+
+    const rows = filteredDistricts.map(d => [
+      `"${d.district}"`,
+      d.total_usd_transferred,
+      d.mobile_money_usd,
+      d.voucher_usd,
+      d.households_reached,
+      d.idp_camps_count,
+      d.gatekeeper_camps_count,
+      `"${d.gatekeeper_prevalence_pct}%"`,
+      d.total_idp_shelters,
+      `"${d.active_organizations.join(', ')}"`
+    ]);
+
+    const csv = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+    const encodedUri = encodeURI(csv);
+    const link = document.createElement('a');
+    link.setAttribute('href', encodedUri);
+    link.setAttribute('download', `somalia_cva_district_summary_${new Date().toISOString().slice(0,10)}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   // CSV Exporter for Real CWG
   const exportCwgCSV = () => {
@@ -193,7 +265,13 @@ export default function RealDataWindow() {
               <span>Print View</span>
             </button>
             <button
-              onClick={activeTab === 'reach_settlements' ? exportReachCSV : exportCwgCSV}
+              onClick={
+                activeTab === 'district_summary'
+                  ? exportDistrictCSV
+                  : activeTab === 'reach_settlements'
+                  ? exportReachCSV
+                  : exportCwgCSV
+              }
               className="flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-slate-950 text-xs font-bold transition-all shadow-lg shadow-emerald-600/30"
             >
               <Download className="w-4 h-4" />
@@ -205,6 +283,18 @@ export default function RealDataWindow() {
         {/* Tab Switcher & Filters */}
         <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col lg:flex-row justify-between items-center gap-4">
           <div className="flex flex-wrap items-center gap-2 w-full lg:w-auto">
+            <button
+              onClick={() => setActiveTab('district_summary')}
+              className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+                activeTab === 'district_summary'
+                  ? 'bg-emerald-600 text-slate-950 shadow'
+                  : 'bg-slate-800 text-slate-400 hover:text-white'
+              }`}
+            >
+              <Layers className="w-4 h-4" />
+              <span>District Summary Real Totals ({filteredDistricts.length})</span>
+            </button>
+
             <button
               onClick={() => setActiveTab('cwg_transfers')}
               className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
@@ -227,18 +317,6 @@ export default function RealDataWindow() {
             >
               <Building2 className="w-4 h-4" />
               <span>Real REACH IDP Settlements ({filteredReach.length})</span>
-            </button>
-
-            <button
-              onClick={() => setActiveTab('district_summary')}
-              className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
-                activeTab === 'district_summary'
-                  ? 'bg-emerald-600 text-slate-950 shadow'
-                  : 'bg-slate-800 text-slate-400 hover:text-white'
-              }`}
-            >
-              <Layers className="w-4 h-4" />
-              <span>District Summary Totals (74)</span>
             </button>
           </div>
 
@@ -435,37 +513,128 @@ export default function RealDataWindow() {
               <table className="w-full text-left text-xs border-collapse">
                 <thead className="bg-slate-800/95 text-slate-300 font-bold uppercase tracking-wider sticky top-0 z-10 border-b border-slate-700">
                   <tr>
-                    <th className="py-3 px-4">District</th>
-                    <th className="py-3 px-4 text-right">Total Transferred (USD)</th>
-                    <th className="py-3 px-4 text-right">Mobile Money (USD)</th>
-                    <th className="py-3 px-4 text-right">Voucher (USD)</th>
-                    <th className="py-3 px-4 text-right">Households</th>
-                    <th className="py-3 px-4 text-right">IDP Camps Count</th>
-                    <th className="py-3 px-4 text-right">Gatekeeper Camps</th>
-                    <th className="py-3 px-4 text-right">Total Shelters</th>
+                    <th 
+                      onClick={() => toggleDistrictSort('district')}
+                      className="py-3 px-4 cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                    >
+                      <div className="flex items-center gap-1.5">
+                        <span>District</span>
+                        {districtSortField === 'district' ? (
+                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                      </div>
+                    </th>
+                    <th 
+                      onClick={() => toggleDistrictSort('total_usd_transferred')}
+                      className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                    >
+                      <div className="flex items-center justify-end gap-1.5">
+                        <span>Total Transferred (USD)</span>
+                        {districtSortField === 'total_usd_transferred' ? (
+                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                      </div>
+                    </th>
+                    <th 
+                      onClick={() => toggleDistrictSort('mobile_money_usd')}
+                      className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                    >
+                      <div className="flex items-center justify-end gap-1.5">
+                        <span>Mobile Money (USD)</span>
+                        {districtSortField === 'mobile_money_usd' ? (
+                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                      </div>
+                    </th>
+                    <th 
+                      onClick={() => toggleDistrictSort('voucher_usd')}
+                      className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                    >
+                      <div className="flex items-center justify-end gap-1.5">
+                        <span>Voucher (USD)</span>
+                        {districtSortField === 'voucher_usd' ? (
+                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                      </div>
+                    </th>
+                    <th 
+                      onClick={() => toggleDistrictSort('households_reached')}
+                      className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                    >
+                      <div className="flex items-center justify-end gap-1.5">
+                        <span>Households</span>
+                        {districtSortField === 'households_reached' ? (
+                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                      </div>
+                    </th>
+                    <th 
+                      onClick={() => toggleDistrictSort('idp_camps_count')}
+                      className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                    >
+                      <div className="flex items-center justify-end gap-1.5">
+                        <span>IDP Camps Count</span>
+                        {districtSortField === 'idp_camps_count' ? (
+                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                      </div>
+                    </th>
+                    <th 
+                      onClick={() => toggleDistrictSort('gatekeeper_camps_count')}
+                      className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                    >
+                      <div className="flex items-center justify-end gap-1.5">
+                        <span>Gatekeeper Camps</span>
+                        {districtSortField === 'gatekeeper_camps_count' ? (
+                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                      </div>
+                    </th>
+                    <th 
+                      onClick={() => toggleDistrictSort('total_idp_shelters')}
+                      className="py-3 px-4 text-right cursor-pointer hover:bg-slate-700/60 transition-colors select-none"
+                    >
+                      <div className="flex items-center justify-end gap-1.5">
+                        <span>Total Shelters</span>
+                        {districtSortField === 'total_idp_shelters' ? (
+                          districtSortAsc ? <ChevronUp className="w-3.5 h-3.5 text-emerald-400" /> : <ChevronDown className="w-3.5 h-3.5 text-emerald-400" />
+                        ) : <ArrowUpDown className="w-3 h-3 text-slate-500" />}
+                      </div>
+                    </th>
                     <th className="py-3 px-4">Active Implementers</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-800 text-slate-300 font-mono">
-                  {cvaSummaryData.districts.map(d => (
-                    <tr key={d.district} className="hover:bg-slate-800/60 transition-colors">
-                      <td className="py-2.5 px-4 font-sans font-bold text-white whitespace-nowrap">{d.district}</td>
-                      <td className="py-2.5 px-4 text-right font-bold text-emerald-400">${d.total_usd_transferred.toLocaleString()}</td>
-                      <td className="py-2.5 px-4 text-right text-slate-200">${d.mobile_money_usd.toLocaleString()}</td>
-                      <td className="py-2.5 px-4 text-right text-indigo-300">${d.voucher_usd.toLocaleString()}</td>
-                      <td className="py-2.5 px-4 text-right text-slate-200">{d.households_reached.toLocaleString()}</td>
-                      <td className="py-2.5 px-4 text-right text-slate-300">{d.idp_camps_count}</td>
-                      <td className="py-2.5 px-4 text-right text-slate-300">
-                        {d.gatekeeper_camps_count} ({d.gatekeeper_prevalence_pct}%)
-                      </td>
-                      <td className="py-2.5 px-4 text-right text-slate-300">{d.total_idp_shelters.toLocaleString()}</td>
-                      <td className="py-2.5 px-4 font-sans text-slate-400 max-w-xs truncate" title={d.active_organizations.join(', ')}>
-                        {d.active_organizations.join(', ')}
+                  {filteredDistricts.length === 0 ? (
+                    <tr>
+                      <td colSpan={9} className="py-8 text-center text-slate-400 font-sans">
+                        No districts found matching &ldquo;{searchTerm}&rdquo;
                       </td>
                     </tr>
-                  ))}
+                  ) : (
+                    filteredDistricts.map(d => (
+                      <tr key={d.district} className={`hover:bg-slate-800/60 transition-colors ${d.district === 'Cabudwaaq' ? 'bg-indigo-950/20' : ''}`}>
+                        <td className="py-2.5 px-4 font-sans font-bold text-white whitespace-nowrap">{d.district}</td>
+                        <td className="py-2.5 px-4 text-right font-bold text-emerald-400">${d.total_usd_transferred.toLocaleString()}</td>
+                        <td className="py-2.5 px-4 text-right text-slate-200">${d.mobile_money_usd.toLocaleString()}</td>
+                        <td className="py-2.5 px-4 text-right text-indigo-300">${d.voucher_usd.toLocaleString()}</td>
+                        <td className="py-2.5 px-4 text-right text-slate-200">{d.households_reached.toLocaleString()}</td>
+                        <td className="py-2.5 px-4 text-right text-slate-300">{d.idp_camps_count}</td>
+                        <td className="py-2.5 px-4 text-right text-slate-300">
+                          {d.gatekeeper_camps_count} ({d.gatekeeper_prevalence_pct}%)
+                        </td>
+                        <td className="py-2.5 px-4 text-right text-slate-300">{d.total_idp_shelters.toLocaleString()}</td>
+                        <td className="py-2.5 px-4 font-sans text-slate-400 max-w-sm truncate" title={d.active_organizations.join(', ')}>
+                          {d.active_organizations.join(', ')}
+                        </td>
+                      </tr>
+                    ))
+                  )}
                 </tbody>
               </table>
+            </div>
+            <div className="p-3 bg-slate-900 border-t border-slate-800 text-center text-xs text-slate-400">
+              Showing {filteredDistricts.length} active Somali districts sorted by <strong>{districtSortField.replace(/_/g, ' ')}</strong> ({districtSortAsc ? 'Ascending' : 'Descending'}). Click any column header to sort.
             </div>
           </div>
         )}
