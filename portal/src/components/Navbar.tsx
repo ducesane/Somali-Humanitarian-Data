@@ -21,7 +21,7 @@ import {
   Briefcase,
   Layers
 } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 // Pillar I: Field & Territorial Intelligence
 const FIELD_TABS = [
@@ -42,9 +42,48 @@ const PROCUREMENT_TABS = [
 export default function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY;
+
+          // Always visible near the top of the page
+          if (currentScrollY < 100) {
+            setIsVisible(true);
+          } else if (currentScrollY > lastScrollY && currentScrollY > 180) {
+            // Scrolling down towards the middle of the page -> hide navbar
+            setIsVisible(false);
+            setIsOpen(false);
+          } else if (currentScrollY < lastScrollY) {
+            // Scrolling back up -> reveal navbar smoothly
+            setIsVisible(true);
+          }
+
+          setLastScrollY(currentScrollY);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   return (
-    <header className="sticky top-0 z-50 bg-slate-950/98 backdrop-blur-md border-b border-emerald-900/40 text-white shadow-2xl">
+    <header 
+      className={`sticky top-0 z-50 bg-slate-950/98 backdrop-blur-md border-b border-emerald-900/40 text-white shadow-2xl transition-all duration-300 ease-in-out ${
+        isVisible || isOpen
+          ? 'translate-y-0 opacity-100 pointer-events-auto'
+          : '-translate-y-full opacity-0 pointer-events-none'
+      }`}
+    >
       
       {/* ============================================================== */}
       {/* TIER 1: GLOBAL BRANDING, REAL-TIME STATUS & ACTIONS            */}
