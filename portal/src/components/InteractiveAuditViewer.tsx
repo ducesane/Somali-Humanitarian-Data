@@ -150,14 +150,14 @@ export default function InteractiveAuditViewer() {
             {/* Floating Coordinate HUD */}
             <div className="absolute top-4 left-4 bg-slate-950/90 backdrop-blur border border-slate-800 rounded-xl px-3 py-2 shadow-lg text-xs font-mono">
               <div className="text-slate-400 text-[10px] font-bold uppercase">Target Location</div>
-              <div className="text-emerald-400 font-bold">6.4402° N, 47.3418° E</div>
+              <div className="text-emerald-400 font-bold">7.1932° N, 47.5284° E</div>
               <div className="text-slate-500 text-[10px]">Bacadweyn &bull; Gaalkacyo &bull; Mudug</div>
             </div>
 
             {/* Quick External Map Links */}
             <div className="absolute top-4 right-4 flex items-center gap-2">
               <a
-                href="https://www.google.com/maps/@6.4402,47.3418,17z/data=!3m1!1e3"
+                href="https://www.google.com/maps/@7.1932,47.5284,18z/data=!3m1!1e3"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-1.5 bg-slate-950/90 backdrop-blur border border-slate-800 hover:border-slate-700 text-xs text-slate-300 hover:text-white px-3 py-1.5 rounded-lg shadow-md transition-colors"

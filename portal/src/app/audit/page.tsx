@@ -53,7 +53,7 @@ export default function SatelliteAuditPage() {
             {/* Quick Actions */}
             <div className="flex flex-wrap items-center gap-3">
               <a
-                href="https://www.google.com/maps/@6.4402,47.3418,17z/data=!3m1!1e3"
+                href="https://www.google.com/maps/@7.1932,47.5284,18z/data=!3m1!1e3"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-sm font-semibold text-slate-200 transition-colors shadow-sm"
@@ -148,7 +148,7 @@ export default function SatelliteAuditPage() {
               </div>
             </div>
             <span className="text-xs font-mono text-emerald-400 bg-emerald-950/70 border border-emerald-800/80 px-3 py-1 rounded-full hidden sm:inline-block">
-              Coordinates: 6.44020° N, 47.34180° E
+              Coordinates: 7.19320° N, 47.52840° E
             </span>
           </div>
 
@@ -168,7 +168,7 @@ export default function SatelliteAuditPage() {
               </div>
             </div>
             <span className="hidden sm:inline-block font-mono text-xs text-emerald-400 bg-emerald-950/70 border border-emerald-800/80 px-3 py-1 rounded-full">
-              GPS: 6.4402° N, 47.3418° E
+              GPS: 7.1932° N, 47.5284° E
             </span>
           </div>
 
