@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import InteractiveAuditViewer from '@/components/InteractiveAuditViewer';
 import BoreholeZoomMap from '@/components/BoreholeZoomMap';
+import SiteCoordinateResolver from '@/components/SiteCoordinateResolver';
 
 export const metadata = {
   title: 'Independent Satellite Audit (TPM) | Somalia Humanitarian Intelligence',
@@ -126,6 +127,11 @@ export default function SatelliteAuditPage() {
       {/* Main Content Area */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
         
+        {/* ------------------------------------------------------------------ */}
+        {/* SCENARIO TOOL: SITE COORDINATE RESOLVER (EXIF & REGISTRY ENGINE)   */}
+        {/* ------------------------------------------------------------------ */}
+        <SiteCoordinateResolver />
+
         {/* ------------------------------------------------------------------ */}
         {/* FEATURED: INTERACTIVE BOREHOLE ULTRA-ZOOM MAP                     */}
         {/* ------------------------------------------------------------------ */}
