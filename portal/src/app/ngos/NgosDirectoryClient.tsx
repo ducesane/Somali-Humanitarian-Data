@@ -175,9 +175,7 @@ function NgosDirectoryContent({ initialNgos }: NgosDirectoryClientProps) {
     if (!name) return;
     const found = initialNgos.find((n) => n.name === name);
     if (found) {
-      setSelectedNgo(found);
-      setActiveTab('funding');
-      // Also scroll to view or open modal
+      router.push(`/ngos/${found.slug}`);
     }
   };
 
@@ -325,19 +323,16 @@ function NgosDirectoryContent({ initialNgos }: NgosDirectoryClientProps) {
 
           <div className="flex items-center gap-2">
             {selectedNgo ? (
-              <button
-                onClick={() => {
-                  // Already selected, ensure tab is set
-                  setActiveTab('funding');
-                }}
+              <Link
+                href={`/ngos/${selectedNgo.slug}`}
                 className="w-full py-3.5 px-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-black text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-900/30 transition-all"
               >
-                <span>Inspecting: {selectedNgo.acronym || selectedNgo.name.slice(0, 15)}</span>
+                <span>Open Dedicated Page: {selectedNgo.acronym || selectedNgo.name.slice(0, 15)}</span>
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </Link>
             ) : (
               <div className="w-full py-3.5 px-4 rounded-2xl bg-slate-950/60 border border-slate-800 text-slate-400 text-xs font-medium flex items-center justify-center text-center">
-                Select an organization above to view their activity map & funding flow
+                Select an organization above to immediately open their intelligence page
               </div>
             )}
           </div>
@@ -876,9 +871,12 @@ function NgosDirectoryContent({ initialNgos }: NgosDirectoryClientProps) {
 
                   {/* Title & Acronym */}
                   <div className="space-y-1">
-                    <h3 className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors line-clamp-2">
+                    <Link
+                      href={`/ngos/${ngo.slug}`}
+                      className="text-base font-bold text-white hover:text-emerald-300 transition-colors line-clamp-2 block"
+                    >
                       {ngo.name}
-                    </h3>
+                    </Link>
                     <div className="flex items-center gap-2 text-xs font-bold text-slate-400">
                       <span className="text-emerald-400">{ngo.total_activities} frontline actions</span>
                       <span>•</span>
@@ -955,16 +953,13 @@ function NgosDirectoryContent({ initialNgos }: NgosDirectoryClientProps) {
 
                 {/* Card Action Buttons */}
                 <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center gap-2">
-                  <button
-                    onClick={() => {
-                      setSelectedNgo(ngo);
-                      setActiveTab('funding');
-                    }}
-                    className="flex-1 py-2 px-3 rounded-xl bg-slate-800 hover:bg-emerald-950/80 border border-slate-700 hover:border-emerald-600 text-xs font-bold text-emerald-300 hover:text-emerald-200 transition-all flex items-center justify-center gap-1.5"
+                  <Link
+                    href={`/ngos/${ngo.slug}`}
+                    className="flex-1 py-2 px-3 rounded-xl bg-slate-800 hover:bg-emerald-950/80 border border-slate-700 hover:border-emerald-600 text-xs font-bold text-emerald-300 hover:text-emerald-200 transition-all flex items-center justify-center gap-1.5 group/btn"
                   >
                     <span>Inspect Activities & Funding</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 transition-transform" />
+                  </Link>
 
                   <Link
                     href={`/dossier-builder?ngo=${encodeURIComponent(ngo.name)}`}

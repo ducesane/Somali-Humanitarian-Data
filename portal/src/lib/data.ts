@@ -20,10 +20,20 @@ export function getAllNGOs(): NGOData[] {
   return Object.values(data.ngos);
 }
 
+export function getNGOBySlug(slug: string): NGOData | undefined {
+  const normSlug = decodeURIComponent(slug).toLowerCase().trim();
+  const ngos = Object.values(data.ngos);
+  return ngos.find((n) => {
+    if (n.slug && n.slug.toLowerCase() === normSlug) return true;
+    const computedSlug = n.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+    return computedSlug === normSlug;
+  });
+}
+
 export function getNGOByName(name: string): NGOData | undefined {
   const decoded = decodeURIComponent(name).toLowerCase();
   return Object.values(data.ngos).find(
-    (n) => n.name.toLowerCase() === decoded || n.name.toLowerCase().includes(decoded)
+    (n) => n.name.toLowerCase() === decoded || n.name.toLowerCase().includes(decoded) || (n.slug && n.slug === decoded)
   );
 }
 

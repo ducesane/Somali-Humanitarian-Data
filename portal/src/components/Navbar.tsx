@@ -28,7 +28,7 @@ import { useState, useEffect } from 'react';
 const FIELD_TABS = [
   { href: '/', label: 'Platform Overview', icon: Compass },
   { href: '/districts', label: 'Districts & Locations', count: '90', icon: MapPin },
-  { href: '/ngos', label: 'NGO Operational Presence', count: '211', icon: Building2 },
+  { href: '/ngos', label: 'NGO Operational Presence', count: '201', icon: Building2 },
 ];
 
 // Pillar II: Funding, Contracts & Strategic Pipeline

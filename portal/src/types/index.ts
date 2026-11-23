@@ -89,6 +89,7 @@ export interface DistrictActivityDetail {
 }
 
 export interface NGOData {
+  slug: string;
   name: string;
   clean_name?: string;
   acronym?: string;
