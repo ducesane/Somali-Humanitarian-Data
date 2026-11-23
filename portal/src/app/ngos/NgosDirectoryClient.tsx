@@ -28,7 +28,8 @@ import {
   ArrowUpRight, 
   Globe,
   PieChart,
-  BadgeDollarSign
+  BadgeDollarSign,
+  Calendar
 } from 'lucide-react';
 import { NGOData } from '@/types';
 
@@ -311,7 +312,7 @@ function NgosDirectoryContent({ initialNgos }: NgosDirectoryClientProps) {
                   : `[Downstream Sub-Grant IP]`;
                 return (
                   <option key={ngo.name} value={ngo.name} className="bg-slate-950 text-white py-1">
-                    {ngo.name} {fundingTag} — {ngo.districts?.length || 0} Districts ({ngo.total_activities} actions)
+                    {ngo.name} {fundingTag} — {ngo.districts?.length || 0} Districts ({ngo.total_activities} actions • {ngo.latest_action_date || '2026'})
                   </option>
                 );
               })}
@@ -877,10 +878,15 @@ function NgosDirectoryContent({ initialNgos }: NgosDirectoryClientProps) {
                     >
                       {ngo.name}
                     </Link>
-                    <div className="flex items-center gap-2 text-xs font-bold text-slate-400">
+                    <div className="flex flex-wrap items-center gap-2 text-xs font-bold text-slate-400">
                       <span className="text-emerald-400">{ngo.total_activities} frontline actions</span>
                       <span>•</span>
                       <span>{districtsList.length} districts</span>
+                      <span>•</span>
+                      <span className="text-slate-300 font-mono text-[11px] flex items-center gap-1 bg-slate-950 px-2 py-0.5 rounded border border-slate-800">
+                        <Calendar className="w-3 h-3 text-emerald-400" />
+                        <span>{ngo.active_date_range || ngo.latest_action_date || '2026 Cycle'}</span>
+                      </span>
                     </div>
                   </div>
 

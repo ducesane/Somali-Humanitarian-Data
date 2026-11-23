@@ -85,6 +85,9 @@ export interface DistrictActivityDetail {
   district: string;
   region: string;
   cluster: string;
+  date?: string;
+  latest_month?: string;
+  months?: string[];
   actions: number;
 }
 
@@ -95,6 +98,8 @@ export interface NGOData {
   acronym?: string;
   type: 'NNGO' | 'INGO' | 'UN' | 'Government';
   total_activities: number;
+  latest_action_date?: string;
+  active_date_range?: string;
   districts: string[];
   districts_count?: number;
   regions: string[];
