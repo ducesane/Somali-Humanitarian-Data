@@ -28,7 +28,7 @@ import { useState, useEffect } from 'react';
 const FIELD_TABS = [
   { href: '/', label: 'Platform Overview', icon: Compass },
   { href: '/districts', label: 'Districts & Locations', count: '90', icon: MapPin },
-  { href: '/ngos', label: 'NGO Operational Presence', count: '204', icon: Building2 },
+  { href: '/ngos', label: 'NGO Operational Presence', count: '211', icon: Building2 },
 ];
 
 // Pillar II: Funding, Contracts & Strategic Pipeline
@@ -204,7 +204,7 @@ export default function Navbar() {
 
             {/* Right Context Hint */}
             <div className="hidden xl:flex items-center gap-2 text-[11px] text-slate-500 font-medium">
-              <span>90 Districts &bull; 18 Regions &bull; 204 Active NGOs</span>
+              <span>90 Districts &bull; 18 Regions &bull; 211 Active Partners</span>
             </div>
           </div>
         </div>

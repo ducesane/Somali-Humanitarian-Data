@@ -40,8 +40,58 @@ export interface DistrictData {
   ett_2026?: ETTData;
 }
 
+export interface FundingMechanism {
+  name: string;
+  type: string;
+  verified_usd: number;
+  is_verified: boolean;
+  channel_path: string;
+  details: string;
+}
+
+export interface SHFProject {
+  project_title: string;
+  budget: number;
+  direct_cost: number;
+  support_cost: number;
+  target_beneficiaries: {
+    men: number;
+    women: number;
+    boys: number;
+    girls: number;
+    total: number;
+  };
+  allocation_year: number;
+  fund_source: string;
+  status: string;
+}
+
+export interface FTSGrant {
+  source_donor: string;
+  sector: string;
+  amount_usd: number;
+  description: string;
+}
+
+export interface UNDPContract {
+  source_agency: string;
+  orders_count: number;
+  projects_count: number;
+  total_amount_usd: number;
+  latest_activity: string;
+}
+
+export interface DistrictActivityDetail {
+  district: string;
+  region: string;
+  cluster: string;
+  actions: number;
+}
+
 export interface NGOData {
   name: string;
+  clean_name?: string;
+  acronym?: string;
   type: 'NNGO' | 'INGO' | 'UN' | 'Government';
   total_activities: number;
   districts: string[];
@@ -49,6 +99,17 @@ export interface NGOData {
   regions: string[];
   clusters: string[];
   shf_budget?: number;
+  total_tracked_funding_usd?: number;
+  funding_status?: string;
+  funding_tier?: string;
+  funding_narrative?: string;
+  funding_mechanisms?: FundingMechanism[];
+  shf_projects?: SHFProject[];
+  fts_grants?: FTSGrant[];
+  undp_contracts?: UNDPContract[];
+  cwg_cva_active?: boolean;
+  cwg_districts?: string[];
+  district_details?: DistrictActivityDetail[];
   // Fallback aliases for backwards compatibility
   districts_present?: string[];
   regions_present?: string[];
