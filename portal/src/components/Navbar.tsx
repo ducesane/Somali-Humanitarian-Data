@@ -33,7 +33,7 @@ const FIELD_TABS = [
 
 // Pillar II: Funding, Contracts & Strategic Pipeline
 const PROCUREMENT_TABS = [
-  { href: '/undp-projects', label: 'UNDP Projects', count: '50', icon: FolderDown },
+  { href: '/undp-projects', label: 'UNDP Projects', count: '203', icon: FolderDown },
   { href: '/vendors', label: 'Vendors & Contractors', count: '364', icon: ReceiptText },
   { href: '/tenders', label: 'Live Tenders & Awards', count: '47', icon: Radio, isLive: true },
   { href: '/cash-audit', label: 'Cash Programming (CVA)', icon: Smartphone, badge: '$592M' },
