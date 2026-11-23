@@ -119,11 +119,11 @@ export default function Navbar() {
               <Link
                 href="/tenders"
                 className="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/80 border border-emerald-800/70 text-xs text-emerald-300 hover:bg-emerald-900/60 transition-colors shadow-sm"
-                title="View 47 active Somalia bids and 451 contract awards"
+                title="View 47 active Somalia bids and 822 contract awards"
               >
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span className="font-semibold text-[11px]">UNGM Live:</span>
-                <span className="font-mono text-[11px] text-emerald-200">47 Tenders &bull; 451 Awards</span>
+                <span className="font-mono text-[11px] text-emerald-200">47 Tenders &bull; 822 Awards</span>
               </Link>
 
               {/* GitHub Link */}

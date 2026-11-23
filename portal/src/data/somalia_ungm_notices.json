@@ -99,6 +99,39 @@
     "destination": "Multiple destinations"
   },
   {
+    "id": "323223",
+    "title": "Provision of digital project management services for the migration of the UPU website to a new content management system",
+    "url": "https://www.ungm.org/Public/Notice/323223",
+    "agency": "UPU",
+    "notice_type": "Invitation to bid",
+    "reference": "RFP-2026-020-DACAB",
+    "published_date": "20-Nov-2026",
+    "deadline": "14-Dec-2026 17:00\r\n            (GMT 1.00)",
+    "destination": "Multiple destinations"
+  },
+  {
+    "id": "323269",
+    "title": "Provision of Printing Services and Visibility Materials on a Long-Term Agreement (LTA) Basis. PR 26/008",
+    "url": "https://www.ungm.org/Public/Notice/323269",
+    "agency": "FAO",
+    "notice_type": "Invitation to bid",
+    "reference": "2026/FRSOM/FRSOM/138890",
+    "published_date": "21-Nov-2026",
+    "deadline": "10-Dec-2026 12:00\r\n            (GMT 3.00)",
+    "destination": "Somalia"
+  },
+  {
+    "id": "318781",
+    "title": "Establishment of Long-Term Agreements (LTAs) for the Supply of manual and electric Material Handling Equipment for UN Web Buy Plus",
+    "url": "https://www.ungm.org/Public/Notice/318781",
+    "agency": "UNOPS",
+    "notice_type": "Invitation to bid",
+    "reference": "ITB/2026/64524",
+    "published_date": "19-Oct-2026",
+    "deadline": "10-Dec-2026 11:00\r\n            (GMT 0.00)",
+    "destination": "Multiple destinations"
+  },
+  {
     "id": "322996",
     "title": "Request for Proposal for provision of Asset Management Services for UNOPS Working Capital Portfolio",
     "url": "https://www.ungm.org/Public/Notice/322996",
@@ -118,6 +151,17 @@
     "reference": "EOIUNPD24877",
     "published_date": "09-Nov-2026",
     "deadline": "09-Dec-2026 23:59\r\n            (GMT -4.00)",
+    "destination": "Multiple destinations"
+  },
+  {
+    "id": "322992",
+    "title": "Strengthening manufacturing capacity in LMICs through technology assessment and prioritization and, technology transfer",
+    "url": "https://www.ungm.org/Public/Notice/322992",
+    "agency": "WHO",
+    "notice_type": "Request for proposal",
+    "reference": "WHO-SHQ-RFP-26-2047-LTA",
+    "published_date": "18-Nov-2026",
+    "deadline": "09-Dec-2026 23:59\r\n            (GMT 1.00)",
     "destination": "Multiple destinations"
   },
   {
@@ -143,28 +187,6 @@
     "destination": "Multiple destinations"
   },
   {
-    "id": "322992",
-    "title": "Strengthening manufacturing capacity in LMICs through technology assessment and prioritization and, technology transfer",
-    "url": "https://www.ungm.org/Public/Notice/322992",
-    "agency": "WHO",
-    "notice_type": "Request for proposal",
-    "reference": "WHO-SHQ-RFP-26-2047-LTA",
-    "published_date": "18-Nov-2026",
-    "deadline": "09-Dec-2026 23:59\r\n            (GMT 1.00)",
-    "destination": "Multiple destinations"
-  },
-  {
-    "id": "322729",
-    "title": "RFPS-2026-503979 \u2013 Hosting Platform and Managed Services for R Shiny Applications",
-    "url": "https://www.ungm.org/Public/Notice/322729",
-    "agency": "UNICEF",
-    "notice_type": "Request for proposal",
-    "reference": "RFPS-2026-503979",
-    "published_date": "16-Nov-2026",
-    "deadline": "07-Dec-2026 23:59\r\n            (GMT 1.00)",
-    "destination": "Multiple destinations"
-  },
-  {
     "id": "317935",
     "title": "Development of the TCIM Research Methods-and-Evidence Architecture and Digital Navigator \u2013 Phase 1",
     "url": "https://www.ungm.org/Public/Notice/317935",
@@ -185,6 +207,28 @@
     "published_date": "29-Oct-2026",
     "deadline": "07-Dec-2026 23:59\r\n            (GMT 1.00)",
     "destination": "Multiple destinations"
+  },
+  {
+    "id": "322729",
+    "title": "RFPS-2026-503979 \u2013 Hosting Platform and Managed Services for R Shiny Applications",
+    "url": "https://www.ungm.org/Public/Notice/322729",
+    "agency": "UNICEF",
+    "notice_type": "Request for proposal",
+    "reference": "RFPS-2026-503979",
+    "published_date": "16-Nov-2026",
+    "deadline": "07-Dec-2026 23:59\r\n            (GMT 1.00)",
+    "destination": "Multiple destinations"
+  },
+  {
+    "id": "323303",
+    "title": "Procurement of spare parts for IOM Somalia Vehicles",
+    "url": "https://www.ungm.org/Public/Notice/323303",
+    "agency": "IOM",
+    "notice_type": "Request for quotation",
+    "reference": "30000037389",
+    "published_date": "22-Nov-2026",
+    "deadline": "06-Dec-2026 14:15\r\n            (GMT 0.00)",
+    "destination": "Somalia"
   },
   {
     "id": "321522",
@@ -253,6 +297,17 @@
     "destination": "Somalia"
   },
   {
+    "id": "323304",
+    "title": "Renovation of Office Building for Erigavo MRC",
+    "url": "https://www.ungm.org/Public/Notice/323304",
+    "agency": "IOM",
+    "notice_type": "Request for quotation",
+    "reference": "30000037515",
+    "published_date": "22-Nov-2026",
+    "deadline": "30-Nov-2026 14:17\r\n            (GMT 0.00)",
+    "destination": "Somalia"
+  },
+  {
     "id": "322600",
     "title": "CONSTRUCTION OF DISPENSARY CLINIC IN SAAXO, MUDUG REGION, PUNTLAND STATE- SOMALIA. PR 26/138",
     "url": "https://www.ungm.org/Public/Notice/322600",
@@ -275,17 +330,6 @@
     "destination": "Somalia"
   },
   {
-    "id": "318781",
-    "title": "Establishment of Long-Term Agreements (LTAs) for the Supply of manual and electric Material Handling Equipment for UN Web Buy Plus",
-    "url": "https://www.ungm.org/Public/Notice/318781",
-    "agency": "UNOPS",
-    "notice_type": "Invitation to bid",
-    "reference": "ITB/2026/64524",
-    "published_date": "19-Oct-2026",
-    "deadline": "30-Nov-2026 11:00\r\n            (GMT 0.00)",
-    "destination": "Multiple destinations"
-  },
-  {
     "id": "318517",
     "title": "ESTABLISHMENT OF FRAME AGREEMENT(S) FOR THE PROVISION OF ESA REGIONAL ROAD FREIGHT FORWARDING SERVICES",
     "url": "https://www.ungm.org/Public/Notice/318517",
@@ -306,6 +350,28 @@
     "published_date": "19-Nov-2026",
     "deadline": "29-Nov-2026 10:27\r\n            (GMT 0.00)",
     "destination": "Somalia"
+  },
+  {
+    "id": "323280",
+    "title": "Procurement of VERIFIER TD&B Workstations (DESC) for Six Airports in Somalia",
+    "url": "https://www.ungm.org/Public/Notice/323280",
+    "agency": "IOM",
+    "notice_type": "Request for quotation",
+    "reference": "30000037630",
+    "published_date": "22-Nov-2026",
+    "deadline": "29-Nov-2026 07:48\r\n            (GMT 0.00)",
+    "destination": "Somalia"
+  },
+  {
+    "id": "323225",
+    "title": "Call for External Collaborator (Translation/Revision)\u2013 Translation of the Global Manual for WIND from English into Brazilian Portuguese, ILO Vision Zero Fund (VZF) \u2013 Brazil",
+    "url": "https://www.ungm.org/Public/Notice/323225",
+    "agency": "ILO",
+    "notice_type": "Call for individual consultants",
+    "reference": "rfx_14791_HQ",
+    "published_date": "20-Nov-2026",
+    "deadline": "27-Nov-2026 20:00\r\n            (GMT 1.00)",
+    "destination": "Multiple destinations"
   },
   {
     "id": "322095",
@@ -448,72 +514,6 @@
     "reference": "30000035761-3",
     "published_date": "16-Nov-2026",
     "deadline": "23-Nov-2026 10:32\r\n            (GMT 0.00)",
-    "destination": "Somalia"
-  },
-  {
-    "id": "319084",
-    "title": "RFQ 2200348310 - For Provision of Conference Services in Eswatini in January-June 2027",
-    "url": "https://www.ungm.org/Public/Notice/319084",
-    "agency": "ITC",
-    "notice_type": "Request for quotation",
-    "reference": "RFQ 2200348310",
-    "published_date": "21-Oct-2026",
-    "deadline": "22-Nov-2026 23:59\r\n            (GMT 2.00)",
-    "destination": "Multiple destinations"
-  },
-  {
-    "id": "322517",
-    "title": "Call for External Collaborator: Baseline analysis, results framework and monitoring tool for the ILO Living Wage Programme, coordinated by the ILO Inclusive Labour Markets, Working Conditions and Labour Migration Branch (FAIRWORK)",
-    "url": "https://www.ungm.org/Public/Notice/322517",
-    "agency": "ILO",
-    "notice_type": "Call for individual consultants",
-    "reference": "rfx_14266_HQ",
-    "published_date": "13-Nov-2026",
-    "deadline": "22-Nov-2026 12:00\r\n            (GMT 1.00)",
-    "destination": "Multiple destinations"
-  },
-  {
-    "id": "322322",
-    "title": "IT Equipment and furniture to Ministry of Labour Hargeisa Somaliland",
-    "url": "https://www.ungm.org/Public/Notice/322322",
-    "agency": "IOM",
-    "notice_type": "Request for quotation",
-    "reference": "30000037026,1",
-    "published_date": "17-Nov-2026",
-    "deadline": "22-Nov-2026 06:33\r\n            (GMT 0.00)",
-    "destination": "Somalia"
-  },
-  {
-    "id": "322635",
-    "title": "Request for Quotation for CCCM El Ni\u00f1o flood preparedness, response in Beledwein",
-    "url": "https://www.ungm.org/Public/Notice/322635",
-    "agency": "IOM",
-    "notice_type": "Request for quotation",
-    "reference": "30000037286",
-    "published_date": "16-Nov-2026",
-    "deadline": "21-Nov-2026 06:25\r\n            (GMT 0.00)",
-    "destination": "Somalia"
-  },
-  {
-    "id": "318627",
-    "title": "Long term global contract for the supply of UN Ballistic Helmets for the United Nations",
-    "url": "https://www.ungm.org/Public/Notice/318627",
-    "agency": "UN Secretariat",
-    "notice_type": "Request for EOI",
-    "reference": "EOIUNPD24823",
-    "published_date": "16-Oct-2026",
-    "deadline": "20-Nov-2026 23:59\r\n            (GMT -4.00)",
-    "destination": "Multiple destinations"
-  },
-  {
-    "id": "320297",
-    "title": "Solid Waste Management Plan and Community-Driven Valorisation in Afgooye Town",
-    "url": "https://www.ungm.org/Public/Notice/320297",
-    "agency": "IOM",
-    "notice_type": "Request for quotation",
-    "reference": "30000036142,1",
-    "published_date": "05-Nov-2026",
-    "deadline": "20-Nov-2026 15:08\r\n            (GMT 0.00)",
     "destination": "Somalia"
   }
 ]
